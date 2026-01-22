@@ -3,13 +3,17 @@ import ROOT
 #Mandatory: List of processes
 
 processList = {
-        'p8_ee_Zee_ecm91':{'chunks':100},
-        'p8_ee_Zmumu_ecm91':{'chunks':100},
-        'p8_ee_Ztautau_ecm91':{'chunks':100},
-        'p8_ee_Zbb_ecm91':{'chunks':100},
-        'p8_ee_Zcc_ecm91':{'chunks':100},
-        'p8_ee_Zud_ecm91':{'chunks':100},
-        'p8_ee_Zss_ecm91':{'chunks':100},
+        #'p8_ee_Zee_ecm91':{'fraction':0.001},
+        #'p8_ee_Zmumu_ecm91':{'fraction':0.001},
+        #'p8_ee_Ztautau_ecm91':{'fraction':0.001},
+        #'p8_ee_Zbb_ecm91':{'fraction':0.001},
+        #'p8_ee_Zcc_ecm91':{'fraction':0.001},
+        #'p8_ee_Zud_ecm91':{'fraction':0.001},
+        #'p8_ee_Zss_ecm91':{'fraction':0.001},
+
+	## ##
+	
+		"HNL_4e-10_20gev":{},
 }
 
 processList_ = {
@@ -421,20 +425,20 @@ processList_ = {
 #Production tag. This points to the yaml files for getting sample statistics
 #Mandatory when running over EDM4Hep centrally produced events
 #Comment out when running over privately produced events
-prodTag     = "FCCee/winter2023/IDEA/"
+#prodTag     = "FCCee/winter2023/IDEA/"
 
 #Input directory
 #Comment out when running over centrally produced events
 #Mandatory when running over privately produced events
 #inputDir = "/eos/experiment/fcc/ee/generation/DelphesEvents/winter2023/IDEA/"
-#inputDir = "/eos/user/s/sgiappic/2HNL_samples/root/"
+inputDir = "/eos/user/e/espoto/HNLsignals"
 
 # additional/costom C++ functions, defined in header files (optional)
 includePaths = ["functions.h"]
 
 #Optional: output directory, default is local dir
 #outputDir = "output_stage1/"
-outputDir = "/eos/user/s/sgiappic/2HNL_ana/stage1/"
+outputDir = "/eos/user/e/espoto/FCCAnalyses/outputs/gen/stage1_gen"
 
 ### necessary to run on HTCondor ###
 eosType = "eosuser"
@@ -443,7 +447,7 @@ eosType = "eosuser"
 nCPUS = 10
 
 #Optional running on HTCondor, default is False
-runBatch = True
+#runBatch = True
 
 #Optional batch queue name when running on HTCondor, default is workday
 batchQueue = "workday"
@@ -943,10 +947,11 @@ class RDFanalysis():
                         "n_FSGenMuon",
                         "n_FSGenLepton",
                         "n_FSGenPhoton",
-                        #"n_GenN",
-                        #"n_FSGenNeutrino",
+                        "n_GenN",  ## ## decommentato da me
+                        "n_FSGenNeutrino", ## ## decommentato da me
+			## ## "FSGenNeutrino_e", ## ## aggiunta per prova per risolvere un errore in final
 
-                        #"GenParticles_PID",
+                        "GenParticles_PID",
 
                         #"n_GenTaus",
                         #"n_GenPions",
@@ -963,51 +968,51 @@ class RDFanalysis():
                         #"GenKL_pt",
                         #"GenKplus_pt",
 
-                        #"FSGenLepton_e",
-                        #"FSGenLepton_p",
-                        #"FSGenLepton_pt",
-                        #"FSGenLepton_px",
-                        #"FSGenLepton_py",
-                        #"FSGenLepton_pz",
-                        #"FSGenLepton_eta",
-                        #"FSGenLepton_theta",
-                        #"FSGenLepton_phi",
-                        #"FSGenLepton_charge",
-                        #"FSGenLepton_time",
-                        #"FSGenLepton_vertex_x",
-                        #"FSGenLepton_vertex_y",
-                        #"FSGenLepton_vertex_z",
+                        "FSGenLepton_e",  ## ## decommentato da me
+                        "FSGenLepton_p",## ## decommentato da me
+                        "FSGenLepton_pt",## ## decommentato da me
+                        "FSGenLepton_px",## ## decommentato da me
+                        "FSGenLepton_py",## ## decommentato da me
+                        "FSGenLepton_pz",## ## decommentato da me
+                        "FSGenLepton_eta",## ## decommentato da me
+                        "FSGenLepton_theta",## ## decommentato da me
+                        "FSGenLepton_phi",## ## decommentato da me
+                        "FSGenLepton_charge",## ## decommentato da me
+                        "FSGenLepton_time",## ## decommentato da me
+                        "FSGenLepton_vertex_x",## ## decommentato da me
+                        "FSGenLepton_vertex_y",## ## decommentato da me
+                        "FSGenLepton_vertex_z",## ## decommentato da me
 
-                        #"FSGenLepton_e_led",
-                        #"FSGenLepton_p_led",
-                        #"FSGenLepton_pt_led",
-                        #"FSGenLepton_px_led",
-                        #"FSGenLepton_py_led",
-                        #"FSGenLepton_pz_led",
-                        #"FSGenLepton_eta_led",
-                        #"FSGenLepton_theta_led",
-                        #"FSGenLepton_phi_led",
-                        #"FSGenLepton_charge_led",
+                        "FSGenLepton_e_led",## ## decommentato da me
+                        "FSGenLepton_p_led",## ## decommentato da me
+                        "FSGenLepton_pt_led",## ## decommentato da me
+                        "FSGenLepton_px_led",## ## decommentato da me
+                        "FSGenLepton_py_led",## ## decommentato da me
+                        "FSGenLepton_pz_led",## ## decommentato da me
+                        "FSGenLepton_eta_led",## ## decommentato da me
+                        "FSGenLepton_theta_led",## ## decommentato da me
+                        "FSGenLepton_phi_led",## ## decommentato da me
+                        "FSGenLepton_charge_led",## ## decommentato da me
 
-                        #"FSGenLepton_e_sub",
-                        #"FSGenLepton_p_sub",
-                        #"FSGenLepton_pt_sub",
-                        #"FSGenLepton_px_sub",
-                        #"FSGenLepton_py_sub",
-                        #"FSGenLepton_pz_sub",
-                        #"FSGenLepton_eta_sub",
-                        #"FSGenLepton_theta_sub",
-                        #"FSGenLepton_phi_sub",
-                        #"FSGenLepton_charge_sub",
+                        "FSGenLepton_e_sub",## ## decommentato da me
+                        "FSGenLepton_p_sub",## ## decommentato da me
+                        "FSGenLepton_pt_sub",## ## decommentato da me
+                        "FSGenLepton_px_sub",## ## decommentato da me
+                        "FSGenLepton_py_sub",## ## decommentato da me
+                        "FSGenLepton_pz_sub",## ## decommentato da me
+                        "FSGenLepton_eta_sub",## ## decommentato da me
+                        "FSGenLepton_theta_sub",## ## decommentato da me
+                        "FSGenLepton_phi_sub",## ## decommentato da me
+                        "FSGenLepton_charge_sub",## ## decommentato da me
 
-                        #"FSGen_Lxy",
-                        #"FSGen_Lxyz",
-                        #"FSGen_invMass",
-                        #"GenN_Lxyz",
-                        #"GenN_tau",
-                        #"GenN_mass",
-                        #"GenN_e",
-                        #"GenN_p",
+                        "FSGen_Lxy",## ## decommentato da me
+                        "FSGen_Lxyz",## ## decommentato da me
+                        "FSGen_invMass",## ## decommentato da me
+                        "GenN_Lxyz",## ## decommentato da me
+                        "GenN_tau",## ## decommentato da me
+                        "GenN_mass",## ## decommentato da me
+                        "GenN_e",## ## decommentato da me
+                        "GenN_p",## ## decommentato da me
 
                         #"FSGenPhoton_e",
                         #"FSGenPhoton_p",
@@ -1065,17 +1070,17 @@ class RDFanalysis():
                         #"RecoPhoton_phi",
                         #"RecoPhoton_charge",
 
-                        #"RecoElectron_e",
-                        #"RecoElectron_p",
-                        #"RecoElectron_pt",
-                        #"RecoElectron_px",
-                        #"RecoElectron_py",
-                        #"RecoElectron_pz",
-                        #"RecoElectron_eta",
-                        #"RecoElectron_theta",
-                        #"RecoElectron_phi",
-                        #"RecoElectron_charge",
-                        #"RecoElectronTrack_absD0",
+                        "RecoElectron_e",## ## decommentato da me
+                        "RecoElectron_p",## ## decommentato da me
+                        "RecoElectron_pt",## ## decommentato da me
+                        "RecoElectron_px",## ## decommentato da me
+                        "RecoElectron_py",## ## decommentato da me
+                        "RecoElectron_pz",## ## decommentato da me
+                        "RecoElectron_eta",## ## decommentato da me
+                        "RecoElectron_theta",## ## decommentato da me
+                        "RecoElectron_phi",## ## decommentato da me
+                        "RecoElectron_charge",## ## decommentato da me
+                        "RecoElectronTrack_absD0",## ## decommentato da me
                         #"RecoElectronTrack_absZ0",
                         #"RecoElectronTrack_absD0sig",
                         #"RecoElectronTrack_absZ0sig",
