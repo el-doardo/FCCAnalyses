@@ -669,7 +669,7 @@ class RDFanalysis():
                 	#.Define("FSGen_Missing_e", " if (n_FSGenLepton==2) return float(91 - FSGen_invMass); else return float(-1);")
                 	#.Define("FSGen_Missing_e", " if (n_FSGenLepton==2) return float(91 - FSGen_TwoLeptons_energy); else return float(-1);")
                 	## ## tolgo il 91: definisco missing energy come l'energia dei leptoni, cosi' come fatto per missing pt che non e' davvero missing pt
-                	.Define("FSGenMissing_e", "if (n_FSGenLepton == 2 && n_FSGenNeutrino == 2) return (FSGenNeutrino_e + FSGenLepton_e)")
+                	.Define("FSGenMissing_e", "if (n_FSGenLepton==2 && n_FSGenNeutrino==2) return (FSGenNeutrino_e + FSGenLepton_e)")
 
                 .Define("FSGenParticles", "FCCAnalyses::MCParticle::sel_genStatus(1)(Particle)")
                 .Define("DecGenParticles", "FCCAnalyses::MCParticle::sel_genStatus(2)(Particle)")
