@@ -999,6 +999,36 @@ class RDFanalysis():
                         "FSGenLepton_vertex_y",## ## decommentato da me
                         "FSGenLepton_vertex_z",## ## decommentato da me
 
+						"FSGenElectron_e",  ## ## decommentato da me
+                        "FSGenElectron_p",## ## decommentato da me
+                        "FSGenElectron_pt",## ## decommentato da me
+                        "FSGenElectron_px",## ## decommentato da me
+                        "FSGenElectron_py",## ## decommentato da me
+                        "FSGenElectron_pz",## ## decommentato da me
+                        "FSGenElectron_eta",## ## decommentato da me
+                        "FSGenElectron_theta",## ## decommentato da me
+                        "FSGenElectron_phi",## ## decommentato da me
+                        "FSGenElectron_charge",## ## decommentato da me
+                        "FSGenElectron_time",## ## decommentato da me
+                        "FSGenElectron_vertex_x",## ## decommentato da me
+                        "FSGenElectron_vertex_y",## ## decommentato da me
+                        "FSGenElectron_vertex_z",## ## decommentato da me
+
+						"FSGenMuon_e",  ## ## decommentato da me
+                        "FSGenMuon_p",## ## decommentato da me
+                        "FSGenMuon_pt",## ## decommentato da me
+                        "FSGenMuon_px",## ## decommentato da me
+                        "FSGenMuon_py",## ## decommentato da me
+                        "FSGenMuon_pz",## ## decommentato da me
+                        "FSGenMuon_eta",## ## decommentato da me
+                        "FSGenMuon_theta",## ## decommentato da me
+                        "FSGenMuon_phi",## ## decommentato da me
+                        "FSGenMuon_charge",## ## decommentato da me
+                        "FSGenMuon_time",## ## decommentato da me
+                        "FSGenMuon_vertex_x",## ## decommentato da me
+                        "FSGenMuon_vertex_y",## ## decommentato da me
+                        "FSGenMuon_vertex_z",## ## decommentato da me
+
                         "FSGenLepton_e_led",## ## decommentato da me
                         "FSGenLepton_p_led",## ## decommentato da me
                         "FSGenLepton_pt_led",## ## decommentato da me
