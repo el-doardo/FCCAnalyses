@@ -1009,7 +1009,7 @@ class RDFanalysis():
                         "FSGenElectron_theta",## ## decommentato da me
                         "FSGenElectron_phi",## ## decommentato da me
                         "FSGenElectron_charge",## ## decommentato da me
-                        "FSGenElectron_time",## ## decommentato da me
+                        #"FSGenElectron_time",## ## decommentato da me
                         "FSGenElectron_vertex_x",## ## decommentato da me
                         "FSGenElectron_vertex_y",## ## decommentato da me
                         "FSGenElectron_vertex_z",## ## decommentato da me
@@ -1024,7 +1024,7 @@ class RDFanalysis():
                         "FSGenMuon_theta",## ## decommentato da me
                         "FSGenMuon_phi",## ## decommentato da me
                         "FSGenMuon_charge",## ## decommentato da me
-                        "FSGenMuon_time",## ## decommentato da me
+                        #"FSGenMuon_time",## ## decommentato da me
                         "FSGenMuon_vertex_x",## ## decommentato da me
                         "FSGenMuon_vertex_y",## ## decommentato da me
                         "FSGenMuon_vertex_z",## ## decommentato da me
