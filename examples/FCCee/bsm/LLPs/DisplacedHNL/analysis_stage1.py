@@ -664,6 +664,13 @@ class RDFanalysis():
                 # MC event primary vertex
                 .Define("MC_PrimaryVertex",  "FCCAnalyses::MCParticle::get_EventPrimaryVertex(21)( Particle )" )
 
+					## ## cerco missing energy a gen level
+                	.Define("FSGen_Missing_pt", " if (n_FSGenLepton==2) return sqrt((FSGen_TwoLeptons_px*FSGen_TwoLeptons_px+FSGen_TwoLeptons_py*FSGen_TwoLeptons_py)); else return float(-1000.);")
+                	#.Define("FSGen_Missing_e", " if (n_FSGenLepton==2) return float(91 - FSGen_invMass); else return float(-1);")
+                	#.Define("FSGen_Missing_e", " if (n_FSGenLepton==2) return float(91 - FSGen_TwoLeptons_energy); else return float(-1);")
+                	## ## tolgo il 91: definisco missing energy come l'energia dei leptoni, cosi' come fatto per missing pt che non e' davvero missing pt
+                	.Define("FSGen_Missing_e", "return (FSGenNeutrino_e + FSGenLepton_e)")
+
                 .Define("FSGenParticles", "FCCAnalyses::MCParticle::sel_genStatus(1)(Particle)")
                 .Define("DecGenParticles", "FCCAnalyses::MCParticle::sel_genStatus(2)(Particle)")
                 .Define("GenParticles_PID", "FCCAnalyses::MCParticle::get_pdg(Particle)")
