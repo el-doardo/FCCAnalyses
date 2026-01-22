@@ -1029,6 +1029,16 @@ class RDFanalysis():
                         "FSGenMuon_vertex_y",## ## decommentato da me
                         "FSGenMuon_vertex_z",## ## decommentato da me
 
+						"FSGenNeutrino_e",  ## ## decommentato da me
+                        "FSGenNeutrino_p",## ## decommentato da me
+                        "FSGenNeutrino_pt",## ## decommentato da me
+                        "FSGenNeutrino_px",## ## decommentato da me
+                        "FSGenNeutrino_py",## ## decommentato da me
+                        "FSGenNeutrino_pz",## ## decommentato da me
+                        "FSGenNeutrino_eta",## ## decommentato da me
+                        "FSGenNeutrino_theta",## ## decommentato da me
+                        "FSGenNeutrino_phi",## ## decommentato da me
+
                         "FSGenLepton_e_led",## ## decommentato da me
                         "FSGenLepton_p_led",## ## decommentato da me
                         "FSGenLepton_pt_led",## ## decommentato da me
