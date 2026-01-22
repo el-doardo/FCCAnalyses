@@ -915,6 +915,7 @@ cutLabels = {
 histoList = {
 
     ######## GEN VARIABLES
+	"FSGenTotal_e":						{"name":"FSGenTotal_e",                  	"title":"Total process' energy ",         				 "bin":100,"xmin":0 ,"xmax":100},
     "n_FSGenElectron":                  {"name":"n_FSGenElectron",                  "title":"Number of final state gen electrons",          "bin":5,"xmin":-0.5 ,"xmax":4.5},
     "n_FSGenMuon":                      {"name":"n_FSGenMuon",                      "title":"Number of final state gen muons",              "bin":5,"xmin":-0.5 ,"xmax":4.5},
     "n_FSGenLepton":                    {"name":"n_FSGenLepton",                    "title":"Number of final state gen leptons",            "bin":5,"xmin":-0.5 ,"xmax":4.5},
