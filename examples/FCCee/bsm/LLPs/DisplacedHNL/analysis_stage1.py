@@ -669,7 +669,7 @@ class RDFanalysis():
                 	#.Define("FSGenMissing_e", " if (n_FSGenLepton==2) return float(91 - FSGen_TwoLeptons_energy); else return float(-1);")
 				
 					.Define("FSGenMissing_e", " float Tot=0.0; for (int i = 0; i < n_FSGenNeutrino; ++i) { Tot += FSGenNeutrino_e.at(i);} return Tot;") ## ## missing energy come energia totale dei neutrini
-					.Define("FSGenTotal_e", "(FCCAnalyses::MCParticle::get_e(FSGenLepton) + FCCAnalyses::MCParticle::get_e(FSGenNeutrino))") ## ## se fa 91Gev => FSGenLepton_e e Neutrino_e sono le energie totali di tutti i leptoni e enutrini generati
+					.Define("FSGenTotal_e", "((FCCAnalyses::MCParticle::get_e(FSGenLepton)) + (FCCAnalyses::MCParticle::get_e(FSGenNeutrino)))") ## ## se fa 91Gev => FSGenLepton_e e Neutrino_e sono le energie totali di tutti i leptoni e enutrini generati
 					
                 
 
