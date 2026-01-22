@@ -667,9 +667,11 @@ class RDFanalysis():
 					## ## cerco missing energy a gen level
                 	.Define("FSGenMissing_pt", " if (n_FSGenLepton==2) return sqrt((FSGen_TwoLeptons_px*FSGen_TwoLeptons_px+FSGen_TwoLeptons_py*FSGen_TwoLeptons_py)); else return float(-1000.);")
                 	#.Define("FSGenMissing_e", " if (n_FSGenLepton==2) return float(91 - FSGen_TwoLeptons_energy); else return float(-1);")
-					.Define("FSGenMissing_e", " float Tot=0.0; for (int i = 0; i < n_FSGenNeutrino; ++i) { Tot += FSGenNeutrino_e.at(i);} return Tot;")
+				
+					.Define("FSGenMissing_e", " float Tot=0.0; for (int i = 0; i < n_FSGenNeutrino; ++i) { Tot += FSGenNeutrino_e.at(i);} return Tot;") ## ## missing energy come energia totale dei neutrini
+					.Define("FSGenTotal_e", "return (FSGenLepton_e + FSGenNeutrino_e") ## ## se fa 91Gev => FSGenLepton_e e Neutrino_e sono le energie totali di tutti i leptoni e enutrini generati
 					
-                	## ## tolgo il 91: definisco missing energy come l'energia dei leptoni, cosi' come fatto per missing pt che non e' davvero missing pt
+                
 
                 .Define("FSGenParticles", "FCCAnalyses::MCParticle::sel_genStatus(1)(Particle)")
                 .Define("DecGenParticles", "FCCAnalyses::MCParticle::sel_genStatus(2)(Particle)")
@@ -965,7 +967,7 @@ class RDFanalysis():
                         "n_FSGenPhoton",
                         "n_GenN",  ## ## decommentato da me
                         "n_FSGenNeutrino", ## ## decommentato da me
-			## ## "FSGenNeutrino_e", ## ## aggiunta per prova per risolvere un errore in final
+						"FSGenTotal_e", ## ## prova per energia totale
 
                         "GenParticles_PID",
 
