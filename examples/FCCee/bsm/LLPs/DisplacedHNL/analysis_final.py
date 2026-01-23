@@ -1001,6 +1001,7 @@ histoList = {
 	## ## riga di gen missing energy
     "FSGenMissing_e":            {"name":"FSGenMissing_e",              "title":"Gen missing e [GeV]",            "bin":100,"xmin":0 ,"xmax":100},
     "FSGenMissing_pt":            {"name":"FSGenMissing_pt",              "title":"Gen missing pt [GeV]",            "bin":100,"xmin":0 ,"xmax":50},
+	"FSGenMissing_e(nu)":			{"name":"FSGenMissing_e(nu)",              "title":"Gen missing energy (from #nu s) [GeV]",            "bin":100,"xmin":0 ,"xmax":100},
 	
     #"FSGenPhoton_e":                   {"name":"FSGenPhoton_e",                  "title":"Final state gen photons energy [GeV]",       "bin":100,"xmin":0 ,"xmax":50},
     #"FSGenPhoton_p":                   {"name":"FSGenPhoton_p",                  "title":"Final state gen photons p [GeV]",            "bin":100,"xmin":0 ,"xmax":50},
