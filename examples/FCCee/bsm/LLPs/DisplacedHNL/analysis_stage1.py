@@ -663,14 +663,6 @@ class RDFanalysis():
 
                 # MC event primary vertex
                 .Define("MC_PrimaryVertex",  "FCCAnalyses::MCParticle::get_EventPrimaryVertex(21)( Particle )" )
-
-					## ## cerco missing energy a gen level
-                	.Define("FSGenMissing_pt", " if (n_FSGenLepton==2) return sqrt((FSGen_TwoLeptons_px*FSGen_TwoLeptons_px+FSGen_TwoLeptons_py*FSGen_TwoLeptons_py)); else return float(-1000.);")
-                	#.Define("FSGenMissing_e", " if (n_FSGenLepton==2) return float(91 - FSGen_TwoLeptons_energy); else return float(-1);")
-				
-					.Define("FSGenMissing_e", " float Tot=0.0; for (int i = 0; i < n_FSGenNeutrino; ++i) { Tot += FSGenNeutrino_e.at(i);} return Tot;") ## ## missing energy come energia totale dei neutrini
-					.Define("FSGenTotal_e", " float Tot=0.0; for (int i = 0; i < n_FSGenNeutrino; ++i) { Tot += FSGenNeutrino_e.at(i);}; for (int i = 0; i < n_FSGenLepton; ++i) { Tot += FSGenLepton_e.at(i);} return Tot;") ## ## spero che facci 91Gev 
-					
                 
 
                 .Define("FSGenParticles", "FCCAnalyses::MCParticle::sel_genStatus(1)(Particle)")
@@ -1072,9 +1064,6 @@ class RDFanalysis():
                         "GenN_e",## ## decommentato da me
                         "GenN_p",## ## decommentato da me
 
-					## ## righe di gen missing energy
-						"FSGenMissing_pt",
-						"FSGenMissing_e",
 
                         #"FSGenPhoton_e",
                         #"FSGenPhoton_p",
@@ -1148,6 +1137,40 @@ class RDFanalysis():
                         #"RecoElectronTrack_absZ0sig",
                         #"RecoElectronTrack_D0cov",
                         #"RecoElectronTrack_Z0cov",
+
+						"RecoMuon_e",## ## decommentato da me
+                        "RecoMuon_p",## ## decommentato da me
+                        "RecoMuon_pt",## ## decommentato da me
+                        "RecoMuon_px",## ## decommentato da me
+                        "RecoMuon_py",## ## decommentato da me
+                        "RecoMuon_pz",## ## decommentato da me
+                        "RecoMuon_eta",## ## decommentato da me
+                        "RecoMuon_theta",## ## decommentato da me
+                        "RecoMuon_phi",## ## decommentato da me
+                        "RecoMuon_charge",## ## decommentato da me
+                        "RecoMuonTrack_absD0",## ## decommentato da me
+                        #"RecoMuonTrack_absZ0",
+                        #"RecoMuonTrack_absD0sig",
+                        #"RecoMuonTrack_absZ0sig",
+                        #"RecoMuonTrack_D0cov",
+                        #"RecoMuonTrack_Z0cov",
+
+						"RecoLepton_e",## ## decommentato da me
+                        "RecoLepton_p",## ## decommentato da me
+                        "RecoLepton_pt",## ## decommentato da me
+                        "RecoLepton_px",## ## decommentato da me
+                        "RecoLepton_py",## ## decommentato da me
+                        "RecoLepton_pz",## ## decommentato da me
+                        "RecoLepton_eta",## ## decommentato da me
+                        "RecoLepton_theta",## ## decommentato da me
+                        "RecoLepton_phi",## ## decommentato da me
+                        "RecoLepton_charge",## ## decommentato da me
+                        "RecoLeptonTrack_absD0",## ## decommentato da me
+                        #"RecoLeptonTrack_absZ0",
+                        #"RecoLeptonTrack_absD0sig",
+                        #"RecoLeptonTrack_absZ0sig",
+                        #"RecoLeptonTrack_D0cov",
+                        #"RecoLeptonTrack_Z0cov",
 
                         "n_NeutralHadrons",
                         "NeutralHadrons_e",
