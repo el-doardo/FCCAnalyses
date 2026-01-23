@@ -1156,23 +1156,6 @@ class RDFanalysis():
                         #"RecoMuonTrack_D0cov",
                         #"RecoMuonTrack_Z0cov",
 
-						"RecoLepton_e",## ## decommentato da me
-                        "RecoLepton_p",## ## decommentato da me
-                        "RecoLepton_pt",## ## decommentato da me
-                        "RecoLepton_px",## ## decommentato da me
-                        "RecoLepton_py",## ## decommentato da me
-                        "RecoLepton_pz",## ## decommentato da me
-                        "RecoLepton_eta",## ## decommentato da me
-                        "RecoLepton_theta",## ## decommentato da me
-                        "RecoLepton_phi",## ## decommentato da me
-                        "RecoLepton_charge",## ## decommentato da me
-                        "RecoLeptonTrack_absD0",## ## decommentato da me
-                        #"RecoLeptonTrack_absZ0",
-                        #"RecoLeptonTrack_absD0sig",
-                        #"RecoLeptonTrack_absZ0sig",
-                        #"RecoLeptonTrack_D0cov",
-                        #"RecoLeptonTrack_Z0cov",
-
                         "n_NeutralHadrons",
                         "NeutralHadrons_e",
                         "NeutralHadrons_p",
