@@ -669,7 +669,7 @@ class RDFanalysis():
                 #.Define("FSGenMissing_e", " if (n_FSGenLepton==2) return float(91 - FSGen_TwoLeptons_energy); else return float(-1);")
 				
 				.Define("FSGenMissing_e", " float Tot=0.0; for (int i = 0; i < n_FSGenNeutrino; ++i) { Tot += FSGenNeutrino_e.at(i);} return Tot;") ## ## missing energy come energia totale dei neutrini
-				.Define("FSGenMissing_e(nu)", " return sum_e(FSGenNeutrino_e)") ## ## try of my new function sum_e(...)
+				.Define("FSGenMissing_e_nu", " return sum_e(FSGenNeutrino_e)") ## ## try of my new function sum_e(...)
                 
 
                 .Define("FSGenParticles", "FCCAnalyses::MCParticle::sel_genStatus(1)(Particle)")
