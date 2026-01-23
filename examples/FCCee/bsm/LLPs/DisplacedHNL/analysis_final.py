@@ -1088,6 +1088,17 @@ histoList = {
     #"RecoMuonTrack_absZ0sig_prompt":   {"name":"RecoMuonTrack_absZ0sig",  "title":"Reco muon tracks |z_{0} significance|",      "bin":100,"xmin":0, "xmax":5},
     #"RecoMuonTrack_D0cov":      {"name":"RecoMuonTrack_D0cov",     "title":"Reco muon tracks d_{0} #sigma^{2}",      "bin":100,"xmin":0, "xmax":0.5},
     #"RecoMuonTrack_Z0cov":      {"name":"RecoMuonTrack_Z0cov",     "title":"Reco electron tracks z_{0} #sigma^{2}",      "bin":100,"xmin":0, "xmax":0.5},
+
+	"RecoLepton_e":        {"name":"RecoLepton_e",        "title":"Reco lepton energy [GeV]", "bin":100,"xmin":0 ,"xmax":50},
+    "RecoLepton_p":        {"name":"RecoLepton_p",        "title":"Reco lepton p [GeV]",      "bin":100,"xmin":0 ,"xmax":50},
+    "RecoLepton_pt":       {"name":"RecoLepton_pt",       "title":"Reco lepton p_{T} [GeV]",  "bin":100,"xmin":0 ,"xmax":50},
+    "RecoLepton_px":       {"name":"RecoLepton_px",       "title":"Reco lepton p_{x} [GeV]",  "bin":100,"xmin":-50 ,"xmax":50},
+    "RecoLepton_py":       {"name":"RecoLepton_py",       "title":"Reco lepton p_{y} [GeV]",  "bin":100,"xmin":-50 ,"xmax":50},
+    "RecoLepton_pz":       {"name":"RecoLepton_pz",       "title":"Reco lepton p_{z} [GeV]",  "bin":100,"xmin":-50 ,"xmax":50},
+    "RecoLepton_eta":      {"name":"RecoLepton_eta",      "title":"Reco lepton #eta",         "bin":60, "xmin":-3,"xmax":3},
+    "RecoLepton_theta":    {"name":"RecoLepton_theta",    "title":"Reco lepton #theta",       "bin":64, "xmin":0,"xmax":3.2},
+    "RecoLepton_phi":      {"name":"RecoLepton_phi",      "title":"Reco lepton #phi",         "bin":64, "xmin":-3.2,"xmax":3.2},
+    "RecoLepton_charge":   {"name":"RecoLepton_charge",   "title":"Reco lepton charge",       "bin":3, "xmin":-1.5,"xmax":1.5},
 	
 
     #"RecoPhoton_e":        {"name":"RecoPhoton_e",        "title":"Reco photon energy [GeV]", "bin":100,"xmin":0 ,"xmax":50},
