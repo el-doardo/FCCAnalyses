@@ -979,91 +979,91 @@ class RDFanalysis():
                         #"GenKL_pt",
                         #"GenKplus_pt",
 
-                        "FSGenLepton_e",  ## ## decommentato da me
-                        "FSGenLepton_p",## ## decommentato da me
-                        "FSGenLepton_pt",## ## decommentato da me
-                        "FSGenLepton_px",## ## decommentato da me
-                        "FSGenLepton_py",## ## decommentato da me
-                        "FSGenLepton_pz",## ## decommentato da me
-                        "FSGenLepton_eta",## ## decommentato da me
-                        "FSGenLepton_theta",## ## decommentato da me
-                        "FSGenLepton_phi",## ## decommentato da me
-                        "FSGenLepton_charge",## ## decommentato da me
-                        "FSGenLepton_time",## ## decommentato da me
-                        "FSGenLepton_vertex_x",## ## decommentato da me
-                        "FSGenLepton_vertex_y",## ## decommentato da me
-                        "FSGenLepton_vertex_z",## ## decommentato da me
+                        #"FSGenLepton_e",  ## ## decommentato da me
+                        #"FSGenLepton_p",## ## decommentato da me
+                        #"FSGenLepton_pt",## ## decommentato da me
+                        #"FSGenLepton_px",## ## decommentato da me
+                        #"FSGenLepton_py",## ## decommentato da me
+                        #"FSGenLepton_pz",## ## decommentato da me
+                        #"FSGenLepton_eta",## ## decommentato da me
+                        #"FSGenLepton_theta",## ## decommentato da me
+                        #"FSGenLepton_phi",## ## decommentato da me
+                        #"FSGenLepton_charge",## ## decommentato da me
+                        #"FSGenLepton_time",## ## decommentato da me
+                        #"FSGenLepton_vertex_x",## ## decommentato da me
+                        #"FSGenLepton_vertex_y",## ## decommentato da me
+                        #"FSGenLepton_vertex_z",## ## decommentato da me
 
-						"FSGenElectron_e",  ## ## decommentato da me
-                        "FSGenElectron_p",## ## decommentato da me
-                        "FSGenElectron_pt",## ## decommentato da me
-                        "FSGenElectron_px",## ## decommentato da me
-                        "FSGenElectron_py",## ## decommentato da me
-                        "FSGenElectron_pz",## ## decommentato da me
-                        "FSGenElectron_eta",## ## decommentato da me
-                        "FSGenElectron_theta",## ## decommentato da me
-                        "FSGenElectron_phi",## ## decommentato da me
-                        "FSGenElectron_charge",## ## decommentato da me
+						#"FSGenElectron_e",  ## ## decommentato da me
+                        #"FSGenElectron_p",## ## decommentato da me
+                        #"FSGenElectron_pt",## ## decommentato da me
+                        #"FSGenElectron_px",## ## decommentato da me
+                        #"FSGenElectron_py",## ## decommentato da me
+                        #"FSGenElectron_pz",## ## decommentato da me
+                        #"FSGenElectron_eta",## ## decommentato da me
+                        #"FSGenElectron_theta",## ## decommentato da me
+                        #"FSGenElectron_phi",## ## decommentato da me
+                        #"FSGenElectron_charge",## ## decommentato da me
                         #"FSGenElectron_time",## ## decommentato da me
-                        "FSGenElectron_vertex_x",## ## decommentato da me
-                        "FSGenElectron_vertex_y",## ## decommentato da me
-                        "FSGenElectron_vertex_z",## ## decommentato da me
+                        #"FSGenElectron_vertex_x",## ## decommentato da me
+                        #"FSGenElectron_vertex_y",## ## decommentato da me
+                        #"FSGenElectron_vertex_z",## ## decommentato da me
 
-						"FSGenMuon_e",  ## ## decommentato da me
-                        "FSGenMuon_p",## ## decommentato da me
-                        "FSGenMuon_pt",## ## decommentato da me
-                        "FSGenMuon_px",## ## decommentato da me
-                        "FSGenMuon_py",## ## decommentato da me
-                        "FSGenMuon_pz",## ## decommentato da me
-                        "FSGenMuon_eta",## ## decommentato da me
-                        "FSGenMuon_theta",## ## decommentato da me
-                        "FSGenMuon_phi",## ## decommentato da me
-                        "FSGenMuon_charge",## ## decommentato da me
+						#"FSGenMuon_e",  ## ## decommentato da me
+                        #"FSGenMuon_p",## ## decommentato da me
+                        #"FSGenMuon_pt",## ## decommentato da me
+                        #"FSGenMuon_px",## ## decommentato da me
+                        #"FSGenMuon_py",## ## decommentato da me
+                        #"FSGenMuon_pz",## ## decommentato da me
+                        #"FSGenMuon_eta",## ## decommentato da me
+                        #"FSGenMuon_theta",## ## decommentato da me
+                        #"FSGenMuon_phi",## ## decommentato da me
+                        #"FSGenMuon_charge",## ## decommentato da me
                         #"FSGenMuon_time",## ## decommentato da me
-                        "FSGenMuon_vertex_x",## ## decommentato da me
-                        "FSGenMuon_vertex_y",## ## decommentato da me
-                        "FSGenMuon_vertex_z",## ## decommentato da me
+                        #"FSGenMuon_vertex_x",## ## decommentato da me
+                        #"FSGenMuon_vertex_y",## ## decommentato da me
+                        #"FSGenMuon_vertex_z",## ## decommentato da me
 
-						"FSGenNeutrino_e",  ## ## decommentato da me
-                        "FSGenNeutrino_p",## ## decommentato da me
-                        "FSGenNeutrino_pt",## ## decommentato da me
-                        "FSGenNeutrino_px",## ## decommentato da me
-                        "FSGenNeutrino_py",## ## decommentato da me
-                        "FSGenNeutrino_pz",## ## decommentato da me
-                        "FSGenNeutrino_eta",## ## decommentato da me
-                        "FSGenNeutrino_theta",## ## decommentato da me
-                        "FSGenNeutrino_phi",## ## decommentato da me
+						#"FSGenNeutrino_e",  ## ## decommentato da me
+                        #"FSGenNeutrino_p",## ## decommentato da me
+                        #"FSGenNeutrino_pt",## ## decommentato da me
+                        #"FSGenNeutrino_px",## ## decommentato da me
+                        #"FSGenNeutrino_py",## ## decommentato da me
+                        #"FSGenNeutrino_pz",## ## decommentato da me
+                        #"FSGenNeutrino_eta",## ## decommentato da me
+                        #"FSGenNeutrino_theta",## ## decommentato da me
+                        #"FSGenNeutrino_phi",## ## decommentato da me
 
-                        "FSGenLepton_e_led",## ## decommentato da me
-                        "FSGenLepton_p_led",## ## decommentato da me
-                        "FSGenLepton_pt_led",## ## decommentato da me
-                        "FSGenLepton_px_led",## ## decommentato da me
-                        "FSGenLepton_py_led",## ## decommentato da me
-                        "FSGenLepton_pz_led",## ## decommentato da me
-                        "FSGenLepton_eta_led",## ## decommentato da me
-                        "FSGenLepton_theta_led",## ## decommentato da me
-                        "FSGenLepton_phi_led",## ## decommentato da me
-                        "FSGenLepton_charge_led",## ## decommentato da me
+                        #"FSGenLepton_e_led",## ## decommentato da me
+                        #"FSGenLepton_p_led",## ## decommentato da me
+                        #"FSGenLepton_pt_led",## ## decommentato da me
+                        #"FSGenLepton_px_led",## ## decommentato da me
+                        #"FSGenLepton_py_led",## ## decommentato da me
+                        #"FSGenLepton_pz_led",## ## decommentato da me
+                        #"FSGenLepton_eta_led",## ## decommentato da me
+                        #"FSGenLepton_theta_led",## ## decommentato da me
+                        #"FSGenLepton_phi_led",## ## decommentato da me
+                        #"FSGenLepton_charge_led",## ## decommentato da me
 
-                        "FSGenLepton_e_sub",## ## decommentato da me
-                        "FSGenLepton_p_sub",## ## decommentato da me
-                        "FSGenLepton_pt_sub",## ## decommentato da me
-                        "FSGenLepton_px_sub",## ## decommentato da me
-                        "FSGenLepton_py_sub",## ## decommentato da me
-                        "FSGenLepton_pz_sub",## ## decommentato da me
-                        "FSGenLepton_eta_sub",## ## decommentato da me
-                        "FSGenLepton_theta_sub",## ## decommentato da me
-                        "FSGenLepton_phi_sub",## ## decommentato da me
-                        "FSGenLepton_charge_sub",## ## decommentato da me
+                        #"FSGenLepton_e_sub",## ## decommentato da me
+                        #"FSGenLepton_p_sub",## ## decommentato da me
+                        #"FSGenLepton_pt_sub",## ## decommentato da me
+                        #"FSGenLepton_px_sub",## ## decommentato da me
+                        #"FSGenLepton_py_sub",## ## decommentato da me
+                        #"FSGenLepton_pz_sub",## ## decommentato da me
+                        #"FSGenLepton_eta_sub",## ## decommentato da me
+                        #"FSGenLepton_theta_sub",## ## decommentato da me
+                        #"FSGenLepton_phi_sub",## ## decommentato da me
+                        #"FSGenLepton_charge_sub",## ## decommentato da me
 
-                        "FSGen_Lxy",## ## decommentato da me
-                        "FSGen_Lxyz",## ## decommentato da me
-                        "FSGen_invMass",## ## decommentato da me
-                        "GenN_Lxyz",## ## decommentato da me
-                        "GenN_tau",## ## decommentato da me
-                        "GenN_mass",## ## decommentato da me
-                        "GenN_e",## ## decommentato da me
-                        "GenN_p",## ## decommentato da me
+                        #"FSGen_Lxy",## ## decommentato da me
+                        #"FSGen_Lxyz",## ## decommentato da me
+                        #"FSGen_invMass",## ## decommentato da me
+                        #"GenN_Lxyz",## ## decommentato da me
+                        #"GenN_tau",## ## decommentato da me
+                        #"GenN_mass",## ## decommentato da me
+                        #"GenN_e",## ## decommentato da me
+                        #"GenN_p",## ## decommentato da me
 
 
                         #"FSGenPhoton_e",
