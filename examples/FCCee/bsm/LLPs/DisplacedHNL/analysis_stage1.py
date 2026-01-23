@@ -966,7 +966,6 @@ class RDFanalysis():
                         "n_FSGenPhoton",
                         "n_GenN",  ## ## decommentato da me
                         "n_FSGenNeutrino", ## ## decommentato da me
-						"FSGenTotal_e", ## ## prova per energia totale
 						"FSGenMissing_e_nu",
 
                         "GenParticles_PID",
