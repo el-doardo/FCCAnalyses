@@ -311,8 +311,8 @@ colors['Ztautau'] = 34
 colors['Zee'] = 29
 colors['Zmumu'] = 32
 colors['Zss'] = 20
-colors['llnunu'] = 40
-colors['tatanunu'] = 38
+colors['llnunu_m'] = 40
+colors['tatanunu_m'] = 38
 
 #colors['Zbb'] = ROOT.kRed-4
 #colors['Zcc'] = ROOT.kOrange-3
@@ -344,8 +344,8 @@ plots['HNL'] = {'signal':{
                     'Zee':['p8_ee_Zee_ecm91'],
                     'Zmumu': ['p8_ee_Zmumu_ecm91'],
                     ## ##'Ztautau': ['p8_ee_Ztautau_ecm91'],
-					'llnunu': ['llnunu'],
-                    'tatanunu': ['tatanunu'],
+					'llnunu_m': ['llnunu_m'],
+                    'tatanunu_m': ['tatanunu_m'],
                     ## ##'emununu': ['emununu'],
                 },
                 }
