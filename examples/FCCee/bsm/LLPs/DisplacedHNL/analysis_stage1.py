@@ -14,7 +14,6 @@ processList = {
 	## ##
 	
 		"HNL_4e-10_20gev":{},
-		"HNL_4e-10_20gev":{},
         "HNL_6.67e-8_60gev":{},
         "HNL_1.33e-9_20gev":{},
 #       "HNL_2.86e-7_30gev":{},
@@ -23,6 +22,8 @@ processList = {
         "HNL_2.86e-12_30gev":{},
 #       "HNL_4e-8_60gev":{},
         "HNL_4e-12_50gev":{},
+		'tatanunu_m':{},
+        'llnunu_m':{},
 }
 
 processList_ = {
@@ -447,7 +448,7 @@ includePaths = ["functions.h"]
 
 #Optional: output directory, default is local dir
 #outputDir = "output_stage1/"
-outputDir = "/eos/user/e/espoto/FCCAnalyses/outputs/gen/stage1_gen"
+outputDir = "/eos/user/e/espoto/FCCAnalyses/outputs/reco/stage1_reco"
 
 ### necessary to run on HTCondor ###
 eosType = "eosuser"
