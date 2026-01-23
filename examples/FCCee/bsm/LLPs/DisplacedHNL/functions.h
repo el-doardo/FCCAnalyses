@@ -313,6 +313,15 @@ ROOT::VecOps::RVec<fastjet::PseudoJet> sel_e(float min_e, ROOT::VecOps::RVec<fas
   }
   return result;
 }
+
+//espoto: This function returns a float equal to the sum of all elements of the input RVec<float>
+float sum_e(ROOT::VecOps::RVec<float> e) {
+    float result = 0;
+    for (auto & element: e) {
+        result += element;
+    }
+    return result;
+}
  
 
 }}
