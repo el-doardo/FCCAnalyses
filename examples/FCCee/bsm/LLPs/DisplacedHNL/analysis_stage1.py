@@ -664,13 +664,12 @@ class RDFanalysis():
                 # MC event primary vertex
                 .Define("MC_PrimaryVertex",  "FCCAnalyses::MCParticle::get_EventPrimaryVertex(21)( Particle )" )
 
-					## ## cerco missing energy a gen level
-                	.Define("FSGenMissing_pt", " if (n_FSGenLepton==2) return sqrt((FSGen_TwoLeptons_px*FSGen_TwoLeptons_px+FSGen_TwoLeptons_py*FSGen_TwoLeptons_py)); else return float(-1000.);")
-                	#.Define("FSGenMissing_e", " if (n_FSGenLepton==2) return float(91 - FSGen_TwoLeptons_energy); else return float(-1);")
+				## ## cerco missing energy a gen level
+                .Define("FSGenMissing_pt", " if (n_FSGenLepton==2) return sqrt((FSGen_TwoLeptons_px*FSGen_TwoLeptons_px+FSGen_TwoLeptons_py*FSGen_TwoLeptons_py)); else return float(-1000.);")
+                #.Define("FSGenMissing_e", " if (n_FSGenLepton==2) return float(91 - FSGen_TwoLeptons_energy); else return float(-1);")
 				
-					.Define("FSGenMissing_e", " float Tot=0.0; for (int i = 0; i < n_FSGenNeutrino; ++i) { Tot += FSGenNeutrino_e.at(i);} return Tot;") ## ## missing energy come energia totale dei neutrini
-					.Define("FSGenTotal_e", " float Tot=0.0; for (int i = 0; i < n_FSGenNeutrino; ++i) { Tot += FSGenNeutrino_e.at(i);}; for (int i = 0; i < n_FSGenPhoton; ++i) { Tot += FSGenPhoton_e.at(i);}; for (int i = 0; i < n_FSGenLepton; ++i) { Tot += FSGenLepton_e.at(i);} return Tot;") ## ## spero che facci 91Gev 
-					
+				.Define("FSGenMissing_e", " float Tot=0.0; for (int i = 0; i < n_FSGenNeutrino; ++i) { Tot += FSGenNeutrino_e.at(i);} return Tot;") ## ## missing energy come energia totale dei neutrini
+				.Define("FSGenMissing_e(nu)", " return sum_e(FSGenNeutrino_e)") ## ## try of my new function sum_e(...)
                 
 
                 .Define("FSGenParticles", "FCCAnalyses::MCParticle::sel_genStatus(1)(Particle)")
@@ -968,6 +967,7 @@ class RDFanalysis():
                         "n_GenN",  ## ## decommentato da me
                         "n_FSGenNeutrino", ## ## decommentato da me
 						"FSGenTotal_e", ## ## prova per energia totale
+						"FSGenMissing_e(nu)",
 
                         "GenParticles_PID",
 
