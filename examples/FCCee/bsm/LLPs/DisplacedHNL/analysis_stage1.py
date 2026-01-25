@@ -971,6 +971,7 @@ class RDFanalysis():
                         "n_GenN",  ## ## decommentato da me
                         "n_FSGenNeutrino", ## ## decommentato da me
 						"FSGenMissing_e_nu",
+						"FSGenEmiss_e",
 
                         "GenParticles_PID",
 
