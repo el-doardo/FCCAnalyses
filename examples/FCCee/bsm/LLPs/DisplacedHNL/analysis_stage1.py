@@ -941,7 +941,9 @@ class RDFanalysis():
 				
 				## ## Define for a new class of merged leptons and photons to use as input for missingEnergy function at gen lev
 				.Define("FSGenDParticle","FCCAnalyses::MCParticle::mergeParticles(FSGenLepton, FSGenPhoton)")
-
+				.Define("FSGenEmiss", "FCCAnalyses::ZHfunctions::missingEnergy(91.188, FSGenDParticle)")
+				.Define("FSGenEmiss_e",   "FSGenEmiss[0].energy")
+			
                 ### dilepton invariant mass ###
                 .Define("Reco_TwoLeptons_energy", "if (n_RecoLeptons>1) return (Reco_e.at(0) + Reco_e.at(1)); else return float(-1.);")
                 .Define("Reco_TwoLeptons_px", "if (n_RecoLeptons>1) return (Reco_px.at(0) + Reco_px.at(1)); else return float(-1.);")
