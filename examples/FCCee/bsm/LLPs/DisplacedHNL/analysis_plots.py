@@ -217,6 +217,7 @@ variables = [
     "RecoMissingEnergy_eta",
     #"RecoMissingEnergy_theta",
     "RecoMissingEnergy_phi",
+	"RecoEmiss_e",
 
     #"RecoPhoton_e",
     #"RecoPhoton_p",
