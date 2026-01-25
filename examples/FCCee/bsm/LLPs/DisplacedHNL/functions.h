@@ -322,7 +322,17 @@ float sum_e(ROOT::VecOps::RVec<float> e) {
     }
     return result;
 }
- 
+
+// this function returns missing energy with class of detectable particles as input
+float FSGenGet_emiss(float ecm, ROOT::VecOps::RVec<edm4hep::MCParticleData> in) {
+  ROOT::VecOps::RVec<float> energies;
+  for (auto & p: in) {
+    TLorentzVector tlv;
+    tlv.SetXYZM(p.momentum.x, p.momentum.y, p.momentum.z, p.mass);
+    energies.push_back(tlv.E());
+  }
+  return ecm - sum_e(energies);
+}
 
 }}
 
