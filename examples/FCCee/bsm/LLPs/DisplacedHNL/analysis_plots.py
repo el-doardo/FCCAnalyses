@@ -29,6 +29,7 @@ variables = [
         "FSGenMissing_e", ## ## definito da me in stage1
 	"FSGenMissing_pt", ## ## definito da me in stage1
 	"FSGenMissing_e_nu",
+	"FSGenEmiss_e",
     "n_FSGenElectron",
     "n_FSGenMuon",
     "n_FSGenLepton",
