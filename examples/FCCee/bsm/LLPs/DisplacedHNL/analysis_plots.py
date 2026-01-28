@@ -131,6 +131,7 @@ variables = [
 
     "RecoElectronTrack_absD0",
     "RecoElectronTrack_absD0_prompt",
+	"RecoElectronTrack_absD0_med",
     #"RecoElectronTrack_absZ0",
     #"RecoElectronTrack_absZ0_prompt",
     #"RecoElectronTrack_absD0sig",
@@ -155,6 +156,7 @@ variables = [
 
     "RecoMuonTrack_absD0",
     "RecoMuonTrack_absD0_prompt",
+	"RecoMuonTrack_absD0_med",
     #"RecoMuonTrack_absZ0",
     #"RecoMuonTrack_absZ0_prompt",
     #"RecoMuonTrack_absD0sig",
