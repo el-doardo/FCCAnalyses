@@ -249,6 +249,7 @@ selections['HNL']  = [
     #"selReco_gen_notracks_2eh_10MET_0.8cos_80ME_10chi_0.64d0",
     #"selReco_gen_notracks_2eh_15to70ME",
     "selReco",
+	"selReco_invMass_15_70Gev",
 
     #"sel2RecoDF_vetoes",
     #"sel2RecoDF_vetoes_15-80M",
@@ -262,6 +263,7 @@ selections['HNL']  = [
 
 extralabel = {}
 extralabel['selNone'] = "Before selection"
+extralabel['selReco_invMass_15_70Gev'] = "Invariant mass between 15 Gev and 70 Gev"
 extralabel['selReco']="Two leptons, different charge, no photons and jets"
 extralabel['sel2Reco_vetoes']="Two leptons, no photons and jets"
 extralabel['selReco_gen_notracks_2eh_10MET_0.8cos_80ME_10chi_0.64d0']="Two leptons, no photons an jets, M(l,l')<80 GeV, p_{t,miss}>10 GeV, cos#theta>-0.8" ## ## aggiunto per prova
