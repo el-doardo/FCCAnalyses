@@ -837,6 +837,7 @@ cutList = {
     
     #### inclusive selection cuts ####
     "selReco":"true",
+	"selReco_invMass_15_70Gev":"Reco_invMass>15 && Reco_invMass<70",
     ### cuts for SM llnunu at generator level to be applied to everything properly
     #"selReco_gen": "Reco_pt.at(0)>1 && Reco_pt.at(1)>1 && RecoEmiss_pt>5", ## Reco_e>2 is taken care of by delphes already, no need to specify it here
     ### cuts need to exclude hadronic background
@@ -898,6 +899,7 @@ cutLabels = {
     #"sel2RecoDF_vetoes_notracks_nojets_M80_5MEpt_0.8cos_chi_0.5d0":"Two different flavor leptons, no photons, no other track, no jets, M(l,l)<80 GeV, p_{T,miss}>5 GeV, cos\theta>-0.8, \chi^2<10, |d_0|>0.55 mm",
 
     "selReco":"true reco signal",
+	"selReco_invMass_15_70Gev":"Reco_invMass>15 and Reco_invMass<70",
     #"selReco_gen": "Two leptons, no photons, p_{T}>1 GeV, p_{T, miss}>5 GeV",
     #"selReco_gen_notracks": "Two leptons, no photons, no tracks, p_{T}>1 GeV, p_{T, miss}>5 GeV",
     #"selReco_gen_notrack_2eh": "Two leptons, no photons, no tracks, no neutral hadrons, p_{T}>1 GeV, p_{T, miss}>5 GeV",
@@ -1052,7 +1054,7 @@ histoList = {
 
     "RecoElectronTrack_absD0":             {"name":"RecoElectronTrack_absD0",     "title":"Reco electron tracks |d_{0}| [mm]",      "bin":100,"xmin":0, "xmax":2000},
     "RecoElectronTrack_absD0_med":         {"name":"RecoElectronTrack_absD0",     "title":"Reco electron tracks |d_{0}| [mm]",      "bin":100,"xmin":0, "xmax":10},
-    "RecoElectronTrack_absD0_prompt":      {"name":"RecoElectronTrack_absD0",     "title":"Reco electron tracks |d_{0}| [mm]",      "bin":100,"xmin":0, "xmax":1},
+    "RecoElectronTrack_absD0_prompt":      {"name":"RecoElectronTrack_absD0",     "title":"Reco electron tracks |d_{0}| [mm]",      "bin":100,"xmin":0, "xmax":2},
     #"RecoElectronTrack_absZ0":             {"name":"RecoElectronTrack_absZ0",     "title":"Reco electron tracks |z_{0}| [mm]",      "bin":100,"xmin":0, "xmax":2000},
     #"RecoElectronTrack_absZ0_prompt":      {"name":"RecoElectronTrack_absZ0",     "title":"Reco electron tracks |z_{0}| [mm]",      "bin":100,"xmin":0, "xmax":1},
     #"RecoElectronTrack_absD0sig":          {"name":"RecoElectronTrack_absD0sig",  "title":"Reco electron tracks |d_{0} significance|",      "bin":100,"xmin":0, "xmax":600000},
@@ -1078,7 +1080,7 @@ histoList = {
 
     "RecoMuonTrack_absD0":             {"name":"RecoMuonTrack_absD0",     "title":"Reco muon tracks |d_{0}| [mm]",      "bin":100,"xmin":0, "xmax":2000},
     "RecoMuonTrack_absD0_med":         {"name":"RecoMuonTrack_absD0",     "title":"Reco muon tracks |d_{0}| [mm]",      "bin":100,"xmin":0, "xmax":10},
-    "RecoMuonTrack_absD0_prompt":      {"name":"RecoMuonTrack_absD0",     "title":"Reco muon tracks |d_{0}| [mm]",      "bin":100,"xmin":0, "xmax":1},
+    "RecoMuonTrack_absD0_prompt":      {"name":"RecoMuonTrack_absD0",     "title":"Reco muon tracks |d_{0}| [mm]",      "bin":100,"xmin":0, "xmax":2},
     #"RecoMuonTrack_absZ0":             {"name":"RecoMuonTrack_absZ0",     "title":"Reco muon tracks |z_{0}| [mm]",      "bin":100,"xmin":0, "xmax":2000},
     #"RecoMuonTrack_absZ0_prompt":      {"name":"RecoMuonTrack_absZ0",     "title":"Reco muon tracks |z_{0}| [mm]",      "bin":100,"xmin":0, "xmax":1},
     #"RecoMuonTrack_absD0sig":          {"name":"RecoMuonTrack_absD0sig",  "title":"Reco muon tracks |d_{0} significance|",      "bin":100,"xmin":0, "xmax":600000},
