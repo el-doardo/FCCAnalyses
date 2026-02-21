@@ -378,10 +378,10 @@ plots['HNL'] = {'signal':{
 legend = {}
 
 legend['HNL_1.04e-8_30gev'] = 'U^{2}=1.04e-8, M_{N}=30 GeV'
-legend['HNL_1.04e-8_30gev'] = 'U^{2}=1.04e-8, M_{N}=60 GeV'
-legend['HNL_1.04e-8_30gev'] = 'U^{2}=1.04e-8, M_{N}=90 GeV'
-legend['HNL_1.04e-8_30gev'] = 'U^{2}=1.04e-8, M_{N}=110 GeV'
-legend['HNL_1.04e-8_30gev'] = 'U^{2}=1.04e-8, M_{N}=120 GeV'
+legend['HNL_1.04e-8_60gev'] = 'U^{2}=1.04e-8, M_{N}=60 GeV'
+legend['HNL_1.04e-8_90gev'] = 'U^{2}=1.04e-8, M_{N}=90 GeV'
+legend['HNL_1.04e-8_110gev'] = 'U^{2}=1.04e-8, M_{N}=110 GeV'
+legend['HNL_1.04e-8_120gev'] = 'U^{2}=1.04e-8, M_{N}=120 GeV'
 legend['HNL_4e-12_50gev'] = 'U^{2}=4e-12, M_{N}=50 GeV'
 legend['HNL_6.67e-8_60gev'] = 'U^{2}=6.67e-8, M_{N}=60 GeV'
 legend['HNL_4e-8_60gev'] = 'U^{2}=4e-8, M_{N}=60 GeV'
