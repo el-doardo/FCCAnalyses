@@ -11,8 +11,8 @@ ana_tex        = "e^{+}e^{-} #rightarrow N_{1,2} #nu, N_{1,2} #rightarrow ll#nu"
 delphesVersion = '3.4.2'
 energy         = 125
 collider       = 'FCC-ee'
-inputDir       = '/eos/user/e/espoto/H_pole/FCCAnalyses/gen/final_gen'
-outdir         = '/eos/user/e/espoto/H_pole/FCCAnalyses/gen/plots_gen'
+inputDir       = '/eos/user/e/espoto/H_pole/FCCAnalyses/gen/final_gen/'
+outdir         = '/eos/user/e/espoto/H_pole/FCCAnalyses/gen/plots_gen/'
 formats        = ['png']
 #formats        = ['pdf']
 #yaxis          = ['lin','log']
@@ -29,12 +29,12 @@ variables = [
     #"FSGenMissing_e", ## ## definito da me in stage1
 	#"FSGenMissing_pt", ## ## definito da me in stage1
 	#"FSGenMissing_e_nu",
-    #"n_FSGenElectron",
-    #"n_FSGenMuon",
-    #"n_FSGenLepton",
-    #"n_GenN",
+    "n_FSGenElectron",
+    "n_FSGenMuon",
+    "n_FSGenLepton",
+    "n_GenN",
     #"n_FSGenPhoton",
-    #"n_FSGenNeutrino",
+    "n_FSGenNeutrino",
 
     "FSGenElectron_e",     ## ## just a note: following two group of raws are defined in stage1, but no hint in final
     #"FSGenElectron_p",
