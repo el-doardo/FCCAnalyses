@@ -12,7 +12,7 @@ delphesVersion = '3.4.2'
 energy         = 125
 collider       = 'FCC-ee'
 inputDir       = '/eos/user/e/espoto/H_pole/FCCAnalyses/gen/final_gen/'
-outdir         = '/eos/user/e/espoto/H_pole/FCCAnalyses/gen/plots_gen_1.04e-8/'
+outdir         = '/eos/user/e/espoto/H_pole/FCCAnalyses/gen/plots_gen_4e-10/'
 formats        = ['png']
 #formats        = ['pdf']
 #yaxis          = ['lin','log']
@@ -237,12 +237,12 @@ extralabel['selReco'] = "Before selection"
 
 colors = {}
 
-colors['HNL_1.04e-8_30gev'] = ROOT.kMagenta-5 ## ## mod edo
+colors['HNL_4e-10_30gev'] = ROOT.kMagenta-5 ## ## mod edo
 #colors['HNL_4e-8_10gev'] = ROOT.kCyan-7 ## ## mod edo
-colors['HNL_1.04e-8_60gev'] = ROOT.kAzure+5
-colors['HNL_1.04e-8_90gev'] = ROOT.kBlue-7
-colors['HNL_1.04e-8_110gev'] = ROOT.kOrange-2
-colors['HNL_1.04e-8_120gev'] = ROOT.kOrange+8
+colors['HNL_4e-10_60gev'] = ROOT.kAzure+5
+colors['HNL_4e-10_90gev'] = ROOT.kBlue-7
+colors['HNL_4e-10_110gev'] = ROOT.kOrange-2
+colors['HNL_4e-10_120gev'] = ROOT.kOrange+8
 colors['HNL_4e-12_50gev'] = ROOT.kBlue-4
 colors['HNL_6.67e-8_60gev'] = ROOT.kRed-4
 colors['HNL_4e-8_60gev'] = ROOT.kBlue-4
@@ -289,17 +289,17 @@ plots['HNL'] = {'signal':{
                     #'HNL_2.86e-9_70gev':['HNL_2.86e-9_70gev'],
                     #'HNL_2.86e-8_80gev':['HNL_2.86e-8_80gev'],
 
-					'HNL_1.04e-8_30gev':['HNL_1.04e-8_30gev'], ## ## this is also going to be a dummy background
-					'HNL_1.04e-8_60gev':['HNL_1.04e-8_60gev'],
-					'HNL_1.04e-8_90gev':['HNL_1.04e-8_90gev'],
-					'HNL_1.04e-8_110gev':['HNL_1.04e-8_110gev'],
-					'HNL_1.04e-8_120gev':['HNL_1.04e-8_120gev'],
+					#'HNL_1.04e-8_30gev':['HNL_1.04e-8_30gev'], ## ## this is also going to be a dummy background
+					#'HNL_1.04e-8_60gev':['HNL_1.04e-8_60gev'],
+					#'HNL_1.04e-8_90gev':['HNL_1.04e-8_90gev'],
+					#'HNL_1.04e-8_110gev':['HNL_1.04e-8_110gev'],
+					#'HNL_1.04e-8_120gev':['HNL_1.04e-8_120gev'],
 	
-					#"HNL_4e-10_30gev":{},
-					#"HNL_4e-10_60gev":{},
-					#"HNL_4e-10_90gev":{},
-					#"HNL_4e-10_110gev":{},
-					#"HNL_4e-10_120gev":{},
+					'HNL_4e-10_30gev':['HNL_4e-10_30gev'],
+					'HNL_4e-10_60gev':['HNL_4e-10_30gev'],
+					'HNL_4e-10_90gev':['HNL_4e-10_30gev'],
+					'HNL_4e-10_110ge':['HNL_4e-10_30gev'],
+					'HNL_4e-10_120ge':['HNL_4e-10_30gev'],
 	
 					#"HNL_6.67e-10_30gev":{},
 					#"HNL_6.67e-10_60gev":{},
