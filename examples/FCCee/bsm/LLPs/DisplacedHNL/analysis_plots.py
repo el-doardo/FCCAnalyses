@@ -332,35 +332,35 @@ plots['HNL'] = {'signal':{
 					"HNL_1.04e-8_110gev":['HNL_1.04e-8_110gev'],
 					"HNL_1.04e-8_120gev":['HNL_1.04e-8_120gev'],
 	
-					"HNL_4e-10_30gev":['HNL_4e-10_30gev'],
-					"HNL_4e-10_60gev":['HNL_4e-10_60gev'],
-					"HNL_4e-10_90gev":['HNL_4e-10_90gev'],
-					"HNL_4e-10_110gev":['HNL_4e-10_110gev'],
-					"HNL_4e-10_120gev":['HNL_4e-10_120gev'],
+					#"HNL_4e-10_30gev":['HNL_4e-10_30gev'],
+					#"HNL_4e-10_60gev":['HNL_4e-10_60gev'],
+					#"HNL_4e-10_90gev":['HNL_4e-10_90gev'],
+					#"HNL_4e-10_110gev":['HNL_4e-10_110gev'],
+					#"HNL_4e-10_120gev":['HNL_4e-10_120gev'],
 	
-					"HNL_6.67e-10_30gev":['HNL_6.67e-10_30gev'],
-					"HNL_6.67e-10_60gev":['HNL_6.67e-10_60gev'],
-					"HNL_6.67e-10_90gev":['HNL_6.67e-10_90gev'],
-					"HNL_6.67e-10_110gev":['HNL_6.67e-10_110gev'],
-					"HNL_6.67e-10_120gev":['HNL_6.67e-10_120gev'],
+					#"HNL_6.67e-10_30gev":['HNL_6.67e-10_30gev'],
+					#"HNL_6.67e-10_60gev":['HNL_6.67e-10_60gev'],
+					#"HNL_6.67e-10_90gev":['HNL_6.67e-10_90gev'],
+					#"HNL_6.67e-10_110gev":['HNL_6.67e-10_110gev'],
+					#"HNL_6.67e-10_120gev":['HNL_6.67e-10_120gev'],
 
-					"HNL_8.35e-9_30gev":['HNL_8.35e-9_30gev'],
-					"HNL_8.35e-9_60gev":['HNL_8.35e-9_60gev'],
-					"HNL_8.35e-9_90gev":['HNL_8.35e-9_90gev'],
-					"HNL_8.35e-9_110gev":['HNL_8.35e-9_110gev'],
-					"HNL_8.35e-9_120gev":['HNL_8.35e-9_120gev'],
+					#"HNL_8.35e-9_30gev":['HNL_8.35e-9_30gev'],
+					#"HNL_8.35e-9_60gev":['HNL_8.35e-9_60gev'],
+					#"HNL_8.35e-9_90gev":['HNL_8.35e-9_90gev'],
+					#"HNL_8.35e-9_110gev":['HNL_8.35e-9_110gev'],
+					#"HNL_8.35e-9_120gev":['HNL_8.35e-9_120gev'],
 		
-					"HNL_2.27e-9_30gev":['HNL_2.27e-9_30gev'],
-					"HNL_2.27e-9_60gev":['HNL_2.27e-9_60gev'],
-					"HNL_2.27e-9_90gev":['HNL_2.27e-9_90gev'],
-					"HNL_2.27e-9_110gev":['HNL_2.27e-9_110gev'],
-					"HNL_2.27e-9_120gev":['HNL_2.27e-9_120gev'],
+					#"HNL_2.27e-9_30gev":['HNL_2.27e-9_30gev'],
+					#"HNL_2.27e-9_60gev":['HNL_2.27e-9_60gev'],
+					#"HNL_2.27e-9_90gev":['HNL_2.27e-9_90gev'],
+					#"HNL_2.27e-9_110gev":['HNL_2.27e-9_110gev'],
+					#"HNL_2.27e-9_120gev":['HNL_2.27e-9_120gev'],
 
-					"HNL_3.17e-11_30gev":['HNL_3.17e-11_30gev'],
-					"HNL_3.17e-11_60gev":['HNL_3.17e-11_60gev'],
-					"HNL_3.17e-11_90gev":['HNL_3.17e-11_90gev'],
-					"HNL_3.17e-11_110gev":['HNL_3.17e-11_110gev'],
-					"HNL_3.17e-11_120gev":['HNL_3.17e-11_120gev'],
+					#"HNL_3.17e-11_30gev":['HNL_3.17e-11_30gev'],
+					#"HNL_3.17e-11_60gev":['HNL_3.17e-11_60gev'],
+					#"HNL_3.17e-11_90gev":['HNL_3.17e-11_90gev'],
+					#"HNL_3.17e-11_110gev":['HNL_3.17e-11_110gev'],
+					#"HNL_3.17e-11_120gev":['HNL_3.17e-11_120gev'],
                 },
                 'backgrounds':{
 
@@ -377,11 +377,11 @@ plots['HNL'] = {'signal':{
 
 legend = {}
 
-legend['HNL_4e-10_20gev'] = 'U^{2}=4e-10, M_{N}=20 GeV'
-legend['HNL_1.33e-9_20gev'] = 'U^{2}=1.33e-9, M_{N}=20 GeV'
-legend['HNL_2.86e-12_30gev'] = 'U^{2}=2.86e-12, M_{N}=30 GeV'
-legend['HNL_2.86e-7_30gev'] = 'U^{2}=2.86e-7, M_{N}=30 GeV'
-legend['HNL_5e-12_40gev'] = 'U^{2}=5e-12, M_{N}=40 GeV'
+legend['HNL_1.04e-8_30gev'] = 'U^{2}=1.04e-8, M_{N}=30 GeV'
+legend['HNL_1.04e-8_30gev'] = 'U^{2}=1.04e-8, M_{N}=60 GeV'
+legend['HNL_1.04e-8_30gev'] = 'U^{2}=1.04e-8, M_{N}=90 GeV'
+legend['HNL_1.04e-8_30gev'] = 'U^{2}=1.04e-8, M_{N}=110 GeV'
+legend['HNL_1.04e-8_30gev'] = 'U^{2}=1.04e-8, M_{N}=120 GeV'
 legend['HNL_4e-12_50gev'] = 'U^{2}=4e-12, M_{N}=50 GeV'
 legend['HNL_6.67e-8_60gev'] = 'U^{2}=6.67e-8, M_{N}=60 GeV'
 legend['HNL_4e-8_60gev'] = 'U^{2}=4e-8, M_{N}=60 GeV'
@@ -390,13 +390,13 @@ legend['HNL_2.86e-8_80gev'] = 'U^{2}=2.86e-8, M_{N}=80 GeV'
 
 legend['HNL'] = ''
 
-legend['Zud'] = 'Z #rightarrow ud'
-legend['Zss'] = 'Z #rightarrow ss'
-legend['Zbb'] = 'Z #rightarrow bb'
-legend['Zcc'] = 'Z #rightarrow cc'
-legend['Zee'] = 'Z #rightarrow ee'
-legend['Zmumu'] = 'Z #rightarrow #mu#mu'
-legend['Ztautau'] = 'Z #rightarrow #tau#tau'
+legend['Htautau'] = 'Htautau'
+legend['tautau'] = 'tautau'
+legend['Hllnunu'] = 'Hllnunu'
+legend['l1l2nunu'] = 'l1l2nunu'
+legend['tautaununu'] = 'tautaununu'
+legend['eenunu'] = 'eenunu'
+legend['mumununu'] = 'mumununu'
 legend['emununu'] = 'e#mu#nu#nu'
 legend['llnunu_m'] = 'll#nu#nu'
 legend['tatanunu_m'] = '#tau#tau#nu#nu'
