@@ -97,7 +97,7 @@ variables = [
     "FSGen_Lxy",
     "FSGen_Lxyz",
     "GenN_Lxyz",
-    ## ##"FSGen_Lxyz_prompt",
+    "FSGen_Lxyz_prompt",
     "FSGen_invMass",
 
     "GenN_mass",
