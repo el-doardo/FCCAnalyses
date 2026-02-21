@@ -237,7 +237,7 @@ extralabel['selReco'] = "Before selection"
 
 colors = {}
 
-colors['HNL_1.04e-8_30gev'] = ROOT.kWhite ## ## mod edo
+colors['HNL_1.04e-8_30gev'] = ROOT.kRed+1 ## ## mod edo
 #colors['HNL_4e-8_10gev'] = ROOT.kCyan-7 ## ## mod edo
 colors['HNL_1.04e-8_60gev'] = ROOT.kAzure+5
 colors['HNL_1.04e-8_90gev'] = ROOT.kBlue-7
