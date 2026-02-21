@@ -903,7 +903,7 @@ cutList = {
     
     #### inclusive selection cuts ####
     #"selReco":"true",
-	"selReco_15MET_08cos_64D0_1pt_2el": "RecoEmiss_pt>15 && Reco_cos>-0.8 && Reco_pt.at(0)>1 && Reco_pt.at(1)>1", # && Reco_e>2 && RecoTrack_absD0>0.64",
+	"selReco_15MET_08cos_64D0_1pt_2el": "RecoEmiss_pt>15 && Reco_cos>-0.8 && Reco_pt.at(0)>1 && Reco_pt.at(1)>1 # && Reco_e>2 && RecoTrack_absD0>0.64",
     ### cuts for SM llnunu at generator level to be applied to everything properly
     #"selReco_gen": "Reco_pt.at(0)>1 && Reco_pt.at(1)>1 && RecoEmiss_pt>5", ## Reco_e>2 is taken care of by delphes already, no need to specify it here
     ### cuts need to exclude hadronic background
