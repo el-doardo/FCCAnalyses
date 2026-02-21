@@ -1040,7 +1040,7 @@ histoList = {
     
     "FSGen_Lxy":            {"name":"FSGen_Lxy",      "title":"Gen L_{xy} [mm]",     "bin":100,"xmin":0 ,"xmax":2000},
     "FSGen_Lxyz":           {"name":"FSGen_Lxyz",     "title":"Gen L_{xyz} [mm]",    "bin":100,"xmin":0 ,"xmax":2000},
-    #"FSGen_Lxyz_prompt":    {"name":"FSGen_Lxyz",     "title":"Gen L_{xyz} [mm]",    "bin":100,"xmin":0 ,"xmax":10},
+    "FSGen_Lxyz_prompt":    {"name":"FSGen_Lxyz",     "title":"Gen L_{xyz} [mm]",    "bin":100,"xmin":0 ,"xmax":10},
     #"FSGen_Lxy_prompt":     {"name":"FSGen_Lxy",     "title":"Gen L_{xy} [mm]",    "bin":100,"xmin":0 ,"xmax":10},
     "FSGen_invMass":        {"name":"FSGen_invMass",  "title":"Gen M(l,l') [GeV]",   "bin":100,"xmin":0, "xmax":100},
 
