@@ -879,6 +879,18 @@ procDictAdd = {
 	'HNL_8.35e-9_90gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 5.66e-08, "kfactor": 1.0, "matchingEfficiency": 1.0},
 	'HNL_8.35e-9_110gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 1.168e-08, "kfactor": 1.0, "matchingEfficiency": 1.0},
 	'HNL_8.35e-9_120gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 1.56e-09, "kfactor": 1.0, "matchingEfficiency": 1.0},
+
+	'HNL_2.27e-9_30gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 4.559e-08, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_2.27e-9_60gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 3.472e-08, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_2.27e-9_90gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 2.415e-08, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_2.27e-9_110gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 5.115e-09, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_2.27e-9_120gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 6.964e-10, "kfactor": 1.0, "matchingEfficiency": 1.0},
+
+	'HNL_3.17e-11_30gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 9.656e-10, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_3.17e-11_60gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 7.385e-10, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_3.17e-11_90gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 5.202e-10, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_3.17e-11_110gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 1.12e-10, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_3.17e-11_120gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 1.542e-11, "kfactor": 1.0, "matchingEfficiency": 1.0},
 }
 
 ###Dictionnay of the list of cuts. The key is the name of the selection that will be added to the output file
