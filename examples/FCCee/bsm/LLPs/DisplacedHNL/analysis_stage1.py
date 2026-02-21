@@ -19,7 +19,7 @@ processList = {
 		#'wzp6_ee_eenunu_ecm125':{'fraction':0.05}, #cross section: 0.6574
 		#'wzp6_ee_mumununu_ecm125':{'fraction':0.05}, #cross section: 0.2202
 		#'p8_ee_Z_Ztautau_ecm125':{'fraction':0.05}, #cross section: 26  # Error with this line: "Can't find the YAML file with process info for process "p8_ee_Z_Ztautau_ecm125"!"
-		'p8_ee_Z_Zqq_ecm125':{'fraction':0.05}, #cross section: 237
+		#'p8_ee_Z_Zqq_ecm125':{'fraction':0.05}, #cross section: 237 	# Error with this line: "Can't find the YAML file with process info for process "p8_ee_Z_Ztautau_ecm125"!"
 
 	## ##
 	
