@@ -26,8 +26,8 @@ splitLeg       = True ### to split legend for backgrounds and signals ###
 variables = [
 
     #gen variables
-        "FSGenMissing_e", ## ## definito da me in stage1
-	"FSGenMissing_pt", ## ## definito da me in stage1
+    #"FSGenMissing_e", ## ## definito da me in stage1
+	#"FSGenMissing_pt", ## ## definito da me in stage1
 	"FSGenMissing_e_nu",
     "n_FSGenElectron",
     "n_FSGenMuon",
