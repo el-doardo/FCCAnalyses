@@ -11,14 +11,14 @@ processList = {
         #'p8_ee_Zud_ecm91':{'fraction':0.001},
         #'p8_ee_Zss_ecm91':{'fraction':0.001},
 
-		'wzp6_ee_Htautau_ecm125':{'fraction':0.5}, #cross section: 0.0001011
+		#'wzp6_ee_Htautau_ecm125':{'fraction':0.5}, #cross section: 0.0001011
 		#'wzp6_ee_tautau_ecm125':{'fraction':0.5}, #cross section: 25.939
-		'wzp6_ee_Hllnunu_ecm125':{'fraction':0.5}, #cross section: 0.00003187
+		#'wzp6_ee_Hllnunu_ecm125':{'fraction':0.5}, #cross section: 0.00003187
 		#'wzp6_ee_l1l2nunu_ecm125':{'fraction':0.05}, #cross section: 0.009845
-		'wzp6_ee_tautaununu_ecm125':{'fraction':0.5}, #cross section: 0.04265
+		#'wzp6_ee_tautaununu_ecm125':{'fraction':0.5}, #cross section: 0.04265
 		#'wzp6_ee_eenunu_ecm125':{'fraction':0.05}, #cross section: 0.6574
 		#'wzp6_ee_mumununu_ecm125':{'fraction':0.05}, #cross section: 0.2202
-		'p8_ee_Z_Ztautau_ecm125':{'fraction':0.05}, #cross section: 26
+		#'p8_ee_Z_Ztautau_ecm125':{'fraction':0.05}, #cross section: 26  # Error with this line: "Can't find the YAML file with process info for process "p8_ee_Z_Ztautau_ecm125"!"
 		'p8_ee_Z_Zqq_ecm125':{'fraction':0.05}, #cross section: 237
 
 	## ##
