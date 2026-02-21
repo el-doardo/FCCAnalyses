@@ -1,8 +1,8 @@
 #Input directory where the files produced at the stage1 level are
-inputDir = "/eos/user/e/espoto/FCCAnalyses/outputs/reco/stage1_reco"
+inputDir = "/eos/user/e/espoto/H_pole/FCCAnalyses/reco/stage1_reco/"
 
 #Output directory where the files produced at the final-selection level are
-outputDir = "/eos/user/e/espoto/FCCAnalyses/outputs/reco/final_reco"
+outputDir = "/eos/user/e/espoto/H_pole/FCCAnalyses/reco/final_reco/"
 
 #Integrated luminosity for scaling number of events (required only if setting doScale to true)
 intLumi = 150e6 #pb^-1
