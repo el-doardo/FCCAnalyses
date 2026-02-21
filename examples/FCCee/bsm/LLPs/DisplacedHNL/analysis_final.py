@@ -1058,7 +1058,7 @@ histoList = {
     "GenN_p":                      {"name":"GenN_p",                        "title":"Gen N momentum [GeV]",           "bin":100,"xmin":0 ,"xmax":130},
     #"GenN_tau":                    {"name":"GenN_tau",                      "title":"Gen HNL #tau [s]",               "bin":100,"xmin":0 ,"xmax":1e-8},
     "GenN_Lxyz":                   {"name":"GenN_Lxyz",                     "title":"Gen N L_{xyz} [mm]",             "bin":100,"xmin":0 ,"xmax":2000},
-    #"GenN_Lxyz_prompt":            {"name":"GenN_Lxyz",                     "title":"Gen N L_{xyz} [mm]",             "bin":100,"xmin":0 ,"xmax":10},
+    "GenN_Lxyz_prompt":            {"name":"GenN_Lxyz",                     "title":"Gen N L_{xyz} [mm]",             "bin":100,"xmin":0 ,"xmax":10},
 
 	## ## riga di gen missing energy
     "FSGenMissing_e":            {"name":"FSGenMissing_e",              "title":"Gen missing e [GeV]",            "bin":100,"xmin":0 ,"xmax":130},
