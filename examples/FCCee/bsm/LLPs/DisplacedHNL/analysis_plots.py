@@ -248,7 +248,8 @@ selections['HNL']  = [
     ## ##
     #"selReco_gen_notracks_2eh_10MET_0.8cos_80ME_10chi_0.64d0",
     #"selReco_gen_notracks_2eh_15to70ME",
-    "selReco",
+    #"selReco",
+	"selReco_15MET_08cos_64D0_1pt_2el",
 
     #"sel2RecoDF_vetoes",
     #"sel2RecoDF_vetoes_15-80M",
@@ -261,6 +262,7 @@ selections['HNL']  = [
 ]
 
 extralabel = {}
+extralabel['selReco_15MET_08cos_64D0_1pt_2el'] = "cuts on paper"
 extralabel['selNone'] = "Before selection"
 extralabel['selReco']="Two leptons, different charge, no photons and jets"
 extralabel['sel2Reco_vetoes']="Two leptons, no photons and jets"
