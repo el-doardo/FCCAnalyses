@@ -987,7 +987,7 @@ histoList = {
     #"n_FSGenMuon":                      {"name":"n_FSGenMuon",                      "title":"Number of final state gen muons",              "bin":5,"xmin":-0.5 ,"xmax":4.5},
     #"n_FSGenLepton":                    {"name":"n_FSGenLepton",                    "title":"Number of final state gen leptons",            "bin":5,"xmin":-0.5 ,"xmax":4.5},
     #"n_FSGenPhoton":                    {"name":"n_FSGenPhoton",                    "title":"Number of final state gen photons",            "bin":5,"xmin":-0.5 ,"xmax":4.5},
-    #"n_GenTaus":                        {"name":"n_GenTaus",                      "title":"Number of final state gen tau",              "bin":5,"xmin":-0.5 ,"xmax":4.5},
+    "n_GenTaus":                        {"name":"n_GenTaus",                      "title":"Number of final state gen tau",              "bin":5,"xmin":-0.5 ,"xmax":4.5},
     #"n_GenPions":                       {"name":"n_GenPions",                    "title":"Number of final state gen pion",            "bin":5,"xmin":-0.5 ,"xmax":4.5},
     #"n_GenKpluss":                      {"name":"n_GenKpluss",                    "title":"Number of final state gen K+",            "bin":5,"xmin":-0.5 ,"xmax":4.5},
     #"n_GenKLs":                         {"name":"n_GenKLs",                        "title":"Number of final state gen KL",            "bin":5,"xmin":-0.5 ,"xmax":4.5},
