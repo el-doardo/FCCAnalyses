@@ -32,6 +32,7 @@ variables = [
     #"n_GenN",
     #"n_FSGenPhoton",
     #"n_FSGenNeutrino",
+	"n_GenTaus",
 
     #"FSGenElectron_e",     ## ## just a note: following two group of raws are defined in stage1, but no hint in final
     #"FSGenElectron_p",
