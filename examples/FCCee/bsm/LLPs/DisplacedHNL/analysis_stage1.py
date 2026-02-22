@@ -11,53 +11,53 @@ processList = {
         #'p8_ee_Zud_ecm91':{'fraction':0.001},
         #'p8_ee_Zss_ecm91':{'fraction':0.001},
 
-		#'wzp6_ee_Htautau_ecm125':{'fraction':0.5}, #cross section: 0.0001011
-		#'wzp6_ee_tautau_ecm125':{'fraction':0.5}, #cross section: 25.939
-		#'wzp6_ee_Hllnunu_ecm125':{'fraction':0.5}, #cross section: 0.00003187
-		#'wzp6_ee_l1l2nunu_ecm125':{'fraction':0.05}, #cross section: 0.009845
-		#'wzp6_ee_tautaununu_ecm125':{'fraction':0.5}, #cross section: 0.04265
-		#'wzp6_ee_eenunu_ecm125':{'fraction':0.05}, #cross section: 0.6574
-		#'wzp6_ee_mumununu_ecm125':{'fraction':0.05}, #cross section: 0.2202
+		'wzp6_ee_Htautau_ecm125':{'fraction':0.5}, #cross section: 0.0001011
+		'wzp6_ee_tautau_ecm125':{'fraction':0.5}, #cross section: 25.939
+		'wzp6_ee_Hllnunu_ecm125':{'fraction':0.5}, #cross section: 0.00003187
+		'wzp6_ee_l1l2nunu_ecm125':{'fraction':0.05}, #cross section: 0.009845
+		'wzp6_ee_tautaununu_ecm125':{'fraction':0.5}, #cross section: 0.04265
+		'wzp6_ee_eenunu_ecm125':{'fraction':0.05}, #cross section: 0.6574
+		'wzp6_ee_mumununu_ecm125':{'fraction':0.05}, #cross section: 0.2202
 		#'p8_ee_Z_Ztautau_ecm125':{'fraction':0.05}, #cross section: 26  # Error with this line: "Can't find the YAML file with process info for process "p8_ee_Z_Ztautau_ecm125"!"
 		#'p8_ee_Z_Zqq_ecm125':{'fraction':0.05}, #cross section: 237 	# Error with this line: "Can't find the YAML file with process info for process "p8_ee_Z_Ztautau_ecm125"!"
 
 	## ##
 	
-		"HNL_1.04e-8_30gev":{},
-		"HNL_1.04e-8_60gev":{},
-		"HNL_1.04e-8_90gev":{},
-		"HNL_1.04e-8_110gev":{},
-		"HNL_1.04e-8_120gev":{},
+		#"HNL_1.04e-8_30gev":{},
+		#"HNL_1.04e-8_60gev":{},
+		#"HNL_1.04e-8_90gev":{},
+		#"HNL_1.04e-8_110gev":{},
+		#"HNL_1.04e-8_120gev":{},
 	
-		"HNL_4e-10_30gev":{},
-		"HNL_4e-10_60gev":{},
-		"HNL_4e-10_90gev":{},
-		"HNL_4e-10_110gev":{},
-		"HNL_4e-10_120gev":{},
+		#"HNL_4e-10_30gev":{},
+		#"HNL_4e-10_60gev":{},
+		#"HNL_4e-10_90gev":{},
+		#"HNL_4e-10_110gev":{},
+		#"HNL_4e-10_120gev":{},
 	
-		"HNL_6.67e-10_30gev":{},
-		"HNL_6.67e-10_60gev":{},
-		"HNL_6.67e-10_90gev":{},
-		"HNL_6.67e-10_110gev":{},
-		"HNL_6.67e-10_120gev":{},
+		#"HNL_6.67e-10_30gev":{},
+		#"HNL_6.67e-10_60gev":{},
+		#"HNL_6.67e-10_90gev":{},
+		#"HNL_6.67e-10_110gev":{},
+		#"HNL_6.67e-10_120gev":{},
 
-		"HNL_8.35e-9_30gev":{},
-		"HNL_8.35e-9_60gev":{},
-		"HNL_8.35e-9_90gev":{},
-		"HNL_8.35e-9_110gev":{},
-		"HNL_8.35e-9_120gev":{},
+		#"HNL_8.35e-9_30gev":{},
+		#"HNL_8.35e-9_60gev":{},
+		#"HNL_8.35e-9_90gev":{},
+		#"HNL_8.35e-9_110gev":{},
+		#"HNL_8.35e-9_120gev":{},
 		
-		"HNL_2.27e-9_30gev":{},
-		"HNL_2.27e-9_60gev":{},
-		"HNL_2.27e-9_90gev":{},
-		"HNL_2.27e-9_110gev":{},
-		"HNL_2.27e-9_120gev":{},
+		#"HNL_2.27e-9_30gev":{},
+		#"HNL_2.27e-9_60gev":{},
+		#"HNL_2.27e-9_90gev":{},
+		#"HNL_2.27e-9_110gev":{},
+		#"HNL_2.27e-9_120gev":{},
 
-		"HNL_3.17e-11_30gev":{},
-		"HNL_3.17e-11_60gev":{},
-		"HNL_3.17e-11_90gev":{},
-		"HNL_3.17e-11_110gev":{},
-		"HNL_3.17e-11_120gev":{},
+		#"HNL_3.17e-11_30gev":{},
+		#"HNL_3.17e-11_60gev":{},
+		#"HNL_3.17e-11_90gev":{},
+		#"HNL_3.17e-11_110gev":{},
+		#"HNL_3.17e-11_120gev":{},
 }
 
 processList_ = {
@@ -469,13 +469,13 @@ processList_ = {
 #Production tag. This points to the yaml files for getting sample statistics
 #Mandatory when running over EDM4Hep centrally produced events
 #Comment out when running over privately produced events
-#prodTag     = "FCCee/winter2023/IDEA/"
+prodTag     = "FCCee/winter2023/IDEA/"
 
 #Input directory
 #Comment out when running over centrally produced events
 #Mandatory when running over privately produced events
 #inputDir = "/eos/experiment/fcc/ee/generation/DelphesEvents/winter2023/IDEA/"
-inputDir = "/eos/user/e/espoto/H_pole/HNL_signals"
+#inputDir = "/eos/user/e/espoto/H_pole/HNL_signals"
 
 # additional/costom C++ functions, defined in header files (optional)
 includePaths = ["functions.h"]
