@@ -12,7 +12,7 @@ delphesVersion = '3.4.2'
 energy         = 125
 collider       = 'FCC-ee'
 inputDir       = '/eos/user/e/espoto/H_pole/FCCAnalyses/reco/final_reco/'
-outdir         = '/eos/user/e/espoto/H_pole/FCCAnalyses/reco/plots_reco/HNL_1.04e-8/'
+outdir         = '/eos/user/e/espoto/H_pole/FCCAnalyses/reco/plots_reco/HNL_4e-10/'
 formats        = ['png']
 #formats        = ['pdf']
 #yaxis          = ['lin','log']
@@ -248,7 +248,7 @@ selections['HNL']  = [
     ## ##
     #"selReco_gen_notracks_2eh_10MET_0.8cos_80ME_10chi_0.64d0",
     #"selReco_gen_notracks_2eh_15to70ME",
-    #"selReco",
+    "selReco",
 	"selReco_15MET_08cos_64D0_1pt_2el",
 
     #"sel2RecoDF_vetoes",
@@ -287,11 +287,11 @@ extralabel['sel2RecoDF_vetoes_tracks_M80_5MEpt_0.8cos']="Two different flavor le
 
 colors = {}
 
-colors['HNL_1.04e-8_30gev'] = ROOT.kCyan-7 ## ## modificato da me
-colors['HNL_1.04e-8_60gev'] = ROOT.kAzure+5
-colors['HNL_1.04e-8_90gev'] = ROOT.kBlue-7
-colors['HNL_1.04e-8_110gev'] = ROOT.kOrange-2
-colors['HNL_1.04e-8_120gev'] = ROOT.kOrange+8
+colors['HNL_4e-10_30gev'] = ROOT.kCyan-7 ## ## modificato da me
+colors['HNL_4e-10_60gev'] = ROOT.kAzure+5
+colors['HNL_4e-10_90gev'] = ROOT.kBlue-7
+colors['HNL_4e-10_110gev'] = ROOT.kOrange-2
+colors['HNL_4e-10_120gev'] = ROOT.kOrange+8
 colors['HNL_4e-12_50gev'] = ROOT.kBlue-4
 colors['HNL_6.67e-8_60gev'] = ROOT.kRed-4
 colors['HNL_4e-8_60gev'] = ROOT.kBlue-4
@@ -328,17 +328,17 @@ colors['tatanunu_m'] = 38
 plots = {}
 plots['HNL'] = {'signal':{
 	
-                    "HNL_1.04e-8_30gev":['HNL_1.04e-8_30gev'],
-					"HNL_1.04e-8_60gev":['HNL_1.04e-8_60gev'],
-					"HNL_1.04e-8_90gev":['HNL_1.04e-8_90gev'],
-					"HNL_1.04e-8_110gev":['HNL_1.04e-8_110gev'],
-					"HNL_1.04e-8_120gev":['HNL_1.04e-8_120gev'],
+                    #"HNL_1.04e-8_30gev":['HNL_1.04e-8_30gev'],
+					#"HNL_1.04e-8_60gev":['HNL_1.04e-8_60gev'],
+					#"HNL_1.04e-8_90gev":['HNL_1.04e-8_90gev'],
+					#"HNL_1.04e-8_110gev":['HNL_1.04e-8_110gev'],
+					#"HNL_1.04e-8_120gev":['HNL_1.04e-8_120gev'],
 	
-					#"HNL_4e-10_30gev":['HNL_4e-10_30gev'],
-					#"HNL_4e-10_60gev":['HNL_4e-10_60gev'],
-					#"HNL_4e-10_90gev":['HNL_4e-10_90gev'],
-					#"HNL_4e-10_110gev":['HNL_4e-10_110gev'],
-					#"HNL_4e-10_120gev":['HNL_4e-10_120gev'],
+					"HNL_4e-10_30gev":['HNL_4e-10_30gev'],
+					"HNL_4e-10_60gev":['HNL_4e-10_60gev'],
+					"HNL_4e-10_90gev":['HNL_4e-10_90gev'],
+					"HNL_4e-10_110gev":['HNL_4e-10_110gev'],
+					"HNL_4e-10_120gev":['HNL_4e-10_120gev'],
 	
 					#"HNL_6.67e-10_30gev":['HNL_6.67e-10_30gev'],
 					#"HNL_6.67e-10_60gev":['HNL_6.67e-10_60gev'],
@@ -379,11 +379,11 @@ plots['HNL'] = {'signal':{
 
 legend = {}
 
-legend['HNL_1.04e-8_30gev'] = 'U^{2}=1.04e-8, M_{N}=30 GeV'
-legend['HNL_1.04e-8_60gev'] = 'U^{2}=1.04e-8, M_{N}=60 GeV'
-legend['HNL_1.04e-8_90gev'] = 'U^{2}=1.04e-8, M_{N}=90 GeV'
-legend['HNL_1.04e-8_110gev'] = 'U^{2}=1.04e-8, M_{N}=110 GeV'
-legend['HNL_1.04e-8_120gev'] = 'U^{2}=1.04e-8, M_{N}=120 GeV'
+legend['HNL_4e-10_30gev'] = 'U^{2}=4e-10, M_{N}=30 GeV'
+legend['HNL_4e-10_60gev'] = 'U^{2}=4e-10, M_{N}=60 GeV'
+legend['HNL_4e-10_90gev'] = 'U^{2}=4e-10, M_{N}=90 GeV'
+legend['HNL_4e-10_110gev'] = 'U^{2}=4e-10, M_{N}=110 GeV'
+legend['HNL_4e-10_120gev'] = 'U^{2}=4e-10, M_{N}=120 GeV'
 legend['HNL_4e-12_50gev'] = 'U^{2}=4e-12, M_{N}=50 GeV'
 legend['HNL_6.67e-8_60gev'] = 'U^{2}=6.67e-8, M_{N}=60 GeV'
 legend['HNL_4e-8_60gev'] = 'U^{2}=4e-8, M_{N}=60 GeV'
