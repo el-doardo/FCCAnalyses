@@ -12,7 +12,7 @@ delphesVersion = '3.4.2'
 energy         = 125
 collider       = 'FCC-ee'
 inputDir       = '/eos/user/e/espoto/H_pole/FCCAnalyses/reco/final_reco/'
-outdir         = '/eos/user/e/espoto/H_pole/FCCAnalyses/reco/plots_reco/HNL_3.17e-11/'
+outdir         = '/eos/user/e/espoto/H_pole/FCCAnalyses/reco/plots_reco/HNL_60gev/'
 formats        = ['png']
 #formats        = ['pdf']
 #yaxis          = ['lin','log']
@@ -287,12 +287,12 @@ extralabel['sel2RecoDF_vetoes_tracks_M80_5MEpt_0.8cos']="Two different flavor le
 
 colors = {}
 
-colors['HNL_3.17e-11_30gev'] = ROOT.kCyan-7 ## ## modificato da me
-colors['HNL_3.17e-11_60gev'] = ROOT.kAzure+5
-colors['HNL_3.17e-11_90gev'] = ROOT.kBlue-7
-colors['HNL_3.17e-11_110gev'] = ROOT.kOrange-2
-colors['HNL_3.17e-11_120gev'] = ROOT.kOrange+8
-colors['HNL_4e-12_50gev'] = ROOT.kBlue-4
+colors['HNL_1.04e-8_60gev'] = ROOT.kCyan-7 ## ## modificato da me
+colors['HNL_4e-10_60gev'] = ROOT.kAzure+5
+colors['HNL_6.67e-10_60gev'] = ROOT.kBlue-7
+colors['HNL_8.35e-9_60gev'] = ROOT.kOrange-2
+colors['HNL_2.27e-9_60gevgev'] = ROOT.kOrange+8
+colors['HNL_3.17e-11_60gev'] = ROOT.kBlue-4
 colors['HNL_6.67e-8_60gev'] = ROOT.kRed-4
 colors['HNL_4e-8_60gev'] = ROOT.kBlue-4
 colors['HNL_2.86e-9_70gev'] = ROOT.kRed+2
@@ -329,40 +329,40 @@ plots = {}
 plots['HNL'] = {'signal':{
 	
                     #"HNL_1.04e-8_30gev":['HNL_1.04e-8_30gev'],
-					#"HNL_1.04e-8_60gev":['HNL_1.04e-8_60gev'],
+					"HNL_1.04e-8_60gev":['HNL_1.04e-8_60gev'],
 					#"HNL_1.04e-8_90gev":['HNL_1.04e-8_90gev'],
 					#"HNL_1.04e-8_110gev":['HNL_1.04e-8_110gev'],
 					#"HNL_1.04e-8_120gev":['HNL_1.04e-8_120gev'],
 	
 					#"HNL_4e-10_30gev":['HNL_4e-10_30gev'],
-					#"HNL_4e-10_60gev":['HNL_4e-10_60gev'],
+					"HNL_4e-10_60gev":['HNL_4e-10_60gev'],
 					#"HNL_4e-10_90gev":['HNL_4e-10_90gev'],
 					#"HNL_4e-10_110gev":['HNL_4e-10_110gev'],
 					#"HNL_4e-10_120gev":['HNL_4e-10_120gev'],
 	
 					#"HNL_6.67e-10_30gev":['HNL_6.67e-10_30gev'],
-					#"HNL_6.67e-10_60gev":['HNL_6.67e-10_60gev'],
+					"HNL_6.67e-10_60gev":['HNL_6.67e-10_60gev'],
 					#"HNL_6.67e-10_90gev":['HNL_6.67e-10_90gev'],
 					#"HNL_6.67e-10_110gev":['HNL_6.67e-10_110gev'],
 					#"HNL_6.67e-10_120gev":['HNL_6.67e-10_120gev'],
 
 					#"HNL_8.35e-9_30gev":['HNL_8.35e-9_30gev'],
-					#"HNL_8.35e-9_60gev":['HNL_8.35e-9_60gev'],
+					"HNL_8.35e-9_60gev":['HNL_8.35e-9_60gev'],
 					#"HNL_8.35e-9_90gev":['HNL_8.35e-9_90gev'],
 					#"HNL_8.35e-9_110gev":['HNL_8.35e-9_110gev'],
 					#"HNL_8.35e-9_120gev":['HNL_8.35e-9_120gev'],
 		
 					#"HNL_2.27e-9_30gev":['HNL_2.27e-9_30gev'],
-					#"HNL_2.27e-9_60gev":['HNL_2.27e-9_60gev'],
+					"HNL_2.27e-9_60gev":['HNL_2.27e-9_60gev'],
 					#"HNL_2.27e-9_90gev":['HNL_2.27e-9_90gev'],
 					#"HNL_2.27e-9_110gev":['HNL_2.27e-9_110gev'],
 					#"HNL_2.27e-9_120gev":['HNL_2.27e-9_120gev'],
 
-					"HNL_3.17e-11_30gev":['HNL_3.17e-11_30gev'],
+					#"HNL_3.17e-11_30gev":['HNL_3.17e-11_30gev'],
 					"HNL_3.17e-11_60gev":['HNL_3.17e-11_60gev'],
-					"HNL_3.17e-11_90gev":['HNL_3.17e-11_90gev'],
-					"HNL_3.17e-11_110gev":['HNL_3.17e-11_110gev'],
-					"HNL_3.17e-11_120gev":['HNL_3.17e-11_120gev'],
+					#"HNL_3.17e-11_90gev":['HNL_3.17e-11_90gev'],
+					#"HNL_3.17e-11_110gev":['HNL_3.17e-11_110gev'],
+					#"HNL_3.17e-11_120gev":['HNL_3.17e-11_120gev'],
                 },
                 'backgrounds':{
 
@@ -379,12 +379,12 @@ plots['HNL'] = {'signal':{
 
 legend = {}
 
-legend['HNL_3.17e-11_30gev'] = 'U^{2}=3.17e-11, M_{N}=30 GeV'
+legend['HNL_1.04e-8_60gev'] = 'U^{2}=1.04e-8, M_{N}=60 GeV'
+legend['HNL_4e-10_60gev'] = 'U^{2}=4e-10, M_{N}=60 GeV'
+legend['HNL_6.67e-10_60gev'] = 'U^{2}=6.67e-10, M_{N}=60 GeV'
+legend['HNL_8.35e-9_60gev'] = 'U^{2}=8.35e-9, M_{N}=60 GeV'
+legend['HNL_2.27e-9_60gev'] = 'U^{2}=2.27e-9, M_{N}=60 GeV'
 legend['HNL_3.17e-11_60gev'] = 'U^{2}=3.17e-11, M_{N}=60 GeV'
-legend['HNL_3.17e-11_90gev'] = 'U^{2}=3.17e-11, M_{N}=90 GeV'
-legend['HNL_3.17e-11_110gev'] = 'U^{2}=3.17e-11, M_{N}=110 GeV'
-legend['HNL_3.17e-11_120gev'] = 'U^{2}=3.17e-11, M_{N}=120 GeV'
-legend['HNL_4e-12_50gev'] = 'U^{2}=4e-12, M_{N}=50 GeV'
 legend['HNL_6.67e-8_60gev'] = 'U^{2}=6.67e-8, M_{N}=60 GeV'
 legend['HNL_4e-8_60gev'] = 'U^{2}=4e-8, M_{N}=60 GeV'
 legend['HNL_2.86e-9_70gev'] = 'U^{2}=2.86e-9, M_{N}=70 GeV'
