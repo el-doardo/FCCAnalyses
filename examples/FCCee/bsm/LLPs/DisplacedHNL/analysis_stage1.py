@@ -998,7 +998,7 @@ class RDFanalysis():
 
                         "GenParticles_PID",
 
-                        #"n_GenTaus",
+                        "n_GenTaus",
                         #"n_GenPions",
                         #"n_GenKLs",
                         #"n_GenKpluss",
