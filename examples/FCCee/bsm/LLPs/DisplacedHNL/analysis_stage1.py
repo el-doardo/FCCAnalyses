@@ -980,7 +980,7 @@ class RDFanalysis():
 		.Define("RecoMissingEnergy_phi", "ReconstructedParticle::get_phi(MissingET)") #angle of RecoMissingEnergy
 
                 # different definition of missing energy from fccanalysis classes instead of edm4hep
-                .Define("RecoEmiss", "FCCAnalyses::ZHfunctions::missingEnergy(91.188, ReconstructedParticles)") #ecm 
+                .Define("RecoEmiss", "FCCAnalyses::ZHfunctions::missingEnergy(125, ReconstructedParticles)") #ecm 
                 .Define("RecoEmiss_px",  "RecoEmiss[0].momentum.x")
                 .Define("RecoEmiss_py",  "RecoEmiss[0].momentum.y")
                 .Define("RecoEmiss_pz",  "RecoEmiss[0].momentum.z")
