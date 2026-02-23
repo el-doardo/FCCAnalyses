@@ -386,21 +386,21 @@ plots['HNL'] = {'signal':{
                 },
                 'backgrounds':{
 
-					'Htautau':['wzp6_ee_Htautau_ecm125'],
-					'tautau':['wzp6_ee_tautau_ecm125'],
-					'Hllnunu':['wzp6_ee_Hllnunu_ecm125'],
-					'l1l2nunu':['wzp6_ee_l1l2nunu_ecm125'],
-					'tautaununu':['wzp6_ee_tautaununu_ecm125'],
-					'eenunu':['wzp6_ee_eenunu_ecm125'],
-					'mumununu':['wzp6_ee_mumununu_ecm125'],
+					#'Htautau':['wzp6_ee_Htautau_ecm125'],
+					#'tautau':['wzp6_ee_tautau_ecm125'],
+					#'Hllnunu':['wzp6_ee_Hllnunu_ecm125'],
+					#'l1l2nunu':['wzp6_ee_l1l2nunu_ecm125'],
+					#'tautaununu':['wzp6_ee_tautaununu_ecm125'],
+					#'eenunu':['wzp6_ee_eenunu_ecm125'],
+					#'mumununu':['wzp6_ee_mumununu_ecm125'],
 
 					## ## plots aggiuntivi
 
-					#'1':['wzp6_ee_eeqq_ecm125'],
-					#'2':['wzp6_ee_qq_ecm125'],
-					#'3':['wzp6_ee_mumuqq_ecm125'],
-					#'4':['wzp6_ee_tautauqq_ecm125'],
-					#'5':['wzp6_ee_enueqq_ecm125'],
+					'1':['wzp6_ee_eeqq_ecm125'],
+					'2':['wzp6_ee_qq_ecm125'],
+					'3':['wzp6_ee_mumuqq_ecm125'],
+					'4':['wzp6_ee_tautauqq_ecm125'],
+					'5':['wzp6_ee_enueqq_ecm125'],
 					#'6':['wzp6_ee_taunutauqq_ecm125'],
 					#'7':['wzp6_ee_munumuqq_ecm125'],
 					#'8':['p8_ee_ZZ_4tau_ecm125'],
