@@ -11,13 +11,13 @@ processList = {
         #'p8_ee_Zud_ecm91':{'fraction':0.001},
         #'p8_ee_Zss_ecm91':{'fraction':0.001},
 
-		'wzp6_ee_Htautau_ecm125':{'fraction':0.5},
-		'wzp6_ee_tautau_ecm125':{'fraction':0.5},
-		'wzp6_ee_Hllnunu_ecm125':{'fraction':0.5}, #
-		'wzp6_ee_l1l2nunu_ecm125':{'fraction':0.05},
-		'wzp6_ee_tautaununu_ecm125':{'fraction':0.5},
-		'wzp6_ee_eenunu_ecm125':{'fraction':0.05},
-		'wzp6_ee_mumununu_ecm125':{'fraction':0.05},
+		#'wzp6_ee_Htautau_ecm125':{'fraction':0.05},
+		#'wzp6_ee_tautau_ecm125':{'fraction':0.05},
+		#'wzp6_ee_Hllnunu_ecm125':{'fraction':0.05}, #
+		#'wzp6_ee_l1l2nunu_ecm125':{'fraction':0.05},
+		#'wzp6_ee_tautaununu_ecm125':{'fraction':0.05},
+		#'wzp6_ee_eenunu_ecm125':{'fraction':0.05},
+		#'wzp6_ee_mumununu_ecm125':{'fraction':0.05},
 		#'p8_ee_Z_Ztautau_ecm125':{'fraction':0.05}, #cross section: 26  # Error with this line: "Can't find the YAML file with process info for process "p8_ee_Z_Ztautau_ecm125"!"
 		#'p8_ee_Z_Zqq_ecm125':{'fraction':0.05}, #cross section: 237 	# Error with this line: "Can't find the YAML file with process info for process "p8_ee_Z_Ztautau_ecm125"!"
 
@@ -490,13 +490,13 @@ processList_ = {
 #Production tag. This points to the yaml files for getting sample statistics
 #Mandatory when running over EDM4Hep centrally produced events
 #Comment out when running over privately produced events
-prodTag     = "FCCee/winter2023/IDEA/"
+#prodTag     = "FCCee/winter2023/IDEA/"
 
 #Input directory
 #Comment out when running over centrally produced events
 #Mandatory when running over privately produced events
 #inputDir = "/eos/experiment/fcc/ee/generation/DelphesEvents/winter2023/IDEA/"
-#inputDir = "/eos/user/e/espoto/H_pole/HNL_signals"
+inputDir = "/eos/user/e/espoto/H_pole/HNL_signals"
 
 # additional/costom C++ functions, defined in header files (optional)
 includePaths = ["functions.h"]
