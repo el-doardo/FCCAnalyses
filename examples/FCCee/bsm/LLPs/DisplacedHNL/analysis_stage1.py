@@ -818,6 +818,10 @@ class RDFanalysis():
                 .Define("RecoMuonTrack_D0cov", "ReconstructedParticle2Track::getRP2TRK_D0_cov(RecoMuons,EFlowTrack_1)") #variance (not sigma)
                 .Define("RecoMuonTrack_Z0cov", "ReconstructedParticle2Track::getRP2TRK_Z0_cov(RecoMuons,EFlowTrack_1)")
 
+			## ## TAUS
+
+			.Define("n_RecoTaus",  "ReconstructedParticle::get_n(RecoTaus)") #count how many tauss are in the event in total
+
                 ### building variables for the two leptons final state ###
                 .Define("RecoLeptons", "ReconstructedParticle::merge(RecoElectrons, RecoMuons)")
                 .Define("n_RecoLeptons",  "ReconstructedParticle::get_n(RecoLeptons)") 
@@ -1141,6 +1145,7 @@ class RDFanalysis():
                         "n_RecoElectrons",
                         "n_RecoMuons",
                         "n_RecoLeptons",
+						"n_RecoTaus", ## ## is this gonna work?
 
                         #"RecoJet_e",
                         #"RecoJet_p",
