@@ -3,13 +3,6 @@ import ROOT
 #Mandatory: List of processes
 
 processList = {
-        #'p8_ee_Zee_ecm91':{'fraction':0.001},
-        #'p8_ee_Zmumu_ecm91':{'fraction':0.001},
-        #'p8_ee_Ztautau_ecm91':{'fraction':0.001},
-        #'p8_ee_Zbb_ecm91':{'fraction':0.001},
-        #'p8_ee_Zcc_ecm91':{'fraction':0.001},
-        #'p8_ee_Zud_ecm91':{'fraction':0.001},
-        #'p8_ee_Zss_ecm91':{'fraction':0.001},
 
 		#'wzp6_ee_Htautau_ecm125':{'fraction':0.05},
 		#'wzp6_ee_tautau_ecm125':{'fraction':0.05},
