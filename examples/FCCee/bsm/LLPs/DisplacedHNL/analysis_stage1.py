@@ -29,7 +29,7 @@ processList = {
 		'wzp6_ee_enueqq_ecm125':{'fraction':0.5},
 		'wzp6_ee_taunutauqq_ecm125':{'fraction':0.5},
 		'wzp6_ee_munumuqq_ecm125':{'fraction':0.5},
-		'p8_ee_ZZ_4tau_ecm125':{'fraction':0.5},
+		'p8_ee_ZZ_4tau_ecm125':{'fraction':0.01},
 		'wzp6_ee_Hbb_ecm125':{'fraction':0.5},
 		'wzp6_ee_Hgg_ecm125':{'fraction':0.5},
 		'wzp6_ee_Hlnuqq_ecm125':{'fraction':0.5},
