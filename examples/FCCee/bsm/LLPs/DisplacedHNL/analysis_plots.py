@@ -308,15 +308,32 @@ colors['HNL'] = ROOT.kWhite
 #colors['HNL_6.67e-8_60gev'] = ROOT.kRed-4
 
 
-colors['Htautau'] = 48
-colors['tautau'] = 44
-colors['Hllnunu'] = 41
-colors['Ztautau'] = 34
-colors['l1l2nunu'] = 29
-colors['tautaununu'] = 32
-colors['eenunu'] = 20
-colors['mumununu'] = 40
-colors['tatanunu_m'] = 38
+colors['Htautau'] = 12 #48
+colors['tautau'] = 15 #44
+colors['Hllnunu'] = 18 #41
+colors['Ztautau'] = 21 #34
+colors['l1l2nunu'] = 24 #29
+colors['tautaununu'] = 27 #32
+colors['eenunu'] = 30 #20
+colors['mumununu'] = 33 #40
+colors['tatanunu_m'] = 36 #38
+colors['1'] = 39
+colors['2'] = 42
+colors['3'] = 45
+colors['4'] = 48
+colors['5'] = 51
+colors['6'] = 54
+colors['7'] = 57
+colors['8'] = 60
+colors['9'] = 63
+colors['10'] = 66
+colors['11'] = 69
+colors['12'] = 72
+colors['13'] = 75
+colors['14'] = 78
+colors['15'] = 81
+colors['16'] = 84
+
 
 #colors['Zbb'] = ROOT.kRed-4
 #colors['Zcc'] = ROOT.kOrange-3
@@ -374,6 +391,27 @@ plots['HNL'] = {'signal':{
 					'tautaununu':['wzp6_ee_tautaununu_ecm125'],
 					'eenunu':['wzp6_ee_eenunu_ecm125'],
 					'mumununu':['wzp6_ee_mumununu_ecm125'],
+
+					## ## plots aggiuntivi
+
+					'1':['wzp6_ee_eeqq_ecm125'],
+					'2':['wzp6_ee_qq_ecm125'],
+					'3':['wzp6_ee_mumuqq_ecm125'],
+					'4':['wzp6_ee_tautauqq_ecm125'],
+					'5':['wzp6_ee_enueqq_ecm125'],
+					'6':['wzp6_ee_taunutauqq_ecm125'],
+					'7':['wzp6_ee_munumuqq_ecm125'],
+					'8':['p8_ee_ZZ_4tau_ecm125'],
+					'9':['wzp6_ee_Hbb_ecm125'],
+					'10':['wzp6_ee_Hgg_ecm125'],
+					'11':['wzp6_ee_Hlnuqq_ecm125'],
+					'12':['wzp6_ee_Hqqlnu_ecm125'],
+					'13':['wzp6_ee_Hqqenue_ecm125'],
+					'14':['wzp6_ee_Hqqmunumu_ecm125'],
+					'15':['wzp6_ee_Hqqtaunutau_ecm125'],
+					'16':['wzp6_ee_Hmunumuqq_ecm125'],
+					'17':['wzp6_ee_Henueqq_ecm125'],
+					'18':['wzp6_ee_Htaunutauqq_ecm125'],
 					
                 },
                 }
@@ -403,3 +441,19 @@ legend['mumununu'] = 'mumununu'
 legend['emununu'] = 'e#mu#nu#nu'
 legend['llnunu_m'] = 'll#nu#nu'
 legend['tatanunu_m'] = '#tau#tau#nu#nu'
+legend['1'] = '1'
+legend['2'] = '2'
+legend['3'] = '3'
+legend['4'] = '4'
+legend['5'] = '5'
+legend['6'] = '6'
+legend['7'] = '7'
+legend['8'] = '8'
+legend['9'] = '9'
+legend['10'] = '10'
+legend['11'] = '11'
+legend['12'] = '12'
+legend['13'] = '13'
+legend['14'] = '14'
+legend['15'] = '15'
+legend['16'] = '16'
