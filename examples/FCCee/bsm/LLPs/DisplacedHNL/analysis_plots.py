@@ -333,6 +333,8 @@ colors['13'] = 75
 colors['14'] = 78
 colors['15'] = 81
 colors['16'] = 84
+colors['17'] = 87
+colors['18'] = 90
 
 
 #colors['Zbb'] = ROOT.kRed-4
@@ -457,3 +459,5 @@ legend['13'] = '13'
 legend['14'] = '14'
 legend['15'] = '15'
 legend['16'] = '16'
+legend['17'] = '17'
+legend['18'] = '18'
