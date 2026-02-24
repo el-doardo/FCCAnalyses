@@ -23,35 +23,35 @@ processList = {
     #run over the full statistics from stage1
 
     #backgrounds
-    'wzp6_ee_Htautau_ecm125':{},
-	'wzp6_ee_tautau_ecm125':{},
-	'wzp6_ee_Hllnunu_ecm125':{}, #cross section: 0.00003187
-	'wzp6_ee_l1l2nunu_ecm125':{}, #cross section: 0.009845
-	'wzp6_ee_tautaununu_ecm125':{}, #cross section: 0.04265
-	'wzp6_ee_eenunu_ecm125':{}, #cross section: 0.6574
-	'wzp6_ee_mumununu_ecm125':{}, #cross section: 0.2202
+    #'wzp6_ee_Htautau_ecm125':{},
+	#'wzp6_ee_tautau_ecm125':{},
+	#'wzp6_ee_Hllnunu_ecm125':{}, #cross section: 0.00003187
+	#'wzp6_ee_l1l2nunu_ecm125':{}, #cross section: 0.009845
+	#'wzp6_ee_tautaununu_ecm125':{}, #cross section: 0.04265
+	#'wzp6_ee_eenunu_ecm125':{}, #cross section: 0.6574
+	#'wzp6_ee_mumununu_ecm125':{}, #cross section: 0.2202
 	#'p8_ee_Z_Ztautau_ecm125':{}, #cross section: 26  # Error with this line: "Can't find the YAML file with process info for process "p8_ee_Z_Ztautau_ecm125"!"
 	#'p8_ee_Z_Zqq_ecm125':{}, #cross section: 237 	# Error with this line: "Can't find the YAML file with process info for process "p8_ee_Z_Ztautau_ecm125"!"
 
 	## ## selezione per provarli tutti
-		'wzp6_ee_eeqq_ecm125':{},
-		'wzp6_ee_qq_ecm125':{},
-		'wzp6_ee_mumuqq_ecm125':{},
-		'wzp6_ee_tautauqq_ecm125':{},
-		'wzp6_ee_enueqq_ecm125':{},
-		'wzp6_ee_taunutauqq_ecm125':{},
-		'wzp6_ee_munumuqq_ecm125':{},
-		'p8_ee_ZZ_4tau_ecm125':{},
-		'wzp6_ee_Hbb_ecm125':{},
+		#'wzp6_ee_eeqq_ecm125':{},
+		#'wzp6_ee_qq_ecm125':{},
+		#'wzp6_ee_mumuqq_ecm125':{},
+		#'wzp6_ee_tautauqq_ecm125':{},
+		#'wzp6_ee_enueqq_ecm125':{},
+		#'wzp6_ee_taunutauqq_ecm125':{},
+		#'wzp6_ee_munumuqq_ecm125':{},
+		#'p8_ee_ZZ_4tau_ecm125':{},
+		#'wzp6_ee_Hbb_ecm125':{},
 		'wzp6_ee_Hgg_ecm125':{},
-		'wzp6_ee_Hlnuqq_ecm125':{},
-		'wzp6_ee_Hqqlnu_ecm125':{},
-		'wzp6_ee_Hqqenue_ecm125':{},
-		'wzp6_ee_Hqqmunumu_ecm125':{},
-		'wzp6_ee_Hqqtaunutau_ecm125':{},
-		'wzp6_ee_Hmunumuqq_ecm125':{},
-		'wzp6_ee_Henueqq_ecm125':{},
-		'wzp6_ee_Htaunutauqq_ecm125':{},
+		#'wzp6_ee_Hlnuqq_ecm125':{},
+		#'wzp6_ee_Hqqlnu_ecm125':{},
+		#'wzp6_ee_Hqqenue_ecm125':{},
+		#'wzp6_ee_Hqqmunumu_ecm125':{},
+		#'wzp6_ee_Hqqtaunutau_ecm125':{},
+		#'wzp6_ee_Hmunumuqq_ecm125':{},
+		#'wzp6_ee_Henueqq_ecm125':{},
+		#'wzp6_ee_Htaunutauqq_ecm125':{},
 
         
     ### privately produced backgrounds ###
@@ -61,35 +61,35 @@ processList = {
     #'llnunu_m':{},
 
   ## ##
-    "HNL_1.04e-8_30gev":{},
-	"HNL_1.04e-8_60gev":{},
-	"HNL_1.04e-8_90gev":{},
-	"HNL_1.04e-8_110gev":{},
-	"HNL_1.04e-8_120gev":{},
+    #"HNL_1.04e-8_30gev":{},
+	#"HNL_1.04e-8_60gev":{},
+	#"HNL_1.04e-8_90gev":{},
+	#"HNL_1.04e-8_110gev":{},
+	#"HNL_1.04e-8_120gev":{},
 	
-	"HNL_4e-10_30gev":{},
-	"HNL_4e-10_60gev":{},
-	"HNL_4e-10_90gev":{},
-	"HNL_4e-10_110gev":{},
-	"HNL_4e-10_120gev":{},
+	#"HNL_4e-10_30gev":{},
+	#"HNL_4e-10_60gev":{},
+	#"HNL_4e-10_90gev":{},
+	#"HNL_4e-10_110gev":{},
+	#"HNL_4e-10_120gev":{},
 	
-	"HNL_6.67e-10_30gev":{},
-	"HNL_6.67e-10_60gev":{},
-	"HNL_6.67e-10_90gev":{},
-	"HNL_6.67e-10_110gev":{},
-	"HNL_6.67e-10_120gev":{},
+	#"HNL_6.67e-10_30gev":{},
+	#"HNL_6.67e-10_60gev":{},
+	#"HNL_6.67e-10_90gev":{},
+	#"HNL_6.67e-10_110gev":{},
+	#"HNL_6.67e-10_120gev":{},
 
-	"HNL_8.35e-9_30gev":{},
-	"HNL_8.35e-9_60gev":{},
-	"HNL_8.35e-9_90gev":{},
-	"HNL_8.35e-9_110gev":{},
-	"HNL_8.35e-9_120gev":{},
+	#"HNL_8.35e-9_30gev":{},
+	#"HNL_8.35e-9_60gev":{},
+	#"HNL_8.35e-9_90gev":{},
+	#"HNL_8.35e-9_110gev":{},
+	#"HNL_8.35e-9_120gev":{},
 		
-	"HNL_2.27e-9_30gev":{},
-	"HNL_2.27e-9_60gev":{},
-	"HNL_2.27e-9_90gev":{},
-	"HNL_2.27e-9_110gev":{},
-	"HNL_2.27e-9_120gev":{},
+	#"HNL_2.27e-9_30gev":{},
+	#"HNL_2.27e-9_60gev":{},
+	#"HNL_2.27e-9_90gev":{},
+	#"HNL_2.27e-9_110gev":{},
+	#"HNL_2.27e-9_120gev":{},
 
 	"HNL_3.17e-11_30gev":{},
 	"HNL_3.17e-11_60gev":{},
