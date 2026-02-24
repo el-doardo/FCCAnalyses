@@ -24,7 +24,7 @@ processList = {
 		#'wzp6_ee_munumuqq_ecm125':{'fraction':0.05},
 		#'p8_ee_ZZ_4tau_ecm125':{'fraction':0.01},
 		#'wzp6_ee_Hbb_ecm125':{'fraction':0.05},
-		#'wzp6_ee_Hgg_ecm125':{'fraction':0.05},
+		'wzp6_ee_Hgg_ecm125':{'fraction':0.5},
 		#'wzp6_ee_Hlnuqq_ecm125':{'fraction':0.05},
 		#'wzp6_ee_Hqqlnu_ecm125':{'fraction':0.05},
 		#'wzp6_ee_Hqqenue_ecm125':{'fraction':0.05},
@@ -37,7 +37,14 @@ processList = {
 
 	## ##
 	
-		"HNL_1.04e-8_30gev":{},
+		
+}
+
+processList_ = {
+
+		## ## signals for 125GeV
+
+        "HNL_1.04e-8_30gev":{},
 		"HNL_1.04e-8_60gev":{},
 		"HNL_1.04e-8_90gev":{},
 		"HNL_1.04e-8_110gev":{},
@@ -72,18 +79,6 @@ processList = {
 		"HNL_3.17e-11_90gev":{},
 		"HNL_3.17e-11_110gev":{},
 		"HNL_3.17e-11_120gev":{},
-}
-
-processList_ = {
-
-        #centrally-produced backgrounds
-        #'p8_ee_Zee_ecm91':{'chunks':100},
-        #'p8_ee_Zmumu_ecm91':{'chunks':100},
-        #'p8_ee_Ztautau_ecm91':{'chunks':100},
-        #'p8_ee_Zbb_ecm91':{'chunks':100},
-        #'p8_ee_Zcc_ecm91':{'chunks':100},
-        #'p8_ee_Zud_ecm91':{'chunks':100},
-        #'p8_ee_Zss_ecm91':{'chunks':100},
 
         'eenunu_m':{},
         'mumununu_m':{},
@@ -483,13 +478,13 @@ processList_ = {
 #Production tag. This points to the yaml files for getting sample statistics
 #Mandatory when running over EDM4Hep centrally produced events
 #Comment out when running over privately produced events
-#prodTag     = "FCCee/winter2023/IDEA/"
+prodTag     = "FCCee/winter2023/IDEA/"
 
 #Input directory
 #Comment out when running over centrally produced events
 #Mandatory when running over privately produced events
 #inputDir = "/eos/experiment/fcc/ee/generation/DelphesEvents/winter2023/IDEA/"
-inputDir = "/eos/user/e/espoto/H_pole/HNL_signals"
+#inputDir = "/eos/user/e/espoto/H_pole/HNL_signals"
 
 # additional/costom C++ functions, defined in header files (optional)
 includePaths = ["functions.h"]
