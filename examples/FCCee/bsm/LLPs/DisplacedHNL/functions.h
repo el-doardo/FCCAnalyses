@@ -322,7 +322,17 @@ float sum_e(ROOT::VecOps::RVec<float> e) {
     }
     return result;
 }
- 
+
+//funzione per cercare il muone con energia massima nell'array
+//float get_max_muon_e(const ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData>& mu) {
+//    float result = 0.0;
+//   for (size_t i = 0; i < mu.size(); ++i) {
+//        if (mu[i].energy > result) {
+//            result = mu[i].energy;
+//        }
+//    }
+//    return result;
+//}
 
 }}
 
