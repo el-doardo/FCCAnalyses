@@ -357,6 +357,51 @@ leading_muon(const ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData>& mu) {
     return result;
 }
 
+//funzione per estrarre particella con pt più alto
+ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> get_leading_pt(ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> x) {
+    std::vector<edm4hep::ReconstructedParticleData> result; //use a vector even if it is one element so it's compatible with the other functions
+    std::vector<float> momentum;
+
+    for (size_t i = 0; i < x.size(); ++i) {
+        float px1 = x.at(i).momentum.x;
+        float py1 = x.at(i).momentum.y;
+        momentum.emplace_back(std::sqrt(px1* px1 + py1*py1));
+        }
+
+    auto maxp = std::max_element(momentum.begin(), momentum.end());
+    int maxp_index = std::distance(momentum.begin(), maxp); //index corresponding to the reconstructed particle class
+    result.emplace_back(x.at(maxp_index));
+    return ROOT::VecOps::RVec(result);
+}
+
+// Jet trovati come nel paper
+#include "FCCAnalyses/JetCluster.h"
+#include "edm4hep/ReconstructedParticleData.h"
+#include <ROOT/RVec.hxx>
+
+RVec<fastjet::PseudoJet> cluster_jets(RVec<edm4hep::ReconstructedParticleData> particles_no_leading) {
+
+    RVec<fastjet::PseudoJet> jets;
+
+    // --- Step 1: Inclusive clustering con ycut equivalente a 5 GeV ---
+    // In FCCAnalyses Stage1, inclusive con cut (ptmin o ycut)
+    float ycut = 5.0; // taglio 5 GeV
+    jets = JetCluster::Cluster(particles_no_leading,
+                               JetCluster::JetAlgorithm::ee_kt,
+                               JetCluster::ClusteringType::inclusive,
+                               ycut);
+
+    // --- Step 2: se il numero di jet > 2, passo a exclusive ---
+    if (jets.size() > 2) {
+        jets = JetCluster::Cluster(particles_no_leading,
+                                   JetCluster::JetAlgorithm::ee_kt,
+                                   JetCluster::ClusteringType::exclusive,
+                                   2);  // numero di jet fissato
+    }
+
+    return jets;
+}
+
 }}
 
 #endif
