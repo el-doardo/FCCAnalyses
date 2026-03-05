@@ -830,12 +830,17 @@ class RDFanalysis():
                 ### angular distance between two leptons ###
                 .Define("Reco_DR","if (n_RecoLeptons>1) return myUtils::deltaR(Reco_phi.at(0), Reco_phi.at(1), Reco_eta.at(0), Reco_eta.at(1)); else return float(-1.);")
 
-				## ## prova con i jet
+				## ## prova con i jet in cui tolgo il muone più energetico
 				#.Define("max_muon_e", "FCCAnalyses::ZHfunctions::get_max_muon_e(RecoMuons)")
+				.Define("LeadingMuon", "ReconstructedParticle::get_leading_pt(RecoMuons)")
+				#.Define("ParticlesNoLeadingMuon", "ReconstructedParticle::remove(ReconstructedParticles, LeadingMuon)")
+				#.Define("jets","FCCAnalyses::ZHfunctions::cluster_jets(ParticlesNoLeadingMuon)")
 
+				
                 ### Jet clustering with different algorithm, only on non leptons ###
                 ### https://github.com/HEP-FCC/FCCAnalyses/blob/master/addons/FastJet/JetClustering.h ###
-                .Define("JetsParticles", "ReconstructedParticle::remove(ReconstructedParticles, RecoLeptons)")
+                .Define("JetsParticles", "ReconstructedParticle::remove(ReconstructedParticles, RecoLeptons)") ## lo modifico qua sotto
+				.Define("JetsParticles", "ReconstructedParticle::remove(ReconstructedParticles, LeadingMuon)")
                 .Define("RP_px", "ReconstructedParticle::get_px(JetsParticles) ")
                 .Define("RP_py", "ReconstructedParticle::get_py(JetsParticles) ")
                 .Define("RP_pz", "ReconstructedParticle::get_pz(JetsParticles) ")
@@ -843,7 +848,7 @@ class RDFanalysis():
                 # build pseudo jets with the RP, using the interface that takes px,py,pz,E
                 .Define("pseudo_jets",  "JetClusteringUtils::set_pseudoJets(RP_px, RP_py, RP_pz, RP_e)" )
                 ### Durham algo, exclusive clustering (first number 2) N_jets=0 (second number), E-scheme=0 (third and forth numbers) ###
-                .Define( "FCCAnalysesJets_ee_kt",  "JetClustering::clustering_ee_kt(2, 0, 1, 0)(pseudo_jets)" )
+                .Define( "FCCAnalysesJets_ee_kt",  "JetClustering::clustering_ee_kt(2, 2, 1, 0)(pseudo_jets)" )
                 .Define("jets_ee_kt",  "JetClusteringUtils::get_pseudoJets( FCCAnalysesJets_ee_kt )")
                 ### get the number of jets in a workaround way, anyway is exactly zero for exclusive clustering ###
                 .Define("jets_e",  "JetClusteringUtils::get_e(jets_ee_kt)")
