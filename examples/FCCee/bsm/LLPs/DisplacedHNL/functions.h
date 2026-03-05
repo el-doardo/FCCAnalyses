@@ -334,6 +334,29 @@ float sum_e(ROOT::VecOps::RVec<float> e) {
 //    return result;
 //}
 
+
+// funzione per estrarre il muone più energetico
+ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData>
+leading_muon(const ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData>& mu) {
+
+    ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> result;
+
+    if (mu.size() == 0) return result;
+
+    int idx_max = 0;
+    float maxE = mu[0].energy;
+
+    for (size_t i = 1; i < mu.size(); ++i) {
+        if (mu[i].energy > maxE) {
+            maxE = mu[i].energy;
+            idx_max = i;
+        }
+    }
+
+    result.push_back(mu[idx_max]);
+    return result;
+}
+
 }}
 
 #endif
