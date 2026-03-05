@@ -833,7 +833,7 @@ class RDFanalysis():
 
 				## ## prova con i jet in cui tolgo il muone più energetico
 				#.Define("max_muon_e", "FCCAnalyses::ZHfunctions::get_max_muon_e(RecoMuons)")
-				.Define("LeadingMuon", "ReconstructedParticle::get_leading_pt(RecoMuons)")
+				.Define("LeadingMuon", "FCCAnalyses::ZHfunctions::get_leading_pt(RecoMuons)")
 				#.Define("ParticlesNoLeadingMuon", "ReconstructedParticle::remove(ReconstructedParticles, LeadingMuon)")
 				#.Define("jets","FCCAnalyses::ZHfunctions::cluster_jets(ParticlesNoLeadingMuon)")
 
