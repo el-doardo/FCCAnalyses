@@ -374,31 +374,6 @@ ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> get_leading_pt(ROOT::VecO
     return ROOT::VecOps::RVec(result);
 }
 
-// Jet trovati come nel paper
-
-RVec<fastjet::PseudoJet> cluster_jets(RVec<edm4hep::ReconstructedParticleData> particles_no_leading) {
-
-    RVec<fastjet::PseudoJet> jets;
-
-    // --- Step 1: Inclusive clustering con ycut equivalente a 5 GeV ---
-    // In FCCAnalyses Stage1, inclusive con cut (ptmin o ycut)
-    float ycut = 5.0; // taglio 5 GeV
-    jets = JetCluster::Cluster(particles_no_leading,
-                               JetCluster::JetAlgorithm::ee_kt,
-                               JetCluster::ClusteringType::inclusive,
-                               ycut);
-
-    // --- Step 2: se il numero di jet > 2, passo a exclusive ---
-    if (jets.size() > 2) {
-        jets = JetCluster::Cluster(particles_no_leading,
-                                   JetCluster::JetAlgorithm::ee_kt,
-                                   JetCluster::ClusteringType::exclusive,
-                                   2);  // numero di jet fissato
-    }
-
-    return jets;
-}
-
 }}
 
 #endif
