@@ -840,7 +840,7 @@ class RDFanalysis():
 				
                 ### Jet clustering with different algorithm, only on non leptons ###
                 ### https://github.com/HEP-FCC/FCCAnalyses/blob/master/addons/FastJet/JetClustering.h ###
-                .Define("JetsParticles", "ReconstructedParticle::remove(ReconstructedParticles, RecoLeptons)") ## lo modifico qua sotto
+                #.Define("JetsParticles", "ReconstructedParticle::remove(ReconstructedParticles, RecoLeptons)") ## lo modifico qua sotto
 				.Define("JetsParticles", "ReconstructedParticle::remove(ReconstructedParticles, LeadingMuon)")
                 .Define("RP_px", "ReconstructedParticle::get_px(JetsParticles) ")
                 .Define("RP_py", "ReconstructedParticle::get_py(JetsParticles) ")
