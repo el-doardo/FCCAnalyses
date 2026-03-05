@@ -830,6 +830,9 @@ class RDFanalysis():
                 ### angular distance between two leptons ###
                 .Define("Reco_DR","if (n_RecoLeptons>1) return myUtils::deltaR(Reco_phi.at(0), Reco_phi.at(1), Reco_eta.at(0), Reco_eta.at(1)); else return float(-1.);")
 
+				## ## prova con i jet
+				#.Define("max_muon_e", "FCCAnalyses::ZHfunctions::get_max_muon_e(RecoMuons)")
+
                 ### Jet clustering with different algorithm, only on non leptons ###
                 ### https://github.com/HEP-FCC/FCCAnalyses/blob/master/addons/FastJet/JetClustering.h ###
                 .Define("JetsParticles", "ReconstructedParticle::remove(ReconstructedParticles, RecoLeptons)")
