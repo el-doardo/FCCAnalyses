@@ -375,9 +375,6 @@ ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> get_leading_pt(ROOT::VecO
 }
 
 // Jet trovati come nel paper
-#include "FCCAnalyses/JetCluster.h"
-#include "edm4hep/ReconstructedParticleData.h"
-#include <ROOT/RVec.hxx>
 
 RVec<fastjet::PseudoJet> cluster_jets(RVec<edm4hep::ReconstructedParticleData> particles_no_leading) {
 
