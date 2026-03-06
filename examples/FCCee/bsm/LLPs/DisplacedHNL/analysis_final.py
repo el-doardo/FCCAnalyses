@@ -1260,6 +1260,6 @@ histoList = {
     #"RecoTracknoLep_Z0cov":               {"name":"RecoTracknoLep_Z0cov",     "title":"Reco non lepton tracks z_{0} #sigma^{2}",      "bin":100,"xmin":0, "xmax":0.5},
 	"jets_e":								{"name":"jets_e",    				"title":"Jets Energy",          	 "bin":100, "xmin":0,"xmax":90},
 	"jets_pt":								{"name":"jets_pt",    				"title":"Jets pt",          	 "bin":100, "xmin":0,"xmax":90},
-	"n_jets":								{"name":"jets_n",    				"title":"Number of jets",          	 "bin":5, "xmin":-0.5,"xmax":4.5},
+	"n_jets":								{"name":"n_jets",    				"title":"Number of jets",          	 "bin":5, "xmin":-0.5,"xmax":4.5},
     
 }
