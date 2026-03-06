@@ -862,7 +862,7 @@ class RDFanalysis():
 
 				## ## definisco le grandezze interessant per i jet
 				.Define("jets_ee_kt_selected",  "JetClusteringUtils::get_pseudoJets( FCCAnalysesJets_ee_kt )")
-				.Define("jets_ee_kt_selected_e",  "JetClusteringUtils::get_e( FCCAnalysesJets_ee_kt )")
+				.Define("jets_ee_kt_selected_e",  "JetClusteringUtils::get_e(FCCAnalysesJets_ee_kt)")
 				.Define("jets_ee_kt_selected_p",  "JetClusteringUtils::get_p( FCCAnalysesJets_ee_kt )")
 				.Define("jets_ee_kt_selected_pt",  "JetClusteringUtils::get_pt( FCCAnalysesJets_ee_kt )")
 				.Define("jets_ee_kt_selected_eta",  "JetClusteringUtils::get_eta( FCCAnalysesJets_ee_kt )")
