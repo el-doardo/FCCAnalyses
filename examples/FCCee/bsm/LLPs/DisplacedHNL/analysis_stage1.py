@@ -24,6 +24,7 @@ processList = {
 	
 		"HNL_1.04e-8_10gev":{},
 		"HNL_1.04e-8_70gev":{},
+		"numujj":{},
 }
 
 processList_ = {
@@ -853,6 +854,15 @@ class RDFanalysis():
                 ### get the number of jets in a workaround way, anyway is exactly zero for exclusive clustering ###
                 .Define("jets_e",  "JetClusteringUtils::get_e(jets_ee_kt)")
 				.Define("jets_pt",  "JetClusteringUtils::get_pt(jets_ee_kt)")
+				.Define("jets_p",  "JetClusteringUtils::get_p(jets_ee_kt)")
+				.Define("jets_px",  "JetClusteringUtils::get_px(jets_ee_kt)")
+				.Define("jets_py",  "JetClusteringUtils::get_py(jets_ee_kt)")
+				.Define("jets_pz",  "JetClusteringUtils::get_pz(jets_ee_kt)")
+				.Define("jets_m",  "JetClusteringUtils::get_m(jets_ee_kt)")
+				.Define("jets_eta",  "JetClusteringUtils::get_eta(jets_ee_kt)")
+				.Define("jets_ph",  "JetClusteringUtils::get_phi(jets_ee_kt)")
+				.Define("jets_phi_std",  "JetClusteringUtils::get_phi_std(jets_ee_kt)")
+				.Define("jets_theta",  "JetClusteringUtils::get_theta(jets_ee_kt)")
                 .Define("n_jets", "jets_e.size()")
 
                 ### Durham algo, exclusive clustering (first number 2, 3 for exclusive up to n) N_jets=0 (second number), E-scheme=0 (third and forth numbers) ###
@@ -953,7 +963,7 @@ class RDFanalysis():
                 #.Filter("n_RecoPhotons==0 && n_RecoLeptons==2 && ((Reco_charge.at(0)==1 && Reco_charge.at(1)==-1) || (Reco_charge.at(0)==-1 && Reco_charge.at(1)==1))") ## ## lui va via
                 ### generator selection on llnunu background that needs to be applied consinstently to the others
                 #.Filter("Reco_pt.at(0) > 1 && Reco_pt.at(1) > 1 && RecoEmiss_pt > 5")
-				.Filter("n_RecoMuons > 0 && RecoMuon_pt.at(0) > 2")
+				.Filter("n_RecoMuons > 0 && RecoMuon_pt.at(0) > 10")
 
                )
                 return df2
@@ -1260,6 +1270,11 @@ class RDFanalysis():
 					"jets_e",
 					"jets_pt",
 					"n_jets",
+					"PrimaryTracks",
+                	"PrimaryVertexObject",
+               		"n_PrimaryTracks",
+              		"SecondaryTracks",
+	                "n_SecondaryTracks",
 
 		]
 
