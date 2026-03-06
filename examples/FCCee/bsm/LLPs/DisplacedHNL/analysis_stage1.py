@@ -949,7 +949,7 @@ class RDFanalysis():
 
                 #### FILTERS APPLIED TO ALL THE EVENTS ####
                 ### minimal selection for hnls final state
-                #.Filter("n_RecoPhotons==0 && n_RecoLeptons==2 && ((Reco_charge.at(0)==1 && Reco_charge.at(1)==-1) || (Reco_charge.at(0)==-1 && Reco_charge.at(1)==1))") ## ## lui va via
+                .Filter("n_RecoPhotons==0 && n_RecoLeptons==2 && ((Reco_charge.at(0)==1 && Reco_charge.at(1)==-1) || (Reco_charge.at(0)==-1 && Reco_charge.at(1)==1))") ## ## lui va via
                 ### generator selection on llnunu background that needs to be applied consinstently to the others
                 #.Filter("Reco_pt.at(0) > 1 && Reco_pt.at(1) > 1 && RecoEmiss_pt > 5")
 				.Filter("RecoMuon_lead.size() == 1 && RecoMuon_lead_pt.at(0) > 20")
