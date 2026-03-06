@@ -313,7 +313,23 @@ ROOT::VecOps::RVec<fastjet::PseudoJet> sel_e(float min_e, ROOT::VecOps::RVec<fas
   }
   return result;
 }
- 
+
+// Definisco questa funzione per estrarre la particella con max pt dalla collezione input
+ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> get_leading(ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> x) {
+    std::vector<edm4hep::ReconstructedParticleData> result; //use a vector even if it is one element so it's compatible with the other functions
+    std::vector<float> momentum;
+
+    for (size_t i = 0; i < x.size(); ++i) {
+        float px1 = x.at(i).momentum.x;
+        float py1 = x.at(i).momentum.y;
+        momentum.emplace_back(std::sqrt(px1* px1 + py1*py1));
+        }
+
+    auto maxp = std::max_element(momentum.begin(), momentum.end());
+    int maxp_index = std::distance(momentum.begin(), maxp); //index corresponding to the reconstructed particle class
+    result.emplace_back(x.at(maxp_index));
+    return ROOT::VecOps::RVec(result);
+}
 
 }}
 
