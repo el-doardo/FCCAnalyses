@@ -1094,15 +1094,6 @@ class RDFanalysis():
                         #"n_antikt_jets",
                         #"n_antikt_jets10",
                         #"n_RecoJets",
-
-						## ## selected jets ## ##
-						"jets_ee_kt_selected_e",
-						"jets_ee_kt_selected_p",
-						"jets_ee_kt_selected_pt",
-						"jets_ee_kt_selected_eta",
-						"jets_ee_kt_selected_phi",
-						"jets_ee_kt_selected_m",
-						"LeadingMuon_pt",
 						
 
                         "n_RecoPhotons",
