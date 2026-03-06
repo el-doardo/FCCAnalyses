@@ -836,6 +836,7 @@ class RDFanalysis():
 				## ## 	collezione viene ri-clusterata con algoritmo esclusivo fissando Nj=2.
 				## ##	Il pt del muone energetico può essere usato come taglio alla fine (forse con pt>20 GeV)
 				.Define("LeadingMuon", "FCCAnalyses::ZHfunctions::get_leading_pt(RecoMuons)")
+				.Define("LeadingMuon_pt", "ReconstructedParticle::get_pt(LeadingMuon)")
 				#.Define("ParticlesNoLeadingMuon", "ReconstructedParticle::remove(ReconstructedParticles, LeadingMuon)")
 				#.Define("jets","FCCAnalyses::ZHfunctions::cluster_jets(ParticlesNoLeadingMuon)")
 
@@ -964,7 +965,7 @@ class RDFanalysis():
 
                 #### FILTERS APPLIED TO ALL THE EVENTS ####
                 ### minimal selection for hnls final state
-                .Filter("n_RecoPhotons==0 && n_RecoLeptons==2 && ((Reco_charge.at(0)==1 && Reco_charge.at(1)==-1) || (Reco_charge.at(0)==-1 && Reco_charge.at(1)==1))")
+                .Filter("LeadingMuon_e > 20")
                 ### generator selection on llnunu background that needs to be applied consinstently to the others
                 #.Filter("Reco_pt.at(0) > 1 && Reco_pt.at(1) > 1 && RecoEmiss_pt > 5")
 
@@ -1119,6 +1120,7 @@ class RDFanalysis():
 						"jets_ee_kt_selected_eta",
 						"jets_ee_kt_selected_phi",
 						"jets_ee_kt_selected_m",
+						"LeadingMuon_pt",
 						
 
                         "n_RecoPhotons",
