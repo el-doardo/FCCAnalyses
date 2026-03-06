@@ -851,11 +851,13 @@ class RDFanalysis():
                 # build pseudo jets with the RP, using the interface that takes px,py,pz,E
                 .Define("pseudo_jets",  "JetClusteringUtils::set_pseudoJets(RP_px, RP_py, RP_pz, RP_e)" )
                 ### Durham algo, exclusive clustering (first number 2) N_jets=0 (second number), E-scheme=0 (third and forth numbers) ###
-                .Define( "FCCAnalysesJets_ee_kt",  "JetClustering::clustering_ee_kt(2, 2, 1, 0)(pseudo_jets)" )
-                .Define("jets_ee_kt",  "JetClusteringUtils::get_pseudoJets( FCCAnalysesJets_ee_kt )")
+                .Define( "jets_inclusive",  "JetClustering::clustering_ee_kt(0, 5, 1, 0)(pseudo_jets)" ) ## ## righer per jet inclusive
+                .Define("jets_ee_kt_inclusive",  "JetClusteringUtils::get_pseudoJets( jets_inclusive )")
                 ### get the number of jets in a workaround way, anyway is exactly zero for exclusive clustering ###
-                .Define("jets_e",  "JetClusteringUtils::get_e(jets_ee_kt)")
-                .Define("n_jets", "jets_e.size()")
+                .Define("jets_e_inclusive", "JetClusteringUtils::get_e(jets_ee_kt_inclusive)")
+                .Define("n_jets_inclusive", "jets_e_inclusive.size()")
+			
+				.Define("FCCAnalysesJets_ee_kt", "n_jets_inclusive>2 ? JetClustering::clustering_ee_kt(2,2,1,0)(pseudo_jets) : jets_inclusive")
 
                 ### Durham algo, exclusive clustering (first number 2, 3 for exclusive up to n) N_jets=0 (second number), E-scheme=0 (third and forth numbers) ###
                 .Define( "FCCAnalysesJets_ee_kt_excl",  "JetClustering::clustering_ee_kt(3, 2, 1, 0)(pseudo_jets)" )
