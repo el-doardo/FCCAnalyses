@@ -831,8 +831,10 @@ class RDFanalysis():
                 ### angular distance between two leptons ###
                 .Define("Reco_DR","if (n_RecoLeptons>1) return myUtils::deltaR(Reco_phi.at(0), Reco_phi.at(1), Reco_eta.at(0), Reco_eta.at(1)); else return float(-1.);")
 
-				## ## prova con i jet in cui tolgo il muone più energetico
-				#.Define("max_muon_e", "FCCAnalyses::ZHfunctions::get_max_muon_e(RecoMuons)")
+				## ##	prova con i jet in cui tolgo il muone con pt maggiore, la collezione di particelle di particelle senza muone viene
+				## ##	data a JetClustering::clustering_ee_kt con algoritmo inclusivo e taglio a 5 GeV, se risultano più di 2 jet, la 
+				## ## 	collezione viene ri-clusterata con algoritmo esclusivo fissando Nj=2.
+				## ##	Il pt del muone energetico può essere usato come taglio alla fine (forse con pt>20 GeV)
 				.Define("LeadingMuon", "FCCAnalyses::ZHfunctions::get_leading_pt(RecoMuons)")
 				#.Define("ParticlesNoLeadingMuon", "ReconstructedParticle::remove(ReconstructedParticles, LeadingMuon)")
 				#.Define("jets","FCCAnalyses::ZHfunctions::cluster_jets(ParticlesNoLeadingMuon)")
