@@ -953,7 +953,8 @@ class RDFanalysis():
                 ### generator selection on llnunu background that needs to be applied consinstently to the others
                 #.Filter("Reco_pt.at(0) > 1 && Reco_pt.at(1) > 1 && RecoEmiss_pt > 5")
 				#.Filter("RecoMuon_lead_pt > 20")
-				.Filter("ROOT::VecOps::Max(RecoMuon_lead_pt) > 20")
+				#.Filter("ROOT::VecOps::Max(RecoMuon_lead_pt) > 20")
+				.Filter("ROOT::VecOps::Any(RecoMuon_lead_pt > 20)")
 
                )
                 return df2
