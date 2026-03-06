@@ -835,9 +835,19 @@ class RDFanalysis():
 				## ##	data a JetClustering::clustering_ee_kt con algoritmo inclusivo e taglio a 5 GeV, se risultano più di 2 jet, la 
 				## ## 	collezione viene ri-clusterata con algoritmo esclusivo fissando Nj=2.
 				## ##	Il pt del muone energetico può essere usato come taglio alla fine (forse con pt>20 GeV)
-				.Define("LeadingMuon", "FCCAnalyses::ZHfunctions::get_leading_pt(RecoMuons)")
-				.Define("LeadingMuon_pt", "ReconstructedParticle::get_pt(LeadingMuon)")
-				.Define("LeadingMuon_size", "ReconstructedParticle::get_n(LeadingMuon)")
+
+						## ## prova, perchè qui non funziona nulla
+							.Define("LeadingMuon", "FCCAnalyses::ZHfunctions::get_leading_pt(RecoMuons)")
+							.Define("LeadingMuon_pt", "ReconstructedParticle::get_pt(LeadingMuon)")
+							.Define("LeadingMuon_size", "ReconstructedParticle::get_n(LeadingMuon)")
+
+							
+							.Define("LeadingMuonExist", R"(auto tmp = LeadingMuon; if(LeadingMuon_size == 0) tmp.clear();  return tmp; )")
+							.Define("JetsParticles", R"(auto tmp = ReconstructedParticles; tmp = ReconstructedParticle::remove(tmp, LeadingMuonExist); return tmp; )")
+			
+				## ##.Define("LeadingMuon", "FCCAnalyses::ZHfunctions::get_leading_pt(RecoMuons)")
+				## ##.Define("LeadingMuon_pt", "ReconstructedParticle::get_pt(LeadingMuon)")
+				## ##.Define("LeadingMuon_size", "ReconstructedParticle::get_n(LeadingMuon)")
 				#.Define("ParticlesNoLeadingMuon", "ReconstructedParticle::remove(ReconstructedParticles, LeadingMuon)")
 				#.Define("jets","FCCAnalyses::ZHfunctions::cluster_jets(ParticlesNoLeadingMuon)")
 
@@ -845,7 +855,7 @@ class RDFanalysis():
                 ### Jet clustering with different algorithm, only on non leptons ###
                 ### https://github.com/HEP-FCC/FCCAnalyses/blob/master/addons/FastJet/JetClustering.h ###
                 #.Define("JetsParticles", "ReconstructedParticle::remove(ReconstructedParticles, RecoLeptons)") ## lo modifico qua sotto
-				.Define("JetsParticles", "LeadingMuon_size > 0 ? ReconstructedParticle::remove(ReconstructedParticles, LeadingMuon) : ReconstructedParticles")
+				## ##.Define("JetsParticles", "LeadingMuon_size > 0 ? ReconstructedParticle::remove(ReconstructedParticles, LeadingMuon) : ReconstructedParticles")
                 .Define("RP_px", "ReconstructedParticle::get_px(JetsParticles) ")
                 .Define("RP_py", "ReconstructedParticle::get_py(JetsParticles) ")
                 .Define("RP_pz", "ReconstructedParticle::get_pz(JetsParticles) ")
