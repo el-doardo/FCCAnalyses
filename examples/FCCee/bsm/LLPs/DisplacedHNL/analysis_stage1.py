@@ -432,7 +432,7 @@ processList_ = {
 #Comment out when running over centrally produced events
 #Mandatory when running over privately produced events
 #inputDir = "/eos/experiment/fcc/ee/generation/DelphesEvents/winter2023/IDEA/"
-inputDir = "/eos/user/e/espoto/FCC_2jet_z_pole/FCCAnalysis/stage1/"
+inputDir = "/eos/user/e/espoto/FCC_2jet_z_pole/FCCAnalysis/stage1"
 
 # additional/costom C++ functions, defined in header files (optional)
 includePaths = ["functions.h"]
