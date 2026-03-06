@@ -230,8 +230,8 @@ variables = [
 	"jets_e",
 	"jets_pt",
 	"n_jets",
-	"n_PrimaryTracks"
-	"n_SecondaryTracks"
+	"n_PrimaryTracks",
+	"n_SecondaryTracks",
     
 ]
 
