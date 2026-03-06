@@ -1263,11 +1263,11 @@ histoList = {
 	"jets_e":								{"name":"jets_e",    				"title":"Jets Energy",          		 "bin":100, "xmin":0,"xmax":90},
 	"jets_pt":								{"name":"jets_pt",    				"title":"Jets pt",          	 		"bin":100, "xmin":0,"xmax":90},
 	"n_jets":								{"name":"n_jets",    				"title":"Number of jets",         	 	 "bin":5, "xmin":-0.5,"xmax":4.5},
-	"PrimaryTracks":						{"name":"PrimaryTracks",    		"title":"PrimaryTracks",          		 "bin":5, "xmin":0,"xmax":5},
+	#"PrimaryTracks":						{"name":"PrimaryTracks",    		"title":"PrimaryTracks",          		 "bin":5, "xmin":0,"xmax":5},
     #"PrimaryVertexObject":					{"name":"PrimaryVertexObject",    	"title":"PrimaryVertexObject",       	 "bin":100, "xmin":0,"xmax":90},
-    "n_PrimaryTracks":						{"name":"n_PrimaryTracks",    		"title":"n_PrimaryTracks",          	 "bin":10, "xmin":0,"xmax":10},
-    "SecondaryTracks":						{"name":"SecondaryTracks",    		"title":"SecondaryTracks",          	 "bin":10, "xmin":0,"xmax":5},
-	"n_SecondaryTracks":					{"name":"n_SecondaryTracks",    	"title":"Jn_SecondaryTracks",          	 "bin":100, "xmin":0,"xmax":90},
+    #"n_PrimaryTracks":						{"name":"n_PrimaryTracks",    		"title":"n_PrimaryTracks",          	 "bin":10, "xmin":0,"xmax":10},
+    #"SecondaryTracks":						{"name":"SecondaryTracks",    		"title":"SecondaryTracks",          	 "bin":10, "xmin":0,"xmax":5},
+	#"n_SecondaryTracks":					{"name":"n_SecondaryTracks",    	"title":"Jn_SecondaryTracks",          	 "bin":100, "xmin":0,"xmax":90},
 	
     
 }
