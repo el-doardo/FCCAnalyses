@@ -1,8 +1,8 @@
 #Input directory where the files produced at the stage1 level are
-inputDir = "/eos/user/e/espoto/FCCAnalyses/outputs/reco/stage1_reco"
+inputDir = "/eos/user/e/espoto/FCC_2jet_z_pole/FCCAnalysis/final_reco/"
 
 #Output directory where the files produced at the final-selection level are
-outputDir = "/eos/user/e/espoto/FCCAnalyses/outputs/reco/final_reco"
+outputDir = "/eos/user/e/espoto/FCC_2jet_z_pole/FCCAnalysis/plots_reco/"
 
 #Integrated luminosity for scaling number of events (required only if setting doScale to true)
 intLumi = 150e6 #pb^-1
@@ -23,30 +23,23 @@ processList = {
     #run over the full statistics from stage1
 
     #backgrounds
-    'p8_ee_Zee_ecm91':{},
-    'p8_ee_Zmumu_ecm91':{},
-    'p8_ee_Ztautau_ecm91':{},
-    'p8_ee_Zbb_ecm91':{},
-    'p8_ee_Zcc_ecm91':{},
-    'p8_ee_Zud_ecm91':{},
-    'p8_ee_Zss_ecm91':{},
+    #'p8_ee_Zee_ecm91':{},
+    #'p8_ee_Zmumu_ecm91':{},
+    #'p8_ee_Ztautau_ecm91':{},
+    #'p8_ee_Zbb_ecm91':{},
+    #'p8_ee_Zcc_ecm91':{},
+    #'p8_ee_Zud_ecm91':{},
+    #'p8_ee_Zss_ecm91':{},
         
     ### privately produced backgrounds ###
     #'eenunu_m':{},
     #'mumununu_m':{},
-    'tatanunu_m':{},
-    'llnunu_m':{},
+    #'tatanunu_m':{},
+    #'llnunu_m':{},
 
   ## ##
-    "HNL_4e-10_20gev":{},
-    "HNL_6.67e-8_60gev":{},
-    "HNL_1.33e-9_20gev":{},
-	"HNL_2.86e-7_30gev":{},
-	"HNL_2.86e-8_80gev":{},
-	"HNL_2.86e-9_70gev":{},
-	"HNL_2.86e-12_30gev":{},
-    "HNL_4e-8_60gev":{},
-	"HNL_4e-12_50gev":{},
+    "HNL_1.04e-8_10gev":{},
+	"HNL_1.04e-8_70gev":{},
 }
 
 processList_ = {
@@ -637,13 +630,13 @@ procDictAdd = {
     'HNL_5e-8_60gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 3.74994337e-05, "kfactor": 1.0, "matchingEfficiency": 1.0},
     'HNL_5e-8_70gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 2.147886517211138e-05, "kfactor": 1.0, "matchingEfficiency": 1.0},
     'HNL_5e-8_80gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 8.53972564021e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_1.04e-8_10gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 1.92615418e-05, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_1.04e-8_10gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 1.903e-05, "kfactor": 1.0, "matchingEfficiency": 1.0}, ## ## modificato da me
     'HNL_1.04e-8_20gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 1.83240097e-05, "kfactor": 1.0, "matchingEfficiency": 1.0},
     'HNL_1.04e-8_30gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 1.64522803e-05, "kfactor": 1.0, "matchingEfficiency": 1.0},
     'HNL_1.04e-8_40gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 1.4027173999999996e-05, "kfactor": 1.0, "matchingEfficiency": 1.0},
     'HNL_1.04e-8_50gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 1.1089091e-05, "kfactor": 1.0, "matchingEfficiency": 1.0},
     'HNL_1.04e-8_60gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 7.8214212e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_1.04e-8_70gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 4.48310133984938e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_1.04e-8_70gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 3.768e-06, "kfactor": 1.0, "matchingEfficiency": 1.0}, ## ## mod da me
     'HNL_1.04e-8_80gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 1.7827107412789997e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
     'HNL_2.27e-9_10gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 4.1846006800000005e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
     'HNL_2.27e-9_20gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 3.97964244e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
@@ -1265,5 +1258,8 @@ histoList = {
     #"RecoTracknoLep_absZ0sig_med":        {"name":"RecoTracknoLep_absZ0sig",  "title":"Reco non lepton tracks |z_{0} significance|",      "bin":100,"xmin":0, "xmax":1000},
     #"RecoTracknoLep_D0cov":               {"name":"RecoTracknoLep_D0cov",     "title":"Reco non lepton tracks d_{0} #sigma^{2}",      "bin":100,"xmin":0, "xmax":0.5},
     #"RecoTracknoLep_Z0cov":               {"name":"RecoTracknoLep_Z0cov",     "title":"Reco non lepton tracks z_{0} #sigma^{2}",      "bin":100,"xmin":0, "xmax":0.5},
+	"jets_e",								{"name":"jets_e",    				"title":"Jets Energy",          	 "bin":100, "xmin":0,"xmax":90},
+	"jets_pt",								{"name":"jets_pt",    				"title":"Jets pt",          	 "bin":100, "xmin":0,"xmax":90},
+	"n_jets",								{"name":"jets_n",    				"title":"Number of jets",          	 "bin":5, "xmin":-0.5,"xmax":4.5},
     
 }
