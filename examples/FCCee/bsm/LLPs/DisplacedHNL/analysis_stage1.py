@@ -439,7 +439,7 @@ includePaths = ["functions.h"]
 
 #Optional: output directory, default is local dir
 #outputDir = "output_stage1/"
-outputDir = "/eos/user/e/espoto/FCC_2jet_z_pole/FCCAnalysis/final_gen/"
+outputDir = "/eos/user/e/espoto/FCC_2jet_z_pole/FCCAnalysis/final_reco/"
 
 ### necessary to run on HTCondor ###
 eosType = "eosuser"
