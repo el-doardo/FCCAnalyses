@@ -859,6 +859,16 @@ class RDFanalysis():
 			
 				.Define("FCCAnalysesJets_ee_kt", "n_jets_inclusive>2 ? JetClustering::clustering_ee_kt(2,2,1,0)(pseudo_jets) : jets_inclusive")
 
+				## ## definisco le grandezze interessant per i jet
+				.Define("jets_ee_kt_selected",  "JetClusteringUtils::get_pseudoJets( FCCAnalysesJets_ee_kt )")
+				.Define("jets_ee_kt_selected_e",  "JetClusteringUtils::get_e( FCCAnalysesJets_ee_kt )")
+				.Define("jets_ee_kt_selected_p",  "JetClusteringUtils::get_p( FCCAnalysesJets_ee_kt )")
+				.Define("jets_ee_kt_selected_pt",  "JetClusteringUtils::get_pt( FCCAnalysesJets_ee_kt )")
+				.Define("jets_ee_kt_selected_eta",  "JetClusteringUtils::get_eta( FCCAnalysesJets_ee_kt )")
+				.Define("jets_ee_kt_selected_phi",  "JetClusteringUtils::get_phi( FCCAnalysesJets_ee_kt )")
+				.Define("jets_ee_kt_selected_m",  "JetClusteringUtils::get_m( FCCAnalysesJets_ee_kt )")
+				
+
                 ### Durham algo, exclusive clustering (first number 2, 3 for exclusive up to n) N_jets=0 (second number), E-scheme=0 (third and forth numbers) ###
                 .Define( "FCCAnalysesJets_ee_kt_excl",  "JetClustering::clustering_ee_kt(3, 2, 1, 0)(pseudo_jets)" )
                 .Define("jets_ee_kt_excl",  "JetClusteringUtils::get_pseudoJets( FCCAnalysesJets_ee_kt_excl )")
