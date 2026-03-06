@@ -965,7 +965,7 @@ class RDFanalysis():
 
                 #### FILTERS APPLIED TO ALL THE EVENTS ####
                 ### minimal selection for hnls final state
-                .Filter("LeadingMuon_e > 20")
+                .Filter("LeadingMuon_pt > 20")
                 ### generator selection on llnunu background that needs to be applied consinstently to the others
                 #.Filter("Reco_pt.at(0) > 1 && Reco_pt.at(1) > 1 && RecoEmiss_pt > 5")
 
