@@ -40,7 +40,7 @@ processList = {
   ## ##
     "HNL_1.04e-8_10gev":{},
 	"HNL_1.04e-8_70gev":{},
-	#"numujj":{},
+	"numujj":{},
 }
 
 processList_ = {
@@ -801,7 +801,7 @@ procDictAdd = {
     "mumununu_m":{"numberOfEvents": 1000000, "sumOfWeights": 1000000, "crossSection": 0.004782, "kfactor": 1.0, "matchingEfficiency": 1.0},
     "tatanunu_m":{"numberOfEvents": 1000000, "sumOfWeights": 1000000, "crossSection": 0.001426, "kfactor": 1.0, "matchingEfficiency": 1.0},
     "llnunu_m":{"numberOfEvents": 1000000, "sumOfWeights": 1000000, "crossSection": 0.004597, "kfactor": 1.0, "matchingEfficiency": 1.0},
-	#"numujj":{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 0.001811, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	"numujj":{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 0.001811, "kfactor": 1.0, "matchingEfficiency": 1.0},
 
     'HNL_6.67e-10_40gev_isr':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 6.364544236800001e-07,  "kfactor": 1.0, "matchingEfficiency": 1.0},
     'HNL_6.67e-10_40gev_isrbm':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 6.3881989487e-07, "kfactor": 1.0, "matchingEfficiency": 1.0},
