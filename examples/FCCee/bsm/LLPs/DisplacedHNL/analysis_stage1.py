@@ -852,6 +852,7 @@ class RDFanalysis():
                 .Define("jets_ee_kt",  "JetClusteringUtils::get_pseudoJets( FCCAnalysesJets_ee_kt )")
                 ### get the number of jets in a workaround way, anyway is exactly zero for exclusive clustering ###
                 .Define("jets_e",  "JetClusteringUtils::get_e(jets_ee_kt)")
+				.Define("jets_pt",  "JetClusteringUtils::get_pt(jets_ee_kt)")
                 .Define("n_jets", "jets_e.size()")
 
                 ### Durham algo, exclusive clustering (first number 2, 3 for exclusive up to n) N_jets=0 (second number), E-scheme=0 (third and forth numbers) ###
@@ -1256,6 +1257,9 @@ class RDFanalysis():
                         #"RecoTracknoLep_absZ0sig", 
                         #"RecoTracknoLep_D0cov", 
                         #"RecoTracknoLep_Z0cov",
+					"jets_e",
+					"jets_pt",
+					"n_jets",
 
 		]
 
