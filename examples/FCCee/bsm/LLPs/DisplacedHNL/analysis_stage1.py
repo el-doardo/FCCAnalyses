@@ -13,17 +13,8 @@ processList = {
 
 	## ##
 	
-		"HNL_4e-10_20gev":{},
-        "HNL_6.67e-8_60gev":{},
-        "HNL_1.33e-9_20gev":{},
-#       "HNL_2.86e-7_30gev":{},
-#       "HNL_2.86e-8_80gev":{},
-        "HNL_2.86e-9_70gev":{},
-        "HNL_2.86e-12_30gev":{},
-#       "HNL_4e-8_60gev":{},
-        "HNL_4e-12_50gev":{},
-		'tatanunu_m':{},
-        'llnunu_m':{},
+		"HNL_1.04e-8_10gev":{},
+		"HNL_1.04e-8_70gev":{},
 }
 
 processList_ = {
