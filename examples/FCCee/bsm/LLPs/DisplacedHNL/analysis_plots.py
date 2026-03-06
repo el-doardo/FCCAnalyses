@@ -11,8 +11,8 @@ ana_tex        = "e^{+}e^{-} #rightarrow N_{1,2} #nu, N_{1,2} #rightarrow ll#nu"
 delphesVersion = '3.4.2'
 energy         = 91
 collider       = 'FCC-ee'
-inputDir       = '/eos/user/e/espoto/FCCAnalyses/outputs/reco/final_reco/'
-outdir         = '/eos/user/e/espoto/FCCAnalyses/outputs/reco/plots_reco/'
+inputDir       = '/eos/user/e/espoto/FCC_2jet_z_pole/FCCAnalysis/plots_reco/'
+outdir         = '/eos/user/e/espoto/FCC_2jet_z_pole/FCCAnalysis/plotted_reco/'
 formats        = ['png']
 #formats        = ['pdf']
 #yaxis          = ['lin','log']
@@ -90,14 +90,14 @@ variables = [
     ## ## "GenN_Lxyz_time",# # ## no hint of it in final nor stage1
 
     #reco variables
-    "n_RecoTracks",
+    #"n_RecoTracks",
     ## ##"n_PrimaryTracks",
     ## ##"n_SecondaryTracks",
     ## ##"n_RecoJets",
     ## ##"n_RecoPhotons",
-    "n_RecoElectrons",
-    "n_RecoMuons",
-    "n_RecoLeptons",
+    #"n_RecoElectrons",
+    #"n_RecoMuons",
+    #"n_RecoLeptons",
 
     #"jets_e",
     #"RecoJet_e",
@@ -119,18 +119,18 @@ variables = [
     #"RecoJetTrack_D0cov",
     #"RecoJetTrack_Z0cov",
 
-    "RecoElectron_e",
+    #"RecoElectron_e",
     #"RecoElectron_p",
-    "RecoElectron_pt",
+    #"RecoElectron_pt",
     #"RecoElectron_px",
     #"RecoElectron_py",
     #"RecoElectron_pz",
-    "RecoElectron_eta",
+    #"RecoElectron_eta",
     #"RecoElectron_theta",
-    "RecoElectron_phi",
+    #"RecoElectron_phi",
 
-    "RecoElectronTrack_absD0",
-    "RecoElectronTrack_absD0_prompt",
+    #"RecoElectronTrack_absD0",
+    #"RecoElectronTrack_absD0_prompt",
     #"RecoElectronTrack_absZ0",
     #"RecoElectronTrack_absZ0_prompt",
     #"RecoElectronTrack_absD0sig",
@@ -143,18 +143,18 @@ variables = [
 
     ## ## aggiungo gruppo muoni
 
-    "RecoMuon_e",
+    #"RecoMuon_e",
     #"RecoMuon_p",
-    "RecoMuon_pt",
+    #"RecoMuon_pt",
     #"RecoMuon_px",
     #"RecoMuon_py",
     #"RecoMuon_pz",
-    "RecoMuon_eta",
+    #"RecoMuon_eta",
     #"RecoMuon_theta",
-    "RecoMuon_phi",
+    #"RecoMuon_phi",
 
-    "RecoMuonTrack_absD0",
-    "RecoMuonTrack_absD0_prompt",
+    #"RecoMuonTrack_absD0",
+    #"RecoMuonTrack_absD0_prompt",
     #"RecoMuonTrack_absZ0",
     #"RecoMuonTrack_absZ0_prompt",
     #"RecoMuonTrack_absD0sig",
@@ -199,25 +199,25 @@ variables = [
     #"Reco_DecayVertexLepton_chi2",    
     #"Reco_DecayVertexLepton_probability", 
 
-    "Reco_Lxy",
+    #"Reco_Lxy",
     #"Reco_Lxy_prompt",
-    "Reco_Lxyz",
+    #"Reco_Lxyz",
     #"Reco_Lxyz_prompt",
     
-    "Reco_invMass",
-    "Reco_cos",
-    "Reco_DR",
+    #"Reco_invMass",
+    #"Reco_cos",
+    #"Reco_DR",
 
-    "RecoMissingEnergy_e",
+    #"RecoMissingEnergy_e",
     #"RecoMissingEnergy_p",
-    "RecoMissingEnergy_pt",
+    #"RecoMissingEnergy_pt",
     #"RecoMissingEnergy_px",
     #"RecoMissingEnergy_py",
     #"RecoMissingEnergy_pz",
-    "RecoMissingEnergy_eta",
+    #"RecoMissingEnergy_eta",
     #"RecoMissingEnergy_theta",
-    "RecoMissingEnergy_phi",
-	"RecoEmiss_e",
+    #"RecoMissingEnergy_phi",
+	#"RecoEmiss_e",
 
     #"RecoPhoton_e",
     #"RecoPhoton_p",
@@ -285,8 +285,8 @@ extralabel['sel2RecoDF_vetoes_tracks_M80_5MEpt_0.8cos']="Two different flavor le
 
 colors = {}
 
-colors['HNL_4e-10_20gev'] = ROOT.kCyan-7 ## ## modificato da me
-colors['HNL_1.33e-9_20gev'] = ROOT.kAzure+5
+colors['HNL_1.04e-8_10gev'] = ROOT.kCyan-7 ## ## modificato da me
+colors['HNL_1.04e-8_70gev'] = ROOT.kAzure+5
 colors['HNL_2.86e-12_30gev'] = ROOT.kBlue-7
 colors['HNL_2.86e-7_30gev'] = ROOT.kOrange-2
 colors['HNL_5e-12_40gev'] = ROOT.kOrange+8
@@ -325,28 +325,13 @@ colors['tatanunu_m'] = 38
 
 plots = {}
 plots['HNL'] = {'signal':{
-                    'HNL_4e-10_20gev':['HNL_4e-10_20gev'], ## ## mod da me
-                    'HNL_1.33e-9_20gev':['HNL_1.33e-9_20gev'],
-                    'HNL_2.86e-12_30gev':['HNL_2.86e-12_30gev'],
-                    #'HNL_2.86e-7_30gev':['HNL_2.86e-7_30gev'],
-                    ## ##'HNL_5e-12_40gev':['HNL_5e-12_40gev'],
-                    'HNL_4e-12_50gev':['HNL_4e-12_50gev'],
-                    'HNL_6.67e-8_60gev':['HNL_6.67e-8_60gev'],
-                    #'HNL_4e-8_60gev':['HNL_4e-8_60gev'],
-                    'HNL_2.86e-9_70gev':['HNL_2.86e-9_70gev'],
-                    #'HNL_2.86e-8_80gev':['HNL_2.86e-8_80gev'],
+	
+                    'HNL_1.04e-8_10gev':['HNL_1.04e-8_10gev'],
+                    'HNL_1.04e-8_70gev':['HNL_1.04e-8_70gev'],
                 },
                 'backgrounds':{
                     #'HNL':['HNL_2.86e-12_30gev'], ### impossible to plot without both signals and backgrounds, choose one signal and make it white ### 
-                    'Zud': ['p8_ee_Zud_ecm91'],
-                    'Zss':['p8_ee_Zss_ecm91'],
-                    'Zcc': ['p8_ee_Zcc_ecm91'],
-                    'Zbb':['p8_ee_Zbb_ecm91'],
-                    'Zee':['p8_ee_Zee_ecm91'],
-                    'Zmumu': ['p8_ee_Zmumu_ecm91'],
-                    ## ##'Ztautau': ['p8_ee_Ztautau_ecm91'],
-					'llnunu_m': ['llnunu_m'],
-                    'tatanunu_m': ['tatanunu_m'],
+                    'HNL_1.04e-8_10gev':['HNL_1.04e-8_10gev'],
                     ## ##'emununu': ['emununu'],
                 },
                 }
