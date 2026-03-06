@@ -862,12 +862,12 @@ class RDFanalysis():
 
 				## ## definisco le grandezze interessant per i jet
 				.Define("jets_ee_kt_selected",  "JetClusteringUtils::get_pseudoJets( FCCAnalysesJets_ee_kt )")
-				.Define("jets_ee_kt_selected_e",  "JetClusteringUtils::get_e(FCCAnalysesJets_ee_kt)")
-				.Define("jets_ee_kt_selected_p",  "JetClusteringUtils::get_p( FCCAnalysesJets_ee_kt )")
-				.Define("jets_ee_kt_selected_pt",  "JetClusteringUtils::get_pt( FCCAnalysesJets_ee_kt )")
-				.Define("jets_ee_kt_selected_eta",  "JetClusteringUtils::get_eta( FCCAnalysesJets_ee_kt )")
-				.Define("jets_ee_kt_selected_phi",  "JetClusteringUtils::get_phi( FCCAnalysesJets_ee_kt )")
-				.Define("jets_ee_kt_selected_m",  "JetClusteringUtils::get_m( FCCAnalysesJets_ee_kt )")
+				.Define("jets_ee_kt_selected_e",  "JetClusteringUtils::get_e( jets_ee_kt_selected )")
+				.Define("jets_ee_kt_selected_p",  "JetClusteringUtils::get_p( jets_ee_kt_selected )")
+				.Define("jets_ee_kt_selected_pt",  "JetClusteringUtils::get_pt( jets_ee_kt_selected )")
+				.Define("jets_ee_kt_selected_eta",  "JetClusteringUtils::get_eta( jets_ee_kt_selected )")
+				.Define("jets_ee_kt_selected_phi",  "JetClusteringUtils::get_phi( jets_ee_kt_selected )")
+				.Define("jets_ee_kt_selected_m",  "JetClusteringUtils::get_m( jets_ee_kt_selected )")
 				
 
                 ### Durham algo, exclusive clustering (first number 2, 3 for exclusive up to n) N_jets=0 (second number), E-scheme=0 (third and forth numbers) ###
