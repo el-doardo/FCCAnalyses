@@ -952,7 +952,7 @@ class RDFanalysis():
                 #.Filter("n_RecoPhotons==0 && n_RecoLeptons==2 && ((Reco_charge.at(0)==1 && Reco_charge.at(1)==-1) || (Reco_charge.at(0)==-1 && Reco_charge.at(1)==1))") ## ## lui va via
                 ### generator selection on llnunu background that needs to be applied consinstently to the others
                 #.Filter("Reco_pt.at(0) > 1 && Reco_pt.at(1) > 1 && RecoEmiss_pt > 5")
-				.Filter("RecoMuon_lead_pt.at(0) > 20")
+				.Filter("RecoMuon_lead.size() == 1 && RecoMuon_lead_pt.at(0) > 20")
 
                )
                 return df2
