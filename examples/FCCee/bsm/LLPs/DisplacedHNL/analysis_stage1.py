@@ -1,3 +1,9 @@
+## ## espoto ## ##
+# 	Sto per implementare lo studio dei jet per segnali a stati finali mujj 
+# 	Inizio cercando di estrarre il muone a pt più alta dalla collezione di particelle:
+# 	la classe RecoMuon_Lead sarà composta dal solo muone estratto, la classe della collezione di particelle dalle quali
+# 	manca il muone leading è JetParticles
+
 import ROOT
 
 #Mandatory: List of processes
@@ -823,6 +829,9 @@ class RDFanalysis():
 
                 ### angular distance between two leptons ###
                 .Define("Reco_DR","if (n_RecoLeptons>1) return myUtils::deltaR(Reco_phi.at(0), Reco_phi.at(1), Reco_eta.at(0), Reco_eta.at(1)); else return float(-1.);")
+
+				## ## estraggo il muone a maggior pt
+				.Define("RecoMuon_lead", "FCCAnalyses::ZHfunctions::get_leading_pt(RecoMuons);") ## ## definisco get_leading_pt basandomi su get_leading
 
                 ### Jet clustering with different algorithm, only on non leptons ###
                 ### https://github.com/HEP-FCC/FCCAnalyses/blob/master/addons/FastJet/JetClustering.h ###
