@@ -40,6 +40,7 @@ processList = {
   ## ##
     "HNL_1.04e-8_10gev":{},
 	"HNL_1.04e-8_70gev":{},
+	"numujj":{},
 }
 
 processList_ = {
@@ -800,6 +801,7 @@ procDictAdd = {
     "mumununu_m":{"numberOfEvents": 1000000, "sumOfWeights": 1000000, "crossSection": 0.004782, "kfactor": 1.0, "matchingEfficiency": 1.0},
     "tatanunu_m":{"numberOfEvents": 1000000, "sumOfWeights": 1000000, "crossSection": 0.001426, "kfactor": 1.0, "matchingEfficiency": 1.0},
     "llnunu_m":{"numberOfEvents": 1000000, "sumOfWeights": 1000000, "crossSection": 0.004597, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	"numujj":{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 0.001811, "kfactor": 1.0, "matchingEfficiency": 1.0},
 
     'HNL_6.67e-10_40gev_isr':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 6.364544236800001e-07,  "kfactor": 1.0, "matchingEfficiency": 1.0},
     'HNL_6.67e-10_40gev_isrbm':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 6.3881989487e-07, "kfactor": 1.0, "matchingEfficiency": 1.0},
@@ -1258,8 +1260,14 @@ histoList = {
     #"RecoTracknoLep_absZ0sig_med":        {"name":"RecoTracknoLep_absZ0sig",  "title":"Reco non lepton tracks |z_{0} significance|",      "bin":100,"xmin":0, "xmax":1000},
     #"RecoTracknoLep_D0cov":               {"name":"RecoTracknoLep_D0cov",     "title":"Reco non lepton tracks d_{0} #sigma^{2}",      "bin":100,"xmin":0, "xmax":0.5},
     #"RecoTracknoLep_Z0cov":               {"name":"RecoTracknoLep_Z0cov",     "title":"Reco non lepton tracks z_{0} #sigma^{2}",      "bin":100,"xmin":0, "xmax":0.5},
-	"jets_e":								{"name":"jets_e",    				"title":"Jets Energy",          	 "bin":100, "xmin":0,"xmax":90},
-	"jets_pt":								{"name":"jets_pt",    				"title":"Jets pt",          	 "bin":100, "xmin":0,"xmax":90},
-	"n_jets":								{"name":"n_jets",    				"title":"Number of jets",          	 "bin":5, "xmin":-0.5,"xmax":4.5},
+	"jets_e":								{"name":"jets_e",    				"title":"Jets Energy",          		 "bin":100, "xmin":0,"xmax":90},
+	"jets_pt":								{"name":"jets_pt",    				"title":"Jets pt",          	 		"bin":100, "xmin":0,"xmax":90},
+	"n_jets":								{"name":"n_jets",    				"title":"Number of jets",         	 	 "bin":5, "xmin":-0.5,"xmax":4.5},
+	"PrimaryTracks":						{"name":"PrimaryTracks",    		"title":"PrimaryTracks",          		 "bin":5, "xmin":0,"xmax":5},
+    "PrimaryVertexObject":					{"name":"PrimaryVertexObject",    	"title":"PrimaryVertexObject",       	 "bin":100, "xmin":0,"xmax":90},
+    "n_PrimaryTracks":						{"name":"n_PrimaryTracks",    		"title":"n_PrimaryTracks",          	 "bin":10, "xmin":0,"xmax":10},
+    "SecondaryTracks":						{"name":"SecondaryTracks",    		"title":"SecondaryTracks",          	 "bin":10, "xmin":0,"xmax":5},
+	"n_SecondaryTracks":					{"name":"n_SecondaryTracks",    	"title":"Jn_SecondaryTracks",          	 "bin":100, "xmin":0,"xmax":90},
+	
     
 }
