@@ -230,6 +230,8 @@ variables = [
 	"jets_e",
 	"jets_pt",
 	"n_jets",
+	"n_PrimaryTracks"
+	"n_SecondaryTracks"
     
 ]
 
@@ -312,7 +314,7 @@ colors['Zbb'] = 48
 colors['Zcc'] = 44
 colors['Zud'] = 41
 colors['Ztautau'] = 34
-colors['Zee'] = 29
+colors['numujj'] = 29
 colors['Zmumu'] = 32
 colors['Zss'] = 20
 colors['llnunu_m'] = 40
@@ -334,7 +336,7 @@ plots['HNL'] = {'signal':{
                 },
                 'backgrounds':{
                     #'HNL':['HNL_2.86e-12_30gev'], ### impossible to plot without both signals and backgrounds, choose one signal and make it white ### 
-                    'HNL_1.04e-8_10gev':['HNL_1.04e-8_10gev'],
+                    'numujj':['numujj'],
                     ## ##'emununu': ['emununu'],
                 },
                 }
@@ -358,7 +360,7 @@ legend['Zud'] = 'Z #rightarrow ud'
 legend['Zss'] = 'Z #rightarrow ss'
 legend['Zbb'] = 'Z #rightarrow bb'
 legend['Zcc'] = 'Z #rightarrow cc'
-legend['Zee'] = 'Z #rightarrow ee'
+legend['numujj'] = 'numujj'
 legend['Zmumu'] = 'Z #rightarrow #mu#mu'
 legend['Ztautau'] = 'Z #rightarrow #tau#tau'
 legend['emununu'] = 'e#mu#nu#nu'
