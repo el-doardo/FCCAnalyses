@@ -315,7 +315,7 @@ ROOT::VecOps::RVec<fastjet::PseudoJet> sel_e(float min_e, ROOT::VecOps::RVec<fas
 }
 
 // Definisco questa funzione per estrarre la particella con max pt dalla collezione input
-ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> get_leading(ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> x) {
+ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> get_leading_pt(ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> x) {
     std::vector<edm4hep::ReconstructedParticleData> result; //use a vector even if it is one element so it's compatible with the other functions
     std::vector<float> momentum;
 
