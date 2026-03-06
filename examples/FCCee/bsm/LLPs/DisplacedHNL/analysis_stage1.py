@@ -949,7 +949,7 @@ class RDFanalysis():
 
                 #### FILTERS APPLIED TO ALL THE EVENTS ####
                 ### minimal selection for hnls final state
-                .Filter("n_RecoPhotons==0 && n_RecoLeptons==2 && ((Reco_charge.at(0)==1 && Reco_charge.at(1)==-1) || (Reco_charge.at(0)==-1 && Reco_charge.at(1)==1))") ## ## lui va via
+                #.Filter("n_RecoPhotons==0 && n_RecoLeptons==2 && ((Reco_charge.at(0)==1 && Reco_charge.at(1)==-1) || (Reco_charge.at(0)==-1 && Reco_charge.at(1)==1))") ## ## lui va via
                 ### generator selection on llnunu background that needs to be applied consinstently to the others
                 #.Filter("Reco_pt.at(0) > 1 && Reco_pt.at(1) > 1 && RecoEmiss_pt > 5")
 				.Filter("RecoMuon_lead.size() == 1 && RecoMuon_lead_pt.at(0) > 20")
@@ -1084,21 +1084,21 @@ class RDFanalysis():
                         #"FSGenPhoton_charge",
 
                         ######## Reconstructed particles #######
-                        "n_RecoTracks",
-                        "n_noLeptonTracks",
+                        #"n_RecoTracks",
+                        #"n_noLeptonTracks",
                         #"n_PrimaryTracks",
                         #"n_SecondaryTracks",
 
-                        #"n_jets",
+                        "n_jets",
                         #"n_jets_excl",
-                        "n_antikt_jets",
+                        #"n_antikt_jets",
                         #"n_antikt_jets10",
                         #"n_RecoJets",
 
-                        "n_RecoPhotons",
-                        "n_RecoElectrons",
-                        "n_RecoMuons",
-                        "n_RecoLeptons",
+                        #"n_RecoPhotons",
+                        #"n_RecoElectrons",
+                        #"n_RecoMuons",
+                        #"n_RecoLeptons",
 
                         #"RecoJet_e",
                         #"RecoJet_p",
@@ -1128,127 +1128,127 @@ class RDFanalysis():
                         #"RecoPhoton_phi",
                         #"RecoPhoton_charge",
 
-                        "RecoElectron_e",## ## decommentato da me
-                        "RecoElectron_p",## ## decommentato da me
-                        "RecoElectron_pt",## ## decommentato da me
-                        "RecoElectron_px",## ## decommentato da me
-                        "RecoElectron_py",## ## decommentato da me
-                        "RecoElectron_pz",## ## decommentato da me
-                        "RecoElectron_eta",## ## decommentato da me
-                        "RecoElectron_theta",## ## decommentato da me
-                        "RecoElectron_phi",## ## decommentato da me
-                        "RecoElectron_charge",## ## decommentato da me
-                        "RecoElectronTrack_absD0",## ## decommentato da me
+                        #"RecoElectron_e",## ## decommentato da me
+                        #"RecoElectron_p",## ## decommentato da me
+                        #"RecoElectron_pt",## ## decommentato da me
+                        #"RecoElectron_px",## ## decommentato da me
+                        #"RecoElectron_py",## ## decommentato da me
+                        #"RecoElectron_pz",## ## decommentato da me
+                        #"RecoElectron_eta",## ## decommentato da me
+                        #"RecoElectron_theta",## ## decommentato da me
+                        #"RecoElectron_phi",## ## decommentato da me
+                        #"RecoElectron_charge",## ## decommentato da me
+                        #"RecoElectronTrack_absD0",## ## decommentato da me
                         #"RecoElectronTrack_absZ0",
                         #"RecoElectronTrack_absD0sig",
                         #"RecoElectronTrack_absZ0sig",
                         #"RecoElectronTrack_D0cov",
                         #"RecoElectronTrack_Z0cov",
 
-						"RecoMuon_e",## ## decommentato da me
-                        "RecoMuon_p",## ## decommentato da me
-                        "RecoMuon_pt",## ## decommentato da me
-                        "RecoMuon_px",## ## decommentato da me
-                        "RecoMuon_py",## ## decommentato da me
-                        "RecoMuon_pz",## ## decommentato da me
-                        "RecoMuon_eta",## ## decommentato da me
-                        "RecoMuon_theta",## ## decommentato da me
-                        "RecoMuon_phi",## ## decommentato da me
-                        "RecoMuon_charge",## ## decommentato da me
-                        "RecoMuonTrack_absD0",## ## decommentato da me
+						#"RecoMuon_e",## ## decommentato da me
+                        #"RecoMuon_p",## ## decommentato da me
+                        #"RecoMuon_pt",## ## decommentato da me
+                        #"RecoMuon_px",## ## decommentato da me
+                        #"RecoMuon_py",## ## decommentato da me
+                        #"RecoMuon_pz",## ## decommentato da me
+                        #"RecoMuon_eta",## ## decommentato da me
+                        #"RecoMuon_theta",## ## decommentato da me
+                        #"RecoMuon_phi",## ## decommentato da me
+                        #"RecoMuon_charge",## ## decommentato da me
+                        #"RecoMuonTrack_absD0",## ## decommentato da me
                         #"RecoMuonTrack_absZ0",
                         #"RecoMuonTrack_absD0sig",
                         #"RecoMuonTrack_absZ0sig",
                         #"RecoMuonTrack_D0cov",
                         #"RecoMuonTrack_Z0cov",
 
-                        "n_NeutralHadrons",
-                        "NeutralHadrons_e",
-                        "NeutralHadrons_p",
-                        "NeutralHadrons_pt",
-                        "NeutralHadrons_px",
-                        "NeutralHadrons_py",
-                        "NeutralHadrons_pz",
-                        "NeutralHadrons_eta",
-                        "NeutralHadrons_theta",
-                        "NeutralHadrons_phi",
-                        "NeutralHadrons_charge",
-                        "NeutralHadrons_mass",
+                        #"n_NeutralHadrons",
+                        #"NeutralHadrons_e",
+                        #"NeutralHadrons_p",
+                        #"NeutralHadrons_pt",
+                        #"NeutralHadrons_px",
+                        #"NeutralHadrons_py",
+                        #"NeutralHadrons_pz",
+                        #"NeutralHadrons_eta",
+                        #"NeutralHadrons_theta",
+                        #"NeutralHadrons_phi",
+                        #"NeutralHadrons_charge",
+                        #"NeutralHadrons_mass",
 
-                        "RecoMissingEnergy_e",
-                        "RecoMissingEnergy_p",
-                        "RecoMissingEnergy_pt",
-                        "RecoMissingEnergy_px",
-                        "RecoMissingEnergy_py",
-                        "RecoMissingEnergy_pz",
-                        "RecoMissingEnergy_eta",
-                        "RecoMissingEnergy_theta",
-                        "RecoMissingEnergy_phi",
+                        #"RecoMissingEnergy_e",
+                        #"RecoMissingEnergy_p",
+                        #"RecoMissingEnergy_pt",
+                        #"RecoMissingEnergy_px",
+                        #"RecoMissingEnergy_py",
+                        #"RecoMissingEnergy_pz",
+                        #"RecoMissingEnergy_eta",
+                        #"RecoMissingEnergy_theta",
+                        #"RecoMissingEnergy_phi",
 
-                        "RecoEmiss_px",
-                        "RecoEmiss_py",
-                        "RecoEmiss_pz",
-                        "RecoEmiss_pt",
-                        "RecoEmiss_p",
-                        "RecoEmiss_e",
+                        #"RecoEmiss_px",
+                        #"RecoEmiss_py",
+                        #"RecoEmiss_pz",
+                        #"RecoEmiss_pt",
+                        #"RecoEmiss_p",
+                        à"RecoEmiss_e",
 
-                        "Reco_e",
-                        "Reco_p",
-                        "Reco_pt",
-                        "Reco_px",
-                        "Reco_py",
-                        "Reco_pz",
-                        "Reco_eta",
-                        "Reco_theta",
-                        "Reco_phi",
-                        "Reco_charge",
-                        "RecoTrack_absD0",
-                        "RecoTrack_absZ0",
-                        "RecoTrack_absD0sig",
-                        "RecoTrack_absZ0sig",
-                        "RecoTrack_D0cov",
-                        "RecoTrack_Z0cov",
+                        #"Reco_e",
+                        #"Reco_p",
+                        #"Reco_pt",
+                        #"Reco_px",
+                        #"Reco_py",
+                        #"Reco_pz",
+                        #"Reco_eta",
+                        #"Reco_theta",
+                        #"Reco_phi",
+                        #"Reco_charge",
+                        #"RecoTrack_absD0",
+                        #"RecoTrack_absZ0",
+                        #"RecoTrack_absD0sig",
+                        #"RecoTrack_absZ0sig",
+                        #"RecoTrack_D0cov",
+                        #"RecoTrack_Z0cov",
 
-                        "Reco_e_lead",
-                        "Reco_p_lead",
-                        "Reco_pt_lead",
-                        "Reco_px_lead",
-                        "Reco_py_lead",
-                        "Reco_pz_lead",
-                        "Reco_eta_lead",
-                        "Reco_theta_lead",
-                        "Reco_phi_lead",
-                        "Reco_charge_lead",
-                        "RecoTrack_absD0_lead",
-                        "RecoTrack_absZ0_lead",
-                        "RecoTrack_absD0sig_lead",
-                        "RecoTrack_absZ0sig_lead",
-                        "RecoTrack_D0cov_lead",
-                        "RecoTrack_Z0cov_lead",
+                        #"Reco_e_lead",
+                        #"Reco_p_lead",
+                        #"Reco_pt_lead",
+                        #"Reco_px_lead",
+                        #"Reco_py_lead",
+                        #"Reco_pz_lead",
+                        #"Reco_eta_lead",
+                        #"Reco_theta_lead",
+                        #"Reco_phi_lead",
+                        #"Reco_charge_lead",
+                        #"RecoTrack_absD0_lead",
+                        #"RecoTrack_absZ0_lead",
+                        #"RecoTrack_absD0sig_lead",
+                        #"RecoTrack_absZ0sig_lead",
+                        #"RecoTrack_D0cov_lead",
+                        #"RecoTrack_Z0cov_lead",
 
-                        "Reco_e_sub",
-                        "Reco_p_sub",
-                        "Reco_pt_sub",
-                        "Reco_px_sub",
-                        "Reco_py_sub",
-                        "Reco_pz_sub",
-                        "Reco_eta_sub",
-                        "Reco_theta_sub",
-                        "Reco_phi_sub",
-                        "Reco_charge_sub",
-                        "RecoTrack_absD0_sub",
-                        "RecoTrack_absZ0_sub",
-                        "RecoTrack_absD0sig_sub",
-                        "RecoTrack_absZ0sig_sub",
-                        "RecoTrack_D0cov_sub",
-                        "RecoTrack_Z0cov_sub",
+                        #"Reco_e_sub",
+                        #"Reco_p_sub",
+                        #"Reco_pt_sub",
+                        #"Reco_px_sub",
+                        #"Reco_py_sub",
+                        #"Reco_pz_sub",
+                        #"Reco_eta_sub",
+                        #"Reco_theta_sub",
+                        #"Reco_phi_sub",
+                        #"Reco_charge_sub",
+                        #"RecoTrack_absD0_sub",
+                        #"RecoTrack_absZ0_sub",
+                        #"RecoTrack_absD0sig_sub",
+                        #"RecoTrack_absZ0sig_sub",
+                        #"RecoTrack_D0cov_sub",
+                        #"RecoTrack_Z0cov_sub",
 
-                        "RecoDecayVertexLepton",
-                        "Reco_Lxy",
-                        "Reco_Lxyz",
-                        "Reco_invMass",
-                        "Reco_cos",
-                        "Reco_DR",
+                        #"RecoDecayVertexLepton",
+                        #"Reco_Lxy",
+                        #"Reco_Lxyz",
+                        #"Reco_invMass",
+                        #"Reco_cos",
+                        #"Reco_DR",
 
                         #"n_RecoDVs",
                         #"DV_Lxyz", 
