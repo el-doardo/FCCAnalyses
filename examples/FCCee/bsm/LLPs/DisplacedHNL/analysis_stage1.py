@@ -673,165 +673,165 @@ class RDFanalysis():
                 .Define("DecGenParticles_PID", "FCCAnalyses::MCParticle::get_pdg(DecGenParticles)")
 
                 ################### Reconstructed particles #####################
-                #.Define("n_RecoTracks","ReconstructedParticle2Track::getTK_n(EFlowTrack_1)")
+                .Define("n_RecoTracks","ReconstructedParticle2Track::getTK_n(EFlowTrack_1)")
 
                 #JETS
                 ### count how many jets are in the event in total to check, it doesn't work with this method on reclustered jets, only on the edm4hep collections Jet ###
-				#.Define("n_RecoJets", "ReconstructedParticle::get_n(Jet)") 
+		.Define("n_RecoJets", "ReconstructedParticle::get_n(Jet)") 
                 #SIMPLE VARIABLES: Access the basic kinematic variables of the (selected) jets, works analogously for electrons, muons
-				#.Define("RecoJet_e",      "ReconstructedParticle::get_e(Jet)")
-                #.Define("RecoJet_p",      "ReconstructedParticle::get_p(Jet)") #momentum p
-                #.Define("RecoJet_pt",      "ReconstructedParticle::get_pt(Jet)") #transverse momentum pt
-                #.Define("RecoJet_px",      "ReconstructedParticle::get_px(Jet)")
-                #.Define("RecoJet_py",      "ReconstructedParticle::get_py(Jet)")
-                #.Define("RecoJet_pz",      "ReconstructedParticle::get_pz(Jet)")
-				#.Define("RecoJet_eta",     "ReconstructedParticle::get_eta(Jet)") #pseudorapidity eta
-                #.Define("RecoJet_theta",   "ReconstructedParticle::get_theta(Jet)")
-				#.Define("RecoJet_phi",     "ReconstructedParticle::get_phi(Jet)") #polar angle in the transverse plane phi
-                #.Define("RecoJet_charge",  "ReconstructedParticle::get_charge(Jet)")
-                #.Define("RecoJetTrack_absD0", "return abs(ReconstructedParticle2Track::getRP2TRK_D0(Jet,EFlowTrack_1))")
-                #.Define("RecoJetTrack_absZ0", "return abs(ReconstructedParticle2Track::getRP2TRK_Z0(Jet,EFlowTrack_1))")
-                #.Define("RecoJetTrack_absD0sig", "return abs(ReconstructedParticle2Track::getRP2TRK_D0_sig(Jet,EFlowTrack_1))") #significance
-                #.Define("RecoJetTrack_absZ0sig", "return abs(ReconstructedParticle2Track::getRP2TRK_Z0_sig(Jet,EFlowTrack_1))")
-                #.Define("RecoJetTrack_D0cov", "ReconstructedParticle2Track::getRP2TRK_D0_cov(Jet,EFlowTrack_1)") #variance (not sigma)
-                #.Define("RecoJetTrack_Z0cov", "ReconstructedParticle2Track::getRP2TRK_Z0_cov(Jet,EFlowTrack_1)")
+		.Define("RecoJet_e",      "ReconstructedParticle::get_e(Jet)")
+                .Define("RecoJet_p",      "ReconstructedParticle::get_p(Jet)") #momentum p
+                .Define("RecoJet_pt",      "ReconstructedParticle::get_pt(Jet)") #transverse momentum pt
+                .Define("RecoJet_px",      "ReconstructedParticle::get_px(Jet)")
+                .Define("RecoJet_py",      "ReconstructedParticle::get_py(Jet)")
+                .Define("RecoJet_pz",      "ReconstructedParticle::get_pz(Jet)")
+		.Define("RecoJet_eta",     "ReconstructedParticle::get_eta(Jet)") #pseudorapidity eta
+                .Define("RecoJet_theta",   "ReconstructedParticle::get_theta(Jet)")
+		.Define("RecoJet_phi",     "ReconstructedParticle::get_phi(Jet)") #polar angle in the transverse plane phi
+                .Define("RecoJet_charge",  "ReconstructedParticle::get_charge(Jet)")
+                .Define("RecoJetTrack_absD0", "return abs(ReconstructedParticle2Track::getRP2TRK_D0(Jet,EFlowTrack_1))")
+                .Define("RecoJetTrack_absZ0", "return abs(ReconstructedParticle2Track::getRP2TRK_Z0(Jet,EFlowTrack_1))")
+                .Define("RecoJetTrack_absD0sig", "return abs(ReconstructedParticle2Track::getRP2TRK_D0_sig(Jet,EFlowTrack_1))") #significance
+                .Define("RecoJetTrack_absZ0sig", "return abs(ReconstructedParticle2Track::getRP2TRK_Z0_sig(Jet,EFlowTrack_1))")
+                .Define("RecoJetTrack_D0cov", "ReconstructedParticle2Track::getRP2TRK_D0_cov(Jet,EFlowTrack_1)") #variance (not sigma)
+                .Define("RecoJetTrack_Z0cov", "ReconstructedParticle2Track::getRP2TRK_Z0_cov(Jet,EFlowTrack_1)")
 
 		#PHOTONS
-		#.Alias("Photon0", "Photon#0.index") 
-		#.Define("RecoPhotons",  "ReconstructedParticle::get(Photon0, ReconstructedParticles)")
-		#.Define("n_RecoPhotons",  "ReconstructedParticle::get_n(RecoPhotons)") #count how many photons are in the event in total
-        #.Define("RecoPhoton_e",      "ReconstructedParticle::get_e(RecoPhotons)")
-                #.Define("RecoPhoton_p",      "ReconstructedParticle::get_p(RecoPhotons)")
-                #.Define("RecoPhoton_pt",      "ReconstructedParticle::get_pt(RecoPhotons)")
-                #.Define("RecoPhoton_px",      "ReconstructedParticle::get_px(RecoPhotons)")
-                #.Define("RecoPhoton_py",      "ReconstructedParticle::get_py(RecoPhotons)")
-                #.Define("RecoPhoton_pz",      "ReconstructedParticle::get_pz(RecoPhotons)")
-				#.Define("RecoPhoton_eta",     "ReconstructedParticle::get_eta(RecoPhotons)") #pseudorapidity eta
-                #.Define("RecoPhoton_theta",   "ReconstructedParticle::get_theta(RecoPhotons)")
-				#.Define("RecoPhoton_phi",     "ReconstructedParticle::get_phi(RecoPhotons)") #polar angle in the transverse plane phi
-                #.Define("RecoPhoton_charge",  "ReconstructedParticle::get_charge(RecoPhotons)")
+		.Alias("Photon0", "Photon#0.index") 
+		.Define("RecoPhotons",  "ReconstructedParticle::get(Photon0, ReconstructedParticles)")
+		.Define("n_RecoPhotons",  "ReconstructedParticle::get_n(RecoPhotons)") #count how many photons are in the event in total
+                .Define("RecoPhoton_e",      "ReconstructedParticle::get_e(RecoPhotons)")
+                .Define("RecoPhoton_p",      "ReconstructedParticle::get_p(RecoPhotons)")
+                .Define("RecoPhoton_pt",      "ReconstructedParticle::get_pt(RecoPhotons)")
+                .Define("RecoPhoton_px",      "ReconstructedParticle::get_px(RecoPhotons)")
+                .Define("RecoPhoton_py",      "ReconstructedParticle::get_py(RecoPhotons)")
+                .Define("RecoPhoton_pz",      "ReconstructedParticle::get_pz(RecoPhotons)")
+		.Define("RecoPhoton_eta",     "ReconstructedParticle::get_eta(RecoPhotons)") #pseudorapidity eta
+                .Define("RecoPhoton_theta",   "ReconstructedParticle::get_theta(RecoPhotons)")
+		.Define("RecoPhoton_phi",     "ReconstructedParticle::get_phi(RecoPhotons)") #polar angle in the transverse plane phi
+                .Define("RecoPhoton_charge",  "ReconstructedParticle::get_charge(RecoPhotons)")
 
                 #NEUTRAL HADRONS
                 #.Define("Candidates", "ReconstructedParticle::remove(ReconstructedParticles, RecoPhotons)") #does not work well, there are more "photons" than expected at e<2 Gev(no efficiency) that are not in Photons but in RecoParticle so they are kept here
-                #.Define("NeutralHadrons_cand",   "ReconstructedParticles[ReconstructedParticles.type != 22 && ReconstructedParticles.energy > 2]") #this instead excludes all photons with type 22, type 0 is charged particles and then type 130 is K0 that we are interested in, pi0 always decay in gamma-gamma
-                #.Define("NeutralHadrons",       "ReconstructedParticle::sel_charge(0, true) (NeutralHadrons_cand)")
-                #.Define("n_NeutralHadrons",  "ReconstructedParticle::get_n(NeutralHadrons)") #count how many photons are in the event in total
-                #.Define("NeutralHadrons_e",      "ReconstructedParticle::get_e(NeutralHadrons)")
-                #.Define("NeutralHadrons_p",      "ReconstructedParticle::get_p(NeutralHadrons)")
-                #.Define("NeutralHadrons_pt",      "ReconstructedParticle::get_pt(NeutralHadrons)")
-                #.Define("NeutralHadrons_px",      "ReconstructedParticle::get_px(NeutralHadrons)")
-                #.Define("NeutralHadrons_py",      "ReconstructedParticle::get_py(NeutralHadrons)")
-                #.Define("NeutralHadrons_pz",      "ReconstructedParticle::get_pz(NeutralHadrons)")
-				#.Define("NeutralHadrons_eta",     "ReconstructedParticle::get_eta(NeutralHadrons)") #pseudorapidity eta
-                #.Define("NeutralHadrons_theta",   "ReconstructedParticle::get_theta(NeutralHadrons)")
-				#.Define("NeutralHadrons_phi",     "ReconstructedParticle::get_phi(NeutralHadrons)") #polar angle in the transverse plane phi
-                #.Define("NeutralHadrons_charge",  "ReconstructedParticle::get_charge(NeutralHadrons)")
-                #.Define("NeutralHadrons_mass",  "ReconstructedParticle::get_mass(NeutralHadrons)")
+                .Define("NeutralHadrons_cand",   "ReconstructedParticles[ReconstructedParticles.type != 22 && ReconstructedParticles.energy > 2]") #this instead excludes all photons with type 22, type 0 is charged particles and then type 130 is K0 that we are interested in, pi0 always decay in gamma-gamma
+                .Define("NeutralHadrons",       "ReconstructedParticle::sel_charge(0, true) (NeutralHadrons_cand)")
+                .Define("n_NeutralHadrons",  "ReconstructedParticle::get_n(NeutralHadrons)") #count how many photons are in the event in total
+                .Define("NeutralHadrons_e",      "ReconstructedParticle::get_e(NeutralHadrons)")
+                .Define("NeutralHadrons_p",      "ReconstructedParticle::get_p(NeutralHadrons)")
+                .Define("NeutralHadrons_pt",      "ReconstructedParticle::get_pt(NeutralHadrons)")
+                .Define("NeutralHadrons_px",      "ReconstructedParticle::get_px(NeutralHadrons)")
+                .Define("NeutralHadrons_py",      "ReconstructedParticle::get_py(NeutralHadrons)")
+                .Define("NeutralHadrons_pz",      "ReconstructedParticle::get_pz(NeutralHadrons)")
+		.Define("NeutralHadrons_eta",     "ReconstructedParticle::get_eta(NeutralHadrons)") #pseudorapidity eta
+                .Define("NeutralHadrons_theta",   "ReconstructedParticle::get_theta(NeutralHadrons)")
+		.Define("NeutralHadrons_phi",     "ReconstructedParticle::get_phi(NeutralHadrons)") #polar angle in the transverse plane phi
+                .Define("NeutralHadrons_charge",  "ReconstructedParticle::get_charge(NeutralHadrons)")
+                .Define("NeutralHadrons_mass",  "ReconstructedParticle::get_mass(NeutralHadrons)")
 
-				#ELECTRONS 
-				#.Alias("Electron0", "Electron#0.index")
-				#.Define("RecoElectrons",  "ReconstructedParticle::get(Electron0, ReconstructedParticles)")
-				#.Define("n_RecoElectrons",  "ReconstructedParticle::get_n(RecoElectrons)") #count how many electrons are in the event in total
-                #.Define("RecoElectron_e",      "ReconstructedParticle::get_e(RecoElectrons)")
-                #.Define("RecoElectron_p",      "ReconstructedParticle::get_p(RecoElectrons)")
-                #.Define("RecoElectron_pt",      "ReconstructedParticle::get_pt(RecoElectrons)")
-                #.Define("RecoElectron_px",      "ReconstructedParticle::get_px(RecoElectrons)")
-                #.Define("RecoElectron_py",      "ReconstructedParticle::get_py(RecoElectrons)")
-                #.Define("RecoElectron_pz",      "ReconstructedParticle::get_pz(RecoElectrons)")
-				#.Define("RecoElectron_eta",     "ReconstructedParticle::get_eta(RecoElectrons)") #pseudorapidity eta
-                #.Define("RecoElectron_theta",   "ReconstructedParticle::get_theta(RecoElectrons)")
-				#.Define("RecoElectron_phi",     "ReconstructedParticle::get_phi(RecoElectrons)") #polar angle in the transverse plane phi
-                #.Define("RecoElectron_charge",  "ReconstructedParticle::get_charge(RecoElectrons)")
-                #.Define("RecoElectronTrack_absD0", "return abs(ReconstructedParticle2Track::getRP2TRK_D0(RecoElectrons,EFlowTrack_1))")
-                #.Define("RecoElectronTrack_absZ0", "return abs(ReconstructedParticle2Track::getRP2TRK_Z0(RecoElectrons,EFlowTrack_1))")
-                #.Define("RecoElectronTrack_absD0sig", "return abs(ReconstructedParticle2Track::getRP2TRK_D0_sig(RecoElectrons,EFlowTrack_1))") #significance
-                #.Define("RecoElectronTrack_absZ0sig", "return abs(ReconstructedParticle2Track::getRP2TRK_Z0_sig(RecoElectrons,EFlowTrack_1))")
-                #.Define("RecoElectronTrack_D0cov", "ReconstructedParticle2Track::getRP2TRK_D0_cov(RecoElectrons,EFlowTrack_1)") #variance (not sigma)
-                #.Define("RecoElectronTrack_Z0cov", "ReconstructedParticle2Track::getRP2TRK_Z0_cov(RecoElectrons,EFlowTrack_1)")
+		#ELECTRONS 
+		.Alias("Electron0", "Electron#0.index")
+		.Define("RecoElectrons",  "ReconstructedParticle::get(Electron0, ReconstructedParticles)")
+		.Define("n_RecoElectrons",  "ReconstructedParticle::get_n(RecoElectrons)") #count how many electrons are in the event in total
+                .Define("RecoElectron_e",      "ReconstructedParticle::get_e(RecoElectrons)")
+                .Define("RecoElectron_p",      "ReconstructedParticle::get_p(RecoElectrons)")
+                .Define("RecoElectron_pt",      "ReconstructedParticle::get_pt(RecoElectrons)")
+                .Define("RecoElectron_px",      "ReconstructedParticle::get_px(RecoElectrons)")
+                .Define("RecoElectron_py",      "ReconstructedParticle::get_py(RecoElectrons)")
+                .Define("RecoElectron_pz",      "ReconstructedParticle::get_pz(RecoElectrons)")
+		.Define("RecoElectron_eta",     "ReconstructedParticle::get_eta(RecoElectrons)") #pseudorapidity eta
+                .Define("RecoElectron_theta",   "ReconstructedParticle::get_theta(RecoElectrons)")
+		.Define("RecoElectron_phi",     "ReconstructedParticle::get_phi(RecoElectrons)") #polar angle in the transverse plane phi
+                .Define("RecoElectron_charge",  "ReconstructedParticle::get_charge(RecoElectrons)")
+                .Define("RecoElectronTrack_absD0", "return abs(ReconstructedParticle2Track::getRP2TRK_D0(RecoElectrons,EFlowTrack_1))")
+                .Define("RecoElectronTrack_absZ0", "return abs(ReconstructedParticle2Track::getRP2TRK_Z0(RecoElectrons,EFlowTrack_1))")
+                .Define("RecoElectronTrack_absD0sig", "return abs(ReconstructedParticle2Track::getRP2TRK_D0_sig(RecoElectrons,EFlowTrack_1))") #significance
+                .Define("RecoElectronTrack_absZ0sig", "return abs(ReconstructedParticle2Track::getRP2TRK_Z0_sig(RecoElectrons,EFlowTrack_1))")
+                .Define("RecoElectronTrack_D0cov", "ReconstructedParticle2Track::getRP2TRK_D0_cov(RecoElectrons,EFlowTrack_1)") #variance (not sigma)
+                .Define("RecoElectronTrack_Z0cov", "ReconstructedParticle2Track::getRP2TRK_Z0_cov(RecoElectrons,EFlowTrack_1)")
 
                 # MUONS
-				.Alias("Muon0", "Muon#0.index")
-				.Define("RecoMuons",  "ReconstructedParticle::get(Muon0, ReconstructedParticles)")
-				.Define("n_RecoMuons",  "ReconstructedParticle::get_n(RecoMuons)") #count how many muons are in the event in total
+		.Alias("Muon0", "Muon#0.index")
+		.Define("RecoMuons",  "ReconstructedParticle::get(Muon0, ReconstructedParticles)")
+		.Define("n_RecoMuons",  "ReconstructedParticle::get_n(RecoMuons)") #count how many muons are in the event in total
                 .Define("RecoMuon_e",      "ReconstructedParticle::get_e(RecoMuons)")
                 .Define("RecoMuon_p",      "ReconstructedParticle::get_p(RecoMuons)")
                 .Define("RecoMuon_pt",      "ReconstructedParticle::get_pt(RecoMuons)")
                 .Define("RecoMuon_px",      "ReconstructedParticle::get_px(RecoMuons)")
                 .Define("RecoMuon_py",      "ReconstructedParticle::get_py(RecoMuons)")
                 .Define("RecoMuon_pz",      "ReconstructedParticle::get_pz(RecoMuons)")
-				.Define("RecoMuon_eta",     "ReconstructedParticle::get_eta(RecoMuons)") #pseudorapidity eta
+		.Define("RecoMuon_eta",     "ReconstructedParticle::get_eta(RecoMuons)") #pseudorapidity eta
                 .Define("RecoMuon_theta",   "ReconstructedParticle::get_theta(RecoMuons)")
-				.Define("RecoMuon_phi",     "ReconstructedParticle::get_phi(RecoMuons)") #polar angle in the transverse plane phi
+		.Define("RecoMuon_phi",     "ReconstructedParticle::get_phi(RecoMuons)") #polar angle in the transverse plane phi
                 .Define("RecoMuon_charge",  "ReconstructedParticle::get_charge(RecoMuons)")
-                #.Define("RecoMuonTrack_absD0", "return abs(ReconstructedParticle2Track::getRP2TRK_D0(RecoMuons,EFlowTrack_1))")
-                #.Define("RecoMuonTrack_absZ0", "return abs(ReconstructedParticle2Track::getRP2TRK_Z0(RecoMuons,EFlowTrack_1))")
-                #.Define("RecoMuonTrack_absD0sig", "return abs(ReconstructedParticle2Track::getRP2TRK_D0_sig(RecoMuons,EFlowTrack_1))") #significance
-                #.Define("RecoMuonTrack_absZ0sig", "return abs(ReconstructedParticle2Track::getRP2TRK_Z0_sig(RecoMuons,EFlowTrack_1))")
-                #.Define("RecoMuonTrack_D0cov", "ReconstructedParticle2Track::getRP2TRK_D0_cov(RecoMuons,EFlowTrack_1)") #variance (not sigma)
-                #.Define("RecoMuonTrack_Z0cov", "ReconstructedParticle2Track::getRP2TRK_Z0_cov(RecoMuons,EFlowTrack_1)")
+                .Define("RecoMuonTrack_absD0", "return abs(ReconstructedParticle2Track::getRP2TRK_D0(RecoMuons,EFlowTrack_1))")
+                .Define("RecoMuonTrack_absZ0", "return abs(ReconstructedParticle2Track::getRP2TRK_Z0(RecoMuons,EFlowTrack_1))")
+                .Define("RecoMuonTrack_absD0sig", "return abs(ReconstructedParticle2Track::getRP2TRK_D0_sig(RecoMuons,EFlowTrack_1))") #significance
+                .Define("RecoMuonTrack_absZ0sig", "return abs(ReconstructedParticle2Track::getRP2TRK_Z0_sig(RecoMuons,EFlowTrack_1))")
+                .Define("RecoMuonTrack_D0cov", "ReconstructedParticle2Track::getRP2TRK_D0_cov(RecoMuons,EFlowTrack_1)") #variance (not sigma)
+                .Define("RecoMuonTrack_Z0cov", "ReconstructedParticle2Track::getRP2TRK_Z0_cov(RecoMuons,EFlowTrack_1)")
 
                 ### building variables for the two leptons final state ###
-                #.Define("RecoLeptons", "ReconstructedParticle::merge(RecoElectrons, RecoMuons)")
-                #.Define("n_RecoLeptons",  "ReconstructedParticle::get_n(RecoLeptons)") 
-                #.Define("Reco_e",      "ReconstructedParticle::get_e(RecoLeptons)")
-                #.Define("Reco_p",      "ReconstructedParticle::get_p(RecoLeptons)")
-                #.Define("Reco_pt",      "ReconstructedParticle::get_pt(RecoLeptons)")
-                #.Define("Reco_px",      "ReconstructedParticle::get_px(RecoLeptons)")
-                #.Define("Reco_py",      "ReconstructedParticle::get_py(RecoLeptons)")
-                #.Define("Reco_pz",      "ReconstructedParticle::get_pz(RecoLeptons)")
-				#.Define("Reco_eta",     "ReconstructedParticle::get_eta(RecoLeptons)") #pseudorapidity eta
-                #.Define("Reco_theta",   "ReconstructedParticle::get_theta(RecoLeptons)")
-				#.Define("Reco_phi",     "ReconstructedParticle::get_phi(RecoLeptons)") #polar angle in the transverse plane phi
-                #.Define("Reco_charge",  "ReconstructedParticle::get_charge(RecoLeptons)")
-                #.Define("RecoTrack_absD0", "return abs(ReconstructedParticle2Track::getRP2TRK_D0(RecoLeptons,EFlowTrack_1))")
-                #.Define("RecoTrack_absZ0", "return abs(ReconstructedParticle2Track::getRP2TRK_Z0(RecoLeptons,EFlowTrack_1))")
-                #.Define("RecoTrack_absD0sig", "return abs(ReconstructedParticle2Track::getRP2TRK_D0_sig(RecoLeptons,EFlowTrack_1))") #significance
-                #.Define("RecoTrack_absZ0sig", "return abs(ReconstructedParticle2Track::getRP2TRK_Z0_sig(RecoLeptons,EFlowTrack_1))")
-                #.Define("RecoTrack_D0cov", "ReconstructedParticle2Track::getRP2TRK_D0_cov(RecoLeptons,EFlowTrack_1)") #variance (not sigma)
-                #.Define("RecoTrack_Z0cov", "ReconstructedParticle2Track::getRP2TRK_Z0_cov(RecoLeptons,EFlowTrack_1)")
+                .Define("RecoLeptons", "ReconstructedParticle::merge(RecoElectrons, RecoMuons)")
+                .Define("n_RecoLeptons",  "ReconstructedParticle::get_n(RecoLeptons)") 
+                .Define("Reco_e",      "ReconstructedParticle::get_e(RecoLeptons)")
+                .Define("Reco_p",      "ReconstructedParticle::get_p(RecoLeptons)")
+                .Define("Reco_pt",      "ReconstructedParticle::get_pt(RecoLeptons)")
+                .Define("Reco_px",      "ReconstructedParticle::get_px(RecoLeptons)")
+                .Define("Reco_py",      "ReconstructedParticle::get_py(RecoLeptons)")
+                .Define("Reco_pz",      "ReconstructedParticle::get_pz(RecoLeptons)")
+		.Define("Reco_eta",     "ReconstructedParticle::get_eta(RecoLeptons)") #pseudorapidity eta
+                .Define("Reco_theta",   "ReconstructedParticle::get_theta(RecoLeptons)")
+		.Define("Reco_phi",     "ReconstructedParticle::get_phi(RecoLeptons)") #polar angle in the transverse plane phi
+                .Define("Reco_charge",  "ReconstructedParticle::get_charge(RecoLeptons)")
+                .Define("RecoTrack_absD0", "return abs(ReconstructedParticle2Track::getRP2TRK_D0(RecoLeptons,EFlowTrack_1))")
+                .Define("RecoTrack_absZ0", "return abs(ReconstructedParticle2Track::getRP2TRK_Z0(RecoLeptons,EFlowTrack_1))")
+                .Define("RecoTrack_absD0sig", "return abs(ReconstructedParticle2Track::getRP2TRK_D0_sig(RecoLeptons,EFlowTrack_1))") #significance
+                .Define("RecoTrack_absZ0sig", "return abs(ReconstructedParticle2Track::getRP2TRK_Z0_sig(RecoLeptons,EFlowTrack_1))")
+                .Define("RecoTrack_D0cov", "ReconstructedParticle2Track::getRP2TRK_D0_cov(RecoLeptons,EFlowTrack_1)") #variance (not sigma)
+                .Define("RecoTrack_Z0cov", "ReconstructedParticle2Track::getRP2TRK_Z0_cov(RecoLeptons,EFlowTrack_1)")
 
-                #.Define("RecoLepton_lead",     "FCCAnalyses::ZHfunctions::get_leading(RecoLeptons);")
-                #.Define("Reco_e_lead",      "ReconstructedParticle::get_e(RecoLepton_lead)")
-                #.Define("Reco_p_lead",      "ReconstructedParticle::get_p(RecoLepton_lead)")
-                #.Define("Reco_pt_lead",      "ReconstructedParticle::get_pt(RecoLepton_lead)")
-                #.Define("Reco_px_lead",      "ReconstructedParticle::get_px(RecoLepton_lead)")
-                #.Define("Reco_py_lead",      "ReconstructedParticle::get_py(RecoLepton_lead)")
-                #.Define("Reco_pz_lead",      "ReconstructedParticle::get_pz(RecoLepton_lead)")
-				#.Define("Reco_eta_lead",     "ReconstructedParticle::get_eta(RecoLepton_lead)") #pseudorapidity eta
-                #.Define("Reco_theta_lead",   "ReconstructedParticle::get_theta(RecoLepton_lead)")
-				#.Define("Reco_phi_lead",     "ReconstructedParticle::get_phi(RecoLepton_lead)") #polar angle in the transverse plane phi
-                #.Define("Reco_charge_lead",  "ReconstructedParticle::get_charge(RecoLepton_lead)")
-                #.Define("RecoTrack_absD0_lead", "return abs(ReconstructedParticle2Track::getRP2TRK_D0(RecoLepton_lead,EFlowTrack_1))")
-                #.Define("RecoTrack_absZ0_lead", "return abs(ReconstructedParticle2Track::getRP2TRK_Z0(RecoLepton_lead,EFlowTrack_1))")
-                #.Define("RecoTrack_absD0sig_lead", "return abs(ReconstructedParticle2Track::getRP2TRK_D0_sig(RecoLepton_lead,EFlowTrack_1))") #significance
-                #.Define("RecoTrack_absZ0sig_lead", "return abs(ReconstructedParticle2Track::getRP2TRK_Z0_sig(RecoLepton_lead,EFlowTrack_1))")
-                #.Define("RecoTrack_D0cov_lead", "ReconstructedParticle2Track::getRP2TRK_D0_cov(RecoLepton_lead,EFlowTrack_1)") #variance (not sigma)
-                #.Define("RecoTrack_Z0cov_lead", "ReconstructedParticle2Track::getRP2TRK_Z0_cov(RecoLepton_lead,EFlowTrack_1)")
+                .Define("RecoLepton_lead",     "FCCAnalyses::ZHfunctions::get_leading(RecoLeptons);")
+                .Define("Reco_e_lead",      "ReconstructedParticle::get_e(RecoLepton_lead)")
+                .Define("Reco_p_lead",      "ReconstructedParticle::get_p(RecoLepton_lead)")
+                .Define("Reco_pt_lead",      "ReconstructedParticle::get_pt(RecoLepton_lead)")
+                .Define("Reco_px_lead",      "ReconstructedParticle::get_px(RecoLepton_lead)")
+                .Define("Reco_py_lead",      "ReconstructedParticle::get_py(RecoLepton_lead)")
+                .Define("Reco_pz_lead",      "ReconstructedParticle::get_pz(RecoLepton_lead)")
+		.Define("Reco_eta_lead",     "ReconstructedParticle::get_eta(RecoLepton_lead)") #pseudorapidity eta
+                .Define("Reco_theta_lead",   "ReconstructedParticle::get_theta(RecoLepton_lead)")
+		.Define("Reco_phi_lead",     "ReconstructedParticle::get_phi(RecoLepton_lead)") #polar angle in the transverse plane phi
+                .Define("Reco_charge_lead",  "ReconstructedParticle::get_charge(RecoLepton_lead)")
+                .Define("RecoTrack_absD0_lead", "return abs(ReconstructedParticle2Track::getRP2TRK_D0(RecoLepton_lead,EFlowTrack_1))")
+                .Define("RecoTrack_absZ0_lead", "return abs(ReconstructedParticle2Track::getRP2TRK_Z0(RecoLepton_lead,EFlowTrack_1))")
+                .Define("RecoTrack_absD0sig_lead", "return abs(ReconstructedParticle2Track::getRP2TRK_D0_sig(RecoLepton_lead,EFlowTrack_1))") #significance
+                .Define("RecoTrack_absZ0sig_lead", "return abs(ReconstructedParticle2Track::getRP2TRK_Z0_sig(RecoLepton_lead,EFlowTrack_1))")
+                .Define("RecoTrack_D0cov_lead", "ReconstructedParticle2Track::getRP2TRK_D0_cov(RecoLepton_lead,EFlowTrack_1)") #variance (not sigma)
+                .Define("RecoTrack_Z0cov_lead", "ReconstructedParticle2Track::getRP2TRK_Z0_cov(RecoLepton_lead,EFlowTrack_1)")
 
-                #.Define("RecoLepton_sub",     "FCCAnalyses::ZHfunctions::get_subleading(RecoLeptons);")
-                #.Define("Reco_e_sub",      "ReconstructedParticle::get_e(RecoLepton_sub)")
-                #.Define("Reco_p_sub",      "ReconstructedParticle::get_p(RecoLepton_sub)")
-                #.Define("Reco_pt_sub",      "ReconstructedParticle::get_pt(RecoLepton_sub)")
-                #.Define("Reco_px_sub",      "ReconstructedParticle::get_px(RecoLepton_sub)")
-                #.Define("Reco_py_sub",      "ReconstructedParticle::get_py(RecoLepton_sub)")
-                #.Define("Reco_pz_sub",      "ReconstructedParticle::get_pz(RecoLepton_sub)")
-                #.Define("Reco_eta_sub",     "ReconstructedParticle::get_eta(RecoLepton_sub)") #pseudorapidity eta
-                #.Define("Reco_theta_sub",   "ReconstructedParticle::get_theta(RecoLepton_sub)")
-                #.Define("Reco_phi_sub",     "ReconstructedParticle::get_phi(RecoLepton_sub)") #polar angle in the transverse plane phi
-                #.Define("Reco_charge_sub",  "ReconstructedParticle::get_charge(RecoLepton_sub)")
-                #.Define("RecoTrack_absD0_sub", "return abs(ReconstructedParticle2Track::getRP2TRK_D0(RecoLepton_sub,EFlowTrack_1))")
-                #.Define("RecoTrack_absZ0_sub", "return abs(ReconstructedParticle2Track::getRP2TRK_Z0(RecoLepton_sub,EFlowTrack_1))")
-                #.Define("RecoTrack_absD0sig_sub", "return abs(ReconstructedParticle2Track::getRP2TRK_D0_sig(RecoLepton_sub,EFlowTrack_1))") #significance
-                #.Define("RecoTrack_absZ0sig_sub", "return abs(ReconstructedParticle2Track::getRP2TRK_Z0_sig(RecoLepton_sub,EFlowTrack_1))")
-                #.Define("RecoTrack_D0cov_sub", "ReconstructedParticle2Track::getRP2TRK_D0_cov(RecoLepton_sub,EFlowTrack_1)") #variance (not sigma)
-                #.Define("RecoTrack_Z0cov_sub", "ReconstructedParticle2Track::getRP2TRK_Z0_cov(RecoLepton_sub,EFlowTrack_1)")
+                .Define("RecoLepton_sub",     "FCCAnalyses::ZHfunctions::get_subleading(RecoLeptons);")
+                .Define("Reco_e_sub",      "ReconstructedParticle::get_e(RecoLepton_sub)")
+                .Define("Reco_p_sub",      "ReconstructedParticle::get_p(RecoLepton_sub)")
+                .Define("Reco_pt_sub",      "ReconstructedParticle::get_pt(RecoLepton_sub)")
+                .Define("Reco_px_sub",      "ReconstructedParticle::get_px(RecoLepton_sub)")
+                .Define("Reco_py_sub",      "ReconstructedParticle::get_py(RecoLepton_sub)")
+                .Define("Reco_pz_sub",      "ReconstructedParticle::get_pz(RecoLepton_sub)")
+                .Define("Reco_eta_sub",     "ReconstructedParticle::get_eta(RecoLepton_sub)") #pseudorapidity eta
+                .Define("Reco_theta_sub",   "ReconstructedParticle::get_theta(RecoLepton_sub)")
+                .Define("Reco_phi_sub",     "ReconstructedParticle::get_phi(RecoLepton_sub)") #polar angle in the transverse plane phi
+                .Define("Reco_charge_sub",  "ReconstructedParticle::get_charge(RecoLepton_sub)")
+                .Define("RecoTrack_absD0_sub", "return abs(ReconstructedParticle2Track::getRP2TRK_D0(RecoLepton_sub,EFlowTrack_1))")
+                .Define("RecoTrack_absZ0_sub", "return abs(ReconstructedParticle2Track::getRP2TRK_Z0(RecoLepton_sub,EFlowTrack_1))")
+                .Define("RecoTrack_absD0sig_sub", "return abs(ReconstructedParticle2Track::getRP2TRK_D0_sig(RecoLepton_sub,EFlowTrack_1))") #significance
+                .Define("RecoTrack_absZ0sig_sub", "return abs(ReconstructedParticle2Track::getRP2TRK_Z0_sig(RecoLepton_sub,EFlowTrack_1))")
+                .Define("RecoTrack_D0cov_sub", "ReconstructedParticle2Track::getRP2TRK_D0_cov(RecoLepton_sub,EFlowTrack_1)") #variance (not sigma)
+                .Define("RecoTrack_Z0cov_sub", "ReconstructedParticle2Track::getRP2TRK_Z0_cov(RecoLepton_sub,EFlowTrack_1)")
 
                 ### cosine between two leptons ###
-                #.Define("Reco_TwoLeptons_p", "if (n_RecoLeptons>1) return (Reco_px.at(0)*Reco_px.at(1) + Reco_py.at(0)*Reco_py.at(1) + Reco_pz.at(0)*Reco_pz.at(1)); else return float(-2.);")
-                #.Define("Reco_cos", "if (n_RecoLeptons>1) return (Reco_TwoLeptons_p/(Reco_p.at(0)*Reco_p.at(1))); else return float(-2.);")
+                .Define("Reco_TwoLeptons_p", "if (n_RecoLeptons>1) return (Reco_px.at(0)*Reco_px.at(1) + Reco_py.at(0)*Reco_py.at(1) + Reco_pz.at(0)*Reco_pz.at(1)); else return float(-2.);")
+                .Define("Reco_cos", "if (n_RecoLeptons>1) return (Reco_TwoLeptons_p/(Reco_p.at(0)*Reco_p.at(1))); else return float(-2.);")
 
                 ### angular distance between two leptons ###
-                #.Define("Reco_DR","if (n_RecoLeptons>1) return myUtils::deltaR(Reco_phi.at(0), Reco_phi.at(1), Reco_eta.at(0), Reco_eta.at(1)); else return float(-1.);")
+                .Define("Reco_DR","if (n_RecoLeptons>1) return myUtils::deltaR(Reco_phi.at(0), Reco_phi.at(1), Reco_eta.at(0), Reco_eta.at(1)); else return float(-1.);")
 
 				## ## estraggo il muone a maggior pt
 				.Define("RecoMuon_lead", "FCCAnalyses::ZHfunctions::get_leading_pt(RecoMuons);") ## ## definisco get_leading_pt basandomi su get_leading
@@ -880,36 +880,36 @@ class RDFanalysis():
                 .Define("SecondaryTracks",   "VertexFitterSimple::get_NonPrimaryTracks( EFlowTrack_1, PrimaryTracks )")
                 .Define("n_SecondaryTracks",  "ReconstructedParticle2Track::getTK_n( SecondaryTracks )" )
 
-                ### reconstruct the reco decay vertex using the reco'ed tracks from electrons and muons ###
-                #.Define("RecoElectronTracks",   "ReconstructedParticle2Track::getRP2TRK( RecoElectrons, EFlowTrack_1)") ### EFlowTrack_1 contains all tracks, selecting a subset associated with certain particles ###
+               ### reconstruct the reco decay vertex using the reco'ed tracks from electrons and muons ###
+                .Define("RecoElectronTracks",   "ReconstructedParticle2Track::getRP2TRK( RecoElectrons, EFlowTrack_1)") ### EFlowTrack_1 contains all tracks, selecting a subset associated with certain particles ###
                 .Define("RecoMuonTracks",   "ReconstructedParticle2Track::getRP2TRK( RecoMuons, EFlowTrack_1)")
-                #.Define("RecoLeptonTracks",   "ReconstructedTrack::Merge( RecoElectronTracks, RecoMuonTracks)") ### merges two tracks collections ###
+                .Define("RecoLeptonTracks",   "ReconstructedTrack::Merge( RecoElectronTracks, RecoMuonTracks)") ### merges two tracks collections ###
                 
-                #.Define("RecoDecayVertexObjectLepton",   "VertexFitterSimple::VertexFitter_Tk( 0, RecoLeptonTracks)" ) ### reconstructing a vertex withour any request n=0 ###
-                #.Define("RecoDecayVertexLepton",  "VertexingUtils::get_VertexData( RecoDecayVertexObjectLepton )")
+                .Define("RecoDecayVertexObjectLepton",   "VertexFitterSimple::VertexFitter_Tk( 0, RecoLeptonTracks)" ) ### reconstructing a vertex withour any request n=0 ###
+                .Define("RecoDecayVertexLepton",  "VertexingUtils::get_VertexData( RecoDecayVertexObjectLepton )")
 
-                #.Define("Reco_Lxyz","return sqrt(RecoDecayVertexLepton.position.x*RecoDecayVertexLepton.position.x + RecoDecayVertexLepton.position.y*RecoDecayVertexLepton.position.y + RecoDecayVertexLepton.position.z*RecoDecayVertexLepton.position.z);")
-                #.Define("Reco_Lxy","return sqrt(RecoDecayVertexLepton.position.x*RecoDecayVertexLepton.position.x + RecoDecayVertexLepton.position.y*RecoDecayVertexLepton.position.y);")
+                .Define("Reco_Lxyz","return sqrt(RecoDecayVertexLepton.position.x*RecoDecayVertexLepton.position.x + RecoDecayVertexLepton.position.y*RecoDecayVertexLepton.position.y + RecoDecayVertexLepton.position.z*RecoDecayVertexLepton.position.z);")
+                .Define("Reco_Lxy","return sqrt(RecoDecayVertexLepton.position.x*RecoDecayVertexLepton.position.x + RecoDecayVertexLepton.position.y*RecoDecayVertexLepton.position.y);")
 
                 ### https://github.com/HEP-FCC/FCCAnalyses/blob/d39a711a703244ee2902f5d2191ad1e2367363ac/examples/FCCee/vertex/validation_tkParam.py#L115 ###
-                #.Define("RecoTracks_noLeptons",   "ReconstructedTrack::Remove( RecoLeptonTracks, EFlowTrack_1)")
-                #.Define("n_noLeptonTracks",  "ReconstructedParticle2Track::getTK_n( RecoTracks_noLeptons )" )
-                #.Define("noLep_e",      "ReconstructedParticle::get_e(JetsParticles)")
-                #.Define("noLep_p",      "ReconstructedParticle::get_p(JetsParticles)")
-                #.Define("noLep_pt",      "ReconstructedParticle::get_pt(JetsParticles)")
-                #.Define("noLep_px",      "ReconstructedParticle::get_px(JetsParticles)")
-                #.Define("noLep_py",      "ReconstructedParticle::get_py(JetsParticles)")
-                #.Define("noLep_pz",      "ReconstructedParticle::get_pz(JetsParticles)")
-				#.Define("noLep_eta",     "ReconstructedParticle::get_eta(JetsParticles)") #pseudorapidity eta
-                #.Define("noLep_theta",   "ReconstructedParticle::get_theta(JetsParticles)")
-				#.Define("noLep_phi",     "ReconstructedParticle::get_phi(JetsParticles)") #polar angle in the transverse plane phi
-                #.Define("noLep_charge",  "ReconstructedParticle::get_charge(JetsParticles)")
-                #.Define("RecoTracknoLep_absD0", "return abs(ReconstructedParticle2Track::getRP2TRK_D0(JetsParticles,EFlowTrack_1))")
-                #.Define("RecoTracknoLep_absZ0", "return abs(ReconstructedParticle2Track::getRP2TRK_Z0(JetsParticles,EFlowTrack_1))")
-                #.Define("RecoTracknoLep_absD0sig", "return abs(ReconstructedParticle2Track::getRP2TRK_D0_sig(JetsParticles,EFlowTrack_1))") #significance
-                #.Define("RecoTracknoLep_absZ0sig", "return abs(ReconstructedParticle2Track::getRP2TRK_Z0_sig(JetsParticles,EFlowTrack_1))")
-                #.Define("RecoTracknoLep_D0cov", "ReconstructedParticle2Track::getRP2TRK_D0_cov(JetsParticles,EFlowTrack_1)") #variance (not sigma)
-                #.Define("RecoTracknoLep_Z0cov", "ReconstructedParticle2Track::getRP2TRK_Z0_cov(JetsParticles,EFlowTrack_1)")
+                .Define("RecoTracks_noLeptons",   "ReconstructedTrack::Remove( RecoLeptonTracks, EFlowTrack_1)")
+                .Define("n_noLeptonTracks",  "ReconstructedParticle2Track::getTK_n( RecoTracks_noLeptons )" )
+                .Define("noLep_e",      "ReconstructedParticle::get_e(JetsParticles)")
+                .Define("noLep_p",      "ReconstructedParticle::get_p(JetsParticles)")
+                .Define("noLep_pt",      "ReconstructedParticle::get_pt(JetsParticles)")
+                .Define("noLep_px",      "ReconstructedParticle::get_px(JetsParticles)")
+                .Define("noLep_py",      "ReconstructedParticle::get_py(JetsParticles)")
+                .Define("noLep_pz",      "ReconstructedParticle::get_pz(JetsParticles)")
+		.Define("noLep_eta",     "ReconstructedParticle::get_eta(JetsParticles)") #pseudorapidity eta
+                .Define("noLep_theta",   "ReconstructedParticle::get_theta(JetsParticles)")
+		.Define("noLep_phi",     "ReconstructedParticle::get_phi(JetsParticles)") #polar angle in the transverse plane phi
+                .Define("noLep_charge",  "ReconstructedParticle::get_charge(JetsParticles)")
+                .Define("RecoTracknoLep_absD0", "return abs(ReconstructedParticle2Track::getRP2TRK_D0(JetsParticles,EFlowTrack_1))")
+                .Define("RecoTracknoLep_absZ0", "return abs(ReconstructedParticle2Track::getRP2TRK_Z0(JetsParticles,EFlowTrack_1))")
+                .Define("RecoTracknoLep_absD0sig", "return abs(ReconstructedParticle2Track::getRP2TRK_D0_sig(JetsParticles,EFlowTrack_1))") #significance
+                .Define("RecoTracknoLep_absZ0sig", "return abs(ReconstructedParticle2Track::getRP2TRK_Z0_sig(JetsParticles,EFlowTrack_1))")
+                .Define("RecoTracknoLep_D0cov", "ReconstructedParticle2Track::getRP2TRK_D0_cov(JetsParticles,EFlowTrack_1)") #variance (not sigma)
+                .Define("RecoTracknoLep_Z0cov", "ReconstructedParticle2Track::getRP2TRK_Z0_cov(JetsParticles,EFlowTrack_1)")
                
                 ### LCFIPlus algorithm for vertexing ###
                 #find the DVs
@@ -939,13 +939,13 @@ class RDFanalysis():
                 .Define("RecoEmiss_e",   "RecoEmiss[0].energy")
 
                 ### dilepton invariant mass ###
-                #.Define("Reco_TwoLeptons_energy", "if (n_RecoLeptons>1) return (Reco_e.at(0) + Reco_e.at(1)); else return float(-1.);")
-                #.Define("Reco_TwoLeptons_px", "if (n_RecoLeptons>1) return (Reco_px.at(0) + Reco_px.at(1)); else return float(-1.);")
-                #.Define("Reco_TwoLeptons_py", "if (n_RecoLeptons>1) return (Reco_py.at(0) + Reco_py.at(1)); else return float(-1.);")
-                #.Define("Reco_TwoLeptons_pz", "if (n_RecoLeptons>1) return (Reco_pz.at(0) + Reco_pz.at(1)); else return float(-1.);")
-                #.Define("Reco_invMass", "if (n_RecoLeptons>1) return sqrt(Reco_TwoLeptons_energy*Reco_TwoLeptons_energy - Reco_TwoLeptons_px*Reco_TwoLeptons_px - Reco_TwoLeptons_py*Reco_TwoLeptons_py - Reco_TwoLeptons_pz*Reco_TwoLeptons_pz ); else return float(-1.);")
+                .Define("Reco_TwoLeptons_energy", "if (n_RecoLeptons>1) return (Reco_e.at(0) + Reco_e.at(1)); else return float(-1.);")
+                .Define("Reco_TwoLeptons_px", "if (n_RecoLeptons>1) return (Reco_px.at(0) + Reco_px.at(1)); else return float(-1.);")
+                .Define("Reco_TwoLeptons_py", "if (n_RecoLeptons>1) return (Reco_py.at(0) + Reco_py.at(1)); else return float(-1.);")
+                .Define("Reco_TwoLeptons_pz", "if (n_RecoLeptons>1) return (Reco_pz.at(0) + Reco_pz.at(1)); else return float(-1.);")
+                .Define("Reco_invMass", "if (n_RecoLeptons>1) return sqrt(Reco_TwoLeptons_energy*Reco_TwoLeptons_energy - Reco_TwoLeptons_px*Reco_TwoLeptons_px - Reco_TwoLeptons_py*Reco_TwoLeptons_py - Reco_TwoLeptons_pz*Reco_TwoLeptons_pz ); else return float(-1.);")
 
-                .Define('RecoMC_PID', "ReconstructedParticle2MC::getRP2MC_pdg(MCRecoAssociations0,MCRecoAssociations1,ReconstructedParticles,Particle)")
+                .Define('RecoMC_PID', "ReconstructedParticle2MC::getRP2MC_pdg(MCRecoAssociations0,MCRecoAssociations1,ReconstructedParticles,Particle)"
 
                 #### FILTERS APPLIED TO ALL THE EVENTS ####
                 ### minimal selection for hnls final state
