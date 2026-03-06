@@ -4,7 +4,8 @@
 # 	la classe RecoMuon_Lead sarà composta dal solo muone estratto, la classe della
 #	collezione di particelle dalle quali manca il muone leading è JetParticles .
 # 	Do le JetParticles in pasto alle funzioni che clusterizzano le RecoParticles
-#	impostando l'algoritmo Dhuram kt esclusivo con Nj=2
+#	impostando l'algoritmo Dhuram kt esclusivo con Nj=2. 
+#	Aggiungo il filtro per pt del muone lead > 20GeV
 
 import ROOT
 
@@ -948,7 +949,7 @@ class RDFanalysis():
 
                 #### FILTERS APPLIED TO ALL THE EVENTS ####
                 ### minimal selection for hnls final state
-                .Filter("n_RecoPhotons==0 && n_RecoLeptons==2 && ((Reco_charge.at(0)==1 && Reco_charge.at(1)==-1) || (Reco_charge.at(0)==-1 && Reco_charge.at(1)==1))")
+                #.Filter("n_RecoPhotons==0 && n_RecoLeptons==2 && ((Reco_charge.at(0)==1 && Reco_charge.at(1)==-1) || (Reco_charge.at(0)==-1 && Reco_charge.at(1)==1))") ## ## lui va via
                 ### generator selection on llnunu background that needs to be applied consinstently to the others
                 #.Filter("Reco_pt.at(0) > 1 && Reco_pt.at(1) > 1 && RecoEmiss_pt > 5")
 
