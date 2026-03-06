@@ -227,6 +227,9 @@ variables = [
     #"RecoPhoton_theta",
     #"RecoPhoton_phi",
     #"RecoPhoton_charge",
+	"jets_e",
+	"jets_pt",
+	"n_jets",
     
 ]
 
