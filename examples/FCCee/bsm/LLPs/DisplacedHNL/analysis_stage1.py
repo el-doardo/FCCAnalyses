@@ -432,14 +432,14 @@ processList_ = {
 #Comment out when running over centrally produced events
 #Mandatory when running over privately produced events
 #inputDir = "/eos/experiment/fcc/ee/generation/DelphesEvents/winter2023/IDEA/"
-inputDir = "/eos/user/e/espoto/HNLsignals"
+inputDir = "/eos/user/e/espoto/FCC_2jet_z_pole/FCCAnalysis/stage1"
 
 # additional/costom C++ functions, defined in header files (optional)
 includePaths = ["functions.h"]
 
 #Optional: output directory, default is local dir
 #outputDir = "output_stage1/"
-outputDir = "/eos/user/e/espoto/FCCAnalyses/outputs/reco/stage1_reco"
+outputDir = "/eos/user/e/espoto/FCC_2jet_z_pole/FCCAnalysis/final_reco/"
 
 ### necessary to run on HTCondor ###
 eosType = "eosuser"
