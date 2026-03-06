@@ -840,10 +840,8 @@ class RDFanalysis():
 							.Define("LeadingMuon", "FCCAnalyses::ZHfunctions::get_leading_pt(RecoMuons)")
 							.Define("LeadingMuon_pt", "ReconstructedParticle::get_pt(LeadingMuon)")
 							.Define("LeadingMuon_size", "ReconstructedParticle::get_n(LeadingMuon)")
-
-							
-							.Define("LeadingMuonExist", R"(auto tmp = LeadingMuon; if(LeadingMuon_size == 0) tmp.clear();  return tmp; )")
-							.Define("JetsParticles", R"(auto tmp = ReconstructedParticles; tmp = ReconstructedParticle::remove(tmp, LeadingMuonExist); return tmp; )")
+							.Define("LeadingMuonExist", "LeadingMuon_size > 0 ? LeadingMuon : ReconstructedParticle::RVec()")
+							.Define("JetsParticles", "ReconstructedParticle::remove(ReconstructedParticles, LeadingMuonExist)")
 			
 				## ##.Define("LeadingMuon", "FCCAnalyses::ZHfunctions::get_leading_pt(RecoMuons)")
 				## ##.Define("LeadingMuon_pt", "ReconstructedParticle::get_pt(LeadingMuon)")
