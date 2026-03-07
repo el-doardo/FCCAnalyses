@@ -618,10 +618,10 @@ class RDFanalysis():
                
                 ### LCFIPlus algorithm for vertexing ###
                 #find the DVs
-                .Define("RecoDVs", "VertexFinderLCFIPlus::get_SV_event(RecoMuon_lead, EFlowTrack_1, PrimaryVertexObject, true, 9., 40., 5.)")
+            	.Define("RecoDVs", "VertexFinderLCFIPlus::get_SV_event(RecoMuon_lead, EFlowTrack_1, PrimaryVertexObject, true, 9., 40., 5.)")
                 #find number of DVs
                 #.Define("n_RecoDVs", "VertexingUtils::get_n_SV(RecoDVs)")
-                .Define("DV_Lxyz", "VertexingUtils::get_d3d_SV(RecoDVs, PrimaryVertexObject)")
+                #.Define("DV_Lxyz", "VertexingUtils::get_d3d_SV(RecoDVs, PrimaryVertexObject)")
 
                 #EVENTWIDE VARIABLES: Access quantities that exist only once per event, such as the missing energy (despite the name, the MissingET collection contains the total missing energy)
 		.Define("RecoMissingEnergy_e", "ReconstructedParticle::get_e(MissingET)")
@@ -941,7 +941,7 @@ class RDFanalysis():
                         "Reco_DR",
 
                         #"n_RecoDVs",
-                        "DV_Lxyz", 
+                        #"DV_Lxyz", 
                         #"DV_Lxyz_sig",
 
                         #"RecoMC_PID",
