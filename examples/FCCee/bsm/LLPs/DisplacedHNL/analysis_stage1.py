@@ -26,11 +26,11 @@ processList = {
 	
 		#"HNL_1.04e-8_10gev":{},
 		"HNL_1.04e-8_70gev":{},
-		#"HNL_4e-10_20gev":{},
+		"HNL_4e-10_20gev":{},
 		#"HNL_4e-10_80gev":{},	
 		"HNL_6.67e-10_30gev":{},
 		#"HNL_8.35e-9_40gev":{},
-		#"HNL_2.27e-9_20gev":{},
+		"HNL_2.27e-9_20gev":{},
 		#"HNL_2.27e-9_50gev":{},
 		#"HNL_3.17e-11_30gev":{},
 		#"HNL_3.17e-11_60gev":{},
@@ -590,7 +590,7 @@ class RDFanalysis():
 
 				## ## inserisco un blocco modificato pensato per i jet:
 				.Define("RecoMuon_lead_Track",   "ReconstructedParticle2Track::getRP2TRK( RecoMuon_lead, EFlowTrack_1)")
-				.Define("RecoDecayVertexObjectMuon_lead",   "VertexFitterSimple::VertexFitter_Tk( 0, RecoMuon_lead_Track, EFlowTrack_1 )" )
+				.Define("RecoDecayVertexObjectMuon_lead",   "VertexFitterSimple::VertexFitter_Tk( 0, RecoMuon_lead_Track, JetsParticles )" )
 				.Define("RecoDecayVertexMuon_lead",  "VertexingUtils::get_VertexData( RecoDecayVertexObjectMuon_lead )")
 
                 .Define("Reco_Lxyz","return sqrt(RecoDecayVertexMuon_lead.position.x*RecoDecayVertexMuon_lead.position.x + RecoDecayVertexMuon_lead.position.y*RecoDecayVertexMuon_lead.position.y + RecoDecayVertexMuon_lead.position.z*RecoDecayVertexMuon_lead.position.z);")
@@ -618,10 +618,10 @@ class RDFanalysis():
                
                 ### LCFIPlus algorithm for vertexing ###
                 #find the DVs
-                #.Define("RecoDVs", "VertexFinderLCFIPlus::get_SV_event(RecoLeptonTracks, EFlowTrack_1, PrimaryVertexObject, true, 9., 40., 5.)")
+                .Define("RecoDVs", "VertexFinderLCFIPlus::get_SV_event(RecoMuon_lead, EFlowTrack_1, PrimaryVertexObject, true, 9., 40., 5.)")
                 #find number of DVs
                 #.Define("n_RecoDVs", "VertexingUtils::get_n_SV(RecoDVs)")
-                #.Define("DV_Lxyz", "VertexingUtils::get_d3d_SV(RecoDVs, PrimaryVertexObject)")
+                .Define("DV_Lxyz", "VertexingUtils::get_d3d_SV(RecoDVs, PrimaryVertexObject)")
 
                 #EVENTWIDE VARIABLES: Access quantities that exist only once per event, such as the missing energy (despite the name, the MissingET collection contains the total missing energy)
 		.Define("RecoMissingEnergy_e", "ReconstructedParticle::get_e(MissingET)")
@@ -941,7 +941,7 @@ class RDFanalysis():
                         "Reco_DR",
 
                         #"n_RecoDVs",
-                        #"DV_Lxyz", 
+                        "DV_Lxyz", 
                         #"DV_Lxyz_sig",
 
                         #"RecoMC_PID",
