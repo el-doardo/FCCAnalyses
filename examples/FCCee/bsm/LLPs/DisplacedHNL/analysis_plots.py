@@ -351,7 +351,7 @@ plots['HNL'] = {'signal':{
                     'numujj':['numujj'],
 					'p8_ee_Zee_ecm91':['Zee'],
    					'p8_ee_Zmumu_ecm91':['Zmumu'],
-				    'p8_ee_Ztautau_ecm91':['numujj'],
+				    'p8_ee_Ztautau_ecm91':['Ztautau'],
    					'p8_ee_Zbb_ecm91':['Zbb'],
 				    'p8_ee_Zcc_ecm91':['Zcc'],
 				    'p8_ee_Zud_ecm91':['Zud'],
