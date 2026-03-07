@@ -335,14 +335,14 @@ plots = {}
 plots['HNL'] = {'signal':{
 	
                     'HNL_1.04e-8_10gev':['HNL_1.04e-8_10gev'],
-					'HNL_1.04e-8_10gev':['HNL_1.04e-8_20gev'],
-					'HNL_1.04e-8_10gev':['HNL_1.04e-8_30gev'],
-					'HNL_1.04e-8_10gev':['HNL_1.04e-8_40gev'],
-					'HNL_1.04e-8_10gev':['HNL_1.04e-8_50gev'],
-					'HNL_1.04e-8_10gev':['HNL_1.04e-8_60gev'],
+					'HNL_1.04e-8_20gev':['HNL_1.04e-8_20gev'],
+					'HNL_1.04e-8_30gev':['HNL_1.04e-8_30gev'],
+					'HNL_1.04e-8_40gev':['HNL_1.04e-8_40gev'],
+					'HNL_1.04e-8_50gev':['HNL_1.04e-8_50gev'],
+					'HNL_1.04e-8_60gev':['HNL_1.04e-8_60gev'],
                     'HNL_1.04e-8_70gev':['HNL_1.04e-8_70gev'],
-					'HNL_1.04e-8_10gev':['HNL_1.04e-8_80gev'],
-					'HNL_1.04e-8_10gev':['HNL_1.04e-8_90gev'],
+					'HNL_1.04e-8_80gev':['HNL_1.04e-8_80gev'],
+					'HNL_1.04e-8_90gev':['HNL_1.04e-8_90gev'],
                 },
                 'backgrounds':{
                     #'HNL':['HNL_2.86e-12_30gev'], ### impossible to plot without both signals and backgrounds, choose one signal and make it white ### 
