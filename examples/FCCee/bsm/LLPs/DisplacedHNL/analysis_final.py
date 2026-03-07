@@ -23,13 +23,13 @@ processList = {
     #run over the full statistics from stage1
 
     #backgrounds
-    #'p8_ee_Zee_ecm91':{},
-    #'p8_ee_Zmumu_ecm91':{},
-    #'p8_ee_Ztautau_ecm91':{},
-    #'p8_ee_Zbb_ecm91':{},
-    #'p8_ee_Zcc_ecm91':{},
-    #'p8_ee_Zud_ecm91':{},
-    #'p8_ee_Zss_ecm91':{},
+    'p8_ee_Zee_ecm91':{},
+    'p8_ee_Zmumu_ecm91':{},
+    'p8_ee_Ztautau_ecm91':{},
+    'p8_ee_Zbb_ecm91':{},
+    'p8_ee_Zcc_ecm91':{},
+    'p8_ee_Zud_ecm91':{},
+    'p8_ee_Zss_ecm91':{},
         
     ### privately produced backgrounds ###
     #'eenunu_m':{},
