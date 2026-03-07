@@ -320,7 +320,7 @@ colors['Ztautau'] = 34
 colors['numujj'] = 29
 colors['Zmumu'] = 32
 colors['Zss'] = 20
-colors['llnunu_m'] = 40
+colors['Zee'] = 40
 colors['tatanunu_m'] = 38
 
 #colors['Zbb'] = ROOT.kRed-4
@@ -349,6 +349,13 @@ plots['HNL'] = {'signal':{
                 'backgrounds':{
                     #'HNL':['HNL_2.86e-12_30gev'], ### impossible to plot without both signals and backgrounds, choose one signal and make it white ### 
                     'numujj':['numujj'],
+					'p8_ee_Zee_ecm91':['Zee'],
+   					'p8_ee_Zmumu_ecm91':['Zmumu'],
+				    'p8_ee_Ztautau_ecm91':['numujj'],
+   					'p8_ee_Zbb_ecm91':['Zbb'],
+				    'p8_ee_Zcc_ecm91':['Zcc'],
+				    'p8_ee_Zud_ecm91':['Zud'],
+				    'p8_ee_Zss_ecm91':['Zss'],
                     ## ##'emununu': ['emununu'],
                 },
                 }
@@ -376,5 +383,5 @@ legend['numujj'] = 'numujj'
 legend['Zmumu'] = 'Z #rightarrow #mu#mu'
 legend['Ztautau'] = 'Z #rightarrow #tau#tau'
 legend['emununu'] = 'e#mu#nu#nu'
-legend['llnunu_m'] = 'll#nu#nu'
+legend['Zee'] = 'Zee'
 legend['tatanunu_m'] = '#tau#tau#nu#nu'
