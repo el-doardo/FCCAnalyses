@@ -361,7 +361,7 @@ legend['HNL_1.04e-8_50gev'] = 'U^{2}=1.04e-8, M_{N}=50 GeV'
 legend['HNL_1.04e-8_60gev'] = 'U^{2}=1.04e-8, M_{N}=60 GeV'
 legend['HNL_1.04e-8_70gev'] = 'U^{2}=1.04e-8, M_{N}=70 GeV'
 legend['HNL_1.04e-8_80gev'] = 'U^{2}=1.04e-8, M_{N}=80 GeV'
-legend['HNL_1.04e-9_90gev'] = 'U^{2}=1.04e-8, M_{N}=90 GeV'
+legend['HNL_1.04e-8_90gev'] = 'U^{2}=1.04e-8, M_{N}=90 GeV'
 legend['HNL_2.86e-8_80gev'] = 'U^{2}=2.86e-8, M_{N}=80 GeV'
 
 legend['HNL'] = ''
