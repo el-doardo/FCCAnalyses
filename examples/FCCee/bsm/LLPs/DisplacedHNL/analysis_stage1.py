@@ -570,11 +570,11 @@ class RDFanalysis():
                 ### so there will always be one primary track even if they should both be secondary but the code doesn't handle that and we have both secondary in principle ###
 				
 				## ## Blocchi per vertex (controllare i valori input in get_PrimaryTracks(...)
-                .Define("PrimaryTracks",  "VertexFitterSimple::get_PrimaryTracks( EFlowTrack_1, true, 4.5, 20e-3, 300, 0., 0., 0.)") 
-                .Define("PrimaryVertexObject", "VertexFitterSimple::VertexFitter_Tk(1, PrimaryTracks, true, 4.5, 20e-3, 300)")
-                .Define("n_PrimaryTracks",  "ReconstructedParticle2Track::getTK_n( PrimaryTracks )")
-                .Define("SecondaryTracks",   "VertexFitterSimple::get_NonPrimaryTracks( EFlowTrack_1, PrimaryTracks )")
-                .Define("n_SecondaryTracks",  "ReconstructedParticle2Track::getTK_n( SecondaryTracks )" )
+                #.Define("PrimaryTracks",  "VertexFitterSimple::get_PrimaryTracks( EFlowTrack_1, true, 4.5, 20e-3, 300, 0., 0., 0.)") 
+                #.Define("PrimaryVertexObject", "VertexFitterSimple::VertexFitter_Tk(1, PrimaryTracks, true, 4.5, 20e-3, 300)")
+                #.Define("n_PrimaryTracks",  "ReconstructedParticle2Track::getTK_n( PrimaryTracks )")
+                #.Define("SecondaryTracks",   "VertexFitterSimple::get_NonPrimaryTracks( EFlowTrack_1, PrimaryTracks )")
+                #.Define("n_SecondaryTracks",  "ReconstructedParticle2Track::getTK_n( SecondaryTracks )" )
 
                ### reconstruct the reco decay vertex using the reco'ed tracks from electrons and muons ###
 				## ## tolgo questo blocco perché dovrebbe essere buono per la precedente versione dello studio
@@ -619,10 +619,10 @@ class RDFanalysis():
                 ### LCFIPlus algorithm for vertexing ###
                 #find the DVs
             	#.Define("RecoDVs", "VertexFinderLCFIPlus::get_SV_event(RecoMuon_lead, EFlowTrack_1, PrimaryVertexObject, true, 9., 40., 5.)")
-				.Define("RecoDVs", "VertexFinderLCFIPlus::get_SV_jets(ReconstructedParticles, EFlowTrack_1, PrimaryVertexObject, true, pseudo_jets, 10)")
+				#.Define("RecoDVs", "VertexFinderLCFIPlus::get_SV_jets(ReconstructedParticles, EFlowTrack_1, PrimaryVertexObject, true, pseudo_jets, 10)") ## ## l'ho scritto io, ma non so usarlo
                 #find number of DVs
-                .Define("n_RecoDVs", "VertexingUtils::get_n_SV(RecoDVs)")
-                .Define("DV_Lxyz", "VertexingUtils::get_d3d_SV(RecoDVs, PrimaryVertexObject)")
+                #.Define("n_RecoDVs", "VertexingUtils::get_n_SV(RecoDVs)")
+                #.Define("DV_Lxyz", "VertexingUtils::get_d3d_SV(RecoDVs, PrimaryVertexObject)")
 
                 #EVENTWIDE VARIABLES: Access quantities that exist only once per event, such as the missing energy (despite the name, the MissingET collection contains the total missing energy)
 		.Define("RecoMissingEnergy_e", "ReconstructedParticle::get_e(MissingET)")
@@ -658,7 +658,7 @@ class RDFanalysis():
                 #.Filter("n_RecoPhotons==0 && n_RecoLeptons==2 && ((Reco_charge.at(0)==1 && Reco_charge.at(1)==-1) || (Reco_charge.at(0)==-1 && Reco_charge.at(1)==1))") ## ## lui va via
                 ### generator selection on llnunu background that needs to be applied consinstently to the others
                 #.Filter("Reco_pt.at(0) > 1 && Reco_pt.at(1) > 1 && RecoEmiss_pt > 5")
-				.Filter("n_RecoMuons > 0 && RecoMuon_pt.at(0) > 10")
+				.Filter("n_RecoMuons > 0 && RecoMuon_pt.at(0) > 20")
 				.Filter("n_jets>0")
 
                )
