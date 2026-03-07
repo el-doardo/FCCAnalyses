@@ -790,8 +790,8 @@ class RDFanalysis():
                         #"FSGenPhoton_charge",
 
                         ######## Reconstructed particles #######
-                       "n_RecoTracks",
-                        "n_noLeptonTracks",
+                       	#"n_RecoTracks",
+                        #"n_noLeptonTracks",
                         #"n_PrimaryTracks",
                         #"n_SecondaryTracks",
 
@@ -933,7 +933,7 @@ class RDFanalysis():
                         "RecoTrack_D0cov_sub",
                         "RecoTrack_Z0cov_sub",
 
-                        "RecoDecayVertexLepton",
+                        #"RecoDecayVertexLepton",
                         "Reco_Lxy",
                         "Reco_Lxyz",
                         "Reco_invMass",
