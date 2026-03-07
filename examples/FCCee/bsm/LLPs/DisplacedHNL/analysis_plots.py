@@ -294,14 +294,14 @@ extralabel['sel2RecoDF_vetoes_tracks_M80_5MEpt_0.8cos']="Two different flavor le
 colors = {}
 
 colors['HNL_1.04e-8_10gev'] = ROOT.kCyan-7 ## ## modificato da me
-colors['HNL_1.04e-8_70gev'] = ROOT.kAzure+5
-colors['HNL_2.86e-12_30gev'] = ROOT.kBlue-7
-colors['HNL_2.86e-7_30gev'] = ROOT.kOrange-2
-colors['HNL_5e-12_40gev'] = ROOT.kOrange+8
-colors['HNL_4e-12_50gev'] = ROOT.kBlue-4
-colors['HNL_6.67e-8_60gev'] = ROOT.kRed-4
-colors['HNL_4e-8_60gev'] = ROOT.kBlue-4
-colors['HNL_2.86e-9_70gev'] = ROOT.kRed+2
+colors['HNL_1.04e-8_20gev'] = ROOT.kAzure+5
+colors['HNL_1.04e-8_30gev'] = ROOT.kBlue-7
+colors['HNL_1.04e-8_40gev'] = ROOT.kOrange-2
+colors['HNL_1.04e-8_50gev'] = ROOT.kOrange+8
+colors['HNL_1.04e-8_60gev'] = ROOT.kBlue-4
+colors['HNL_1.04e-8_70gev'] = ROOT.kRed-4
+colors['HNL_1.04e-8_80gev'] = ROOT.kBlue-4
+colors['HNL_1.04e-8_90gev'] = ROOT.kRed+2
 colors['HNL_2.86e-8_80gev'] = ROOT.kBlue+2
 
 colors['HNL'] = ROOT.kWhite
@@ -335,7 +335,14 @@ plots = {}
 plots['HNL'] = {'signal':{
 	
                     'HNL_1.04e-8_10gev':['HNL_1.04e-8_10gev'],
+					'HNL_1.04e-8_10gev':['HNL_1.04e-8_20gev'],
+					'HNL_1.04e-8_10gev':['HNL_1.04e-8_30gev'],
+					'HNL_1.04e-8_10gev':['HNL_1.04e-8_40gev'],
+					'HNL_1.04e-8_10gev':['HNL_1.04e-8_50gev'],
+					'HNL_1.04e-8_10gev':['HNL_1.04e-8_60gev'],
                     'HNL_1.04e-8_70gev':['HNL_1.04e-8_70gev'],
+					'HNL_1.04e-8_10gev':['HNL_1.04e-8_80gev'],
+					'HNL_1.04e-8_10gev':['HNL_1.04e-8_90gev'],
                 },
                 'backgrounds':{
                     #'HNL':['HNL_2.86e-12_30gev'], ### impossible to plot without both signals and backgrounds, choose one signal and make it white ### 
@@ -347,14 +354,14 @@ plots['HNL'] = {'signal':{
 legend = {}
 
 legend['HNL_1.04e-8_10gev'] = 'U^{2}=1.04e-8, M_{N}=10 GeV'
+legend['HNL_1.04e-8_20gev'] = 'U^{2}=1.04e-8, M_{N}=20 GeV'
+legend['HNL_1.04e-8_30gev'] = 'U^{2}=1.04e-8, M_{N}=30 GeV'
+legend['HNL_1.04e-8_40gev'] = 'U^{2}=1.04e-8, M_{N}=40 GeV'
+legend['HNL_1.04e-8_50gev'] = 'U^{2}=1.04e-8, M_{N}=50 GeV'
+legend['HNL_1.04e-8_60gev'] = 'U^{2}=1.04e-8, M_{N}=60 GeV'
 legend['HNL_1.04e-8_70gev'] = 'U^{2}=1.04e-8, M_{N}=70 GeV'
-legend['HNL_2.86e-12_30gev'] = 'U^{2}=2.86e-12, M_{N}=30 GeV'
-legend['HNL_2.86e-7_30gev'] = 'U^{2}=2.86e-7, M_{N}=30 GeV'
-legend['HNL_5e-12_40gev'] = 'U^{2}=5e-12, M_{N}=40 GeV'
-legend['HNL_4e-12_50gev'] = 'U^{2}=4e-12, M_{N}=50 GeV'
-legend['HNL_6.67e-8_60gev'] = 'U^{2}=6.67e-8, M_{N}=60 GeV'
-legend['HNL_4e-8_60gev'] = 'U^{2}=4e-8, M_{N}=60 GeV'
-legend['HNL_2.86e-9_70gev'] = 'U^{2}=2.86e-9, M_{N}=70 GeV'
+legend['HNL_1.04e-8_70gev'] = 'U^{2}=1.04e-8, M_{N}=80 GeV'
+legend['HNL_2.86e-9_90gev'] = 'U^{2}=1.04e-8, M_{N}=90 GeV'
 legend['HNL_2.86e-8_80gev'] = 'U^{2}=2.86e-8, M_{N}=80 GeV'
 
 legend['HNL'] = ''
