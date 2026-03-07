@@ -6,27 +6,29 @@
 # 	Do le JetParticles in pasto alle funzioni che clusterizzano le RecoParticles
 #	impostando l'algoritmo Dhuram kt esclusivo con Nj=2. 
 #	Aggiungo il filtro per pt del muone lead > 20GeV
+#
+#	Sto Andando alla ricerca della ricostruzione del displaced vertex nella speranza di lavorare bene coi jet :/
 
 import ROOT
 
 #Mandatory: List of processes
 
 processList = {
-        'p8_ee_Zee_ecm91':{'fraction':0.2}, ## ## secondo il paper lui non serve, ma sono curioso
-        'p8_ee_Zmumu_ecm91':{'fraction':0.2},
-        'p8_ee_Ztautau_ecm91':{'fraction':0.2},
-        'p8_ee_Zbb_ecm91':{'fraction':0.2},
-        'p8_ee_Zcc_ecm91':{'fraction':0.2},
-        'p8_ee_Zud_ecm91':{'fraction':0.2},
-        'p8_ee_Zss_ecm91':{'fraction':0.2},
+        #'p8_ee_Zee_ecm91':{'fraction':0.2}, ## ## secondo il paper lui non serve, ma sono curioso
+        #'p8_ee_Zmumu_ecm91':{'fraction':0.2},
+        #'p8_ee_Ztautau_ecm91':{'fraction':0.2},
+        #'p8_ee_Zbb_ecm91':{'fraction':0.2},
+        #'p8_ee_Zcc_ecm91':{'fraction':0.2},
+        #'p8_ee_Zud_ecm91':{'fraction':0.2},
+        #'p8_ee_Zss_ecm91':{'fraction':0.2},
 
 	## ##
 	
 		#"HNL_1.04e-8_10gev":{},
-		#"HNL_1.04e-8_70gev":{},
+		"HNL_1.04e-8_70gev":{},
 		#"HNL_4e-10_20gev":{},
 		#"HNL_4e-10_80gev":{},	
-		#"HNL_6.67e-10_30gev":{},
+		"HNL_6.67e-10_30gev":{},
 		#"HNL_8.35e-9_40gev":{},
 		#"HNL_2.27e-9_20gev":{},
 		#"HNL_2.27e-9_50gev":{},
@@ -114,13 +116,13 @@ processList_ = {
 #Production tag. This points to the yaml files for getting sample statistics
 #Mandatory when running over EDM4Hep centrally produced events
 #Comment out when running over privately produced events
-prodTag     = "FCCee/winter2023/IDEA/"
+#prodTag     = "FCCee/winter2023/IDEA/"
 
 #Input directory
 #Comment out when running over centrally produced events
 #Mandatory when running over privately produced events
 #inputDir = "/eos/experiment/fcc/ee/generation/DelphesEvents/winter2023/IDEA/"
-#inputDir = "/eos/user/e/espoto/FCC_2jet_z_pole/FCCAnalysis/hadronized_signals"
+inputDir = "/eos/user/e/espoto/FCC_2jet_z_pole/FCCAnalysis/hadronized_signals"
 
 # additional/costom C++ functions, defined in header files (optional)
 includePaths = ["functions.h"]
@@ -567,24 +569,33 @@ class RDFanalysis():
                 ### not useful in this case as the primary track code runs by looking at the chi2 of vertex, taking out the tracks making it larger until there is only one track ###
                 ### so there will always be one primary track even if they should both be secondary but the code doesn't handle that and we have both secondary in principle ###
 				
-				## ## rimuovo questo gruppo di define, ma penso che mi serviranno in futuro
-                #.Define("PrimaryTracks",  "VertexFitterSimple::get_PrimaryTracks( EFlowTrack_1, true, 4.5, 20e-3, 300, 0., 0., 0.)") 
-                #.Define("PrimaryVertexObject", "VertexFitterSimple::VertexFitter_Tk(1, PrimaryTracks, true, 4.5, 20e-3, 300)")
-                #.Define("n_PrimaryTracks",  "ReconstructedParticle2Track::getTK_n( PrimaryTracks )")
-                #.Define("SecondaryTracks",   "VertexFitterSimple::get_NonPrimaryTracks( EFlowTrack_1, PrimaryTracks )")
-                #.Define("n_SecondaryTracks",  "ReconstructedParticle2Track::getTK_n( SecondaryTracks )" )
+				## ## Blocchi per vertex (controllare i valori input in get_PrimaryTracks(...)
+                .Define("PrimaryTracks",  "VertexFitterSimple::get_PrimaryTracks( EFlowTrack_1, true, 4.5, 20e-3, 300, 0., 0., 0.)") 
+                .Define("PrimaryVertexObject", "VertexFitterSimple::VertexFitter_Tk(1, PrimaryTracks, true, 4.5, 20e-3, 300)")
+                .Define("n_PrimaryTracks",  "ReconstructedParticle2Track::getTK_n( PrimaryTracks )")
+                .Define("SecondaryTracks",   "VertexFitterSimple::get_NonPrimaryTracks( EFlowTrack_1, PrimaryTracks )")
+                .Define("n_SecondaryTracks",  "ReconstructedParticle2Track::getTK_n( SecondaryTracks )" )
 
                ### reconstruct the reco decay vertex using the reco'ed tracks from electrons and muons ###
-                .Define("RecoElectronTracks",   "ReconstructedParticle2Track::getRP2TRK( RecoElectrons, EFlowTrack_1)") ### EFlowTrack_1 contains all tracks, selecting a subset associated with certain particles ###
-                .Define("RecoMuonTracks",   "ReconstructedParticle2Track::getRP2TRK( RecoMuons, EFlowTrack_1)")
-                .Define("RecoLeptonTracks",   "ReconstructedTrack::Merge( RecoElectronTracks, RecoMuonTracks)") ### merges two tracks collections ###
+				## ## tolgo questo blocco perché dovrebbe essere buono per la precedente versione dello studio
+                #.Define("RecoElectronTracks",   "ReconstructedParticle2Track::getRP2TRK( RecoElectrons, EFlowTrack_1)") ### EFlowTrack_1 contains all tracks, selecting a subset associated with certain particles ###
+                #.Define("RecoMuonTracks",   "ReconstructedParticle2Track::getRP2TRK( RecoMuons, EFlowTrack_1)")
+                #.Define("RecoLeptonTracks",   "ReconstructedTrack::Merge( RecoElectronTracks, RecoMuonTracks)") ### merges two tracks collections ###
                 
-                .Define("RecoDecayVertexObjectLepton",   "VertexFitterSimple::VertexFitter_Tk( 0, RecoLeptonTracks)" ) ### reconstructing a vertex withour any request n=0 ###
-                .Define("RecoDecayVertexLepton",  "VertexingUtils::get_VertexData( RecoDecayVertexObjectLepton )")
+                #.Define("RecoDecayVertexObjectLepton",   "VertexFitterSimple::VertexFitter_Tk( 0, RecoLeptonTracks)" ) ### reconstructing a vertex withour any request n=0 ###
+                #.Define("RecoDecayVertexLepton",  "VertexingUtils::get_VertexData( RecoDecayVertexObjectLepton )")
 
-                .Define("Reco_Lxyz","return sqrt(RecoDecayVertexLepton.position.x*RecoDecayVertexLepton.position.x + RecoDecayVertexLepton.position.y*RecoDecayVertexLepton.position.y + RecoDecayVertexLepton.position.z*RecoDecayVertexLepton.position.z);")
-                .Define("Reco_Lxy","return sqrt(RecoDecayVertexLepton.position.x*RecoDecayVertexLepton.position.x + RecoDecayVertexLepton.position.y*RecoDecayVertexLepton.position.y);")
+                #.Define("Reco_Lxyz","return sqrt(RecoDecayVertexLepton.position.x*RecoDecayVertexLepton.position.x + RecoDecayVertexLepton.position.y*RecoDecayVertexLepton.position.y + RecoDecayVertexLepton.position.z*RecoDecayVertexLepton.position.z);")
+                #.Define("Reco_Lxy","return sqrt(RecoDecayVertexLepton.position.x*RecoDecayVertexLepton.position.x + RecoDecayVertexLepton.position.y*RecoDecayVertexLepton.position.y);")
 
+				## ## inserisco un blocco modificato pensato per i jet:
+				.Define("RecoMuon_lead_Track",   "ReconstructedParticle2Track::getRP2TRK( RecoMuon_lead, EFlowTrack_1)")
+				.Define("RecoDecayVertexObjectMuon_lead",   "VertexFitterSimple::VertexFitter_Tk( 0, RecoMuon_lead_Track)" )
+				.Define("RecoDecayVertexMuon_lead",  "VertexingUtils::get_VertexData( RecoDecayVertexObjectMuon_lead )")
+
+                .Define("Reco_Lxyz","return sqrt(RecoDecayVertexMuon_lead.position.x*RecoDecayVertexMuon_lead.position.x + RecoDecayVertexMuon_lead.position.y*RecoDecayVertexMuon_lead.position.y + RecoDecayVertexMuon_lead.position.z*RecoDecayVertexMuon_lead.position.z);")
+                .Define("Reco_Lxy","return sqrt(RecoDecayVertexMuon_lead.position.x*RecoDecayVertexMuon_lead.position.x + RecoDecayVertexMuon_lead.position.y*RecoDecayVertexMuon_lead.position.y);")
+			
                 ### https://github.com/HEP-FCC/FCCAnalyses/blob/d39a711a703244ee2902f5d2191ad1e2367363ac/examples/FCCee/vertex/validation_tkParam.py#L115 ###
                 .Define("RecoTracks_noLeptons",   "ReconstructedTrack::Remove( RecoLeptonTracks, EFlowTrack_1)")
                 .Define("n_noLeptonTracks",  "ReconstructedParticle2Track::getTK_n( RecoTracks_noLeptons )" )
