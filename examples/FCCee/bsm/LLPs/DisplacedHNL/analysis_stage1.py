@@ -837,6 +837,8 @@ class RDFanalysis():
 				## ## estraggo il muone a maggior pt
 				.Define("RecoMuon_lead", "FCCAnalyses::ZHfunctions::get_leading_pt(RecoMuons);") ## ## definisco get_leading_pt basandomi su get_leading
 				.Define("RecoMuon_lead_pt", "ReconstructedParticle::get_pt(RecoMuon_lead) ") ## ## Pt del muone lead
+				.Define("RecoMuon_lead_e", "ReconstructedParticle::get_e(RecoMuon_lead) ") ## ## Pt del muone lead
+				.Define("RecoMuon_lead_Track_absD0", "return abs(ReconstructedParticle2Track::getRP2TRK_D0(RecoMuon_lead,EFlowTrack_1))")
 			
                 ### Jet clustering with different algorithm, only on non leptons ###
                 ### https://github.com/HEP-FCC/FCCAnalyses/blob/master/addons/FastJet/JetClustering.h ###
@@ -1276,6 +1278,9 @@ class RDFanalysis():
                		"n_PrimaryTracks",
               		"SecondaryTracks",
 	                "n_SecondaryTracks",
+					"RecoMuon_lead_pt",
+					"RecoMuon_lead_e",
+					"RecoMuon_lead_Track_absD0",
 
 		]
 
