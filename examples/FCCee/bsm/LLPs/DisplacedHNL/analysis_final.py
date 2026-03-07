@@ -23,13 +23,13 @@ processList = {
     #run over the full statistics from stage1
 
     #backgrounds
-    'p8_ee_Zee_ecm91':{},
-    'p8_ee_Zmumu_ecm91':{},
-    'p8_ee_Ztautau_ecm91':{},
-    'p8_ee_Zbb_ecm91':{},
-    'p8_ee_Zcc_ecm91':{},
-    'p8_ee_Zud_ecm91':{},
-    'p8_ee_Zss_ecm91':{},
+    #'p8_ee_Zee_ecm91':{},
+    #'p8_ee_Zmumu_ecm91':{},
+    #'p8_ee_Ztautau_ecm91':{},
+    #'p8_ee_Zbb_ecm91':{},
+    #'p8_ee_Zcc_ecm91':{},
+    #'p8_ee_Zud_ecm91':{},
+    #'p8_ee_Zss_ecm91':{},
         
     ### privately produced backgrounds ###
     #'eenunu_m':{},
@@ -39,19 +39,19 @@ processList = {
 
   ## ##
 
-		"HNL_1.04e-8_10gev":{},
+		#"HNL_1.04e-8_10gev":{},
 		"HNL_1.04e-8_70gev":{},
-		"HNL_4e-10_20gev":{},
-		"HNL_4e-10_80gev":{},	
+		#"HNL_4e-10_20gev":{},
+		#"HNL_4e-10_80gev":{},	
 		"HNL_6.67e-10_30gev":{},
-		"HNL_8.35e-9_40gev":{},
-		"HNL_2.27e-9_20gev":{},
-		"HNL_2.27e-9_50gev":{},
-		"HNL_3.17e-11_30gev":{},
-		"HNL_3.17e-11_60gev":{},
+		#"HNL_8.35e-9_40gev":{},
+		#"HNL_2.27e-9_20gev":{},
+		#"HNL_2.27e-9_50gev":{},
+		#"HNL_3.17e-11_30gev":{},
+		#"HNL_3.17e-11_60gev":{},
 
 	
-	"numujj":{},
+		#"numujj":{},
 }
 
 processList_ = {
@@ -871,10 +871,10 @@ histoList = {
     #"Reco_DecayVertexLepton_chi2":        {"name":"RecoDecayVertexLepton.chi2",        "title":"Reco decay lepton vertex #chi^{2}",          "bin":100,"xmin":0 ,"xmax":20},
     #"Reco_DecayVertexLepton_probability": {"name":"RecoDecayVertexLepton.probability", "title":"Reco decay lepton vertex probability",       "bin":100,"xmin":0 ,"xmax":1},
 
-    #"Reco_Lxy":                     {"name":"Reco_Lxy",                    "title":"Reco L_{xy} [mm]",     "bin":100,"xmin":0 ,"xmax":2000},
-    #"Reco_Lxy_prompt":              {"name":"Reco_Lxy",                    "title":"Reco L_{xy} [mm]",     "bin":100,"xmin":0 ,"xmax":10},
-    #"Reco_Lxyz":                    {"name":"Reco_Lxyz",                   "title":"Reco L_{xyz} [mm]",    "bin":100,"xmin":0 ,"xmax":2000},
-    #"Reco_Lxyz_prompt":             {"name":"Reco_Lxyz",                   "title":"Reco L_{xyz} [mm]",    "bin":100,"xmin":0 ,"xmax":10},
+    "Reco_Lxy":                     {"name":"Reco_Lxy",                    "title":"Reco L_{xy} [mm]",     "bin":100,"xmin":0 ,"xmax":2000},
+    "Reco_Lxy_prompt":              {"name":"Reco_Lxy",                    "title":"Reco L_{xy} [mm]",     "bin":100,"xmin":0 ,"xmax":10},
+    "Reco_Lxyz":                    {"name":"Reco_Lxyz",                   "title":"Reco L_{xyz} [mm]",    "bin":100,"xmin":0 ,"xmax":2000},
+    "Reco_Lxyz_prompt":             {"name":"Reco_Lxyz",                   "title":"Reco L_{xyz} [mm]",    "bin":100,"xmin":0 ,"xmax":10},
 
     #"Reco_Lxyz_LCFI":                    {"name":"DV_Lxyz",                   "title":"Reco L_{xyz} [mm]",    "bin":100,"xmin":0 ,"xmax":1000},
     #"Reco_Lxyz_prompt_LCFI":             {"name":"DV_Lxyz",                   "title":"Reco L_{xyz} [mm]",    "bin":100,"xmin":0 ,"xmax":10},
@@ -885,9 +885,9 @@ histoList = {
 
     #"2DHsito":     {"cols":["Reco_invMass","RecoMissingEnergy_e"],     "title":"Invariant mass - Missing Energy",            "bins":[(100,0,100),(100,0,50)]},
 
-    #"RecoMissingEnergy_e":       {"name":"RecoMissingEnergy_e",       "title":"Reco Total Missing Energy [GeV]",    "bin":100,"xmin":0 ,"xmax":50},
+    "RecoMissingEnergy_e":       {"name":"RecoMissingEnergy_e",       "title":"Reco Total Missing Energy [GeV]",    "bin":100,"xmin":0 ,"xmax":50},
     #"RecoMissingEnergy_p":       {"name":"RecoMissingEnergy_p",       "title":"Reco Total Missing p [GeV]",         "bin":100,"xmin":0 ,"xmax":50},
-    #"RecoMissingEnergy_pt":      {"name":"RecoMissingEnergy_pt",      "title":"Reco Missing p_{T} [GeV]",           "bin":100,"xmin":0 ,"xmax":50},
+    "RecoMissingEnergy_pt":      {"name":"RecoMissingEnergy_pt",      "title":"Reco Missing p_{T} [GeV]",           "bin":100,"xmin":0 ,"xmax":50},
     #"RecoMissingEnergy_px":      {"name":"RecoMissingEnergy_px",      "title":"Reco Missing p_{x} [GeV]",           "bin":100,"xmin":-50 ,"xmax":50},
     #"RecoMissingEnergy_py":      {"name":"RecoMissingEnergy_py",      "title":"Reco Missing p_{y} [GeV]",           "bin":100,"xmin":-50 ,"xmax":50},
     #"RecoMissingEnergy_pz":      {"name":"RecoMissingEnergy_pz",      "title":"Reco Missing p_{z} [GeV]",           "bin":100,"xmin":-50 ,"xmax":50},
