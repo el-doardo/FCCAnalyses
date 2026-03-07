@@ -619,7 +619,7 @@ class RDFanalysis():
                 ### LCFIPlus algorithm for vertexing ###
                 #find the DVs
             	#.Define("RecoDVs", "VertexFinderLCFIPlus::get_SV_event(RecoMuon_lead, EFlowTrack_1, PrimaryVertexObject, true, 9., 40., 5.)")
-				.Define("RecoDVs", "VertexFinderLCFIPlus::get_SV_jets(ReconstructedParticles, EFlowTrack_1, PrimaryVertexObject, true, 9., 40., 5.)")
+				.Define("RecoDVs", "VertexFinderLCFIPlus::get_SV_jets(ReconstructedParticles, EFlowTrack_1, PrimaryVertexObject, true, pseudo_jets, 10)")
                 #find number of DVs
                 .Define("n_RecoDVs", "VertexingUtils::get_n_SV(RecoDVs)")
                 .Define("DV_Lxyz", "VertexingUtils::get_d3d_SV(RecoDVs, PrimaryVertexObject)")
