@@ -936,5 +936,6 @@ histoList = {
 	"RecoMuon_lead_e":						{"name":"RecoMuon_lead_e",    		"title":"RecoMuon_lead_e",          	 "bin":100, "xmin":0,"xmax":90},
 	"RecoMuon_lead_Track_absD0":			{"name":"RecoMuon_lead_Track_absD0",    	"title":"RecoMuon_lead_Track_absD0",          	 "bin":100, "xmin":0,"xmax":2000},
 	"RecoMuon_lead_Track_absD0_mid":		{"name":"RecoMuon_lead_Track_absD0",    	"title":"RecoMuon_lead_Track_absD0",          	 "bin":100, "xmin":0,"xmax":10},
+	"RecoMuon_lead_Track_absD0_prompt":		{"name":"RecoMuon_lead_Track_absD0",    	"title":"RecoMuon_lead_Track_absD0",          	 "bin":50, "xmin":0,"xmax":1},
     
 }
