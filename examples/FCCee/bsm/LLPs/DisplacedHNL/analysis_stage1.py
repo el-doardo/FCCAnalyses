@@ -589,12 +589,12 @@ class RDFanalysis():
                 #.Define("Reco_Lxy","return sqrt(RecoDecayVertexLepton.position.x*RecoDecayVertexLepton.position.x + RecoDecayVertexLepton.position.y*RecoDecayVertexLepton.position.y);")
 
 				## ## inserisco un blocco modificato pensato per i jet:
-				.Define("RecoMuon_lead_Track",   "ReconstructedParticle2Track::getRP2TRK( RecoMuon_lead, EFlowTrack_1)")
-				.Define("RecoDecayVertexObjectMuon_lead",   "VertexFitterSimple::VertexFitter_Tk( 0, RecoMuon_lead_Track, PrimaryTracks )" )
-				.Define("RecoDecayVertexMuon_lead",  "VertexingUtils::get_VertexData( RecoDecayVertexObjectMuon_lead )")
+				#.Define("RecoMuon_lead_Track",   "ReconstructedParticle2Track::getRP2TRK( RecoMuon_lead, EFlowTrack_1)")
+				#.Define("RecoDecayVertexObjectMuon_lead",   "VertexFitterSimple::VertexFitter_Tk( 0, RecoMuon_lead_Track, PrimaryTracks )" )
+				#.Define("RecoDecayVertexMuon_lead",  "VertexingUtils::get_VertexData( RecoDecayVertexObjectMuon_lead )")
 
-                .Define("Reco_Lxyz","return sqrt(RecoDecayVertexMuon_lead.position.x*RecoDecayVertexMuon_lead.position.x + RecoDecayVertexMuon_lead.position.y*RecoDecayVertexMuon_lead.position.y + RecoDecayVertexMuon_lead.position.z*RecoDecayVertexMuon_lead.position.z);")
-                .Define("Reco_Lxy","return sqrt(RecoDecayVertexMuon_lead.position.x*RecoDecayVertexMuon_lead.position.x + RecoDecayVertexMuon_lead.position.y*RecoDecayVertexMuon_lead.position.y);")
+                #.Define("Reco_Lxyz","return sqrt(RecoDecayVertexMuon_lead.position.x*RecoDecayVertexMuon_lead.position.x + RecoDecayVertexMuon_lead.position.y*RecoDecayVertexMuon_lead.position.y + RecoDecayVertexMuon_lead.position.z*RecoDecayVertexMuon_lead.position.z);")
+                #.Define("Reco_Lxy","return sqrt(RecoDecayVertexMuon_lead.position.x*RecoDecayVertexMuon_lead.position.x + RecoDecayVertexMuon_lead.position.y*RecoDecayVertexMuon_lead.position.y);")
 			
                 ### https://github.com/HEP-FCC/FCCAnalyses/blob/d39a711a703244ee2902f5d2191ad1e2367363ac/examples/FCCee/vertex/validation_tkParam.py#L115 ###
                 #.Define("RecoTracks_noLeptons",   "ReconstructedTrack::Remove( RecoLeptonTracks, EFlowTrack_1)")
@@ -619,9 +619,10 @@ class RDFanalysis():
                 ### LCFIPlus algorithm for vertexing ###
                 #find the DVs
             	#.Define("RecoDVs", "VertexFinderLCFIPlus::get_SV_event(RecoMuon_lead, EFlowTrack_1, PrimaryVertexObject, true, 9., 40., 5.)")
+				.Define("RecoDVs", "VertexFinderLCFIPlus::get_SV_jets(ReconstructedParticles, EFlowTrack_1, PrimaryVertexObject, true, 9., 40., 5.)")
                 #find number of DVs
-                #.Define("n_RecoDVs", "VertexingUtils::get_n_SV(RecoDVs)")
-                #.Define("DV_Lxyz", "VertexingUtils::get_d3d_SV(RecoDVs, PrimaryVertexObject)")
+                .Define("n_RecoDVs", "VertexingUtils::get_n_SV(RecoDVs)")
+                .Define("DV_Lxyz", "VertexingUtils::get_d3d_SV(RecoDVs, PrimaryVertexObject)")
 
                 #EVENTWIDE VARIABLES: Access quantities that exist only once per event, such as the missing energy (despite the name, the MissingET collection contains the total missing energy)
 		.Define("RecoMissingEnergy_e", "ReconstructedParticle::get_e(MissingET)")
@@ -934,14 +935,14 @@ class RDFanalysis():
                         "RecoTrack_Z0cov_sub",
 
                         #"RecoDecayVertexLepton",
-                        "Reco_Lxy",
-                        "Reco_Lxyz",
+                        #"Reco_Lxy",
+                        #"Reco_Lxyz",
                         "Reco_invMass",
                         "Reco_cos",
                         "Reco_DR",
 
-                        #"n_RecoDVs",
-                        #"DV_Lxyz", 
+                        "n_RecoDVs",
+                        "DV_Lxyz", 
                         #"DV_Lxyz_sig",
 
                         #"RecoMC_PID",
