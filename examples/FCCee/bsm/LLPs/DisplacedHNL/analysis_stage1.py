@@ -941,8 +941,8 @@ class RDFanalysis():
                         "Reco_cos",
                         "Reco_DR",
 
-                        "n_RecoDVs",
-                        "DV_Lxyz", 
+                        #"n_RecoDVs",
+                        #"DV_Lxyz", 
                         #"DV_Lxyz_sig",
 
                         #"RecoMC_PID",
