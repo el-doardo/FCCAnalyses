@@ -12,13 +12,13 @@ import ROOT
 #Mandatory: List of processes
 
 processList = {
-        'p8_ee_Zee_ecm91':{'fraction':0.05}, ## ## secondo il paper lui non serve, ma sono curioso
-        'p8_ee_Zmumu_ecm91':{'fraction':0.05},
-        'p8_ee_Ztautau_ecm91':{'fraction':0.05},
-        'p8_ee_Zbb_ecm91':{'fraction':0.05},
-        'p8_ee_Zcc_ecm91':{'fraction':0.05},
-        'p8_ee_Zud_ecm91':{'fraction':0.05},
-        'p8_ee_Zss_ecm91':{'fraction':0.05},
+        'p8_ee_Zee_ecm91':{'fraction':0.2}, ## ## secondo il paper lui non serve, ma sono curioso
+        'p8_ee_Zmumu_ecm91':{'fraction':0.2},
+        'p8_ee_Ztautau_ecm91':{'fraction':0.2},
+        'p8_ee_Zbb_ecm91':{'fraction':0.2},
+        'p8_ee_Zcc_ecm91':{'fraction':0.2},
+        'p8_ee_Zud_ecm91':{'fraction':0.2},
+        'p8_ee_Zss_ecm91':{'fraction':0.2},
 
 	## ##
 	
