@@ -348,14 +348,15 @@ plots['HNL'] = {'signal':{
                 },
                 'backgrounds':{
                     #'HNL':['HNL_2.86e-12_30gev'], ### impossible to plot without both signals and backgrounds, choose one signal and make it white ### 
-                    'numujj':['numujj'],
-					'p8_ee_Zee_ecm91':['Zee'],
-   					'p8_ee_Zmumu_ecm91':['Zmumu'],
-				    'p8_ee_Ztautau_ecm91':['Ztautau'],
-   					'p8_ee_Zbb_ecm91':['Zbb'],
-				    'p8_ee_Zcc_ecm91':['Zcc'],
-				    'p8_ee_Zud_ecm91':['Zud'],
-				    'p8_ee_Zss_ecm91':['Zss'],
+
+					'numujj':['numujj'],
+					'Zee':['p8_ee_Zee_ecm91'],
+   					'Zmumu':['p8_ee_Zmumu_ecm91'],
+				    'Ztautau':['p8_ee_Ztautau_ecm91'],
+   					'Zbb':['p8_ee_Zbb_ecm91'],
+				    'Zcc':['p8_ee_Zcc_ecm91'],
+				    'Zud':['p8_ee_Zud_ecm91'],
+				    'Zss':['p8_ee_Zss_ecm91'],
                     ## ##'emununu': ['emununu'],
                 },
                 }
