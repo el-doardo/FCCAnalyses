@@ -1268,6 +1268,9 @@ histoList = {
     "n_PrimaryTracks":						{"name":"n_PrimaryTracks",    		"title":"n_PrimaryTracks",          	 "bin":10, "xmin":0,"xmax":10},
     #"SecondaryTracks":						{"name":"SecondaryTracks",    		"title":"SecondaryTracks",          	 "bin":10, "xmin":0,"xmax":5},
 	"n_SecondaryTracks":					{"name":"n_SecondaryTracks",    	"title":"Jn_SecondaryTracks",          	 "bin":100, "xmin":0,"xmax":90},
+	"RecoMuon_lead_pt":						{"name":"RecoMuon_lead_pt",    		"title":"RecoMuon_lead_pt",          	 "bin":100, "xmin":0,"xmax":90},
+	"RecoMuon_lead_e":						{"name":"RecoMuon_lead_e",    		"title":"RecoMuon_lead_e",          	 "bin":100, "xmin":0,"xmax":90},
+	"RecoMuon_lead_Track_absD0":			{"name":"RecoMuon_lead_Track_absD0",    	"title":"RecoMuon_lead_Track_absD0",          	 "bin":100, "xmin":0,"xmax":2000},
 	
     
 }
