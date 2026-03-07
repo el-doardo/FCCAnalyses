@@ -590,7 +590,7 @@ class RDFanalysis():
 
 				## ## inserisco un blocco modificato pensato per i jet:
 				.Define("RecoMuon_lead_Track",   "ReconstructedParticle2Track::getRP2TRK( RecoMuon_lead, EFlowTrack_1)")
-				.Define("RecoDecayVertexObjectMuon_lead",   "VertexFitterSimple::VertexFitter_Tk( 0, RecoMuon_lead_Track, JetsParticles )" )
+				.Define("RecoDecayVertexObjectMuon_lead",   "VertexFitterSimple::VertexFitter_Tk( 0, RecoMuon_lead_Track, PrimaryTracks )" )
 				.Define("RecoDecayVertexMuon_lead",  "VertexingUtils::get_VertexData( RecoDecayVertexObjectMuon_lead )")
 
                 .Define("Reco_Lxyz","return sqrt(RecoDecayVertexMuon_lead.position.x*RecoDecayVertexMuon_lead.position.x + RecoDecayVertexMuon_lead.position.y*RecoDecayVertexMuon_lead.position.y + RecoDecayVertexMuon_lead.position.z*RecoDecayVertexMuon_lead.position.z);")
