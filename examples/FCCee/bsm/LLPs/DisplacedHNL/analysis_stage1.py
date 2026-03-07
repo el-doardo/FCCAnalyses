@@ -849,7 +849,8 @@ class RDFanalysis():
                 # build pseudo jets with the RP, using the interface that takes px,py,pz,E
                 .Define("pseudo_jets",  "JetClusteringUtils::set_pseudoJets(RP_px, RP_py, RP_pz, RP_e)" )
                 ### Durham algo, exclusive clustering (first number 2) N_jets=0 (second number), E-scheme=0 (third and forth numbers) ###
-                .Define( "FCCAnalysesJets_ee_kt",  "JetClustering::clustering_ee_kt(2, 2, 1, 0)(pseudo_jets)" )
+                .Define( "FCCAnalysesJets_ee_kt",  "JetClustering::clustering_ee_kt(2, 2, 1, 0)(pseudo_jets)" ) ## ## exclusive
+				.Define( "FCCAnalysesJets_ee_kt",  "JetClustering::clustering_ee_kt(0, 5, 1, 0)(pseudo_jets)" ) ## ## inclusive
                 .Define("jets_ee_kt",  "JetClusteringUtils::get_pseudoJets( FCCAnalysesJets_ee_kt )")
                 ### get the number of jets in a workaround way, anyway is exactly zero for exclusive clustering ###
                 .Define("jets_e",  "JetClusteringUtils::get_e(jets_ee_kt)")
