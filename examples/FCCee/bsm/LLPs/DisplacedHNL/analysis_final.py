@@ -499,7 +499,7 @@ cutList = {
     
     #### inclusive selection cuts ####
     "selReco":"true",
-	"selReco_try_cut":"RecoEmiss_pt>5 && RecoEmiss_e>7 && jets_pt.at(0)<45 && jets_pt.at(1)<45 && jets_e.at(0)<45 && jets_e.at(1)<45 ", #RecoMissingEnergy_e > 7 && RecoMissingEnergy_pt > 5", #jets_pt<45
+	"selReco_try_cut":"RecoEmiss_pt>5 && RecoEmiss_e>7 && jets_pt.at(0)<45 && jets_pt.at(1)<45 && jets_e.at(0)<40 && jets_e.at(1)<40 && jets_e.at(0)>2 && jets_e.at(1)>2 ", #RecoMissingEnergy_e > 7 && RecoMissingEnergy_pt > 5", #jets_pt<45
     ### cuts for SM llnunu at generator level to be applied to everything properly
     #"selReco_gen": "Reco_pt.at(0)>1 && Reco_pt.at(1)>1 && RecoEmiss_pt>5", ## Reco_e>2 is taken care of by delphes already, no need to specify it here
     ### cuts need to exclude hadronic background
