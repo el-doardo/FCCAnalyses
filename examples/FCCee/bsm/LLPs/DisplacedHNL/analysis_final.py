@@ -101,7 +101,7 @@ processList = {
 		"HNL_3.17e-11_90gev":{},
 
 	
-		#"numujj":{},
+		"numujj":{},
 }
 
 processList_ = {
