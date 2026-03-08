@@ -14,13 +14,13 @@ import ROOT
 #Mandatory: List of processes
 
 processList = {
-        'p8_ee_Zee_ecm91':{'fraction':0.02}, ## ## secondo il paper lui non serve, ma sono curioso
-        'p8_ee_Zmumu_ecm91':{'fraction':0.02},
-        'p8_ee_Ztautau_ecm91':{'fraction':0.02},
-        'p8_ee_Zbb_ecm91':{'fraction':0.02},
-        'p8_ee_Zcc_ecm91':{'fraction':0.02},
-        'p8_ee_Zud_ecm91':{'fraction':0.02},
-        'p8_ee_Zss_ecm91':{'fraction':0.02},
+        'p8_ee_Zee_ecm91':{'fraction':0.01}, ## ## secondo il paper lui non serve, ma sono curioso
+        'p8_ee_Zmumu_ecm91':{'fraction':0.01},
+        'p8_ee_Ztautau_ecm91':{'fraction':0.01},
+        'p8_ee_Zbb_ecm91':{'fraction':0.01},
+        'p8_ee_Zcc_ecm91':{'fraction':0.01},
+        'p8_ee_Zud_ecm91':{'fraction':0.01},
+        'p8_ee_Zss_ecm91':{'fraction':0.01},
 
 	## ##
 	
@@ -658,7 +658,7 @@ class RDFanalysis():
                 #.Filter("n_RecoPhotons==0 && n_RecoLeptons==2 && ((Reco_charge.at(0)==1 && Reco_charge.at(1)==-1) || (Reco_charge.at(0)==-1 && Reco_charge.at(1)==1))") ## ## lui va via
                 ### generator selection on llnunu background that needs to be applied consinstently to the others
                 #.Filter("Reco_pt.at(0) > 1 && Reco_pt.at(1) > 1 && RecoEmiss_pt > 5")
-				.Filter("n_RecoMuons > 0 && RecoMuon_pt.at(0) > 20")
+				.Filter("n_RecoMuons > 0 && RecoMuon_pt.at(0) > 10")
 				.Filter("n_jets>0")
 
                )
