@@ -237,6 +237,7 @@ variables = [
 	"RecoMuon_lead_Track_absD0",
 	"RecoMuon_lead_Track_absD0_mid",
 	"RecoMuon_lead_Track_absD0_prompt",
+	"RecoDecayVertexMuon_lead.chi2",
     
 ]
 
