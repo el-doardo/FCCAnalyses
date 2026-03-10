@@ -259,7 +259,9 @@ selections['HNL']  = [
     #"selReco_gen_notracks_2eh_10MET_0.8cos_80ME_10chi_0.64d0",
     #"selReco_gen_notracks_2eh_15to70ME",
     "selReco",
+	"selReco_try_cut"
 	"selReco_try_cut_chi2_10",
+	"selReco_try_cut_chi2_5",
 
     #"sel2RecoDF_vetoes",
     #"sel2RecoDF_vetoes_15-80M",
@@ -273,7 +275,9 @@ selections['HNL']  = [
 
 extralabel = {}
 extralabel['selNone'] = "Before selection"
+extralabel['selReco_try_cut'] = "Try from selReco"
 extralabel['selReco_try_cut_chi2_10'] = "Try from selReco and chi2 < 10"
+extralabel['selReco_try_cut_chi2_5'] = "Try from selReco and chi2 < 5"
 extralabel['selReco']="Two leptons, different charge, no photons and jets"
 extralabel['sel2Reco_vetoes']="Two leptons, no photons and jets"
 extralabel['selReco_gen_notracks_2eh_10MET_0.8cos_80ME_10chi_0.64d0']="Two leptons, no photons an jets, M(l,l')<80 GeV, p_{t,miss}>10 GeV, cos#theta>-0.8" ## ## aggiunto per prova
