@@ -522,7 +522,7 @@ class RDFanalysis():
 				.Define("RecoMuon_lead_Track_absD0", "return abs(ReconstructedParticle2Track::getRP2TRK_D0(RecoMuon_lead,EFlowTrack_1))")
 				.Define("RecoMuon_lead_Track", "ReconstructedParticle2Track::getRP2TRK(RecoMuon_lead,EFlowTrack_1)") ## ## inserisco questa traccia in get_VertexData per ottenere un oggetto sul quale poter fare il taglio al chi2
 				#.Define("RecoDecayVertexObjectMuon_lead",   "VertexFitterSimple::VertexFitter_Tk( 0, RecoMuon_lead_Track)" ) ### reconstructing a vertex withour any request n=0 ###
-				.Define("RecoDecayVertexObjectMuon_lead",   "VertexFitterSimple::VertexFitter_Tk( 0, RecoMuon_lead_Track, EFlowTrack_1 )" ) ## ## provo a usare questo invece di quello sopra
+				.Define("RecoDecayVertexObjectMuon_lead",   "VertexFitterSimple::VertexFitter_Tk( 1, RecoMuon_lead_Track, EFlowTrack_1 )" ) ## ## provo a usare questo invece di quello sopra
                 .Define("RecoDecayVertexMuon_lead",  "VertexingUtils::get_VertexData( RecoDecayVertexObjectMuon_lead )") ## ## se tutto va bene userò il chi2 da questo oggetto
 			
                 ### Jet clustering with different algorithm, only on non leptons ###
