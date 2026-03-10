@@ -523,7 +523,7 @@ class RDFanalysis():
 				.Define("RecoMuon_lead_Track", "ReconstructedParticle2Track::getRP2TRK(RecoMuon_lead,EFlowTrack_1)") ## ## inserisco questa traccia in get_VertexData per ottenere un oggetto sul quale poter fare il taglio al chi2
 				.Define("RecoDecayVertexObjectMuon_lead",   "VertexFitterSimple::VertexFitter_Tk( 0, RecoMuon_lead_Track)" ) ### reconstructing a vertex withour any request n=0 ###
 				#.Define("RecoDecayVertexObjectMuon_lead",   "VertexFitterSimple::VertexFitter_Tk( 0, RecoMuon_lead_Track, EFlowTrack_1 )" ) ## ## provo a usare questo invece di quello sopra (non è cambiato nulla)
-                .Define("RecoDecayVertexMuon_lead",  "VertexingUtils::get_VertexData( RecoDecayVertexObjectMuon_lead )") ## ## se tutto va bene userò il chi2 da questo oggetto
+                # .Define("RecoDecayVertexMuon_lead",  "VertexingUtils::get_VertexData( RecoDecayVertexObjectMuon_lead )") ## ## se tutto va bene userò il chi2 da questo oggetto, ne ho definito uno omonimo più avanti.
 			
                 ### Jet clustering with different algorithm, only on non leptons ###
                 ### https://github.com/HEP-FCC/FCCAnalyses/blob/master/addons/FastJet/JetClustering.h ###
@@ -580,6 +580,8 @@ class RDFanalysis():
                 .Define("n_PrimaryTracks",  "ReconstructedParticle2Track::getTK_n( PrimaryTracks )")
                 .Define("SecondaryTracks",   "VertexFitterSimple::get_NonPrimaryTracks( EFlowTrack_1, PrimaryTracks )")
                 .Define("n_SecondaryTracks",  "ReconstructedParticle2Track::getTK_n( SecondaryTracks )" )
+			
+                .Define("RecoDecayVertexMuon_lead",  "VertexingUtils::get_VertexData( PrimaryVertexObject )") ## ## da decoomentare il precedente RecoDecayVertexMuon_lead
 
                ### reconstruct the reco decay vertex using the reco'ed tracks from electrons and muons ###
 				## ## tolgo questo blocco perché dovrebbe essere buono per la precedente versione dello studio
