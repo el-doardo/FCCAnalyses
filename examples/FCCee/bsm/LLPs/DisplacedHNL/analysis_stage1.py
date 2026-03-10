@@ -117,13 +117,13 @@ processList_ = {
 #Production tag. This points to the yaml files for getting sample statistics
 #Mandatory when running over EDM4Hep centrally produced events
 #Comment out when running over privately produced events
-prodTag     = "FCCee/winter2023/IDEA/"
+#prodTag     = "FCCee/winter2023/IDEA/"
 
 #Input directory
 #Comment out when running over centrally produced events
 #Mandatory when running over privately produced events
 
-#inputDir = "/eos/user/e/espoto/FCC_2jet_z_pole/FCCAnalysis/hadronized_signals"
+inputDir = "/eos/user/e/espoto/FCC_2jet_z_pole/FCCAnalysis/hadronized_signals"
 
 # additional/costom C++ functions, defined in header files (optional)
 includePaths = ["functions.h"]
