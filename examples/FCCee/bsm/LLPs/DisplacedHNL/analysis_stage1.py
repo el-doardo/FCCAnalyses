@@ -520,7 +520,7 @@ class RDFanalysis():
 				.Define("RecoMuon_lead_pt", "ReconstructedParticle::get_pt(RecoMuon_lead) ") ## ## Pt del muone lead
 				.Define("RecoMuon_lead_e", "ReconstructedParticle::get_e(RecoMuon_lead) ") ## ## Pt del muone lead
 				.Define("RecoMuon_lead_Track_absD0", "return abs(ReconstructedParticle2Track::getRP2TRK_D0(RecoMuon_lead,EFlowTrack_1))")
-				.Define("RecoMuon_lead_Track", "return abs(ReconstructedParticle2Track::getRP2TRK(RecoMuon_lead,EFlowTrack_1))")
+				.Define("RecoMuon_lead_Track", "ReconstructedParticle2Track::getRP2TRK(RecoMuon_lead,EFlowTrack_1)))
 				
 			
                 ### Jet clustering with different algorithm, only on non leptons ###
