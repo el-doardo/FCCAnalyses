@@ -498,7 +498,7 @@ cutList = {
     
     #### inclusive selection cuts ####
     "selReco":"true",
-	"selReco_try_cut":"RecoEmiss_pt>5 && RecoEmiss_e>7 && jets_pt.at(0)<45 && jets_pt.at(1)<45 && jets_e.at(0)<40 && jets_e.at(1)<40 && jets_e.at(0)>2 && jets_e.at(1)>2 ", #RecoMissingEnergy_e > 7 && RecoMissingEnergy_pt > 5", #jets_pt<45
+	"selReco_try_cut_chi2_10":"RecoEmiss_pt>5 && RecoEmiss_e>7 && jets_pt.at(0)<45 && jets_pt.at(1)<45 && jets_e.at(0)<40 && jets_e.at(1)<40 && jets_e.at(0)>2 && jets_e.at(1)>2 && RecoDecayVertexMuon_lead.chi2<10", #RecoMissingEnergy_e > 7 && RecoMissingEnergy_pt > 5", #jets_pt<45
     ### cuts for SM llnunu at generator level to be applied to everything properly
     #"selReco_gen": "Reco_pt.at(0)>1 && Reco_pt.at(1)>1 && RecoEmiss_pt>5", ## Reco_e>2 is taken care of by delphes already, no need to specify it here
     ### cuts need to exclude hadronic background
@@ -560,7 +560,7 @@ cutLabels = {
     #"sel2RecoDF_vetoes_notracks_nojets_M80_5MEpt_0.8cos_chi_0.5d0":"Two different flavor leptons, no photons, no other track, no jets, M(l,l)<80 GeV, p_{T,miss}>5 GeV, cos\theta>-0.8, \chi^2<10, |d_0|>0.55 mm",
 
     "selReco":"true reco signal",
-	"selReco_try_cut":"Try cuts",
+	"selReco_try_cut_chi2_10":"Try cuts and chi2 < 10",
     #"selReco_gen": "Two leptons, no photons, p_{T}>1 GeV, p_{T, miss}>5 GeV",
     #"selReco_gen_notracks": "Two leptons, no photons, no tracks, p_{T}>1 GeV, p_{T, miss}>5 GeV",
     #"selReco_gen_notrack_2eh": "Two leptons, no photons, no tracks, no neutral hadrons, p_{T}>1 GeV, p_{T, miss}>5 GeV",
