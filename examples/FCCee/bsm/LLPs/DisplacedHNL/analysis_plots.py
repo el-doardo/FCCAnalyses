@@ -259,7 +259,7 @@ selections['HNL']  = [
     #"selReco_gen_notracks_2eh_10MET_0.8cos_80ME_10chi_0.64d0",
     #"selReco_gen_notracks_2eh_15to70ME",
     "selReco",
-	"selReco_try_cut",
+	"selReco_try_cut_chi2_10",
 
     #"sel2RecoDF_vetoes",
     #"sel2RecoDF_vetoes_15-80M",
