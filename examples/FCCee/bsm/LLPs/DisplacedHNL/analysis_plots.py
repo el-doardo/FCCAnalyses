@@ -17,7 +17,6 @@ formats        = ['png']
 #formats        = ['pdf']
 #yaxis          = ['lin','log']
 yaxis          = ['log']
-xaxis          = ['log']
 stacksig       = ['nostack']
 stackbkg       = ['stack']
 #legendCoord    = [0.68,0.76,0.96,0.88]
@@ -259,6 +258,7 @@ variables = [
 selections = {}
 selections['HNL']  = [
     #"selNone",
+	"selReco",
     #"sel2Reco_vetoes",
 
     #"sel2RecoSF_vetoes",
@@ -285,7 +285,7 @@ selections['HNL']  = [
 
 extralabel = {}
 extralabel['selNone'] = "Before selection"
-extralabel['selReco']="Two leptons, different charge, no photons and jets"
+extralabel['selReco']="Two jets, Leadig Muon pt > 10 GeV"
 extralabel['sel2Reco_vetoes']="Two leptons, no photons and jets"
 extralabel['selReco_gen_notracks_2eh_10MET_0.8cos_80ME_10chi_0.64d0']="Two leptons, no photons an jets, M(l,l')<80 GeV, p_{t,miss}>10 GeV, cos#theta>-0.8" ## ## aggiunto per prova
 extralabel['selReco_gen_notracks_2eh_15to70ME']="Two leptons, no photons, no tracks, no neutral hadrons 15Gev<M(l,l')<70Gev"
