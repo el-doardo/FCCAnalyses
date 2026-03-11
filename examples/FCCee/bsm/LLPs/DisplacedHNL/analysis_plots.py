@@ -237,6 +237,7 @@ variables = [
 	"RecoMuon_lead_Track_absD0",
 	"RecoMuon_lead_Track_absD0_mid",
 	"RecoMuon_lead_Track_absD0_prompt",
+	"RecoDecayVertexMuon_lead.chi2",
     
 ]
 
@@ -259,6 +260,8 @@ selections['HNL']  = [
     #"selReco_gen_notracks_2eh_10MET_0.8cos_80ME_10chi_0.64d0",
     #"selReco_gen_notracks_2eh_15to70ME",
     "selReco",
+	"selReco_chi2<10",
+	"selReco_chi2<5",
 
     #"sel2RecoDF_vetoes",
     #"sel2RecoDF_vetoes_15-80M",
@@ -273,6 +276,8 @@ selections['HNL']  = [
 extralabel = {}
 extralabel['selNone'] = "Before selection"
 extralabel['selReco']="Two leptons, different charge, no photons and jets"
+extralabel['selReco_chi2<10']="selReco_chi2<10"
+extralabel['selReco_chi2<5']="selReco_chi2<5"
 extralabel['sel2Reco_vetoes']="Two leptons, no photons and jets"
 extralabel['selReco_gen_notracks_2eh_10MET_0.8cos_80ME_10chi_0.64d0']="Two leptons, no photons an jets, M(l,l')<80 GeV, p_{t,miss}>10 GeV, cos#theta>-0.8" ## ## aggiunto per prova
 extralabel['selReco_gen_notracks_2eh_15to70ME']="Two leptons, no photons, no tracks, no neutral hadrons 15Gev<M(l,l')<70Gev"
@@ -336,29 +341,29 @@ colors['tatanunu_m'] = 38
 plots = {}
 plots['HNL'] = {'signal':{
 	
-                    'HNL_1.04e-8_10gev':['HNL_1.04e-8_10gev'],
-					'HNL_4e-10_20gev':['HNL_4e-10_20gev'],
-					'HNL_4e-10_80gev':['HNL_4e-10_80gev'],
+                    #'HNL_1.04e-8_10gev':['HNL_1.04e-8_10gev'],
+					#'HNL_4e-10_20gev':['HNL_4e-10_20gev'],
+					#'HNL_4e-10_80gev':['HNL_4e-10_80gev'],
 					'HNL_6.67e-10_30gev':['HNL_6.67e-10_30gev'],
 					'HNL_8.35e-9_40gev':['HNL_8.35e-9_40gev'],
-					'HNL_2.27e-9_20gev':['HNL_2.27e-9_20gev'],
-                    'HNL_1.04e-8_70gev':['HNL_1.04e-8_70gev'],
-					'HNL_2.27e-9_50gev':['HNL_2.27e-9_50gev'],
-					'HNL_3.17e-11_30gev':['HNL_3.17e-11_30gev'],
-					'HNL_3.17e-11_60gev':['HNL_3.17e-11_60gev'],
+					#'HNL_2.27e-9_20gev':['HNL_2.27e-9_20gev'],
+                    #'HNL_1.04e-8_70gev':['HNL_1.04e-8_70gev'],
+					#'HNL_2.27e-9_50gev':['HNL_2.27e-9_50gev'],
+					#'HNL_3.17e-11_30gev':['HNL_3.17e-11_30gev'],
+					#'HNL_3.17e-11_60gev':['HNL_3.17e-11_60gev'],
 
                 },
                 'backgrounds':{
                     #'HNL':['HNL_2.86e-12_30gev'], ### impossible to plot without both signals and backgrounds, choose one signal and make it white ### 
 
 					'numujj':['numujj'],
-					'Zee':['p8_ee_Zee_ecm91'],
-   					'Zmumu':['p8_ee_Zmumu_ecm91'],
-				    'Ztautau':['p8_ee_Ztautau_ecm91'],
-   					'Zbb':['p8_ee_Zbb_ecm91'],
-				    'Zcc':['p8_ee_Zcc_ecm91'],
-				    'Zud':['p8_ee_Zud_ecm91'],
-				    'Zss':['p8_ee_Zss_ecm91'],
+					#'Zee':['p8_ee_Zee_ecm91'],
+   					#'Zmumu':['p8_ee_Zmumu_ecm91'],
+				    #'Ztautau':['p8_ee_Ztautau_ecm91'],
+   					#'Zbb':['p8_ee_Zbb_ecm91'],
+				    #'Zcc':['p8_ee_Zcc_ecm91'],
+				    #'Zud':['p8_ee_Zud_ecm91'],
+				    #'Zss':['p8_ee_Zss_ecm91'],
                     ## ##'emununu': ['emununu'],
                 },
                 }
