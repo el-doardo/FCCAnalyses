@@ -499,8 +499,6 @@ cutList = {
     
     #### inclusive selection cuts ####
     "selReco":"true",
-	"selReco_chi2_10":"RecoDecayVertexMuon_lead.chi2<10",
-	"selReco_chi2_5":"RecoDecayVertexMuon_lead.chi2<5",
     ### cuts for SM llnunu at generator level to be applied to everything properly
     #"selReco_gen": "Reco_pt.at(0)>1 && Reco_pt.at(1)>1 && RecoEmiss_pt>5", ## Reco_e>2 is taken care of by delphes already, no need to specify it here
     ### cuts need to exclude hadronic background
@@ -562,8 +560,6 @@ cutLabels = {
     #"sel2RecoDF_vetoes_notracks_nojets_M80_5MEpt_0.8cos_chi_0.5d0":"Two different flavor leptons, no photons, no other track, no jets, M(l,l)<80 GeV, p_{T,miss}>5 GeV, cos\theta>-0.8, \chi^2<10, |d_0|>0.55 mm",
 
     "selReco":"true reco signal",
-	"selReco_chi2_5":"chi2<5",
-	"selReco_chi2_10":"chi2<10",
     #"selReco_gen": "Two leptons, no photons, p_{T}>1 GeV, p_{T, miss}>5 GeV",
     #"selReco_gen_notracks": "Two leptons, no photons, no tracks, p_{T}>1 GeV, p_{T, miss}>5 GeV",
     #"selReco_gen_notrack_2eh": "Two leptons, no photons, no tracks, no neutral hadrons, p_{T}>1 GeV, p_{T, miss}>5 GeV",
@@ -653,10 +649,10 @@ histoList = {
     #"FSGenPhoton_charge":              {"name":"FSGenPhoton_charge",             "title":"Final state gen photons charge",             "bin":3, "xmin":-1.5,"xmax":1.5},
 
     ######### RECO VARIABLES
-    #"n_RecoTracks":                     {"name":"n_RecoTracks",                   "title":"Total number of reco tracks",             "bin":10,"xmin":0 ,"xmax":10},
+    "n_RecoTracks":                     {"name":"n_RecoTracks",                   "title":"Total number of reco tracks",             "bin":30,"xmin":0 ,"xmax":30},
     #"n_noLeptonTracks":                 {"name":"n_noLeptonTracks",           "title":"Total number of non lepton tracks",             "bin":10,"xmin":0 ,"xmax":10},
-    #"n_PrimaryTracks":                 {"name":"n_PrimaryTracks",                "title":"Total number of primary tracks",          "bin":10,"xmin":-0.5 ,"xmax":9.5},
-    #"n_SecondaryTracks":               {"name":"n_SecondaryTracks",              "title":"Total number of secondary tracks",        "bin":10,"xmin":-0.5 ,"xmax":9.5},
+    "n_PrimaryTracks":                 {"name":"n_PrimaryTracks",                "title":"Total number of primary tracks",          "bin":10,"xmin":-0.5 ,"xmax":9.5},
+    "n_SecondaryTracks":               {"name":"n_SecondaryTracks",              "title":"Total number of secondary tracks",        "bin":10,"xmin":-0.5 ,"xmax":9.5},
     #"n_RecoDVs":                       {"name":"n_RecoDVs",                      "title":"Total number of DVs",                     "bin":5,"xmin":-0.5 ,"xmax":4.5},
     #"n_RecoPhotons":                   {"name":"n_RecoPhotons",                  "title":"Total number of reco photons",            "bin":5,"xmin":0 ,"xmax":5},
     #"n_RecoElectrons":                 {"name":"n_RecoElectrons",                "title":"Total number of reco electrons",          "bin":5,"xmin":0 ,"xmax":5},
@@ -875,10 +871,10 @@ histoList = {
     #"Reco_DecayVertexLepton_chi2":        {"name":"RecoDecayVertexLepton.chi2",        "title":"Reco decay lepton vertex #chi^{2}",          "bin":100,"xmin":0 ,"xmax":20},
     #"Reco_DecayVertexLepton_probability": {"name":"RecoDecayVertexLepton.probability", "title":"Reco decay lepton vertex probability",       "bin":100,"xmin":0 ,"xmax":1},
 
-    #"Reco_Lxy":                     {"name":"Reco_Lxy",                    "title":"Reco L_{xy} [mm]",     "bin":100,"xmin":0 ,"xmax":2000},
-    #"Reco_Lxy_prompt":              {"name":"Reco_Lxy",                    "title":"Reco L_{xy} [mm]",     "bin":100,"xmin":0 ,"xmax":10},
-    #"Reco_Lxyz":                    {"name":"Reco_Lxyz",                   "title":"Reco L_{xyz} [mm]",    "bin":100,"xmin":0 ,"xmax":2000},
-    #"Reco_Lxyz_prompt":             {"name":"Reco_Lxyz",                   "title":"Reco L_{xyz} [mm]",    "bin":100,"xmin":0 ,"xmax":10},
+    "Reco_Lxy":                     {"name":"Reco_Lxy",                    "title":"Reco L_{xy} [mm]",     "bin":100,"xmin":0 ,"xmax":2000},
+    "Reco_Lxy_prompt":              {"name":"Reco_Lxy",                    "title":"Reco L_{xy} [mm]",     "bin":100,"xmin":0 ,"xmax":10},
+    "Reco_Lxyz":                    {"name":"Reco_Lxyz",                   "title":"Reco L_{xyz} [mm]",    "bin":100,"xmin":0 ,"xmax":2000},
+    "Reco_Lxyz_prompt":             {"name":"Reco_Lxyz",                   "title":"Reco L_{xyz} [mm]",    "bin":100,"xmin":0 ,"xmax":10},
 
     #"Reco_Lxyz_LCFI":                    {"name":"DV_Lxyz",                   "title":"Reco L_{xyz} [mm]",    "bin":100,"xmin":0 ,"xmax":1000},
     #"Reco_Lxyz_prompt_LCFI":             {"name":"DV_Lxyz",                   "title":"Reco L_{xyz} [mm]",    "bin":100,"xmin":0 ,"xmax":10},
@@ -889,15 +885,15 @@ histoList = {
 
     #"2DHsito":     {"cols":["Reco_invMass","RecoMissingEnergy_e"],     "title":"Invariant mass - Missing Energy",            "bins":[(100,0,100),(100,0,50)]},
 
-    #"RecoMissingEnergy_e":       {"name":"RecoMissingEnergy_e",       "title":"Reco Total Missing Energy [GeV]",    "bin":100,"xmin":0 ,"xmax":50},
+    "RecoMissingEnergy_e":       {"name":"RecoMissingEnergy_e",       "title":"Reco Total Missing Energy [GeV]",    "bin":100,"xmin":0 ,"xmax":50},
     #"RecoMissingEnergy_p":       {"name":"RecoMissingEnergy_p",       "title":"Reco Total Missing p [GeV]",         "bin":100,"xmin":0 ,"xmax":50},
-    #"RecoMissingEnergy_pt":      {"name":"RecoMissingEnergy_pt",      "title":"Reco Missing p_{T} [GeV]",           "bin":100,"xmin":0 ,"xmax":50},
+    "RecoMissingEnergy_pt":      {"name":"RecoMissingEnergy_pt",      "title":"Reco Missing p_{T} [GeV]",           "bin":100,"xmin":0 ,"xmax":50},
     #"RecoMissingEnergy_px":      {"name":"RecoMissingEnergy_px",      "title":"Reco Missing p_{x} [GeV]",           "bin":100,"xmin":-50 ,"xmax":50},
     #"RecoMissingEnergy_py":      {"name":"RecoMissingEnergy_py",      "title":"Reco Missing p_{y} [GeV]",           "bin":100,"xmin":-50 ,"xmax":50},
     #"RecoMissingEnergy_pz":      {"name":"RecoMissingEnergy_pz",      "title":"Reco Missing p_{z} [GeV]",           "bin":100,"xmin":-50 ,"xmax":50},
-    #"RecoMissingEnergy_eta":     {"name":"RecoMissingEnergy_eta",     "title":"Reco Missing Energy #eta",           "bin":60,"xmin":-3 ,"xmax":3},
-    #"RecoMissingEnergy_theta":   {"name":"RecoMissingEnergy_theta",   "title":"Reco Missing Energy #theta",         "bin":64,"xmin":0 , "xmax":3.2},
-    #"RecoMissingEnergy_phi":     {"name":"RecoMissingEnergy_phi",     "title":"Reco Missing Energy #phi",           "bin":64,"xmin":-3.2 ,"xmax":3.2},
+    "RecoMissingEnergy_eta":     {"name":"RecoMissingEnergy_eta",     "title":"Reco Missing Energy #eta",           "bin":60,"xmin":-3 ,"xmax":3},
+    "RecoMissingEnergy_theta":   {"name":"RecoMissingEnergy_theta",   "title":"Reco Missing Energy #theta",         "bin":64,"xmin":0 , "xmax":3.2},
+    "RecoMissingEnergy_phi":     {"name":"RecoMissingEnergy_phi",     "title":"Reco Missing Energy #phi",           "bin":64,"xmin":-3.2 ,"xmax":3.2},
 
     #"RecoEmiss_e":       {"name":"RecoEmiss_e",       "title":"Reco Total Missing Energy [GeV]",    "bin":100,"xmin":0 ,"xmax":100},
     #"RecoEmiss_p":       {"name":"RecoEmiss_p",      "title":"Reco Missing p [GeV]",           "bin":100,"xmin":0 ,"xmax":50},
