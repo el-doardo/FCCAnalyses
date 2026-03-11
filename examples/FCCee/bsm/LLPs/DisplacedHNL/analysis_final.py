@@ -938,7 +938,7 @@ histoList = {
 	"RecoMuon_lead_Track_absD0_mid":		{"name":"RecoMuon_lead_Track_absD0",    	"title":"RecoMuon_lead_Track_absD0",          	 "bin":100, "xmin":0,"xmax":10},
 	"RecoMuon_lead_Track_absD0_prompt":		{"name":"RecoMuon_lead_Track_absD0",    	"title":"RecoMuon_lead_Track_absD0",          	 "bin":50, "xmin":0,"xmax":1},
 	#"RecoDecayVertexMuon_lead_chi2":		{"name":"RecoDecayVertexMuon_lead.chi2",    	"title":"RecoDecayVertexMuon_lead.chi2",          	 "bin":50, "xmin":0,"xmax":50},
-	"Reco_DecayVertexMuon_lead_z":    {"name":"RecoDecayVertexLepton.position.z",  "title":"Reco decay lepton vertex z [mm]",            "bin":100,"xmin":-1 ,"xmax":2000},
-    "Reco_DecayVertexMuon_lead_chi2":        {"name":"RecoDecayVertexMuon_lead.chi2",        "title":"Reco decay lepton vertex #chi^{2}",          "bin":100,"xmin":0 ,"xmax":20},
+	"Reco_DecayVertexMuon_lead_z":    		{"name":"RecoDecayVertexMuon_lead.position.z",  "title":"Reco decay lepton vertex z [mm]",            "bin":100,"xmin":-1 ,"xmax":2000},
+    "Reco_DecayVertexMuon_lead_chi2":       {"name":"RecoDecayVertexMuon_lead.chi2",        "title":"Reco decay lepton vertex #chi^{2}",          "bin":100,"xmin":0 ,"xmax":20},
     
 }
