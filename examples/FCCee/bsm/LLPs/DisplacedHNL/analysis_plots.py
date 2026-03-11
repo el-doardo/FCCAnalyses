@@ -250,7 +250,7 @@ variables = [
 	"RecoMissingEnergy_eta",
 	"RecoMissingEnergy_theta",
 	"RecoMissingEnergy_phi",
-	"Reco_DecayVertexMuon_lead_z"
+	"Reco_DecayVertexMuon_lead_z",
 ]
 
     
