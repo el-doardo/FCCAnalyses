@@ -252,6 +252,7 @@ class RDFanalysis():
 				## ## Sto esplorando con questa riga come ottenre il secondary vertex
 					   .Define("SecondaryVertexObject", "VertexFitterSimple::VertexFitter_Tk(1, SecondaryTracks, true, 4.5, 20e-3, 300)")
 					   .Define("RecoDecayVertexMuon_lead",  "VertexingUtils::get_VertexData( SecondaryVertexObject )") ## ## va decommentato l'omonimo poco sopra
+					   .Define("Log_chi2", "return (log10(RecoDecayVertexMuon_lead.chi2)")
 
 					   
 				## ## Posso controllare se questi funzionano, forse hanno senso
@@ -349,6 +350,7 @@ class RDFanalysis():
 						"RecoMuon_lead_e",
 						"RecoMuon_lead_Track_absD0",
 						"RecoDecayVertexMuon_lead",
+						"Log_chi2",
 
 		]
 
