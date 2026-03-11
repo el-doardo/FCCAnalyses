@@ -33,7 +33,7 @@ processList = {
 		#"HNL_4e-10_20gev":{},
 		#"HNL_4e-10_80gev":{},	
 		"HNL_6.67e-10_30gev":{},
-		"HNL_8.35e-9_40gev":{},
+		#"HNL_8.35e-9_40gev":{},
 		#"HNL_2.27e-9_20gev":{},
 		#"HNL_2.27e-9_50gev":{},
 		#"HNL_3.17e-11_30gev":{},
@@ -41,7 +41,7 @@ processList = {
 
 	
 	
-		"numujj":{},
+		#"numujj":{},
 }
 
 processList_ = {
@@ -573,7 +573,7 @@ class RDFanalysis():
 	       		.Define("jetconstituents_ee_kt", "JetClusteringUtils::get_constituents(FCCAnalysesJets_ee_kt)")
 
 
-	       # finding SVs in jets 
+	       # finding SVs in jets
                .Define("SV_jet", "VertexFinderLCFIPlus::get_SV_jets(ReconstructedParticles, EFlowTrack_1, PrimaryVertexObject, IsPrimary_based_on_reco, jets_ee_kt, jetconstituents_ee_kt)") ## posso provare a inserire JetsParticles al posto di ReconstructedParticles 
                # finding SVs in the event (two interfaces)
 	       #.Define("SV_evt1", "VertexFinderLCFIPlus::get_SV_event(ReconstructedParticles, EFlowTrack_1, PrimaryVertexObject, IsPrimary_based_on_reco)")
@@ -593,6 +593,7 @@ class RDFanalysis():
                # .Define("sv_p",       "VertexingUtils::get_pMag_SV(SV_jet)") # SV momentum (magnitude)
                # .Define("sv_ntracks", "VertexingUtils::get_VertexNtrk(SV_jet)") # SV daughters (no of tracks)
                .Define("sv_chi2",    "VertexingUtils::get_chi2_SV(SV_jet)") # SV chi2 (not normalised)
+				.Define("sv_chi2_0", "return sv_chi2.at(0)") ## ## lo aggiungo perché sto avendo dei problemi a plottare sv_ch2 in quanto vector di vectors
                .Define("sv_normchi2","VertexingUtils::get_norm_chi2_SV(SV_jet)") # SV chi2 (normalised)
                # .Define("sv_ndf",     "VertexingUtils::get_nDOF_SV(SV_jet)") # SV no of DOF
                # .Define("sv_theta",   "VertexingUtils::get_theta_SV(SV_jet)") # SV polar angle (theta)
