@@ -623,7 +623,7 @@ class RDFanalysis():
 				## ##.Define("jets_ph",  "JetClusteringUtils::get_phi(jets_ee_kt)")
 				## ##.Define("jets_phi_std",  "JetClusteringUtils::get_phi_std(jets_ee_kt)")
 				## ##.Define("jets_theta",  "JetClusteringUtils::get_theta(jets_ee_kt)")
-                ## ##.Define("n_jets", "jets_e.size()")
+                .Define("n_jets", "jets_e.size()")
 
                 ### Durham algo, exclusive clustering (first number 2, 3 for exclusive up to n) N_jets=0 (second number), E-scheme=0 (third and forth numbers) ###
                 .Define( "FCCAnalysesJets_ee_kt_excl",  "JetClustering::clustering_ee_kt(3, 2, 1, 0)(pseudo_jets)" )
@@ -738,7 +738,7 @@ class RDFanalysis():
                 ### generator selection on llnunu background that needs to be applied consinstently to the others
                 #.Filter("Reco_pt.at(0) > 1 && Reco_pt.at(1) > 1 && RecoEmiss_pt > 5")
 				.Filter("n_RecoMuons > 0 && RecoMuon_pt.at(0) > 10")
-				.Filter("n_jets>0")
+				.Filter(">0")
 
                )
                 return df2
