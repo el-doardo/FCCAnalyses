@@ -237,8 +237,7 @@ variables = [
 	"RecoMuon_lead_Track_absD0",
 	"RecoMuon_lead_Track_absD0_mid",
 	"RecoMuon_lead_Track_absD0_prompt",
-	"RecoDecayVertexMuon_lead.chi2",
-	"RecoDecayVertexMuon_lead.chi2_10e6",
+	"RecoDecayVertexMuon_lead_chi2",
 	"n_RecoTracks",
 	"n_PrimaryTracks",
 	"n_SecondaryTracks",
@@ -251,6 +250,7 @@ variables = [
 	"RecoMissingEnergy_eta",
 	"RecoMissingEnergy_theta",
 	"RecoMissingEnergy_phi",
+	"Reco_DecayVertexMuon_lead_z"
 ]
 
     
