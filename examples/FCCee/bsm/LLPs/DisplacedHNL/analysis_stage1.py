@@ -175,7 +175,25 @@ class RDFanalysis():
 
                 ################### Reconstructed particles #####################
                 .Define("n_RecoTracks","ReconstructedParticle2Track::getTK_n(EFlowTrack_1)")
+					   
 				.Define("RecoMuons",  "ReconstructedParticle::get(Muon0, ReconstructedParticles)")
+				.Define("n_RecoMuons",  "ReconstructedParticle::get_n(RecoMuons)") #count how many muons are in the event in total
+                .Define("RecoMuon_e",      "ReconstructedParticle::get_e(RecoMuons)")
+                .Define("RecoMuon_p",      "ReconstructedParticle::get_p(RecoMuons)")
+                .Define("RecoMuon_pt",      "ReconstructedParticle::get_pt(RecoMuons)")
+                .Define("RecoMuon_px",      "ReconstructedParticle::get_px(RecoMuons)")
+                .Define("RecoMuon_py",      "ReconstructedParticle::get_py(RecoMuons)")
+                .Define("RecoMuon_pz",      "ReconstructedParticle::get_pz(RecoMuons)")
+				.Define("RecoMuon_eta",     "ReconstructedParticle::get_eta(RecoMuons)") #pseudorapidity eta
+                .Define("RecoMuon_theta",   "ReconstructedParticle::get_theta(RecoMuons)")
+				.Define("RecoMuon_phi",     "ReconstructedParticle::get_phi(RecoMuons)") #polar angle in the transverse plane phi
+                .Define("RecoMuon_charge",  "ReconstructedParticle::get_charge(RecoMuons)")
+                .Define("RecoMuonTrack_absD0", "return abs(ReconstructedParticle2Track::getRP2TRK_D0(RecoMuons,EFlowTrack_1))")
+                .Define("RecoMuonTrack_absZ0", "return abs(ReconstructedParticle2Track::getRP2TRK_Z0(RecoMuons,EFlowTrack_1))")
+                .Define("RecoMuonTrack_absD0sig", "return abs(ReconstructedParticle2Track::getRP2TRK_D0_sig(RecoMuons,EFlowTrack_1))") #significance
+                .Define("RecoMuonTrack_absZ0sig", "return abs(ReconstructedParticle2Track::getRP2TRK_Z0_sig(RecoMuons,EFlowTrack_1))")
+                .Define("RecoMuonTrack_D0cov", "ReconstructedParticle2Track::getRP2TRK_D0_cov(RecoMuons,EFlowTrack_1)") #variance (not sigma)
+                .Define("RecoMuonTrack_Z0cov", "ReconstructedParticle2Track::getRP2TRK_Z0_cov(RecoMuons,EFlowTrack_1)")
 
 
 				## ## estraggo il muone a maggior pt
