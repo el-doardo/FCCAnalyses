@@ -174,6 +174,7 @@ class RDFanalysis():
 
                 ################### Reconstructed particles #####################
                 .Define("n_RecoTracks","ReconstructedParticle2Track::getTK_n(EFlowTrack_1)")
+				.Define("RecoMuons",  "ReconstructedParticle::get(Muon0, ReconstructedParticles)")
 
 
 				## ## estraggo il muone a maggior pt
