@@ -170,6 +170,7 @@ class RDFanalysis():
                 .Alias("Particle1", "Particle#1.index")
                 .Alias("MCRecoAssociations0", "MCRecoAssociations#0.index")
                 .Alias("MCRecoAssociations1", "MCRecoAssociations#1.index")
+				.Alias("Muon0", "Muon#0.index")
 
 
                 ################### Reconstructed particles #####################
