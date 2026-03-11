@@ -332,13 +332,9 @@ class RDFanalysis():
                         "RecoEmiss_p",
                         "RecoEmiss_e",
 
-
-                        "RecoDecayVertexLepton",
+					
                         "Reco_Lxy",
                         "Reco_Lxyz",
-                        "Reco_invMass",
-                        "Reco_cos",
-                        "Reco_DR",
 
                         #"n_RecoDVs",
                         #"DV_Lxyz", 
@@ -349,8 +345,6 @@ class RDFanalysis():
 						"RecoMuon_lead_e",
 						"RecoMuon_lead_Track_absD0",
 						"RecoDecayVertexMuon_lead",
-						"Reco_Lxyz",
-						"Reco_Lxy",
 
 		]
 
