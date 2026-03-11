@@ -942,6 +942,6 @@ histoList = {
 	"RecoMuon_lead_Track_absD0_mid":		{"name":"RecoMuon_lead_Track_absD0",    	"title":"RecoMuon_lead_Track_absD0",          	 "bin":100, "xmin":0,"xmax":10},
 	"RecoMuon_lead_Track_absD0_prompt":		{"name":"RecoMuon_lead_Track_absD0",    	"title":"RecoMuon_lead_Track_absD0",          	 "bin":50, "xmin":0,"xmax":1},
 	"RecoDecayVertexMuon_lead.chi2":		{"name":"RecoDecayVertexMuon_lead.chi2",    	"title":"RecoDecayVertexMuon_lead.chi2",          	 "bin":50, "xmin":0,"xmax":50},
-	"RecoDecayVertexMuon_lead.chi2_10":		{"name":"RecoDecayVertexMuon_lead.chi2",    	"title":"RecoDecayVertexMuon_lead.chi2",          	 "bin":20, "xmin":0,"xmax":10},
+	"RecoDecayVertexMuon_lead.chi2_10e6":		{"name":"RecoDecayVertexMuon_lead.chi2",    	"title":"RecoDecayVertexMuon_lead.chi2",          	 "bin":20, "xmin":0,"xmax":1000000},
     
 }
