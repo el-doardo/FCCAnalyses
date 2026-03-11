@@ -613,7 +613,7 @@ class RDFanalysis():
                 ## ##.Define("jets_ee_kt",  "JetClusteringUtils::get_pseudoJets( FCCAnalysesJets_ee_kt )")
                 ## ##### get the number of jets in a workaround way, anyway is exactly zero for exclusive clustering ###
                 .Define("jets_e",  "JetClusteringUtils::get_e(jets_ee_kt)")
-				## ##.Define("jets_pt",  "JetClusteringUtils::get_pt(jets_ee_kt)")
+				.Define("jets_pt",  "JetClusteringUtils::get_pt(jets_ee_kt)")
 				## ##.Define("jets_p",  "JetClusteringUtils::get_p(jets_ee_kt)")
 				## ##.Define("jets_px",  "JetClusteringUtils::get_px(jets_ee_kt)")
 				## ##.Define("jets_py",  "JetClusteringUtils::get_py(jets_ee_kt)")
