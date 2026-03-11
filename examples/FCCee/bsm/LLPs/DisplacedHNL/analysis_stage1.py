@@ -1,13 +1,17 @@
 ## ## espoto ## ##
-# 	Sto per implementare lo studio dei jet per segnali a stati finali mujj 
-# 	Inizio cercando di estrarre il muone a pt più alta dalla collezione di particelle:
-# 	la classe RecoMuon_Lead sarà composta dal solo muone estratto, la classe della
-#	collezione di particelle dalle quali manca il muone leading è JetParticles .
-# 	Do le JetParticles in pasto alle funzioni che clusterizzano le RecoParticles
-#	impostando l'algoritmo Dhuram kt esclusivo con Nj=2. 
-#	Aggiungo il filtro per pt del muone lead > 20GeV
-#
-#	Sto Andando alla ricerca della ricostruzione del displaced vertex nella speranza di lavorare bene coi jet :/
+## 	Sto per implementare lo studio dei jet per segnali a stati finali mujj 
+## 	Inizio cercando di estrarre il muone a pt più alta dalla collezione di particelle:
+## 	la classe RecoMuon_Lead sarà composta dal solo muone estratto, la classe della
+##	collezione di particelle dalle quali manca il muone leading è JetParticles .
+##	Do le JetParticles in pasto alle funzioni che clusterizzano le RecoParticles
+##	impostando l'algoritmo Dhuram kt esclusivo con Nj=2. 
+##	Aggiungo il filtro per pt del muone lead > 20GeV
+##
+##	Sto Andando alla ricerca della ricostruzione del displaced vertex nella speranza di lavorare bene coi jet :/
+##
+##	Per lavorare con i jet sto riadattando le righe di analysis_SV.py, queste righe erano già qua dentro, ma le ho rifatte da capo perché potevo confondermi
+##
+##############################################
 
 import ROOT
 
