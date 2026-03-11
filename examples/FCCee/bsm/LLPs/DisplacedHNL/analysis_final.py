@@ -23,13 +23,13 @@ processList = {
     #run over the full statistics from stage1
 
     #backgrounds
-    #'p8_ee_Zee_ecm91':{},
-    #'p8_ee_Zmumu_ecm91':{},
-    #'p8_ee_Ztautau_ecm91':{},
-    #'p8_ee_Zbb_ecm91':{},
-    #'p8_ee_Zcc_ecm91':{},
-    #'p8_ee_Zud_ecm91':{},
-    #'p8_ee_Zss_ecm91':{},
+    'p8_ee_Zee_ecm91':{},
+    'p8_ee_Zmumu_ecm91':{},
+    'p8_ee_Ztautau_ecm91':{},
+    'p8_ee_Zbb_ecm91':{},
+    'p8_ee_Zcc_ecm91':{},
+    'p8_ee_Zud_ecm91':{},
+    'p8_ee_Zss_ecm91':{},
         
     ### privately produced backgrounds ###
     #'eenunu_m':{},
@@ -43,15 +43,15 @@ processList = {
 		"HNL_1.04e-8_70gev":{},
 		"HNL_4e-10_20gev":{},
 		"HNL_4e-10_80gev":{},	
-		#"HNL_6.67e-10_30gev":{},
-		#"HNL_8.35e-9_40gev":{},
+		"HNL_6.67e-10_30gev":{},
+		"HNL_8.35e-9_40gev":{},
 		"HNL_2.27e-9_20gev":{},
 		"HNL_2.27e-9_50gev":{},
 		"HNL_3.17e-11_30gev":{},
 		"HNL_3.17e-11_60gev":{},
 
 	
-	#"numujj":{},
+	"numujj":{},
 }
 
 processList_ = {
@@ -942,5 +942,6 @@ histoList = {
 	"RecoMuon_lead_Track_absD0_mid":		{"name":"RecoMuon_lead_Track_absD0",    	"title":"RecoMuon_lead_Track_absD0",          	 "bin":100, "xmin":0,"xmax":10},
 	"RecoMuon_lead_Track_absD0_prompt":		{"name":"RecoMuon_lead_Track_absD0",    	"title":"RecoMuon_lead_Track_absD0",          	 "bin":50, "xmin":0,"xmax":1},
 	"RecoDecayVertexMuon_lead.chi2":		{"name":"RecoDecayVertexMuon_lead.chi2",    	"title":"RecoDecayVertexMuon_lead.chi2",          	 "bin":50, "xmin":0,"xmax":50},
+	"RecoDecayVertexMuon_lead.chi2_10":		{"name":"RecoDecayVertexMuon_lead.chi2",    	"title":"RecoDecayVertexMuon_lead.chi2",          	 "bin":20, "xmin":0,"xmax":10},
     
 }
