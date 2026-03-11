@@ -243,6 +243,7 @@ variables = [
 	#"SV_jet_position",
     #"sv_mass",
 	"sv_chi2_0",
+	"sv_chi2_1",
     #"sv_normchi2",
     
 ]
