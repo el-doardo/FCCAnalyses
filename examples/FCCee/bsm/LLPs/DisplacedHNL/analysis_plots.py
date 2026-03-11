@@ -239,6 +239,11 @@ variables = [
 	"RecoMuon_lead_Track_absD0_prompt",
 	"RecoDecayVertexMuon_lead.chi2",
 	"RecoDecayVertexMuon_lead.chi2_mini",
+	"SV_jet_n",
+	"SV_jet_position",
+    "sv_mass",
+	"sv_chi2",
+    "sv_normchi2",
     
 ]
 
