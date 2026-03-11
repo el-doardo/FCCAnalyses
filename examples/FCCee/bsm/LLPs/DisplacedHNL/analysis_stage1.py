@@ -17,19 +17,19 @@ processList = {
 	#	Backgrounds centrally produced	#
 	## ## ## ## ## ## ## ## ## ## ## ## #
 	
-        'p8_ee_Zee_ecm91':{'fraction':0.01}, 		## ## secondo il paper lui non serve, ma sono curioso 	## ## fraction limit sperimentato: 1
-        'p8_ee_Zmumu_ecm91':{'fraction':0.001},		## ## fraction limit sperimentato: 0.25
-        'p8_ee_Ztautau_ecm91':{'fraction':0.001},	## ## fraction limit sperimentato: 0.25
-        'p8_ee_Zbb_ecm91':{'fraction':0.001},		## ## fraction limit sperimentato: 0.1
-        'p8_ee_Zcc_ecm91':{'fraction':0.001},		## ## fraction limit sperimentato: 0.1
-        'p8_ee_Zud_ecm91':{'fraction':0.001},		## ## fraction limit sperimentato: 0.5 forse alzabile
-        'p8_ee_Zss_ecm91':{'fraction':0.001},		## ## fraction limit sperimentato: 0.5 forrse alzabile
+        #'p8_ee_Zee_ecm91':{'fraction':0.01}, 		## ## secondo il paper lui non serve, ma sono curioso 	## ## fraction limit sperimentato: 1
+        #'p8_ee_Zmumu_ecm91':{'fraction':0.001},		## ## fraction limit sperimentato: 0.25
+        #'p8_ee_Ztautau_ecm91':{'fraction':0.001},	## ## fraction limit sperimentato: 0.25
+        #'p8_ee_Zbb_ecm91':{'fraction':0.001},		## ## fraction limit sperimentato: 0.1
+        #'p8_ee_Zcc_ecm91':{'fraction':0.001},		## ## fraction limit sperimentato: 0.1
+        #'p8_ee_Zud_ecm91':{'fraction':0.001},		## ## fraction limit sperimentato: 0.5 forse alzabile
+        #'p8_ee_Zss_ecm91':{'fraction':0.001},		## ## fraction limit sperimentato: 0.5 forrse alzabile
 
 	## ## ## ## ## ## ## ## ## ## ## ## #
 	#	Backgrounds locally produced	#
 	## ## ## ## ## ## ## ## ## ## ## ## #
 
-		#"numujj":{},
+		"numujj":{},
 	
 
 	## ## ## ## ## ## ## ## #
@@ -38,7 +38,7 @@ processList = {
 	
 		#"HNL_1.04e-8_10gev":{},
 		#"HNL_1.04e-8_70gev":{},
-		#"HNL_4e-10_20gev":{},
+		"HNL_4e-10_20gev":{},
 		#"HNL_4e-10_80gev":{},	
 		#"HNL_6.67e-10_30gev":{},
 		#"HNL_8.35e-9_40gev":{},
@@ -118,13 +118,13 @@ processList_ = {
 #Production tag. This points to the yaml files for getting sample statistics
 #Mandatory when running over EDM4Hep centrally produced events
 #Comment out when running over privately produced events
-prodTag     = "FCCee/winter2023/IDEA/"
+#prodTag     = "FCCee/winter2023/IDEA/"
 
 #Input directory
 #Comment out when running over centrally produced events
 #Mandatory when running over privately produced events
 #inputDir = "/eos/experiment/fcc/ee/generation/DelphesEvents/winter2023/IDEA/"
-#inputDir = "/eos/user/e/espoto/FCC_2jet_z_pole/FCCAnalysis/hadronized_signals"
+inputDir = "/eos/user/e/espoto/FCC_2jet_z_pole/FCCAnalysis/hadronized_signals"
 
 # additional/costom C++ functions, defined in header files (optional)
 includePaths = ["functions.h"]
@@ -248,8 +248,12 @@ class RDFanalysis():
                 .Define("n_PrimaryTracks",  "ReconstructedParticle2Track::getTK_n( PrimaryTracks )")
                 .Define("SecondaryTracks",   "VertexFitterSimple::get_NonPrimaryTracks( EFlowTrack_1, PrimaryTracks )")
                 .Define("n_SecondaryTracks",  "ReconstructedParticle2Track::getTK_n( SecondaryTracks )" )
-				.Define("RecoDecayVertexMuon_lead",  "VertexingUtils::get_VertexData( PrimaryVertexObject )")
-				
+				#.Define("RecoDecayVertexMuon_lead",  "VertexingUtils::get_VertexData( PrimaryVertexObject )") ## ## decommentato per l'esperimento qua sotto
+				## ## Sto esplorando con questa riga come ottenre il secondary vertex
+					   .Define("SecondaryVertexObject", "VertexFitterSimple::VertexFitter_Tk(1, SecondaryTracks, true, 4.5, 20e-3, 300)")
+					   .Define("RecoDecayVertexMuon_lead",  "VertexingUtils::get_VertexData( SecondaryVertexObject )") ## ## va decommentato l'omonimo poco sopra
+
+					   
 				## ## Posso controllare se questi funzionano, forse hanno senso
                 .Define("Reco_Lxyz","return sqrt(RecoDecayVertexMuon_lead.position.x*RecoDecayVertexMuon_lead.position.x + RecoDecayVertexMuon_lead.position.y*RecoDecayVertexMuon_lead.position.y + RecoDecayVertexMuon_lead.position.z*RecoDecayVertexMuon_lead.position.z);")
                 .Define("Reco_Lxy","return sqrt(RecoDecayVertexMuon_lead.position.x*RecoDecayVertexMuon_lead.position.x + RecoDecayVertexMuon_lead.position.y*RecoDecayVertexMuon_lead.position.y);")
