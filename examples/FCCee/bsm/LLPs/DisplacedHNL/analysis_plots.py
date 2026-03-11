@@ -240,10 +240,10 @@ variables = [
 	"RecoDecayVertexMuon_lead.chi2",
 	"RecoDecayVertexMuon_lead.chi2_mini",
 	"SV_jet_n",
-	"SV_jet_position",
-    "sv_mass",
-	"sv_chi2",
-    "sv_normchi2",
+	#"SV_jet_position",
+    #"sv_mass",
+	"sv_chi2_0",
+    #"sv_normchi2",
     
 ]
 
@@ -349,29 +349,29 @@ colors['tatanunu_m'] = 38
 plots = {}
 plots['HNL'] = {'signal':{
 	
-                    'HNL_1.04e-8_10gev':['HNL_1.04e-8_10gev'],
-					'HNL_4e-10_20gev':['HNL_4e-10_20gev'],
-					'HNL_4e-10_80gev':['HNL_4e-10_80gev'],
+                    #'HNL_1.04e-8_10gev':['HNL_1.04e-8_10gev'],
+					#'HNL_4e-10_20gev':['HNL_4e-10_20gev'],
+					#'HNL_4e-10_80gev':['HNL_4e-10_80gev'],
 					'HNL_6.67e-10_30gev':['HNL_6.67e-10_30gev'],
 					'HNL_8.35e-9_40gev':['HNL_8.35e-9_40gev'],
-					'HNL_2.27e-9_20gev':['HNL_2.27e-9_20gev'],
-                    'HNL_1.04e-8_70gev':['HNL_1.04e-8_70gev'],
-					'HNL_2.27e-9_50gev':['HNL_2.27e-9_50gev'],
-					'HNL_3.17e-11_30gev':['HNL_3.17e-11_30gev'],
-					'HNL_3.17e-11_60gev':['HNL_3.17e-11_60gev'],
+					#'HNL_2.27e-9_20gev':['HNL_2.27e-9_20gev'],
+                    #'HNL_1.04e-8_70gev':['HNL_1.04e-8_70gev'],
+					#'HNL_2.27e-9_50gev':['HNL_2.27e-9_50gev'],
+					#'HNL_3.17e-11_30gev':['HNL_3.17e-11_30gev'],
+					#'HNL_3.17e-11_60gev':['HNL_3.17e-11_60gev'],
 
                 },
                 'backgrounds':{
                     #'HNL':['HNL_2.86e-12_30gev'], ### impossible to plot without both signals and backgrounds, choose one signal and make it white ### 
 					#'HNL_1.04e-8_70gev':['HNL_1.04e-8_70gev'],
 					'numujj':['numujj'],
-					'Zee':['p8_ee_Zee_ecm91'],
-   					'Zmumu':['p8_ee_Zmumu_ecm91'],
-				    'Ztautau':['p8_ee_Ztautau_ecm91'],
-   					'Zbb':['p8_ee_Zbb_ecm91'],
-				    'Zcc':['p8_ee_Zcc_ecm91'],
-				    'Zud':['p8_ee_Zud_ecm91'],
-				    'Zss':['p8_ee_Zss_ecm91'],
+					#'Zee':['p8_ee_Zee_ecm91'],
+   					#'Zmumu':['p8_ee_Zmumu_ecm91'],
+				    #'Ztautau':['p8_ee_Ztautau_ecm91'],
+   					#'Zbb':['p8_ee_Zbb_ecm91'],
+				    #'Zcc':['p8_ee_Zcc_ecm91'],
+				    #'Zud':['p8_ee_Zud_ecm91'],
+				    #'Zss':['p8_ee_Zss_ecm91'],
                     ## ##'emununu': ['emununu'],
                 },
                 }
