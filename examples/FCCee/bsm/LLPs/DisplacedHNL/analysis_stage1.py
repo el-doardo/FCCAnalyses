@@ -594,6 +594,7 @@ class RDFanalysis():
                # .Define("sv_ntracks", "VertexingUtils::get_VertexNtrk(SV_jet)") # SV daughters (no of tracks)
                .Define("sv_chi2",    "VertexingUtils::get_chi2_SV(SV_jet)") # SV chi2 (not normalised)
 				.Define("sv_chi2_0", "return sv_chi2.at(0)") ## ## lo aggiungo perché sto avendo dei problemi a plottare sv_ch2 in quanto vector di vectors
+				.Define("sv_chi2_1", "return sv_chi2.at(1)") ## ## lo aggiungo perché sto avendo dei problemi a plottare sv_ch2 in quanto vector di vectors
                .Define("sv_normchi2","VertexingUtils::get_norm_chi2_SV(SV_jet)") # SV chi2 (normalised)
                # .Define("sv_ndf",     "VertexingUtils::get_nDOF_SV(SV_jet)") # SV no of DOF
                # .Define("sv_theta",   "VertexingUtils::get_theta_SV(SV_jet)") # SV polar angle (theta)
@@ -1084,7 +1085,8 @@ class RDFanalysis():
                 		# 'sv_p',
                 		# 'sv_ntracks',
                 		'sv_chi2',
-						"sv_chi2_0",
+						'sv_chi2_0',
+						'sv_chi2_1',
                 		'sv_normchi2',
                 		# 'sv_ndf',
 	        			# 'sv_theta',
