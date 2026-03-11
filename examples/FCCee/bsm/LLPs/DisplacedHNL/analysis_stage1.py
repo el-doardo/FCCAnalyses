@@ -647,11 +647,11 @@ class RDFanalysis():
                 ### so there will always be one primary track even if they should both be secondary but the code doesn't handle that and we have both secondary in principle ###
 				
 				## ## Blocchi per vertex (controllare i valori input in get_PrimaryTracks(...)
-                .Define("PrimaryTracks",  "VertexFitterSimple::get_PrimaryTracks( EFlowTrack_1, true, 4.5, 20e-3, 300, 0., 0., 0.)") 
-                .Define("PrimaryVertexObject", "VertexFitterSimple::VertexFitter_Tk(1, PrimaryTracks, true, 4.5, 20e-3, 300)")
-                .Define("n_PrimaryTracks",  "ReconstructedParticle2Track::getTK_n( PrimaryTracks )")
-                .Define("SecondaryTracks",   "VertexFitterSimple::get_NonPrimaryTracks( EFlowTrack_1, PrimaryTracks )")
-                .Define("n_SecondaryTracks",  "ReconstructedParticle2Track::getTK_n( SecondaryTracks )" )
+                #.Define("PrimaryTracks",  "VertexFitterSimple::get_PrimaryTracks( EFlowTrack_1, true, 4.5, 20e-3, 300, 0., 0., 0.)") 
+                #.Define("PrimaryVertexObject", "VertexFitterSimple::VertexFitter_Tk(1, PrimaryTracks, true, 4.5, 20e-3, 300)")
+                #.Define("n_PrimaryTracks",  "ReconstructedParticle2Track::getTK_n( PrimaryTracks )")
+                #.Define("SecondaryTracks",   "VertexFitterSimple::get_NonPrimaryTracks( EFlowTrack_1, PrimaryTracks )")
+                #.Define("n_SecondaryTracks",  "ReconstructedParticle2Track::getTK_n( SecondaryTracks )" )
 			
                 .Define("RecoDecayVertexMuon_lead",  "VertexingUtils::get_VertexData( PrimaryVertexObject )") ## ## da decoomentare il precedente RecoDecayVertexMuon_lead
 
@@ -1050,7 +1050,7 @@ class RDFanalysis():
 					"RecoMuon_lead_pt",
 					"RecoMuon_lead_e",
 					"RecoMuon_lead_Track_absD0",
-					"RecoDecayVertexMuon_lead",
+					"",
 					
 					########################################
 					########   JET   #######################
