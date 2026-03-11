@@ -794,7 +794,7 @@ histoList = {
     #"NeutralHadrons_charge":   {"name":"NeutralHadrons_charge",   "title":"Reco neutral hadron charge",       "bin":3, "xmin":-1.5,"xmax":1.5},
     #"NeutralHadrons_mass":   {"name":"NeutralHadrons_mass",   "title":"Reco neutral hadron mass [GeV]",       "bin":100, "xmin":0,"xmax":1.},
 
-    #"Reco_e":                   {"name":"Reco_e",         "title":"Reco lepton energy [GeV]",       "bin":100,"xmin":0 ,"xmax":50},
+    "Reco_e":                   {"name":"Reco_e",         "title":"Reco lepton energy [GeV]",       "bin":100,"xmin":0 ,"xmax":50},
     #"Reco_p":                   {"name":"Reco_p",         "title":"Reco lepton p [GeV]",            "bin":100,"xmin":0 ,"xmax":50},
     #"Reco_pt":                  {"name":"Reco_pt",        "title":"Reco lepton p_{T} [GeV]",        "bin":100,"xmin":0 ,"xmax":50},
     #"Reco_px":                  {"name":"Reco_px",        "title":"Reco lepton p_{x} [GeV]",        "bin":100,"xmin":-50 ,"xmax":50},
