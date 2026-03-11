@@ -240,7 +240,18 @@ variables = [
 	"RecoMuon_lead_Track_absD0_prompt",
 	"RecoDecayVertexMuon_lead.chi2",
 	"RecoDecayVertexMuon_lead.chi2_10e6",
-    
+	"n_RecoTracks",
+	"n_PrimaryTracks",
+	"n_SecondaryTracks",
+	"Reco_Lxy",
+	"Reco_Lxyz",
+	"Reco_Lxy_prompt",
+	"Reco_Lxyz_prompt",
+	"RecoMissingEnergy_e",
+	"RecoMissingEnergy_pt",
+	"RecoMissingEnergy_eta",
+	"RecoMissingEnergy_theta",
+	"RecoMissingEnergy_phi",
 ]
 
     
@@ -261,9 +272,6 @@ selections['HNL']  = [
     ## ##
     #"selReco_gen_notracks_2eh_10MET_0.8cos_80ME_10chi_0.64d0",
     #"selReco_gen_notracks_2eh_15to70ME",
-    "selReco",
-	"selReco_chi2_10",
-	"selReco_chi2_5",
 
     #"sel2RecoDF_vetoes",
     #"sel2RecoDF_vetoes_15-80M",
@@ -278,8 +286,6 @@ selections['HNL']  = [
 extralabel = {}
 extralabel['selNone'] = "Before selection"
 extralabel['selReco']="Two leptons, different charge, no photons and jets"
-extralabel['selReco_chi2_10']="selReco_chi2<10"
-extralabel['selReco_chi2_5']="selReco_chi2<5"
 extralabel['sel2Reco_vetoes']="Two leptons, no photons and jets"
 extralabel['selReco_gen_notracks_2eh_10MET_0.8cos_80ME_10chi_0.64d0']="Two leptons, no photons an jets, M(l,l')<80 GeV, p_{t,miss}>10 GeV, cos#theta>-0.8" ## ## aggiunto per prova
 extralabel['selReco_gen_notracks_2eh_15to70ME']="Two leptons, no photons, no tracks, no neutral hadrons 15Gev<M(l,l')<70Gev"
