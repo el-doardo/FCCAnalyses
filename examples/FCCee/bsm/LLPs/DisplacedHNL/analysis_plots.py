@@ -251,6 +251,7 @@ variables = [
 	"RecoMissingEnergy_theta",
 	"RecoMissingEnergy_phi",
 	"Reco_DecayVertexMuon_lead_z",
+	"Log_chi2",
 ]
 
     
