@@ -952,7 +952,7 @@ histoList = {
 	#### Jet da analysis_SV.py
 	"SV_jet_n":								{"name":"SV_jet_n",    						"title":"SV_jet_n",          	 					"bin":5, "xmin":-0.5,"xmax":4.5},
 	#"SV_jet_position":						{"name":"SV_jet_position",    				"title":"SV_jet_position",          	 			"bin":100, "xmin":0,"xmax":2000},
-    "sv_mass":								{"name":"sv_mass",    						"title":"sv_mass",          	 					"bin":100, "xmin":0,"xmax":100},
+    #"sv_mass":								{"name":"sv_mass",    						"title":"sv_mass",          	 					"bin":100, "xmin":0,"xmax":100},
 	#"sv_chi2":								{"name":"sv_chi2",    						"title":"sv_chi2",						        	"bin":100, "xmin":0,"xmax":100},
     #"sv_normchi2":							{"name":"sv_normchi2",    					"title":"sv_normchi2",          	 				"bin":100, "xmin":0,"xmax":100},
 }
