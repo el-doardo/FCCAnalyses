@@ -33,7 +33,7 @@ processList = {
 		#"HNL_4e-10_20gev":{},
 		#"HNL_4e-10_80gev":{},	
 		"HNL_6.67e-10_30gev":{},
-		#"HNL_8.35e-9_40gev":{},
+		"HNL_8.35e-9_40gev":{},
 		#"HNL_2.27e-9_20gev":{},
 		#"HNL_2.27e-9_50gev":{},
 		#"HNL_3.17e-11_30gev":{},
@@ -41,7 +41,7 @@ processList = {
 
 	
 	
-		#"numujj":{},
+		"numujj":{},
 }
 
 processList_ = {
@@ -1084,6 +1084,7 @@ class RDFanalysis():
                 		# 'sv_p',
                 		# 'sv_ntracks',
                 		'sv_chi2',
+						"sv_chi2_0",
                 		'sv_normchi2',
                 		# 'sv_ndf',
 	        			# 'sv_theta',
