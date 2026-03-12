@@ -36,16 +36,16 @@ processList = {
 	#	Segnali di HNLs		#
 	## ## ## ## ## ## ## ##	#
 	
-		"HNL_1.04e-8_10gev":{},
-		"HNL_1.04e-8_70gev":{},
+		#"HNL_1.04e-8_10gev":{},
+		#"HNL_1.04e-8_70gev":{},
 		"HNL_4e-10_20gev":{},
-		"HNL_4e-10_80gev":{},	
-		"HNL_6.67e-10_30gev":{},
-		"HNL_8.35e-9_40gev":{},
-		"HNL_2.27e-9_20gev":{},
-		"HNL_2.27e-9_50gev":{},
-		"HNL_3.17e-11_30gev":{},
-		"HNL_3.17e-11_60gev":{},
+		#"HNL_4e-10_80gev":{},	
+		#"HNL_6.67e-10_30gev":{},
+		#"HNL_8.35e-9_40gev":{},
+		#"HNL_2.27e-9_20gev":{},
+		#"HNL_2.27e-9_50gev":{},
+		#"HNL_3.17e-11_30gev":{},
+		#"HNL_3.17e-11_60gev":{},
 	
 }
 
@@ -248,11 +248,31 @@ class RDFanalysis():
                 .Define("n_PrimaryTracks",  "ReconstructedParticle2Track::getTK_n( PrimaryTracks )")
                 .Define("SecondaryTracks",   "VertexFitterSimple::get_NonPrimaryTracks( EFlowTrack_1, PrimaryTracks )")
                 .Define("n_SecondaryTracks",  "ReconstructedParticle2Track::getTK_n( SecondaryTracks )" )
-				#.Define("RecoDecayVertexMuon_lead",  "VertexingUtils::get_VertexData( PrimaryVertexObject )") ## ## decommentato per l'esperimento qua sotto
-				## ## Sto esplorando con questa riga come ottenre il secondary vertex
-					   .Define("SecondaryVertexObject", "VertexFitterSimple::VertexFitter_Tk(1, SecondaryTracks, true, 4.5, 20e-3, 300)")
-					   .Define("RecoDecayVertexMuon_lead",  "VertexingUtils::get_VertexData( SecondaryVertexObject )") ## ## va decommentato l'omonimo poco sopra
-					   .Define("Log_chi2", "return (log10(RecoDecayVertexMuon_lead.chi2))")
+				.Define("RecoDecayVertexMuon_lead",  "VertexingUtils::get_VertexData( PrimaryVertexObject )")
+				.Define("Log_chi2", "return (log10(RecoDecayVertexMuon_lead.chi2))")
+
+					## ## ## ## ## ## ## ## ## ##
+					#   Esperimenti sui vertici	#
+					## ## ## ## ## ## ## ## ## ##
+					   
+				## ## Sto esplorando con questa riga come ottenere il secondary vertex 1S
+				.Define("SecondaryVertexObject_1S", "VertexFitterSimple::VertexFitter_Tk(1, SecondaryTracks, true, 4.5, 20e-3, 300)")
+				.Define("RecoDecayVertexMuon_lead_1S",  "VertexingUtils::get_VertexData( SecondaryVertexObject_1S )")
+				.Define("Log_chi2_1S", "return (log10(RecoDecayVertexMuon_lead_1S.chi2))")
+				.Define("Reco_Lxyz_1S","return sqrt(RecoDecayVertexMuon_lead_1S.position.x*RecoDecayVertexMuon_lead_1S.position.x + RecoDecayVertexMuon_lead_1S.position.y*RecoDecayVertexMuon_lead_1S.position.y + RecoDecayVertexMuon_lead_1S.position.z*RecoDecayVertexMuon_lead_1S.position.z);")
+
+				## ## Sto esplorando con questa riga come ottenere il secondary vertex 0S
+				.Define("SecondaryVertexObject_0S", "VertexFitterSimple::VertexFitter_Tk(0, SecondaryTracks, true, 4.5, 20e-3, 300)")
+				.Define("RecoDecayVertexMuon_lead_0S",  "VertexingUtils::get_VertexData( SecondaryVertexObject_0S )")
+				.Define("Log_chi2_0S", "return (log10(RecoDecayVertexMuon_lead_0S.chi2))")
+				.Define("Reco_Lxyz_0S","return sqrt(RecoDecayVertexMuon_lead_0S.position.x*RecoDecayVertexMuon_lead_0S.position.x + RecoDecayVertexMuon_lead_0S.position.y*RecoDecayVertexMuon_lead_0S.position.y + RecoDecayVertexMuon_lead_0S.position.z*RecoDecayVertexMuon_lead_0S.position.z);")
+
+				## ## Sto esplorando con questa riga come ottenere il secondary vertex 0P
+				.Define("PrimaryVertexObject_0P", "VertexFitterSimple::VertexFitter_Tk(0, PrimaryTracks, true, 4.5, 20e-3, 300)")
+				.Define("RecoDecayVertexMuon_lead_0P",  "VertexingUtils::get_VertexData( SecondaryVertexObject_0P )")
+				.Define("Log_chi2_0P", "return (log10(RecoDecayVertexMuon_lead_0P.chi2))")
+				.Define("Reco_Lxyz_0P","return sqrt(RecoDecayVertexMuon_lead_0P.position.x*RecoDecayVertexMuon_lead_0P.position.x + RecoDecayVertexMuon_lead_0P.position.y*RecoDecayVertexMuon_lead_0P.position.y + RecoDecayVertexMuon_lead_0P.position.z*RecoDecayVertexMuon_lead_0P.position.z);")
+
 
 					   
 				## ## Posso controllare se questi funzionano, forse hanno senso
@@ -351,6 +371,19 @@ class RDFanalysis():
 						"RecoMuon_lead_Track_absD0",
 						"RecoDecayVertexMuon_lead",
 						"Log_chi2",
+
+						##### prove sui vertici
+						"RecoDecayVertexMuon_lead_1S",
+						"Log_chi2_1S",
+						"Reco_Lxyz_1S"
+
+						"RecoDecayVertexMuon_lead_0S",
+						"Log_chi2_0S",
+						"Reco_Lxyz_0S"
+
+						"RecoDecayVertexMuon_lead_0P",
+						"Log_chi2_0P",
+						"Reco_Lxyz_0P"
 
 		]
 
