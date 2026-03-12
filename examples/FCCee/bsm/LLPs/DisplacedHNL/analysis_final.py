@@ -572,6 +572,8 @@ cutLabels = {
 	"selReco_c_mu_p_miss":"Against Z to bb, cc and tautau",
 	"selReco_Ej_5":"Requested by the paper with inclusive algorithm (not here)",
 	"selReco_c_jj":"Against Z to bb, cc and tautau",
+	"selreco_c_jmu_against_Z":"Against Z to qq",
+	"selreco_c_jmu_against_tautau":"Against Z to tautau",
     #"selReco_gen": "Two leptons, no photons, p_{T}>1 GeV, p_{T, miss}>5 GeV",
     #"selReco_gen_notracks": "Two leptons, no photons, no tracks, p_{T}>1 GeV, p_{T, miss}>5 GeV",
     #"selReco_gen_notrack_2eh": "Two leptons, no photons, no tracks, no neutral hadrons, p_{T}>1 GeV, p_{T, miss}>5 GeV",
@@ -953,5 +955,12 @@ histoList = {
 	"Reco_DecayVertexMuon_lead_z":    		{"name":"RecoDecayVertexMuon_lead.position.z",  "title":"Reco decay lepton vertex z [mm]",            "bin":100,"xmin":-1 ,"xmax":2000},
     "Reco_DecayVertexMuon_lead.chi2":       {"name":"RecoDecayVertexMuon_lead.chi2",        "title":"Reco decay lepton vertex #chi^{2}",          "bin":100,"xmin":-10 ,"xmax":90},
 	"Log_chi2":       						{"name":"Log_chi2",        						"title":"Log Reco decay lepton vertex #chi^{2}",      "bin":100,"xmin":-1 ,"xmax":6},
+
+	"M":									{"name":"M",    				"title":"M",          	 			 "bin":100, "xmin":0,"xmax":90},
+	"c_p_miss_abs":							{"name":"c_p_miss_abs",    		"title":"c_p_miss_abs",          	 "bin":100, "xmin":0,"xmax":1},
+	"c_mu_p_miss":							{"name":"c_mu_p_miss",    		"title":"c_mu_p_miss",          	 "bin":100, "xmin":-1,"xmax":1},
+	"c_jj":									{"name":"c_jj",    				"title":"c_jj",          			 "bin":100, "xmin":-1,"xmax":1},
+	"c_jmu":								{"name":"c_jmu",    			"title":"c_jmu",          			 "bin":100, "xmin":-1,"xmax":1},
+	"c_muj":								{"name":"c_muj",    			"title":"c_muj",          			 "bin":100, "xmin":-1,"xmax":1},
     
 }
