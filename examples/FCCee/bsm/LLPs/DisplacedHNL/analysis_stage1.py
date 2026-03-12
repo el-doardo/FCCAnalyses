@@ -314,7 +314,7 @@ class RDFanalysis():
 				## ## ## ## ## ## ## ## #
 					   
 				.Define("M", "FCCAnalyses::ZHfunctions::get_M(ReconstructedParticles, MissingET)")
-				.Define("c_p_miss", "abs(cos(RecoMissingEnergy_theta))")
+				.Define("c_p_miss_abs", "abs(cos(RecoMissingEnergy_theta))")
 				.Define("c_mu_p_miss", "cos(RecoMuon_lead_theta - RecoMissingEnergy_theta)")
 				.Define("c_jj", "cos(jets_theta.at(0) - jets_theta.at(1))")
 				.Define("c_jmu", "cos(jets_theta.at(0) - RecoMuon_lead_theta)")
@@ -378,6 +378,14 @@ class RDFanalysis():
 						"RecoDecayVertexMuon_lead",
 						"Log_chi2",
 
+						## ## per tagli
+						"M",
+						"c_p_miss_abs",
+						"c_mu_p_miss",
+						"c_jj",
+						"c_jmu",
+						"c_muj",
+						
 		]
 
                 return branchList
