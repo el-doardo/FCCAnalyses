@@ -259,6 +259,7 @@ variables = [
 	"c_jj",
 	"c_jmu",
 	"c_muj",
+	"jets_m"
 ]
 
     
@@ -268,6 +269,7 @@ selections['HNL']  = [
     #"selNone",
 	"selReco",
 	"selReco_M",
+	"selReco_jets_m",
 	"selReco_c_p_miss_abs",
 	"selReco_c_mu_p_miss",
 	"selReco_Ej_5",
@@ -301,7 +303,8 @@ selections['HNL']  = [
 extralabel = {}
 extralabel['selNone'] = "Before selection"
 extralabel['selReco']="Two jets, Leadig Muon pt > 10 GeV"
-extralabel['selReco_M'] = "M>80 Against Z to tautau"
+extralabel['selReco_M'] = "M>80GeV Against Z to tautau"
+extralabel['selReco_jets_m'] = "Jets mass > 0.2 GeV Against collimated jets with an energetic particle"
 extralabel['selReco_c_p_miss_abs'] = "c_p_miss_abs <0.94 Against particles too close to beam axis"
 extralabel['selReco_c_mu_p_miss'] = "c_mu_p_miss<0.8 Against Z to bb, cc and tautau"
 extralabel['selReco_Ej_5'] = "Requested by the paper with inclusive algorithm (not here)"
