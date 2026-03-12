@@ -5,7 +5,7 @@ inputDir = "/eos/user/e/espoto/FCC_2jet_z_pole/FCCAnalysis/stage1_reco/"
 outputDir = "/eos/user/e/espoto/FCC_2jet_z_pole/FCCAnalysis/final_reco/"
 
 #Integrated luminosity for scaling number of events (required only if setting doScale to true)
-intLumi = 150e6 #pb^-1
+intLumi = 240e6 #pb^-1
 
 #Scale event yields by intLumi and cross section (optional)
 doScale = True
