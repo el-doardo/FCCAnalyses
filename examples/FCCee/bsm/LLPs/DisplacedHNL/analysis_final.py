@@ -507,6 +507,7 @@ cutList = {
 	"selReco_c_jj":"c_jj>-0.80",
 	"selreco_c_jmu_against_Z":"c_jmu<0.8 && c_muj<0.8",
 	"selreco_c_jmu_against_tautau":"c_jmu>-0.98 && c_muj>-0.98",
+	"selReco_complete":"M>80 && jets_m.at(0)>0.2 && jets_m.at(1)>0.2 && c_p_miss_abs<0.94 && c_mu_p_miss.at(0)<0.80 && jets_e.at(0)>5 && jets_e.at(1)>5 && c_jj>-0.80 && c_jmu<0.8 && c_muj<0.8 && c_jmu>-0.98 && c_muj>-0.98",
     ### cuts for SM llnunu at generator level to be applied to everything properly
     #"selReco_gen": "Reco_pt.at(0)>1 && Reco_pt.at(1)>1 && RecoEmiss_pt>5", ## Reco_e>2 is taken care of by delphes already, no need to specify it here
     ### cuts need to exclude hadronic background
@@ -576,6 +577,7 @@ cutLabels = {
 	"selReco_c_jj":"Against Z to bb, cc and tautau",
 	"selreco_c_jmu_against_Z":"Against Z to qq",
 	"selreco_c_jmu_against_tautau":"Against Z to tautau",
+	"selReco_complete":"all the previous cuts",
     #"selReco_gen": "Two leptons, no photons, p_{T}>1 GeV, p_{T, miss}>5 GeV",
     #"selReco_gen_notracks": "Two leptons, no photons, no tracks, p_{T}>1 GeV, p_{T, miss}>5 GeV",
     #"selReco_gen_notrack_2eh": "Two leptons, no photons, no tracks, no neutral hadrons, p_{T}>1 GeV, p_{T, miss}>5 GeV",
