@@ -18,12 +18,12 @@ processList = {
 	## ## ## ## ## ## ## ## ## ## ## ## #
 	
         'p8_ee_Zee_ecm91':{'fraction':0.01}, 		## ## secondo il paper lui non serve, ma sono curioso 	## ## fraction limit sperimentato: 1
-        'p8_ee_Zmumu_ecm91':{'fraction':0.001},		## ## fraction limit sperimentato: 0.25
-        'p8_ee_Ztautau_ecm91':{'fraction':0.001},	## ## fraction limit sperimentato: 0.25
-        'p8_ee_Zbb_ecm91':{'fraction':0.001},		## ## fraction limit sperimentato: 0.1
-        'p8_ee_Zcc_ecm91':{'fraction':0.001},		## ## fraction limit sperimentato: 0.1
-        'p8_ee_Zud_ecm91':{'fraction':0.001},		## ## fraction limit sperimentato: 0.5 forse alzabile
-        'p8_ee_Zss_ecm91':{'fraction':0.001},		## ## fraction limit sperimentato: 0.5 forrse alzabile
+        #'p8_ee_Zmumu_ecm91':{'fraction':0.001},		## ## fraction limit sperimentato: 0.25
+        #'p8_ee_Ztautau_ecm91':{'fraction':0.001},	## ## fraction limit sperimentato: 0.25
+        #'p8_ee_Zbb_ecm91':{'fraction':0.001},		## ## fraction limit sperimentato: 0.1
+        #'p8_ee_Zcc_ecm91':{'fraction':0.001},		## ## fraction limit sperimentato: 0.1
+        #'p8_ee_Zud_ecm91':{'fraction':0.001},		## ## fraction limit sperimentato: 0.5 forse alzabile
+        #'p8_ee_Zss_ecm91':{'fraction':0.001},		## ## fraction limit sperimentato: 0.5 forrse alzabile
 
 	## ## ## ## ## ## ## ## ## ## ## ## #
 	#	Backgrounds locally produced	#
