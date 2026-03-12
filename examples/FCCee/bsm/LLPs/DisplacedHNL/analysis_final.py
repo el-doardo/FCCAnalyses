@@ -941,5 +941,35 @@ histoList = {
 	"Reco_DecayVertexMuon_lead_z":    		{"name":"RecoDecayVertexMuon_lead.position.z",  "title":"Reco decay lepton vertex z [mm]",            "bin":100,"xmin":-1 ,"xmax":2000},
     "Reco_DecayVertexMuon_lead.chi2":       {"name":"RecoDecayVertexMuon_lead.chi2",        "title":"Reco decay lepton vertex #chi^{2}",          "bin":100,"xmin":-10 ,"xmax":90},
 	"Log_chi2":       						{"name":"Log_chi2",        						"title":"Log Reco decay lepton vertex #chi^{2}",      "bin":100,"xmin":-1 ,"xmax":6},
-    
+
+	## ## exp sui vertici
+	"Reco_DecayVertexMuon_lead_z_0P":    		{"name":"RecoDecayVertexMuon_lead_0P.position.z",	"title":"Reco decay lepton vertex z 0P [mm]",           "bin":100,"xmin":-1 ,"xmax":2000},
+	"Reco_DecayVertexMuon_lead_0P.chi2":       	{"name":"RecoDecayVertexMuon_lead_0P.chi2",			"title":"Reco decay lepton vertex #chi^{2} 0P",         "bin":100,"xmin":-10 ,"xmax":90},
+	"Log_chi2_0P":       						{"name":"Log_chi2_0P",								"title":"Log Reco decay lepton vertex #chi^{2} 0P",     "bin":100,"xmin":-1 ,"xmax":6},
+	"Reco_Lxyz_0P":                    			{"name":"Reco_Lxyz_0P",                   			"title":"Reco L_{xyz} 0P [mm]",    						"bin":100,"xmin":0 ,"xmax":2000},
+    "Reco_Lxyz_prompt_0P":             			{"name":"Reco_Lxyz_0P",                   			"title":"Reco L_{xyz} 0P [mm]",    						"bin":100,"xmin":0 ,"xmax":10},
+
+	"Reco_DecayVertexMuon_lead_z_2P":    		{"name":"RecoDecayVertexMuon_lead_2P.position.z",	"title":"Reco decay lepton vertex z 2P [mm]",           "bin":100,"xmin":-1 ,"xmax":2000},
+	"Reco_DecayVertexMuon_lead_2P.chi2":       	{"name":"RecoDecayVertexMuon_lead_2P.chi2",			"title":"Reco decay lepton vertex #chi^{2} 2P",         "bin":100,"xmin":-10 ,"xmax":90},
+	"Log_chi2_2P":       						{"name":"Log_chi2_2P",								"title":"Log Reco decay lepton vertex #chi^{2} 2P",     "bin":100,"xmin":-1 ,"xmax":6},
+	"Reco_Lxyz_2P":                    			{"name":"Reco_Lxyz_2P",                   			"title":"Reco L_{xyz} 2P [mm]",    						"bin":100,"xmin":0 ,"xmax":2000},
+    "Reco_Lxyz_prompt_2P":             			{"name":"Reco_Lxyz_2P",                   			"title":"Reco L_{xyz} 2P [mm]",    						"bin":100,"xmin":0 ,"xmax":10},
+
+	"Reco_DecayVertexMuon_lead_z_0S":    		{"name":"RecoDecayVertexMuon_lead_0S.position.z",	"title":"Reco decay lepton vertex z 0S [mm]",           "bin":100,"xmin":-1 ,"xmax":2000},
+	"Reco_DecayVertexMuon_lead_0S.chi2":       	{"name":"RecoDecayVertexMuon_lead_0S.chi2",			"title":"Reco decay lepton vertex #chi^{2} 0S",         "bin":100,"xmin":-10 ,"xmax":90},
+	"Log_chi2_0S":       						{"name":"Log_chi2_0S",								"title":"Log Reco decay lepton vertex #chi^{2} 0S",     "bin":100,"xmin":-1 ,"xmax":6},
+	"Reco_Lxyz_0S":                    			{"name":"Reco_Lxyz_0S",                   			"title":"Reco L_{xyz} 0S [mm]",    						"bin":100,"xmin":0 ,"xmax":2000},
+    "Reco_Lxyz_prompt_0S":             			{"name":"Reco_Lxyz_0S",                   			"title":"Reco L_{xyz} 0S [mm]",    						"bin":100,"xmin":0 ,"xmax":10},
+
+	"Reco_DecayVertexMuon_lead_z_1S":    		{"name":"RecoDecayVertexMuon_lead_1S.position.z",	"title":"Reco decay lepton vertex z 1S [mm]",           "bin":100,"xmin":-1 ,"xmax":2000},
+	"Reco_DecayVertexMuon_lead_1S.chi2":       	{"name":"RecoDecayVertexMuon_lead_1S.chi2",			"title":"Reco decay lepton vertex #chi^{2} 1S",         "bin":100,"xmin":-10 ,"xmax":90},
+	"Log_chi2_1S":       						{"name":"Log_chi2_1S",								"title":"Log Reco decay lepton vertex #chi^{2} 1S",     "bin":100,"xmin":-1 ,"xmax":6},
+	"Reco_Lxyz_1S":                    			{"name":"Reco_Lxyz_1S",                   			"title":"Reco L_{xyz} 1S [mm]",    						"bin":100,"xmin":0 ,"xmax":2000},
+    "Reco_Lxyz_prompt_1S":             			{"name":"Reco_Lxyz_1S",                   			"title":"Reco L_{xyz} 1S [mm]",    						"bin":100,"xmin":0 ,"xmax":10},
+
+	"Reco_DecayVertexMuon_lead_z_2S":    		{"name":"RecoDecayVertexMuon_lead_2S.position.z",	"title":"Reco decay lepton vertex z 2S [mm]",           "bin":100,"xmin":-1 ,"xmax":2000},
+	"Reco_DecayVertexMuon_lead_2S.chi2":       	{"name":"RecoDecayVertexMuon_lead_2S.chi2",			"title":"Reco decay lepton vertex #chi^{2} 2S",         "bin":100,"xmin":-10 ,"xmax":90},
+	"Log_chi2_2S":       						{"name":"Log_chi2_2S",								"title":"Log Reco decay lepton vertex #chi^{2} 2S",     "bin":100,"xmin":-1 ,"xmax":6},
+	"Reco_Lxyz_2S":                    			{"name":"Reco_Lxyz_2S",                   			"title":"Reco L_{xyz} 2S [mm]",    						"bin":100,"xmin":0 ,"xmax":2000},
+    "Reco_Lxyz_prompt_2S":             			{"name":"Reco_Lxyz_2S",                   			"title":"Reco L_{xyz} 2S [mm]",    						"bin":100,"xmin":0 ,"xmax":10},
 }
