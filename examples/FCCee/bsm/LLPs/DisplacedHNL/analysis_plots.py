@@ -252,6 +252,13 @@ variables = [
 	"RecoMissingEnergy_phi",
 	"Reco_DecayVertexMuon_lead_z",
 	"Log_chi2",
+
+	"M",
+	"c_p_miss_abs",
+	"c_mu_p_miss",
+	"c_jj",
+	"c_jmu",
+	"c_muj",
 ]
 
     
@@ -260,6 +267,13 @@ selections = {}
 selections['HNL']  = [
     #"selNone",
 	"selReco",
+	"selReco_M",
+	"selReco_c_p_miss_abs",
+	"selReco_c_mu_p_miss",
+	"selReco_Ej_5",
+	"selReco_c_jj",
+	"selreco_c_jmu_against_Z",
+	"selreco_c_jmu_against_tautau",
     #"sel2Reco_vetoes",
 
     #"sel2RecoSF_vetoes",
@@ -287,6 +301,15 @@ selections['HNL']  = [
 extralabel = {}
 extralabel['selNone'] = "Before selection"
 extralabel['selReco']="Two jets, Leadig Muon pt > 10 GeV"
+extralabel['selReco_M'] = "M>80"
+extralabel['selReco_c_p_miss_abs'] = "c_p_miss_abs <0.94 Against particles too close to beam axis"
+extralabel['selReco_c_mu_p_miss'] = "c_mu_p_miss<0.8 Against Z to bb, cc and tautau"
+extralabel['selReco_Ej_5'] = "Requested by the paper with inclusive algorithm (not here)"
+extralabel['selReco_c_jj'] = "c_jj >-08 Against Z to bb, cc and tautau"
+extralabel['selreco_c_jmu_against_Z'] = "c_jmu<0.8 Against Z to qq"
+extralabel['selreco_c_jmu_against_tautau'] = "c_jmu<0.8>-0.94 Against Z to tautau"
+
+
 extralabel['sel2Reco_vetoes']="Two leptons, no photons and jets"
 extralabel['selReco_gen_notracks_2eh_10MET_0.8cos_80ME_10chi_0.64d0']="Two leptons, no photons an jets, M(l,l')<80 GeV, p_{t,miss}>10 GeV, cos#theta>-0.8" ## ## aggiunto per prova
 extralabel['selReco_gen_notracks_2eh_15to70ME']="Two leptons, no photons, no tracks, no neutral hadrons 15Gev<M(l,l')<70Gev"
