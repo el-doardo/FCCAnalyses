@@ -375,15 +375,15 @@ class RDFanalysis():
 						##### prove sui vertici
 						"RecoDecayVertexMuon_lead_1S",
 						"Log_chi2_1S",
-						"Reco_Lxyz_1S"
+						"Reco_Lxyz_1S",
 
 						"RecoDecayVertexMuon_lead_0S",
 						"Log_chi2_0S",
-						"Reco_Lxyz_0S"
+						"Reco_Lxyz_0S",
 
 						"RecoDecayVertexMuon_lead_0P",
 						"Log_chi2_0P",
-						"Reco_Lxyz_0P"
+						"Reco_Lxyz_0P",
 
 		]
 
