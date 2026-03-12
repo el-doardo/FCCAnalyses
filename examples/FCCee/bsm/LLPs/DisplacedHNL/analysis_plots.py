@@ -276,6 +276,7 @@ selections['HNL']  = [
 	"selReco_c_jj",
 	"selreco_c_jmu_against_Z",
 	"selreco_c_jmu_against_tautau",
+	"selReco_complete",
     #"sel2Reco_vetoes",
 
     #"sel2RecoSF_vetoes",
@@ -311,6 +312,7 @@ extralabel['selReco_Ej_5'] = "Requested by the paper with inclusive algorithm (n
 extralabel['selReco_c_jj'] = "c_jj >-08 Against Z to bb, cc and tautau"
 extralabel['selreco_c_jmu_against_Z'] = "c_jmu<0.8 Against Z to qq"
 extralabel['selreco_c_jmu_against_tautau'] = "c_jmu<0.8>-0.94 Against Z to tautau"
+extralabel['selReco_complete'] = "All the previous cuts"
 
 
 extralabel['sel2Reco_vetoes']="Two leptons, no photons and jets"
