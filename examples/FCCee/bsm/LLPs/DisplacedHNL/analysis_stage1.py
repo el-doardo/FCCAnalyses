@@ -308,7 +308,7 @@ class RDFanalysis():
                 .Define("RecoEmiss_p",  "return sqrt(RecoEmiss_px*RecoEmiss_px + RecoEmiss_py*RecoEmiss_py + RecoEmiss_pz*RecoEmiss_pz)")
                 .Define("RecoEmiss_e",   "RecoEmiss[0].energy")
 
-				.Define("M", "FCCAnalyses::ZHfunctions::get_M(ReconstructedParticles, MissingET")
+				.Define("M", "FCCAnalyses::ZHfunctions::get_M(ReconstructedParticles, MissingET)")
 
                 
                 #### FILTERS APPLIED TO ALL THE EVENTS ####
