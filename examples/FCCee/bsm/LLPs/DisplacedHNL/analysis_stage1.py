@@ -273,6 +273,18 @@ class RDFanalysis():
 				.Define("Log_chi2_0P", "return (log10(RecoDecayVertexMuon_lead_0P.chi2))")
 				.Define("Reco_Lxyz_0P","return sqrt(RecoDecayVertexMuon_lead_0P.position.x*RecoDecayVertexMuon_lead_0P.position.x + RecoDecayVertexMuon_lead_0P.position.y*RecoDecayVertexMuon_lead_0P.position.y + RecoDecayVertexMuon_lead_0P.position.z*RecoDecayVertexMuon_lead_0P.position.z);")
 
+				## ## Sto esplorando con questa riga come ottenere il secondary vertex 2S
+				.Define("SecondaryVertexObject_2S", "VertexFitterSimple::VertexFitter_Tk(2, SecondaryTracks, true, 4.5, 20e-3, 300)")
+				.Define("RecoDecayVertexMuon_lead_2S",  "VertexingUtils::get_VertexData( SecondaryVertexObject_2S )")
+				.Define("Log_chi2_2S", "return (log10(RecoDecayVertexMuon_lead_2S.chi2))")
+				.Define("Reco_Lxyz_2S","return sqrt(RecoDecayVertexMuon_lead_2S.position.x*RecoDecayVertexMuon_lead_2S.position.x + RecoDecayVertexMuon_lead_2S.position.y*RecoDecayVertexMuon_lead_2S.position.y + RecoDecayVertexMuon_lead_2S.position.z*RecoDecayVertexMuon_lead_2S.position.z);")
+
+				## ## Sto esplorando con questa riga come ottenere il secondary vertex 2P
+				.Define("PrimaryVertexObject_2P", "VertexFitterSimple::VertexFitter_Tk(2, PrimaryTracks, true, 4.5, 20e-3, 300)")
+				.Define("RecoDecayVertexMuon_lead_2P",  "VertexingUtils::get_VertexData( PrimaryVertexObject_2P )")
+				.Define("Log_chi2_2P", "return (log10(RecoDecayVertexMuon_lead_2P.chi2))")
+				.Define("Reco_Lxyz_2P","return sqrt(RecoDecayVertexMuon_lead_2P.position.x*RecoDecayVertexMuon_lead_2P.position.x + RecoDecayVertexMuon_lead_2P.position.y*RecoDecayVertexMuon_lead_2P.position.y + RecoDecayVertexMuon_lead_2P.position.z*RecoDecayVertexMuon_lead_2P.position.z);")
+
 
 					   
 				## ## Posso controllare se questi funzionano, forse hanno senso
@@ -384,6 +396,14 @@ class RDFanalysis():
 						"RecoDecayVertexMuon_lead_0P",
 						"Log_chi2_0P",
 						"Reco_Lxyz_0P",
+
+						"RecoDecayVertexMuon_lead_2S",
+						"Log_chi2_2S",
+						"Reco_Lxyz_2S",
+
+						"RecoDecayVertexMuon_lead_2P",
+						"Log_chi2_2P",
+						"Reco_Lxyz_2P",
 
 		]
 
