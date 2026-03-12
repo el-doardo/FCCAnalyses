@@ -37,7 +37,7 @@ processList = {
 	## ## ## ## ## ## ## ##	#
 	
 		#"HNL_1.04e-8_10gev":{},
-		#"HNL_1.04e-8_70gev":{},
+		"HNL_1.04e-8_70gev":{},
 		#"HNL_4e-10_20gev":{},
 		#"HNL_4e-10_80gev":{},	
 		#"HNL_6.67e-10_30gev":{},
@@ -47,65 +47,6 @@ processList = {
 		#"HNL_3.17e-11_30gev":{},
 		#"HNL_3.17e-11_60gev":{},
 
-		#"HNL_1.04e-8_10gev":{},
-		"HNL_1.04e-8_20gev":{},
-		"HNL_1.04e-8_30gev":{},
-		"HNL_1.04e-8_40gev":{},
-		"HNL_1.04e-8_50gev":{},
-		"HNL_1.04e-8_60gev":{},
-		#"HNL_1.04e-8_70gev":{},
-		"HNL_1.04e-8_80gev":{},
-		"HNL_1.04e-8_90gev":{},
-
-		"HNL_4e-10_10gev":{},
-		#"HNL_4e-10_20gev":{},
-		"HNL_4e-10_30gev":{},
-		"HNL_4e-10_40gev":{},
-		"HNL_4e-10_50gev":{},
-		"HNL_4e-10_60gev":{},
-		"HNL_4e-10_70gev":{},
-		#"HNL_4e-10_80gev":{},
-		"HNL_4e-10_90gev":{},
-
-		"HNL_6.67e-10_10gev":{},
-		"HNL_6.67e-10_20gev":{},
-		#"HNL_6.67e-10_30gev":{},
-		"HNL_6.67e-10_40gev":{},
-		"HNL_6.67e-10_50gev":{},
-		"HNL_6.67e-10_60gev":{},
-		"HNL_6.67e-10_70gev":{},
-		"HNL_6.67e-10_80gev":{},
-		"HNL_6.67e-10_90gev":{},
-
-		"HNL_8.35e-9_10gev":{},
-		"HNL_8.35e-9_20gev":{},
-		"HNL_8.35e-9_30gev":{},
-		#"HNL_8.35e-9_40gev":{},
-		"HNL_8.35e-9_50gev":{},
-		"HNL_8.35e-9_60gev":{},
-		"HNL_8.35e-9_70gev":{},
-		"HNL_8.35e-9_80gev":{},
-		"HNL_8.35e-9_90gev":{},
-
-		"HNL_2.27e-9_10gev":{},
-		#"HNL_2.27e-9_20gev":{},
-		"HNL_2.27e-9_30gev":{},
-		"HNL_2.27e-9_40gev":{},
-		#"HNL_2.27e-9_50gev":{},
-		"HNL_2.27e-9_60gev":{},
-		"HNL_2.27e-9_70gev":{},
-		"HNL_2.27e-9_80gev":{},
-		"HNL_2.27e-9_90gev":{},
-
-		"HNL_3.17e-11_10gev":{},
-		"HNL_3.17e-11_20gev":{},
-		#"HNL_3.17e-11_30gev":{},
-		"HNL_3.17e-11_40gev":{},
-		"HNL_3.17e-11_50gev":{},
-		#"HNL_3.17e-11_60gev":{},
-		"HNL_3.17e-11_70gev":{},
-		"HNL_3.17e-11_80gev":{},
-		"HNL_3.17e-11_90gev":{},
 	
 }
 
@@ -260,8 +201,21 @@ class RDFanalysis():
 				.Define("RecoMuon_lead", "FCCAnalyses::ZHfunctions::get_leading_pt(RecoMuons);") ## ## definisco get_leading_pt basandomi su get_leading
 				.Define("RecoMuon_lead_pt", "ReconstructedParticle::get_pt(RecoMuon_lead) ") ## ## Pt del muone lead
 				.Define("RecoMuon_lead_e", "ReconstructedParticle::get_e(RecoMuon_lead) ") ## ## Pt del muone lead
-				.Define("RecoMuon_lead_Track_absD0", "return abs(ReconstructedParticle2Track::getRP2TRK_D0(RecoMuon_lead,EFlowTrack_1))") ## ## Lui potrebbe andar via
-
+				.Define("RecoMuon_lead_Track_absD0", "return abs(ReconstructedParticle2Track::getRP2TRK_D0(RecoMuon_lead,EFlowTrack_1))") ## ## Non so se questa grandezza è davvero utile per valutare lo spazio percorso dall'HNL prima di decadere perché è molto facile da ricavare rispetto ai vertici e al chi2
+				
+				.Define("RecoMuon_lead_p",      "ReconstructedParticle::get_p(RecoMuon_leads)")
+                .Define("RecoMuon_lead_px",      "ReconstructedParticle::get_px(RecoMuon_leads)")
+                .Define("RecoMuon_lead_py",      "ReconstructedParticle::get_py(RecoMuon_leads)")
+                .Define("RecoMuon_lead_pz",      "ReconstructedParticle::get_pz(RecoMuon_leads)")
+				.Define("RecoMuon_lead_eta",     "ReconstructedParticle::get_eta(RecoMuon_leads)") #pseudorapidity eta
+                .Define("RecoMuon_lead_theta",   "ReconstructedParticle::get_theta(RecoMuon_leads)")
+				.Define("RecoMuon_lead_phi",     "ReconstructedParticle::get_phi(RecoMuon_leads)") #polar angle in the transverse plane phi
+                .Define("RecoMuon_lead_charge",  "ReconstructedParticle::get_charge(RecoMuon_leads)")
+                .Define("RecoMuon_leadTrack_absZ0", "return abs(ReconstructedParticle2Track::getRP2TRK_Z0(RecoMuon_leads,EFlowTrack_1))")
+                .Define("RecoMuon_leadTrack_absD0sig", "return abs(ReconstructedParticle2Track::getRP2TRK_D0_sig(RecoMuon_leads,EFlowTrack_1))") #significance
+                .Define("RecoMuon_leadTrack_absZ0sig", "return abs(ReconstructedParticle2Track::getRP2TRK_Z0_sig(RecoMuon_leads,EFlowTrack_1))")
+                .Define("RecoMuon_leadTrack_D0cov", "ReconstructedParticle2Track::getRP2TRK_D0_cov(RecoMuon_leads,EFlowTrack_1)") #variance (not sigma)
+                .Define("RecoMuon_leadTrack_Z0cov", "ReconstructedParticle2Track::getRP2TRK_Z0_cov(RecoMuon_leads,EFlowTrack_1)")
 
 				## ## ## ## #
 				#	JET		#
@@ -353,6 +307,8 @@ class RDFanalysis():
                 .Define("RecoEmiss_pt",  "return sqrt(RecoEmiss_px*RecoEmiss_px + RecoEmiss_py*RecoEmiss_py)")
                 .Define("RecoEmiss_p",  "return sqrt(RecoEmiss_px*RecoEmiss_px + RecoEmiss_py*RecoEmiss_py + RecoEmiss_pz*RecoEmiss_pz)")
                 .Define("RecoEmiss_e",   "RecoEmiss[0].energy")
+
+				.Define("M", "FCCAnalyses::ZHfunctions::get_M(ReconstructedParticles, MissingET")
 
                 
                 #### FILTERS APPLIED TO ALL THE EVENTS ####
