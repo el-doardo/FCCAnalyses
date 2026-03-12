@@ -308,7 +308,17 @@ class RDFanalysis():
                 .Define("RecoEmiss_p",  "return sqrt(RecoEmiss_px*RecoEmiss_px + RecoEmiss_py*RecoEmiss_py + RecoEmiss_pz*RecoEmiss_pz)")
                 .Define("RecoEmiss_e",   "RecoEmiss[0].energy")
 
+					   
+				## ## ## ## ## ## ## ## #
+				# Grandezze per cuts	#
+				## ## ## ## ## ## ## ## #
+					   
 				.Define("M", "FCCAnalyses::ZHfunctions::get_M(ReconstructedParticles, MissingET)")
+				.Define("c_p_miss", "abs(cos(RecoMissingEnergy_theta))")
+				.Define("c_mu_p_miss", "cos(RecoMuon_lead_theta - RecoMissingEnergy_theta)")
+				.Define("c_jj", "cos(jets_theta.at(0) - jets_theta.at(1))")
+				.Define("c_jmu", "cos(jets_theta.at(0) - RecoMuon_lead_theta)")
+				.Define("c_muj", "cos(RecoMuon_lead_theta -  jets_theta.at(1))")
 
                 
                 #### FILTERS APPLIED TO ALL THE EVENTS ####
