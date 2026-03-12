@@ -317,7 +317,7 @@ class RDFanalysis():
 				.Define("c_p_miss_abs", "abs(cos(Sum(RecoMissingEnergy_theta)))")
 				.Define("c_mu_p_miss", "cos(RecoMuon_lead_theta - Sum(RecoMissingEnergy_theta))")
 				.Define("c_jj", "cos(jets_theta.at(0) - jets_theta.at(1))")
-				.Define("c_jmu", "cos(jets_theta.at(0) - RecoMuon_lead_theta.at(0)")
+				.Define("c_jmu", "cos(jets_theta.at(0) - RecoMuon_lead_theta.at(0))")
 				.Define("c_muj", "cos(RecoMuon_lead_theta.at(0) -  jets_theta.at(1))")
 
                 
