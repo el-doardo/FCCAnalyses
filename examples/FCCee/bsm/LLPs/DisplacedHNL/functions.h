@@ -330,7 +330,29 @@ ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> get_leading_pt(ROOT::VecO
     result.emplace_back(x.at(maxp_index));
     return ROOT::VecOps::RVec(result);
 }
+// Definisco questa funzione per trovare la massa invariante richiesta nel paper
+float get_M(ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> vis,
+            ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> miss) {
 
+    auto e_m  = ReconstructedParticle::get_e(miss);
+    auto px_m = ReconstructedParticle::get_px(miss);
+    auto py_m = ReconstructedParticle::get_py(miss);
+    auto pz_m = ReconstructedParticle::get_pz(miss);
+
+    float e  = e_m[0];
+    float px = px_m[0];
+    float py = py_m[0];
+    float pz = pz_m[0];
+
+    for (const auto &p : vis) {
+        e  += p.energy;
+        px += p.momentum.x;
+        py += p.momentum.y;
+        pz += p.momentum.z;
+    }
+
+    return std::sqrt(e*e - px*px - py*py - pz*pz);
+} 
 }}
 
 #endif
