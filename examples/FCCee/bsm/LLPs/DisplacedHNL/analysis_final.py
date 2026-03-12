@@ -500,6 +500,7 @@ cutList = {
     #### inclusive selection cuts ####
     "selReco":"true",
 	"selReco_M":"M>80",
+	"selReco_jets_m":"jets_m.at(0)>0.2 && jets_m.at(1)>0.2",
 	"selReco_c_p_miss_abs":"c_p_miss_abs<0.94",
 	"selReco_c_mu_p_miss":"c_mu_p_miss.at(0)<0.80",
 	"selReco_Ej_5":"jets_e.at(0)>5 && jets_e.at(1)>5",
@@ -568,6 +569,7 @@ cutLabels = {
 
     "selReco":"true reco signal",
 	"selReco_M":"Against Z to tau tau",
+	"selReco_jets_m":"to reject very collimated jets with an energetic particle",
 	"selReco_c_p_miss_abs":"Against particles too close to beam axis",
 	"selReco_c_mu_p_miss":"Against Z to bb, cc and tautau",
 	"selReco_Ej_5":"Requested by the paper with inclusive algorithm (not here)",
@@ -942,6 +944,7 @@ histoList = {
     #"RecoTracknoLep_D0cov":               {"name":"RecoTracknoLep_D0cov",     "title":"Reco non lepton tracks d_{0} #sigma^{2}",      "bin":100,"xmin":0, "xmax":0.5},
     #"RecoTracknoLep_Z0cov":               {"name":"RecoTracknoLep_Z0cov",     "title":"Reco non lepton tracks z_{0} #sigma^{2}",      "bin":100,"xmin":0, "xmax":0.5},
 	"jets_e":								{"name":"jets_e",    				"title":"Jets Energy",          		 "bin":100, "xmin":0,"xmax":90},
+	"jets_m":								{"name":"jets_m",    				"title":"Jets Mass",          		 	"bin":100, "xmin":0,"xmax":90},
 	"jets_pt":								{"name":"jets_pt",    				"title":"Jets pt",          	 		"bin":100, "xmin":0,"xmax":90},
 	"n_jets":								{"name":"n_jets",    				"title":"Number of jets",         	 	 "bin":5, "xmin":-0.5,"xmax":4.5},
     #"n_PrimaryTracks":						{"name":"n_PrimaryTracks",    		"title":"n_PrimaryTracks",          	 "bin":10, "xmin":0,"xmax":10},
