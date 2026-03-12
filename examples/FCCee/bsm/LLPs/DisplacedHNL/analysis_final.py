@@ -958,7 +958,7 @@ histoList = {
 
 	"M":									{"name":"M",    				"title":"M",          	 			 "bin":100, "xmin":0,"xmax":90},
 	"c_p_miss_abs":							{"name":"c_p_miss_abs",    		"title":"c_p_miss_abs",          	 "bin":100, "xmin":0,"xmax":1},
-	"c_mu_p_miss":							{"name":"c_mu_p_miss",    		"title":"c_mu_p_miss",          	 "bin":100, "xmin":-1,"xmax":1},
+	"c_mu_p_miss":							{"name":"c_mu_p_miss.at(0)",    		"title":"c_mu_p_miss",          	 "bin":100, "xmin":-1,"xmax":1},
 	"c_jj":									{"name":"c_jj",    				"title":"c_jj",          			 "bin":100, "xmin":-1,"xmax":1},
 	"c_jmu":								{"name":"c_jmu",    			"title":"c_jmu",          			 "bin":100, "xmin":-1,"xmax":1},
 	"c_muj":								{"name":"c_muj",    			"title":"c_muj",          			 "bin":100, "xmin":-1,"xmax":1},
