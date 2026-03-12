@@ -269,7 +269,7 @@ class RDFanalysis():
 
 				## ## Sto esplorando con questa riga come ottenere il secondary vertex 0P
 				.Define("PrimaryVertexObject_0P", "VertexFitterSimple::VertexFitter_Tk(0, PrimaryTracks, true, 4.5, 20e-3, 300)")
-				.Define("RecoDecayVertexMuon_lead_0P",  "VertexingUtils::get_VertexData( SecondaryVertexObject_0P )")
+				.Define("RecoDecayVertexMuon_lead_0P",  "VertexingUtils::get_VertexData( PrimaryVertexObject_0P )")
 				.Define("Log_chi2_0P", "return (log10(RecoDecayVertexMuon_lead_0P.chi2))")
 				.Define("Reco_Lxyz_0P","return sqrt(RecoDecayVertexMuon_lead_0P.position.x*RecoDecayVertexMuon_lead_0P.position.x + RecoDecayVertexMuon_lead_0P.position.y*RecoDecayVertexMuon_lead_0P.position.y + RecoDecayVertexMuon_lead_0P.position.z*RecoDecayVertexMuon_lead_0P.position.z);")
 
