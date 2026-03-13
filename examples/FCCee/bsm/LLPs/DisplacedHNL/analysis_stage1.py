@@ -258,23 +258,27 @@ class RDFanalysis():
                 
                 ### not useful in this case as the primary track code runs by looking at the chi2 of vertex, taking out the tracks making it larger until there is only one track ###
                 ### so there will always be one primary track even if they should both be secondary but the code doesn't handle that and we have both secondary in principle ###
+					   
+					## ## ## ## ## ##
+					#   I Vertici	#
+					## ## ## ## ## ## 
 				
-				## ## Questa parte va capita
-                .Define("PrimaryTracks",  "VertexFitterSimple::get_PrimaryTracks( EFlowTrack_1, true, 4.5, 20e-3, 300, 0., 0., 0.)") 
-                .Define("PrimaryVertexObject", "VertexFitterSimple::VertexFitter_Tk(1, PrimaryTracks, true, 4.5, 20e-3, 300)")
-                .Define("n_PrimaryTracks",  "ReconstructedParticle2Track::getTK_n( PrimaryTracks )")
-                .Define("SecondaryTracks",   "VertexFitterSimple::get_NonPrimaryTracks( EFlowTrack_1, PrimaryTracks )")
-                .Define("n_SecondaryTracks",  "ReconstructedParticle2Track::getTK_n( SecondaryTracks )" )
+				## ## Questa parte è (presumibilmente permanentemente) rimossa dalla tesi
+                #.Define("PrimaryTracks",  "VertexFitterSimple::get_PrimaryTracks( EFlowTrack_1, true, 4.5, 20e-3, 300, 0., 0., 0.)") 
+                #.Define("PrimaryVertexObject", "VertexFitterSimple::VertexFitter_Tk(1, PrimaryTracks, true, 4.5, 20e-3, 300)")
+                #.Define("n_PrimaryTracks",  "ReconstructedParticle2Track::getTK_n( PrimaryTracks )")
+                #.Define("SecondaryTracks",   "VertexFitterSimple::get_NonPrimaryTracks( EFlowTrack_1, PrimaryTracks )")
+                #.Define("n_SecondaryTracks",  "ReconstructedParticle2Track::getTK_n( SecondaryTracks )" )
 				#.Define("RecoDecayVertexMuon_lead",  "VertexingUtils::get_VertexData( PrimaryVertexObject )") ## ## decommentato per l'esperimento qua sotto
 				## ## Sto esplorando con questa riga come ottenre il secondary vertex
-					   .Define("SecondaryVertexObject", "VertexFitterSimple::VertexFitter_Tk(2, SecondaryTracks, true, 4.5, 20e-3, 300)")
-					   .Define("RecoDecayVertexMuon_lead",  "VertexingUtils::get_VertexData( SecondaryVertexObject )") ## ## va decommentato l'omonimo poco sopra
-					   .Define("Log_chi2", "return (log10(RecoDecayVertexMuon_lead.chi2))")
+				#.Define("SecondaryVertexObject", "VertexFitterSimple::VertexFitter_Tk(2, SecondaryTracks, true, 4.5, 20e-3, 300)")
+				#.Define("RecoDecayVertexMuon_lead",  "VertexingUtils::get_VertexData( SecondaryVertexObject )") ## ## va decommentato l'omonimo poco sopra
+				#.Define("Log_chi2", "return (log10(RecoDecayVertexMuon_lead.chi2))")
 
 					   
 				## ## Posso controllare se questi funzionano, forse hanno senso
-                .Define("Reco_Lxyz","return sqrt(RecoDecayVertexMuon_lead.position.x*RecoDecayVertexMuon_lead.position.x + RecoDecayVertexMuon_lead.position.y*RecoDecayVertexMuon_lead.position.y + RecoDecayVertexMuon_lead.position.z*RecoDecayVertexMuon_lead.position.z);")
-                .Define("Reco_Lxy","return sqrt(RecoDecayVertexMuon_lead.position.x*RecoDecayVertexMuon_lead.position.x + RecoDecayVertexMuon_lead.position.y*RecoDecayVertexMuon_lead.position.y);")
+                #.Define("Reco_Lxyz","return sqrt(RecoDecayVertexMuon_lead.position.x*RecoDecayVertexMuon_lead.position.x + RecoDecayVertexMuon_lead.position.y*RecoDecayVertexMuon_lead.position.y + RecoDecayVertexMuon_lead.position.z*RecoDecayVertexMuon_lead.position.z);")
+                #.Define("Reco_Lxy","return sqrt(RecoDecayVertexMuon_lead.position.x*RecoDecayVertexMuon_lead.position.x + RecoDecayVertexMuon_lead.position.y*RecoDecayVertexMuon_lead.position.y);")
 
                 ### https://github.com/HEP-FCC/FCCAnalyses/blob/d39a711a703244ee2902f5d2191ad1e2367363ac/examples/FCCee/vertex/validation_tkParam.py#L115 ###
                 
@@ -341,9 +345,9 @@ class RDFanalysis():
                         
 
                         ######## Reconstructed particles #######
-                       	"n_RecoTracks",
-                        "n_PrimaryTracks",
-                        "n_SecondaryTracks",
+                       	#"n_RecoTracks",
+                        #"n_PrimaryTracks",
+                        #"n_SecondaryTracks",
 
                         "n_jets",
 						"jets_e",
@@ -368,8 +372,8 @@ class RDFanalysis():
                         "RecoEmiss_e",
 
 					
-                        "Reco_Lxy",
-                        "Reco_Lxyz",
+                        #"Reco_Lxy",
+                        #"Reco_Lxyz",
 
                         #"n_RecoDVs",
                         #"DV_Lxyz", 
@@ -380,7 +384,7 @@ class RDFanalysis():
 						"RecoMuon_lead_e",
 						"RecoMuon_lead_Track_absD0",
 						"RecoDecayVertexMuon_lead",
-						"Log_chi2",
+						#"Log_chi2",
 
 						## ## per tagli
 						"M",
