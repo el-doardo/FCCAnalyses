@@ -263,7 +263,10 @@ variables = [
 	"RecoParticles_eta",
 	"Sum_reco_missing_theta",
 	"RecoMuon_lead_theta",
-	"jets_theta"
+	"jets_theta",
+	"total_theta",
+	"jj_theta",
+	"jmu_theta",
 ]
 
     
