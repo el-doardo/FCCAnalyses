@@ -259,7 +259,8 @@ variables = [
 	"c_jj",
 	"c_jmu",
 	"c_muj",
-	"jets_m"
+	"jets_m",
+	"RecoParticles_eta"
 ]
 
     
