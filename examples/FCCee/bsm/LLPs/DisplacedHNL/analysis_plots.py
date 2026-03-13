@@ -269,6 +269,7 @@ selections = {}
 selections['HNL']  = [
     #"selNone",
 	"selReco",
+	"selReco_eta",
 	"selReco_M",
 	"selReco_jets_m",
 	"selReco_c_p_miss_abs",
@@ -306,6 +307,7 @@ extralabel = {}
 extralabel['selNone'] = "Before selection"
 extralabel['selReco']="Two jets, Leadig Muon pt > 10 GeV"
 extralabel['selReco_M'] = "M>80GeV Against Z to tautau"
+extralabel['selReco_eta'] = "-5 < eta < +5"
 extralabel['selReco_jets_m'] = "Jets mass > 0.2 GeV Against collimated jets with an energetic particle"
 extralabel['selReco_c_p_miss_abs'] = "c_p_miss_abs <0.94 Against particles too close to beam axis"
 extralabel['selReco_c_mu_p_miss'] = "c_mu_p_miss<0.8 Against Z to bb, cc and tautau"
@@ -379,29 +381,29 @@ colors['tatanunu_m'] = 38
 plots = {}
 plots['HNL'] = {'signal':{
 	
-                    #'HNL_1.04e-8_10gev':['HNL_1.04e-8_10gev'],
+                    'HNL_1.04e-8_10gev':['HNL_1.04e-8_10gev'],
 					'HNL_4e-10_20gev':['HNL_4e-10_20gev'],
-				#	'HNL_4e-10_80gev':['HNL_4e-10_80gev'],
-					#'HNL_6.67e-10_30gev':['HNL_6.67e-10_30gev'],
+					'HNL_4e-10_80gev':['HNL_4e-10_80gev'],
+					'HNL_6.67e-10_30gev':['HNL_6.67e-10_30gev'],
 					'HNL_8.35e-9_40gev':['HNL_8.35e-9_40gev'],
-					#'HNL_2.27e-9_20gev':['HNL_2.27e-9_20gev'],
-                    #'HNL_1.04e-8_70gev':['HNL_1.04e-8_70gev'],
-					#'HNL_2.27e-9_50gev':['HNL_2.27e-9_50gev'],
-					#'HNL_3.17e-11_30gev':['HNL_3.17e-11_30gev'],
-					#'HNL_3.17e-11_60gev':['HNL_3.17e-11_60gev'],
+					'HNL_2.27e-9_20gev':['HNL_2.27e-9_20gev'],
+                    'HNL_1.04e-8_70gev':['HNL_1.04e-8_70gev'],
+					'HNL_2.27e-9_50gev':['HNL_2.27e-9_50gev'],
+					'HNL_3.17e-11_30gev':['HNL_3.17e-11_30gev'],
+					'HNL_3.17e-11_60gev':['HNL_3.17e-11_60gev'],
 
                 },
                 'backgrounds':{
                     #'HNL':['HNL_2.86e-12_30gev'], ### impossible to plot without both signals and backgrounds, choose one signal and make it white ### 
 
 					'numujj':['numujj'],
-					#'Zee':['p8_ee_Zee_ecm91'],
-   					#'Zmumu':['p8_ee_Zmumu_ecm91'],
-				    #'Ztautau':['p8_ee_Ztautau_ecm91'],
-   					#'Zbb':['p8_ee_Zbb_ecm91'],
-				    #'Zcc':['p8_ee_Zcc_ecm91'],
-				    #'Zud':['p8_ee_Zud_ecm91'],
-				    #'Zss':['p8_ee_Zss_ecm91'],
+					'Zee':['p8_ee_Zee_ecm91'],
+   					'Zmumu':['p8_ee_Zmumu_ecm91'],
+				    'Ztautau':['p8_ee_Ztautau_ecm91'],
+   					'Zbb':['p8_ee_Zbb_ecm91'],
+				    'Zcc':['p8_ee_Zcc_ecm91'],
+				    'Zud':['p8_ee_Zud_ecm91'],
+				    'Zss':['p8_ee_Zss_ecm91'],
                     ## ##'emununu': ['emununu'],
                 },
                 }
