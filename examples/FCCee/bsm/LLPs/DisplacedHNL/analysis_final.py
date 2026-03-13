@@ -976,4 +976,10 @@ histoList = {
 	"total_theta":							{"name":"total_theta",    			"title":"total_theta",        						"bin":100,"xmin":-6 ,"xmax":6},
 	"jj_theta":								{"name":"jj_theta",    				"title":"jj_theta",        							"bin":100,"xmin":-6 ,"xmax":6},
 	"jmu_theta":							{"name":"jmu_theta",    			"title":"jmu_theta",        						"bin":100,"xmin":-6 ,"xmax":6},
+
+	"c_p_miss_abs2":						{"name":"c_p_miss_abs2",    	"title":"#abs{#cos{p_{miss}}}2",          	 	"bin":100, "xmin":-0.2,"xmax":1.2},
+	"c_mu_p_miss2":							{"name":"c_mu_p_miss2",    		"title":"#cos{#mu, p_{miss}2",          	 	"bin":100, "xmin":-1.2,"xmax":1.2},
+	"c_jj2":								{"name":"c_jj2",    			"title":"#cos{j,j}2",          			 		"bin":100, "xmin":-1.2,"xmax":1.2},
+	"c_jmu2":								{"name":"c_jmu2",    			"title":"#cos{j,#mu}2",          			 	"bin":100, "xmin":-1.2,"xmax":1.2},
+	"c_muj2":								{"name":"c_muj2",    			"title":"#cos{#mu , j}2",          			 	"bin":100, "xmin":-1.2,"xmax":1.2},
 }
