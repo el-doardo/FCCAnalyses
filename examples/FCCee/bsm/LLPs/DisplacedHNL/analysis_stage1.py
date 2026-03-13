@@ -337,10 +337,10 @@ class RDFanalysis():
 				.Define("sum_py_miss", "Sum(RecoMissingEnergy_py)")
 				.Define("sum_pz_miss", "Sum(RecoMissingEnergy_pz)")
 				.Define("c_p_miss_abs2", "abs(sum_pz_miss)/sum_p_miss")
-				.Define("c_mu_p_miss2", "(RecoMuon_lead_px*sum_px_miss + RecoMuon_lead_py*sum_py_miss + RecoMuon_lead_pz*sum_pz_miss)/(RecoMuon_lead_p*sum_p_miss)")
+				.Define("c_mu_p_miss2", "(RecoMuon_lead_px.at(0)*sum_px_miss + RecoMuon_lead_py.at(0)*sum_py_miss + RecoMuon_lead_pz.at(0)*sum_pz_miss)/(RecoMuon_lead_p.at(0)*sum_p_miss)")
 				.Define("c_jj2", "(jets_px.at(0)*jets_px.at(1) + jets_py.at(0)*jets_py.at(1) + jets_pz.at(0)*jets_pz.at(1))/(jets_p.at(0)*jets_p.at(1))")
-				.Define("c_jmu2", "(jets_px.at(0)*RecoMuon_lead_px + jets_py.at(0)*RecoMuon_lead_py + jets_pz.at(0)*RecoMuon_lead_pz)/(jets_p.at(0)*RecoMuon_lead_p)")
-				.Define("c_muj2", "(jets_px.at(1)*RecoMuon_lead_px + jets_py.at(1)*RecoMuon_lead_py + jets_pz.at(1)*RecoMuon_lead_pz)/(jets_p.at(1)*RecoMuon_lead_p)")
+				.Define("c_jmu2", "(jets_px.at(0)*RecoMuon_lead_px.at(0) + jets_py.at(0)*RecoMuon_lead_py.at(0) + jets_pz.at(0)*RecoMuon_lead_pz.at(0))/(jets_p.at(0)*RecoMuon_lead_p.at(0))")
+				.Define("c_muj2", "(jets_px.at(1)*RecoMuon_lead_px.at(0) + jets_py.at(1)*RecoMuon_lead_py.at(0) + jets_pz.at(1)*RecoMuon_lead_pz.at(0))/(jets_p.at(1)*RecoMuon_lead_p.at(0))")
 
                 
                 #### FILTERS APPLIED TO ALL THE EVENTS ####
