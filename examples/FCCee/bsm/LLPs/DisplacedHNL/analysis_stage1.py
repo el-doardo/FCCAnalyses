@@ -330,6 +330,18 @@ class RDFanalysis():
 				.Define("jj_theta", "jets_theta.at(0) - jets_theta.at(1)")
 				.Define("jmu_theta", "RecoMuon_lead_theta - jets_theta.at(1)")
 
+					   ## ## righe per suggerimento di Sofia sui coseni del paper
+
+				.Define("sum_p_miss", "Sum(RecoMissingEnergy_p)")
+				.Define("sum_px_miss", "Sum(RecoMissingEnergy_px)")
+				.Define("sum_py_miss", "Sum(RecoMissingEnergy_py)")
+				.Define("sum_pz_miss", "Sum(RecoMissingEnergy_pz)")
+				.Define("c_p_miss_abs2", "abs(sum_pz_miss)/sum_p_miss")
+				.Define("c_mu_p_miss2", "(RecoMuon_lead_px*sum_px_miss + RecoMuon_lead_py*sum_py_miss + RecoMuon_lead_pz*sum_pz_miss)/(RecoMuon_lead_p*sum_p_miss)")
+				.Define("c_jj2", "(jets_px.at(0)*jets_px.at(1) + jets_py.at(0)*jets_py.at(1) + jets_pz.at(0)*jets_pz.at(1))/(jets_p.at(0)*jets_p.at(1))")
+				.Define("c_jmu2", "(jets_px.at(0)*RecoMuon_lead_px + jets_py.at(0)*RecoMuon_lead_py + jets_pz.at(0)*RecoMuon_lead_pz)/(jets_p.at(0)*RecoMuon_lead_p)")
+				.Define("c_muj2", "(jets_px.at(1)*RecoMuon_lead_px + jets_py.at(1)*RecoMuon_lead_py + jets_pz.at(1)*RecoMuon_lead_pz)/(jets_p.at(1)*RecoMuon_lead_p)")
+
                 
                 #### FILTERS APPLIED TO ALL THE EVENTS ####
                 ### minimal selection for hnls final state
@@ -403,6 +415,12 @@ class RDFanalysis():
 						"total_theta",
 						"jj_theta",
 						"jmu_theta",
+
+						"c_p_miss_abs2",
+						"c_mu_p_miss2",
+						"c_jj2",
+						"c_jmu2",
+						"c_muj2",
 						
 		]
 
