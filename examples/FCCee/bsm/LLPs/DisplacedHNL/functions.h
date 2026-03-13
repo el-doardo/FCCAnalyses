@@ -334,17 +334,21 @@ ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> get_leading_pt(ROOT::VecO
 float get_M(ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> vis,
             ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> miss) {
 
-    auto e_m  = ReconstructedParticle::get_e(miss);
-    auto px_m = ReconstructedParticle::get_px(miss);
-    auto py_m = ReconstructedParticle::get_py(miss);
-    auto pz_m = ReconstructedParticle::get_pz(miss);
+    float e  = 0.0;
+    float px = 0.0;
+    float py = 0.0;
+    float pz = 0.0;
 
-    float e  = e_m[0];
-    float px = px_m[0];
-    float py = py_m[0];
-    float pz = pz_m[0];
-
+    // somma particelle visibili
     for (const auto &p : vis) {
+        e  += p.energy;
+        px += p.momentum.x;
+        py += p.momentum.y;
+        pz += p.momentum.z;
+    }
+
+    // somma particelle missing
+    for (const auto &p : miss) {
         e  += p.energy;
         px += p.momentum.x;
         py += p.momentum.y;
@@ -356,15 +360,10 @@ float get_M(ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> vis,
 
 float get_invMass(ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> vis) {
 
-    auto e_m  = 0;
-    auto px_m = 0;
-    auto py_m = 0;
-    auto pz_m = 0;
-
-    float e  = e_m[0];
-    float px = px_m[0];
-    float py = py_m[0];
-    float pz = pz_m[0];
+    float e  = 0;
+    float px = 0;
+    float py = 0;
+    float pz = 0;
 
     for (const auto &p : vis) {
         e  += p.energy;
