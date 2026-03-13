@@ -22,8 +22,8 @@ processList = {
         #'p8_ee_Ztautau_ecm91':{'fraction':0.25},	## ## fraction limit sperimentato: 0.25
         #'p8_ee_Zbb_ecm91':{'fraction':0.1},		## ## fraction limit sperimentato: 0.1
         #'p8_ee_Zcc_ecm91':{'fraction':0.1},		## ## fraction limit sperimentato: 0.1
-    	'p8_ee_Zud_ecm91':{'fraction':0.01},		## ## fraction limit sperimentato: 0.5 forse alzabile
-        'p8_ee_Zss_ecm91':{'fraction':0.01},		## ## fraction limit sperimentato: 0.5 forrse alzabile
+    	#'p8_ee_Zud_ecm91':{'fraction':0.01},		## ## fraction limit sperimentato: 0.5 forse alzabile
+        #'p8_ee_Zss_ecm91':{'fraction':0.01},		## ## fraction limit sperimentato: 0.5 forrse alzabile
 
 	## ## ## ## ## ## ## ## ## ## ## ## #
 	#	Backgrounds locally produced	#
@@ -36,16 +36,76 @@ processList = {
 	#	Segnali di HNLs		#
 	## ## ## ## ## ## ## ##	#
 	
-		"HNL_1.04e-8_10gev":{},
-		"HNL_1.04e-8_70gev":{},
+		#"HNL_1.04e-8_10gev":{},
+		#"HNL_1.04e-8_70gev":{},
 		#"HNL_4e-10_20gev":{},
-		"HNL_4e-10_80gev":{},	
+		#"HNL_4e-10_80gev":{},	
 		#"HNL_6.67e-10_30gev":{},
+		#"HNL_8.35e-9_40gev":{},
+		#"HNL_2.27e-9_20gev":{},
+		#"HNL_2.27e-9_50gev":{},
+		#"HNL_3.17e-11_30gev":{},
+		#"HNL_3.17e-11_60gev":{},
+	
+		"HNL_1.04e-8_10gev":{},
+		"HNL_1.04e-8_20gev":{},
+		"HNL_1.04e-8_30gev":{},
+		"HNL_1.04e-8_40gev":{},
+		"HNL_1.04e-8_50gev":{},
+		"HNL_1.04e-8_60gev":{},
+		"HNL_1.04e-8_70gev":{},
+		"HNL_1.04e-8_80gev":{},
+		"HNL_1.04e-8_90gev":{},
+
+		"HNL_4e-10_10gev":{},
+		"HNL_4e-10_20gev":{},
+		"HNL_4e-10_30gev":{},
+		"HNL_4e-10_40gev":{},
+		"HNL_4e-10_50gev":{},
+		"HNL_4e-10_60gev":{},
+		"HNL_4e-10_70gev":{},
+		"HNL_4e-10_80gev":{},
+		"HNL_4e-10_90gev":{},
+
+		"HNL_6.67e-10_10gev":{},
+		"HNL_6.67e-10_20gev":{},
+		"HNL_6.67e-10_30gev":{},
+		"HNL_6.67e-10_40gev":{},
+		"HNL_6.67e-10_50gev":{},
+		"HNL_6.67e-10_60gev":{},
+		"HNL_6.67e-10_70gev":{},
+		"HNL_6.67e-10_80gev":{},
+		"HNL_6.67e-10_90gev":{},
+
+		"HNL_8.35e-9_10gev":{},
+		"HNL_8.35e-9_20gev":{},
+		"HNL_8.35e-9_30gev":{},
 		"HNL_8.35e-9_40gev":{},
+		"HNL_8.35e-9_50gev":{},
+		"HNL_8.35e-9_60gev":{},
+		"HNL_8.35e-9_70gev":{},
+		"HNL_8.35e-9_80gev":{},
+		"HNL_8.35e-9_90gev":{},
+
+		"HNL_2.27e-9_10gev":{},
 		"HNL_2.27e-9_20gev":{},
+		"HNL_2.27e-9_30gev":{},
+		"HNL_2.27e-9_40gev":{},
 		"HNL_2.27e-9_50gev":{},
+		"HNL_2.27e-9_60gev":{},
+		"HNL_2.27e-9_70gev":{},
+		"HNL_2.27e-9_80gev":{},
+		"HNL_2.27e-9_90gev":{},
+
+		"HNL_3.17e-11_10gev":{},
+		"HNL_3.17e-11_20gev":{},
 		"HNL_3.17e-11_30gev":{},
+		"HNL_3.17e-11_40gev":{},
+		"HNL_3.17e-11_50gev":{},
 		"HNL_3.17e-11_60gev":{},
+		"HNL_3.17e-11_70gev":{},
+		"HNL_3.17e-11_80gev":{},
+		"HNL_3.17e-11_90gev":{},
 
 	
 }
@@ -119,13 +179,13 @@ processList_ = {
 #Production tag. This points to the yaml files for getting sample statistics
 #Mandatory when running over EDM4Hep centrally produced events
 #Comment out when running over privately produced events
-prodTag     = "FCCee/winter2023/IDEA/"
+#prodTag     = "FCCee/winter2023/IDEA/"
 
 #Input directory
 #Comment out when running over centrally produced events
 #Mandatory when running over privately produced events
 #inputDir = "/eos/experiment/fcc/ee/generation/DelphesEvents/winter2023/IDEA/"
-#inputDir = "/eos/user/e/espoto/FCC_2jet_z_pole/FCCAnalysis/hadronized_signals"
+inputDir = "/eos/user/e/espoto/FCC_2jet_z_pole/FCCAnalysis/hadronized_signals"
 
 # additional/costom C++ functions, defined in header files (optional)
 includePaths = ["functions.h"]
