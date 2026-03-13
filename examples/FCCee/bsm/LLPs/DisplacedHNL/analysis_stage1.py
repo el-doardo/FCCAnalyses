@@ -325,6 +325,7 @@ class RDFanalysis():
 				.Define("c_jj", "cos(jets_theta.at(0) - jets_theta.at(1))")
 				.Define("c_jmu", "cos(jets_theta.at(0) - RecoMuon_lead_theta.at(0))")
 				.Define("c_muj", "cos(RecoMuon_lead_theta.at(0) -  jets_theta.at(1))")
+				.Define("Sum_reco_missing_theta", "Sum(RecoMissingEnergy_theta)")
 
                 
                 #### FILTERS APPLIED TO ALL THE EVENTS ####
@@ -393,11 +394,9 @@ class RDFanalysis():
 						"c_jmu",
 						"c_muj",
 						"RecoParticles_eta",
-						"Sum(RecoMissingEnergy_theta)",
+						"Sum_reco_missing_theta",
 						"RecoMissingEnergy_theta",
 						"RecoMuon_lead_theta",
-						"jets_theta.at(0)",
-						"jets_theta.at(1)",
 						"jets_theta",
 						
 		]
