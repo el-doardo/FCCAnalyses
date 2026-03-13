@@ -909,7 +909,7 @@ histoList = {
     #"RecoMissingEnergy_px":      {"name":"RecoMissingEnergy_px",      "title":"Reco Missing p_{x} [GeV]",           "bin":100,"xmin":-50 ,"xmax":50},
     #"RecoMissingEnergy_py":      {"name":"RecoMissingEnergy_py",      "title":"Reco Missing p_{y} [GeV]",           "bin":100,"xmin":-50 ,"xmax":50},
     #"RecoMissingEnergy_pz":      {"name":"RecoMissingEnergy_pz",      "title":"Reco Missing p_{z} [GeV]",           "bin":100,"xmin":-50 ,"xmax":50},
-    "RecoMissingEnergy_eta":     {"name":"RecoMissingEnergy_eta",     "title":"Reco Missing Energy #eta",           "bin":60,"xmin":-3 ,"xmax":3},
+    "RecoMissingEnergy_eta":     {"name":"RecoMissingEnergy_eta",     "title":"Reco Missing Energy #eta",           "bin":60,"xmin":-6 ,"xmax":6},
     "RecoMissingEnergy_theta":   {"name":"RecoMissingEnergy_theta",   "title":"Reco Missing Energy #theta",         "bin":64,"xmin":0 , "xmax":3.2},
     "RecoMissingEnergy_phi":     {"name":"RecoMissingEnergy_phi",     "title":"Reco Missing Energy #phi",           "bin":64,"xmin":-3.2 ,"xmax":3.2},
 
@@ -967,5 +967,5 @@ histoList = {
 	"c_jj":									{"name":"c_jj",    				"title":"c_jj",          			 "bin":100, "xmin":-1.2,"xmax":1.2},
 	"c_jmu":								{"name":"c_jmu",    			"title":"c_jmu",          			 "bin":100, "xmin":-1.2,"xmax":1.2},
 	"c_muj":								{"name":"c_muj",    			"title":"c_muj",          			 "bin":100, "xmin":-1.2,"xmax":1.2},
-    
+    "RecoParticles_eta":     				{"name":"RecoParticles_eta",    "title":"RecoParticles #eta",        "bin":60,"xmin":-6 ,"xmax":6},
 }
