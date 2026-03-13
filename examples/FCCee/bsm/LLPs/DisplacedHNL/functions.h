@@ -352,6 +352,28 @@ float get_M(ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> vis,
     }
 
     return std::sqrt(e*e - px*px - py*py - pz*pz);
+}
+
+float get_invMass(ROOT::VecOps::RVec<edm4hep::ReconstructedParticleData> vis) {
+
+    auto e_m  = 0;
+    auto px_m = 0;
+    auto py_m = 0;
+    auto pz_m = 0;
+
+    float e  = e_m[0];
+    float px = px_m[0];
+    float py = py_m[0];
+    float pz = pz_m[0];
+
+    for (const auto &p : vis) {
+        e  += p.energy;
+        px += p.momentum.x;
+        py += p.momentum.y;
+        pz += p.momentum.z;
+    }
+
+    return std::sqrt(e*e - px*px - py*py - pz*pz);
 } 
 }}
 
