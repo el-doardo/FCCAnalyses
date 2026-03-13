@@ -393,6 +393,12 @@ class RDFanalysis():
 						"c_jmu",
 						"c_muj",
 						"RecoParticles_eta",
+						"Sum(RecoMissingEnergy_theta)",
+						"RecoMissingEnergy_theta",
+						"RecoMuon_lead_theta",
+						"jets_theta.at(0)",
+						"jets_theta.at(1)",
+						"jets_theta",
 						
 		]
 
