@@ -669,10 +669,10 @@ histoList = {
     #"FSGenPhoton_charge":              {"name":"FSGenPhoton_charge",             "title":"Final state gen photons charge",             "bin":3, "xmin":-1.5,"xmax":1.5},
 
     ######### RECO VARIABLES
-    "n_RecoTracks":                     {"name":"n_RecoTracks",                   "title":"Total number of reco tracks",             "bin":30,"xmin":0 ,"xmax":30},
+    #"n_RecoTracks":                     {"name":"n_RecoTracks",                   "title":"Total number of reco tracks",             "bin":30,"xmin":0 ,"xmax":30},
     #"n_noLeptonTracks":                 {"name":"n_noLeptonTracks",           "title":"Total number of non lepton tracks",             "bin":10,"xmin":0 ,"xmax":10},
-    "n_PrimaryTracks":                 {"name":"n_PrimaryTracks",                "title":"Total number of primary tracks",          "bin":10,"xmin":-0.5 ,"xmax":9.5},
-    "n_SecondaryTracks":               {"name":"n_SecondaryTracks",              "title":"Total number of secondary tracks",        "bin":10,"xmin":-0.5 ,"xmax":9.5},
+    #"n_PrimaryTracks":                 {"name":"n_PrimaryTracks",                "title":"Total number of primary tracks",          "bin":10,"xmin":-0.5 ,"xmax":9.5},
+    #"n_SecondaryTracks":               {"name":"n_SecondaryTracks",              "title":"Total number of secondary tracks",        "bin":10,"xmin":-0.5 ,"xmax":9.5},
     #"n_RecoDVs":                       {"name":"n_RecoDVs",                      "title":"Total number of DVs",                     "bin":5,"xmin":-0.5 ,"xmax":4.5},
     #"n_RecoPhotons":                   {"name":"n_RecoPhotons",                  "title":"Total number of reco photons",            "bin":5,"xmin":0 ,"xmax":5},
     #"n_RecoElectrons":                 {"name":"n_RecoElectrons",                "title":"Total number of reco electrons",          "bin":5,"xmin":0 ,"xmax":5},
