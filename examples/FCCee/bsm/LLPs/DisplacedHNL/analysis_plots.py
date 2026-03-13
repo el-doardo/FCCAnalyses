@@ -267,6 +267,12 @@ variables = [
 	"total_theta",
 	"jj_theta",
 	"jmu_theta",
+
+	"c_p_miss_abs2",
+	"c_mu_p_miss2",
+	"c_jj2",
+	"c_jmu2",
+	"c_muj2",
 ]
 
     
