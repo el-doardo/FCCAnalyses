@@ -383,7 +383,7 @@ class RDFanalysis():
 						"RecoMuon_lead_pt",
 						"RecoMuon_lead_e",
 						"RecoMuon_lead_Track_absD0",
-						"RecoDecayVertexMuon_lead",
+						#"RecoDecayVertexMuon_lead",
 						#"Log_chi2",
 
 						## ## per tagli
