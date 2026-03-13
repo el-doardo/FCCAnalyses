@@ -973,4 +973,7 @@ histoList = {
 	"Sum_reco_missing_theta":				{"name":"Sum_reco_missing_theta",   "title":"Sum_reco_missing_theta",        			"bin":100,"xmin":-6 ,"xmax":6},
 	"RecoMuon_lead_theta":					{"name":"RecoMuon_lead_theta",   	"title":"RecoMuon_lead_theta",        				"bin":100,"xmin":-6 ,"xmax":6},
 	"jets_theta":							{"name":"jets_theta",    			"title":"jets_theta",        						"bin":100,"xmin":-6 ,"xmax":6},
+	"total_theta":							{"name":"total_theta",    			"title":"total_theta",        						"bin":100,"xmin":-6 ,"xmax":6},
+	"jj_theta":								{"name":"jj_theta",    				"title":"jj_theta",        							"bin":100,"xmin":-6 ,"xmax":6},
+	"jmu_theta":							{"name":"jmu_theta",    			"title":"jmu_theta",        						"bin":100,"xmin":-6 ,"xmax":6},
 }
