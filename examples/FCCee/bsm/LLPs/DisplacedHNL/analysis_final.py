@@ -970,4 +970,7 @@ histoList = {
 	"c_jmu":								{"name":"c_jmu",    			"title":"#cos{j,#mu}",          			 	"bin":100, "xmin":-1.2,"xmax":1.2},
 	"c_muj":								{"name":"c_muj",    			"title":"#cos{#mu , j}",          			 	"bin":100, "xmin":-1.2,"xmax":1.2},
     "RecoParticles_eta":     				{"name":"RecoParticles_eta",    "title":"RecoParticles #eta",        			"bin":60,"xmin":-6 ,"xmax":6},
+	"Sum_reco_missing_theta":				{"name":"Sum_reco_missing_theta",   "title":"Sum_reco_missing_theta",        			"bin":100,"xmin":-6 ,"xmax":6},
+	"RecoMuon_lead_theta":					{"name":"RecoMuon_lead_theta",   	"title":"RecoMuon_lead_theta",        				"bin":100,"xmin":-6 ,"xmax":6},
+	"jets_theta":							{"name":"jets_theta",    			"title":"jets_theta",        						"bin":100,"xmin":-6 ,"xmax":6},
 }
