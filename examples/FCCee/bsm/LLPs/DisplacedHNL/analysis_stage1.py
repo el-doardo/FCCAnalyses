@@ -29,7 +29,7 @@ processList = {
 	#	Backgrounds locally produced	#
 	## ## ## ## ## ## ## ## ## ## ## ## #
 
-		#"numujj":{},
+		"numujj":{},
 	
 
 	## ## ## ## ## ## ## ## #
@@ -38,74 +38,16 @@ processList = {
 	
 		#"HNL_1.04e-8_10gev":{},
 		#"HNL_1.04e-8_70gev":{},
-		#"HNL_4e-10_20gev":{},
+		"HNL_4e-10_20gev":{},
 		#"HNL_4e-10_80gev":{},	
 		#"HNL_6.67e-10_30gev":{},
-		#"HNL_8.35e-9_40gev":{},
+		"HNL_8.35e-9_40gev":{},
 		#"HNL_2.27e-9_20gev":{},
 		#"HNL_2.27e-9_50gev":{},
 		#"HNL_3.17e-11_30gev":{},
 		#"HNL_3.17e-11_60gev":{},
 	
-		"HNL_1.04e-8_10gev":{},
-		"HNL_1.04e-8_20gev":{},
-		"HNL_1.04e-8_30gev":{},
-		"HNL_1.04e-8_40gev":{},
-		"HNL_1.04e-8_50gev":{},
-		"HNL_1.04e-8_60gev":{},
-		"HNL_1.04e-8_70gev":{},
-		"HNL_1.04e-8_80gev":{},
-		"HNL_1.04e-8_90gev":{},
-
-		"HNL_4e-10_10gev":{},
-		"HNL_4e-10_20gev":{},
-		"HNL_4e-10_30gev":{},
-		"HNL_4e-10_40gev":{},
-		"HNL_4e-10_50gev":{},
-		"HNL_4e-10_60gev":{},
-		"HNL_4e-10_70gev":{},
-		"HNL_4e-10_80gev":{},
-		"HNL_4e-10_90gev":{},
-
-		"HNL_6.67e-10_10gev":{},
-		"HNL_6.67e-10_20gev":{},
-		"HNL_6.67e-10_30gev":{},
-		"HNL_6.67e-10_40gev":{},
-		"HNL_6.67e-10_50gev":{},
-		"HNL_6.67e-10_60gev":{},
-		"HNL_6.67e-10_70gev":{},
-		"HNL_6.67e-10_80gev":{},
-		"HNL_6.67e-10_90gev":{},
-
-		"HNL_8.35e-9_10gev":{},
-		"HNL_8.35e-9_20gev":{},
-		"HNL_8.35e-9_30gev":{},
-		"HNL_8.35e-9_40gev":{},
-		"HNL_8.35e-9_50gev":{},
-		"HNL_8.35e-9_60gev":{},
-		"HNL_8.35e-9_70gev":{},
-		"HNL_8.35e-9_80gev":{},
-		"HNL_8.35e-9_90gev":{},
-
-		"HNL_2.27e-9_10gev":{},
-		"HNL_2.27e-9_20gev":{},
-		"HNL_2.27e-9_30gev":{},
-		"HNL_2.27e-9_40gev":{},
-		"HNL_2.27e-9_50gev":{},
-		"HNL_2.27e-9_60gev":{},
-		"HNL_2.27e-9_70gev":{},
-		"HNL_2.27e-9_80gev":{},
-		"HNL_2.27e-9_90gev":{},
-
-		"HNL_3.17e-11_10gev":{},
-		"HNL_3.17e-11_20gev":{},
-		"HNL_3.17e-11_30gev":{},
-		"HNL_3.17e-11_40gev":{},
-		"HNL_3.17e-11_50gev":{},
-		"HNL_3.17e-11_60gev":{},
-		"HNL_3.17e-11_70gev":{},
-		"HNL_3.17e-11_80gev":{},
-		"HNL_3.17e-11_90gev":{},
+		
 
 	
 }
@@ -236,6 +178,7 @@ class RDFanalysis():
 
                 ################### Reconstructed particles #####################
                 .Define("n_RecoTracks","ReconstructedParticle2Track::getTK_n(EFlowTrack_1)")
+				.Define("RecoParticles_eta",     "ReconstructedParticle::get_eta(ReconstructedParticles)") #pseudorapidity eta
 					   
 				.Define("RecoMuons",  "ReconstructedParticle::get(Muon0, ReconstructedParticles)")
 				.Define("n_RecoMuons",  "ReconstructedParticle::get_n(RecoMuons)") #count how many muons are in the event in total
@@ -324,7 +267,7 @@ class RDFanalysis():
                 .Define("n_SecondaryTracks",  "ReconstructedParticle2Track::getTK_n( SecondaryTracks )" )
 				#.Define("RecoDecayVertexMuon_lead",  "VertexingUtils::get_VertexData( PrimaryVertexObject )") ## ## decommentato per l'esperimento qua sotto
 				## ## Sto esplorando con questa riga come ottenre il secondary vertex
-					   .Define("SecondaryVertexObject", "VertexFitterSimple::VertexFitter_Tk(1, SecondaryTracks, true, 4.5, 20e-3, 300)")
+					   .Define("SecondaryVertexObject", "VertexFitterSimple::VertexFitter_Tk(2, SecondaryTracks, true, 4.5, 20e-3, 300)")
 					   .Define("RecoDecayVertexMuon_lead",  "VertexingUtils::get_VertexData( SecondaryVertexObject )") ## ## va decommentato l'omonimo poco sopra
 					   .Define("Log_chi2", "return (log10(RecoDecayVertexMuon_lead.chi2))")
 
@@ -446,6 +389,7 @@ class RDFanalysis():
 						"c_jj",
 						"c_jmu",
 						"c_muj",
+						"RecoParticles_eta",
 						
 		]
 
