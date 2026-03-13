@@ -260,7 +260,10 @@ variables = [
 	"c_jmu",
 	"c_muj",
 	"jets_m",
-	"RecoParticles_eta"
+	"RecoParticles_eta",
+	"Sum_reco_missing_theta",
+	"RecoMuon_lead_theta",
+	"jets_theta"
 ]
 
     
