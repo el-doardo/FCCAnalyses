@@ -281,16 +281,17 @@ selections = {}
 selections['HNL']  = [
     #"selNone",
 	"selReco",
-	#"selReco_eta",
-	#"selReco_M",
-	#"selReco_jets_m",
-	#"selReco_c_p_miss_abs",
-	#"selReco_c_mu_p_miss",
-	#"selReco_Ej_5",
-	#"selReco_c_jj",
-	#"selreco_c_jmu_against_Z",
-	#"selreco_c_jmu_against_tautau",
-	#"selReco_complete",
+	"selReco_D0_0.64",
+	"selReco_eta",
+	"selReco_M",
+	"selReco_jets_m",
+	"selReco_c_p_miss_abs",
+	"selReco_c_mu_p_miss",
+	"selReco_Ej_5",
+	"selReco_c_jj",
+	"selreco_c_jmu_against_Z",
+	"selreco_c_jmu_against_tautau",
+	"selReco_complete",
 
 	
     #"sel2Reco_vetoes",
@@ -319,6 +320,7 @@ selections['HNL']  = [
 
 extralabel = {}
 extralabel['selNone'] = "Before selection"
+extralabel['selReco_D0_0.64'] = "d0 > 0.64 mm"
 extralabel['selReco']="Two jets, Leadig Muon pt > 10 GeV"
 extralabel['selReco_M'] = "M>80GeV Against Z to tautau"
 extralabel['selReco_eta'] = "-5 < eta < +5"
