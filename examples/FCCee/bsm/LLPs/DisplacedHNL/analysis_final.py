@@ -32,10 +32,8 @@ processList = {
     #'p8_ee_Zss_ecm91':{},
         
     ### privately produced backgrounds ###
-    #'eenunu_m':{},
-    #'mumununu_m':{},
-    #'tatanunu_m':{},
-    #'llnunu_m':{},
+
+	#"numujj":{},
 
   ## ##
 
@@ -51,11 +49,19 @@ processList = {
 		#"HNL_3.17e-11_60gev":{},
 
 
-	
-	#"numujj":{},
 }
 
 processList_ = {
+
+		"HNL_1.04e-8_10gev":{},
+		"HNL_1.04e-8_20gev":{},
+		"HNL_1.04e-8_30gev":{},
+		"HNL_1.04e-8_40gev":{},
+		"HNL_1.04e-8_50gev":{},
+		"HNL_1.04e-8_60gev":{},
+		"HNL_1.04e-8_70gev":{},
+		"HNL_1.04e-8_80gev":{},
+		"HNL_1.04e-8_90gev":{},
             
         "HNL_4e-10_10gev":{},
 		"HNL_4e-10_20gev":{},
