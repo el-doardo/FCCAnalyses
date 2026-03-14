@@ -517,7 +517,10 @@ cutList = {
 	"selreco_c_jmu_against_tautau":"c_jmu2>-0.98 && c_muj2>-0.98",
 	"selReco_D0_0.64":"RecoMuon_lead_Track_absD0.at(0)>0.64",
 	"selReco_complete":"RecoMuon_lead_Track_absD0.at(0)>0.64 && M>80 && jets_m.at(0)>0.2 && jets_m.at(1)>0.2 && c_p_miss_abs2<0.94 && c_mu_p_miss2<0.80 && jets_e.at(0)>5 && jets_e.at(1)>5 && c_jj2>-0.80 && c_jmu2<0.8 && c_muj2<0.8 && c_jmu2>-0.98 && c_muj2>-0.98",
-    ### cuts for SM llnunu at generator level to be applied to everything properly
+    "selReco_complete_miei":"All(RecoMissingEnergy_e > 15) && All(RecoMissingEnergy_pt > 10) && jets_m.at(0)<30 && jets_m.at(1)<30 jets_e.at(0)<45 && jets_e.at(1)<45 RecoMuon_lead_Track_absD0.at(0)>0.64 && M>80 && jets_m.at(0)>0.2 && jets_m.at(1)>0.2 && c_p_miss_abs2<0.94 && c_mu_p_miss2<0.80 && jets_e.at(0)>5 && jets_e.at(1)>5 && c_jj2>-0.80 && c_jmu2<0.8 && c_muj2<0.8 && c_jmu2>-0.8 && c_muj2>-0.8",
+	
+	
+	### cuts for SM llnunu at generator level to be applied to everything properly
     #"selReco_gen": "Reco_pt.at(0)>1 && Reco_pt.at(1)>1 && RecoEmiss_pt>5", ## Reco_e>2 is taken care of by delphes already, no need to specify it here
     ### cuts need to exclude hadronic background
     #"selReco_gen_notracks": "Reco_pt.at(0)>1 && Reco_pt.at(1)>1 && RecoEmiss_pt>5 && n_noLeptonTracks==0",
@@ -578,6 +581,7 @@ cutLabels = {
     #"sel2RecoDF_vetoes_notracks_nojets_M80_5MEpt_0.8cos_chi_0.5d0":"Two different flavor leptons, no photons, no other track, no jets, M(l,l)<80 GeV, p_{T,miss}>5 GeV, cos\theta>-0.8, \chi^2<10, |d_0|>0.55 mm",
 
     "selReco":"true reco signal",
+	"selReco_complete_miei":"selReco_complete_miei",
 	"selReco_D0_0.64":"D0>0.64",
 	"selReco_eta":"cut on eta +-5",
 	"selReco_M":"M>80",
