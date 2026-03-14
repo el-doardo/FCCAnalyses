@@ -960,7 +960,7 @@ histoList = {
 	"n_jets":								{"name":"n_jets",    				"title":"Number of jets",         	 	 "bin":5, "xmin":-0.5,"xmax":4.5},
     #"n_PrimaryTracks":						{"name":"n_PrimaryTracks",    		"title":"n_PrimaryTracks",          	 "bin":10, "xmin":0,"xmax":10},
 	#"n_SecondaryTracks":					{"name":"n_SecondaryTracks",    	"title":"Jn_SecondaryTracks",          	 "bin":100, "xmin":0,"xmax":90},
-	"RecoMuon_lead_pt":						{"name":"RecoMuon_lead_pt",    		"title":"RecoMuon_lead_pt",          	 "bin":100, "xmin":0,"xmax":90},
+	"RecoMuon_lead_pt":						{"name":"RecoMuon_lead_pt",    		"title":"RecoMuon_lead_pt",          	 "bin":100, "xmin":43,"xmax":47},
 	"RecoMuon_lead_e":						{"name":"RecoMuon_lead_e",    		"title":"RecoMuon_lead_e",          	 "bin":100, "xmin":0,"xmax":90},
 	"RecoMuon_lead_Track_absD0":			{"name":"RecoMuon_lead_Track_absD0",    	"title":"RecoMuon_lead_Track_absD0",          	 "bin":100, "xmin":0,"xmax":2000},
 	"RecoMuon_lead_Track_absD0_mid":		{"name":"RecoMuon_lead_Track_absD0",    	"title":"RecoMuon_lead_Track_absD0",          	 "bin":100, "xmin":0,"xmax":10},
