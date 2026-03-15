@@ -48,16 +48,15 @@ processList = {
 		#"HNL_3.17e-11_30gev":{},
 		#"HNL_3.17e-11_60gev":{},
 
-		"HNL_1.04e-8_10gev":{},
-		"HNL_1.04e-8_20gev":{},
-		"HNL_1.04e-8_30gev":{},
-		"HNL_1.04e-8_40gev":{},
-		"HNL_1.04e-8_50gev":{},
-		"HNL_1.04e-8_60gev":{},
-		"HNL_1.04e-8_70gev":{},
-		"HNL_1.04e-8_80gev":{},
-		"HNL_1.04e-8_90gev":{},
-
+		"HNL_4e-10_10gev":{},
+		"HNL_4e-10_20gev":{},
+		"HNL_4e-10_30gev":{},
+		"HNL_4e-10_40gev":{},
+		"HNL_4e-10_50gev":{},
+		"HNL_4e-10_60gev":{},
+		"HNL_4e-10_70gev":{},
+		"HNL_4e-10_80gev":{},
+		"HNL_4e-10_90gev":{},
 
 }
 
