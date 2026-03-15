@@ -23,40 +23,31 @@ processList = {
     #run over the full statistics from stage1
 
     #backgrounds
-	#'p8_ee_Zee_ecm91':{},
-    #'p8_ee_Zmumu_ecm91':{},
-    #'p8_ee_Ztautau_ecm91':{},
-    #'p8_ee_Zbb_ecm91':{},
-    #'p8_ee_Zcc_ecm91':{},
-    #'p8_ee_Zud_ecm91':{},
-    #'p8_ee_Zss_ecm91':{},
+	'p8_ee_Zee_ecm91':{},
+    'p8_ee_Zmumu_ecm91':{},
+    'p8_ee_Ztautau_ecm91':{},
+    'p8_ee_Zbb_ecm91':{},
+    'p8_ee_Zcc_ecm91':{},
+    'p8_ee_Zud_ecm91':{},
+    'p8_ee_Zss_ecm91':{},
        
     ### privately produced backgrounds ###
 
-	#"numujj":{},
+	"numujj":{},
 
   ## ##
 
-		#"HNL_1.04e-8_10gev":{},
-		#"HNL_1.04e-8_70gev":{},
-		#"HNL_4e-10_20gev":{},
-		#"HNL_4e-10_80gev":{},	
-		#"HNL_6.67e-10_30gev":{},
-		#"HNL_8.35e-9_40gev":{},
-		#"HNL_2.27e-9_20gev":{},
-		#"HNL_2.27e-9_50gev":{},
-		#"HNL_3.17e-11_30gev":{},
-		#"HNL_3.17e-11_60gev":{},
-
-		"HNL_3.17e-11_10gev":{},
-		"HNL_3.17e-11_20gev":{},
+		"HNL_1.04e-8_10gev":{},
+		"HNL_1.04e-8_70gev":{},
+		"HNL_4e-10_20gev":{},
+		"HNL_4e-10_80gev":{},	
+		"HNL_6.67e-10_30gev":{},
+		"HNL_8.35e-9_40gev":{},
+		"HNL_2.27e-9_20gev":{},
+		"HNL_2.27e-9_50gev":{},
 		"HNL_3.17e-11_30gev":{},
-		"HNL_3.17e-11_40gev":{},
-		"HNL_3.17e-11_50gev":{},
 		"HNL_3.17e-11_60gev":{},
-		"HNL_3.17e-11_70gev":{},
-		"HNL_3.17e-11_80gev":{},
-		"HNL_3.17e-11_90gev":{},	
+	
 
 }
 
@@ -515,30 +506,30 @@ cutList = {
     
     #### inclusive selection cuts ####
     "selReco":"true",
-	"selReco_M":"M>80",
+	#"selReco_M":"M>80",
 	#"selReco_eta":"All(RecoParticles_eta > -5) && All(RecoParticles_eta < 5)",
-	"selReco_jets_m_0.2":"jets_m.at(0)>0.2 && jets_m.at(1)>0.2",
-	"selReco_jets_m_30":"jets_m.at(0)<30 && jets_m.at(1)<30",
-	"selReco_jets_e_5":"jets_e.at(0)>5 && jets_e.at(1)>5",
-	"selReco_jets_e_45":"jets_e.at(0)<45 && jets_e.at(1)<45",
-	"selReco_c_p_miss_abs":"c_p_miss_abs2<0.94",
-	"selReco_c_mu_p_miss":"c_mu_p_miss2<0.80",
+	#"selReco_jets_m_0.2":"jets_m.at(0)>0.2 && jets_m.at(1)>0.2",
+	#"selReco_jets_m_30":"jets_m.at(0)<30 && jets_m.at(1)<30",
+	#"selReco_jets_e_5":"jets_e.at(0)>5 && jets_e.at(1)>5",
+	#"selReco_jets_e_45":"jets_e.at(0)<45 && jets_e.at(1)<45",
+	#"selReco_c_p_miss_abs":"c_p_miss_abs2<0.94",
+	#"selReco_c_mu_p_miss":"c_mu_p_miss2<0.80",
 	#"selReco_Ej_5":"jets_e.at(0)>5 && jets_e.at(1)>5", ## ## unito a sopra
-	"selReco_c_jj":"c_jj2>-0.80",
-	"selreco_c_jmu_against_Z":"c_jmu2<0.8 && c_muj2<0.8",
-	"selreco_c_jmu_against_tautau":"c_jmu2>-0.8 && c_muj2>-0.8", ## ## usato -0.8 invece di -0.98
-	"selReco_D0_0.3":"RecoMuon_lead_Track_absD0.at(0)>0.3",
-	"selReco_Miss_e":"All(RecoMissingEnergy_e > 15)",
-	"selReco_Miss_pt":"All(RecoMissingEnergy_pt > 10)",
+	#"selReco_c_jj":"c_jj2>-0.80",
+	#"selreco_c_jmu_against_Z":"c_jmu2<0.8 && c_muj2<0.8",
+	#"selreco_c_jmu_against_tautau":"c_jmu2>-0.8 && c_muj2>-0.8", ## ## usato -0.8 invece di -0.98
+	#"selReco_D0_0.3":"RecoMuon_lead_Track_absD0.at(0)>0.3",
+	#"selReco_Miss_e":"All(RecoMissingEnergy_e > 15)",
+	#"selReco_Miss_pt":"All(RecoMissingEnergy_pt > 10)",
 	#"selReco_complete":"RecoMuon_lead_Track_absD0.at(0)>0.64 && M>80 && jets_m.at(0)>0.2 && jets_m.at(1)>0.2 && c_p_miss_abs2<0.94 && c_mu_p_miss2<0.80 && jets_e.at(0)>5 && jets_e.at(1)>5 && c_jj2>-0.80 && c_jmu2<0.8 && c_muj2<0.8 && c_jmu2>-0.98 && c_muj2>-0.98",
     
 	# complete miei con d0
-	"selReco_complete_miei":"All(RecoMissingEnergy_e > 15) && All(RecoMissingEnergy_pt > 10) && jets_m.at(0)<30 && jets_m.at(1)<30 && jets_e.at(0)<45 && jets_e.at(1)<45 && RecoMuon_lead_Track_absD0.at(0)>0.3 && M>80 && jets_m.at(0)>0.2 && jets_m.at(1)>0.2 && c_p_miss_abs2<0.94 && c_mu_p_miss2<0.80 && jets_e.at(0)>5 && jets_e.at(1)>5 && c_jj2>-0.80 && c_jmu2<0.8 && c_muj2<0.8 && c_jmu2>-0.8 && c_muj2>-0.8",
+	#"selReco_complete_miei":"All(RecoMissingEnergy_e > 15) && All(RecoMissingEnergy_pt > 10) && jets_m.at(0)<30 && jets_m.at(1)<30 && jets_e.at(0)<45 && jets_e.at(1)<45 && RecoMuon_lead_Track_absD0.at(0)>0.3 && M>80 && jets_m.at(0)>0.2 && jets_m.at(1)>0.2 && c_p_miss_abs2<0.94 && c_mu_p_miss2<0.80 && jets_e.at(0)>5 && jets_e.at(1)>5 && c_jj2>-0.80 && c_jmu2<0.8 && c_muj2<0.8 && c_jmu2>-0.8 && c_muj2>-0.8",
 	#"selReco_miei":"All(RecoMissingEnergy_e > 15) && All(RecoMissingEnergy_pt > 10) && jets_m.at(0)<30 && jets_m.at(1)<30 && jets_e.at(0)<45 && jets_e.at(1)<45 && RecoMuon_lead_Track_absD0.at(0)>0.3 && M>80 && c_mu_p_miss2<0.80 && jets_e.at(0)>5 && jets_e.at(1)>5 && c_jj2>-0.80 && c_jmu2>-0.8 && c_muj2>-0.8",
 
 	#complete miei senza d0
-	#"selReco_complete_miei":"All(RecoMissingEnergy_e > 15) && All(RecoMissingEnergy_pt > 10) && jets_m.at(0)<30 && jets_m.at(1)<30 && jets_e.at(0)<45 && jets_e.at(1)<45 && M>80 && jets_m.at(0)>0.2 && jets_m.at(1)>0.2 && c_p_miss_abs2<0.94 && c_mu_p_miss2<0.80 && jets_e.at(0)>5 && jets_e.at(1)>5 && c_jj2>-0.80 && c_jmu2<0.8 && c_muj2<0.8 && c_jmu2>-0.8 && c_muj2>-0.8",
-	#"selReco_miei":"All(RecoMissingEnergy_e > 15) && All(RecoMissingEnergy_pt > 10) && jets_m.at(0)<30 && jets_m.at(1)<30 && jets_e.at(0)<45 && jets_e.at(1)<45 && M>80 && c_mu_p_miss2<0.80 && jets_e.at(0)>5 && jets_e.at(1)>5 && c_jj2>-0.80 && c_jmu2>-0.8 && c_muj2>-0.8",
+	"selReco_complete_miei":"All(RecoMissingEnergy_e > 15) && All(RecoMissingEnergy_pt > 10) && jets_m.at(0)<30 && jets_m.at(1)<30 && jets_e.at(0)<45 && jets_e.at(1)<45 && M>80 && jets_m.at(0)>0.2 && jets_m.at(1)>0.2 && c_p_miss_abs2<0.94 && c_mu_p_miss2<0.80 && jets_e.at(0)>5 && jets_e.at(1)>5 && c_jj2>-0.80 && c_jmu2<0.8 && c_muj2<0.8 && c_jmu2>-0.8 && c_muj2>-0.8",
+	"selReco_miei":"All(RecoMissingEnergy_e > 15) && All(RecoMissingEnergy_pt > 10) && jets_m.at(0)<30 && jets_m.at(1)<30 && jets_e.at(0)<45 && jets_e.at(1)<45 && M>80 && c_mu_p_miss2<0.80 && jets_e.at(0)>5 && jets_e.at(1)>5 && c_jj2>-0.80 && c_jmu2>-0.8 && c_muj2>-0.8",
 
 	
 	
