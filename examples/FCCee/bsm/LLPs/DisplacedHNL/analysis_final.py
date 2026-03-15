@@ -544,7 +544,7 @@ cutLabels = {
 	"selReco_jets_m_0.2_30":"jets 0.2 < m < 30",
 	"selReco_jets_e_5_45":" 5 < jet e < 4",
 	"selReco_c_p_miss_abs": " $ |cos(p_{miss})| < 0.94 $ ",
-	"selReco_c_mu_p_miss": " $ cos(\mu, p_{miss}) < 0.8 $ ",,
+	"selReco_c_mu_p_miss": " $ cos(\mu, p_{miss}) < 0.8 $ ",
 	"selReco_c_jj":"$cos(j,j)>-0.8",
 	"selreco_c_jmu_against_Z_et_tautau":"$|cos(j,\mu)|<0-8$",
 	"selReco_D0_0.3":"DO>0.3 mm",
