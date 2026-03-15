@@ -48,65 +48,6 @@ processList = {
 		#"HNL_3.17e-11_30gev":{},
 		#"HNL_3.17e-11_60gev":{},
 
-		"HNL_1.04e-8_10gev":{},
-		"HNL_1.04e-8_20gev":{},
-		"HNL_1.04e-8_30gev":{},
-		"HNL_1.04e-8_40gev":{},
-		"HNL_1.04e-8_50gev":{},
-		"HNL_1.04e-8_60gev":{},
-		"HNL_1.04e-8_70gev":{},
-		"HNL_1.04e-8_80gev":{},
-		"HNL_1.04e-8_90gev":{},
-            
-        "HNL_4e-10_10gev":{},
-		"HNL_4e-10_20gev":{},
-		"HNL_4e-10_30gev":{},
-		"HNL_4e-10_40gev":{},
-		"HNL_4e-10_50gev":{},
-		"HNL_4e-10_60gev":{},
-		"HNL_4e-10_70gev":{},
-		"HNL_4e-10_80gev":{},
-		"HNL_4e-10_90gev":{},
-
-		"HNL_6.67e-10_10gev":{},
-		"HNL_6.67e-10_20gev":{},
-		"HNL_6.67e-10_30gev":{},
-		"HNL_6.67e-10_40gev":{},
-		"HNL_6.67e-10_50gev":{},
-		"HNL_6.67e-10_60gev":{},
-		"HNL_6.67e-10_70gev":{},
-		"HNL_6.67e-10_80gev":{},
-		"HNL_6.67e-10_90gev":{},
-
-		"HNL_8.35e-9_10gev":{},
-		"HNL_8.35e-9_20gev":{},
-		"HNL_8.35e-9_30gev":{},
-		"HNL_8.35e-9_40gev":{},
-		"HNL_8.35e-9_50gev":{},
-		"HNL_8.35e-9_60gev":{},
-		"HNL_8.35e-9_70gev":{},
-		"HNL_8.35e-9_80gev":{},
-		"HNL_8.35e-9_90gev":{},
-
-		"HNL_2.27e-9_10gev":{},
-		"HNL_2.27e-9_20gev":{},
-		"HNL_2.27e-9_30gev":{},
-		"HNL_2.27e-9_40gev":{},
-		"HNL_2.27e-9_50gev":{},
-		"HNL_2.27e-9_60gev":{},
-		"HNL_2.27e-9_70gev":{},
-		"HNL_2.27e-9_80gev":{},
-		"HNL_2.27e-9_90gev":{},
-
-		"HNL_3.17e-11_10gev":{},
-		"HNL_3.17e-11_20gev":{},
-		"HNL_3.17e-11_30gev":{},
-		"HNL_3.17e-11_40gev":{},
-		"HNL_3.17e-11_50gev":{},
-		"HNL_3.17e-11_60gev":{},
-		"HNL_3.17e-11_70gev":{},
-		"HNL_3.17e-11_80gev":{},
-		"HNL_3.17e-11_90gev":{},
 
 
 }
@@ -566,16 +507,19 @@ cutList = {
     
     #### inclusive selection cuts ####
     "selReco":"true",
-	#"selReco_M":"M>80",
+	"selReco_M":"M>80",
 	#"selReco_eta":"All(RecoParticles_eta > -5) && All(RecoParticles_eta < 5)",
-	#"selReco_jets_m":"jets_m.at(0)>0.2 && jets_m.at(1)>0.2",
-	#"selReco_c_p_miss_abs":"c_p_miss_abs2<0.94",
-	#"selReco_c_mu_p_miss":"c_mu_p_miss2<0.80",
-	#"selReco_Ej_5":"jets_e.at(0)>5 && jets_e.at(1)>5",
-	#"selReco_c_jj":"c_jj2>-0.80",
-	#"selreco_c_jmu_against_Z":"c_jmu2<0.8 && c_muj2<0.8",
-	#"selreco_c_jmu_against_tautau":"c_jmu2>-0.98 && c_muj2>-0.98",
-	#"selReco_D0_0.64":"RecoMuon_lead_Track_absD0.at(0)>0.64",
+	"selReco_jets_m_0.2_30":"jets_m.at(0)>0.2 && jets_m.at(1)>0.2 && jets_m.at(0)<30 && jets_m.at(1)<30",
+	"selReco_jets_e_5_45":"jets_e.at(0)<45 && jets_e.at(1)<45 && jets_e.at(0)>5 && jets_e.at(1)>5",
+	"selReco_c_p_miss_abs":"c_p_miss_abs2<0.94",
+	"selReco_c_mu_p_miss":"c_mu_p_miss2<0.80",
+	#"selReco_Ej_5":"jets_e.at(0)>5 && jets_e.at(1)>5", ## ## unito a sopra
+	"selReco_c_jj":"c_jj2>-0.80",
+	"selreco_c_jmu_against_Z_et_tautau":"c_jmu2<0.8 && c_muj2<0.8 && c_jmu2>-0.8 && c_muj2>-0.8",
+	#"selreco_c_jmu_against_tautau":"c_jmu2>-0.98 && c_muj2>-0.98", ## ## unito a quello sopra e usato -0.8
+	"selReco_D0_0.3":"RecoMuon_lead_Track_absD0.at(0)>0.3",
+	"selReco_Miss_e":"All(RecoMissingEnergy_e > 15)";
+	"selReco_Miss_pt":"All(RecoMissingEnergy_pt > 10)";
 	#"selReco_complete":"RecoMuon_lead_Track_absD0.at(0)>0.64 && M>80 && jets_m.at(0)>0.2 && jets_m.at(1)>0.2 && c_p_miss_abs2<0.94 && c_mu_p_miss2<0.80 && jets_e.at(0)>5 && jets_e.at(1)>5 && c_jj2>-0.80 && c_jmu2<0.8 && c_muj2<0.8 && c_jmu2>-0.98 && c_muj2>-0.98",
     
 	# complete miei con d0
@@ -587,79 +531,27 @@ cutList = {
 	#"selReco_miei":"All(RecoMissingEnergy_e > 15) && All(RecoMissingEnergy_pt > 10) && jets_m.at(0)<30 && jets_m.at(1)<30 && jets_e.at(0)<45 && jets_e.at(1)<45 && M>80 && c_mu_p_miss2<0.80 && jets_e.at(0)>5 && jets_e.at(1)>5 && c_jj2>-0.80 && c_jmu2>-0.8 && c_muj2>-0.8",
 
 	
-	### cuts for SM llnunu at generator level to be applied to everything properly
-    #"selReco_gen": "Reco_pt.at(0)>1 && Reco_pt.at(1)>1 && RecoEmiss_pt>5", ## Reco_e>2 is taken care of by delphes already, no need to specify it here
-    ### cuts need to exclude hadronic background
-    #"selReco_gen_notracks": "Reco_pt.at(0)>1 && Reco_pt.at(1)>1 && RecoEmiss_pt>5 && n_noLeptonTracks==0",
-    #"selReco_gen_notracks_2eh": "Reco_pt.at(0)>1 && Reco_pt.at(1)>1 && RecoEmiss_pt>5 && n_noLeptonTracks==0 && n_NeutralHadrons==0",
-    ### cut to exclude Zll
-    #"selReco_gen_notracks_2eh_10MET": "Reco_pt.at(0)>1 && Reco_pt.at(1)>1  && RecoEmiss_pt>10 && n_noLeptonTracks==0 && n_NeutralHadrons==0",
-    ### cut to reduce Ztautau and llnunu
-    #"selReco_gen_notracks_2eh_10MET_0cos": "Reco_pt.at(0)>1 && Reco_pt.at(1)>1  && RecoEmiss_pt>10 && n_noLeptonTracks==0 && n_NeutralHadrons==0 && Reco_cos>0",
-    #"selReco_gen_notracks_2eh_10MET_0cos_45ME": "Reco_pt.at(0)>1 && Reco_pt.at(1)>1  && RecoEmiss_pt>10 && n_noLeptonTracks==0 && n_NeutralHadrons==0 && Reco_cos>0 && RecoEmiss_e>45",
-    #"selReco_gen_notracks_2eh_10MET_0cos_45ME_e35": "Reco_pt.at(0)>1 && Reco_pt.at(1)>1  && RecoEmiss_pt>10 && n_noLeptonTracks==0 && n_NeutralHadrons==0 && Reco_cos>0 && RecoEmiss_e>45 && Reco_e_lead.at(0)<35",
-    ###HNL based cuts
-    #"selReco_gen_notracks_2eh_15MET_0cos_45ME_e35_10M": "Reco_pt.at(0)>1 && Reco_pt.at(1)>1  && RecoEmiss_pt>15 && n_noLeptonTracks==0 && n_NeutralHadrons==0 && Reco_invMass<10 && Reco_cos>0 && RecoEmiss_e>45 && Reco_e_lead.at(0)<35",
-    #"selReco_gen_notracks_2eh_15MET_0cos_45ME_e35_20M": "Reco_pt.at(0)>1 && Reco_pt.at(1)>1  && RecoEmiss_pt>15 && n_noLeptonTracks==0 && n_NeutralHadrons==0 && Reco_invMass<20 && Reco_cos>0 && RecoEmiss_e>45 && Reco_e_lead.at(0)<35",
-    #"selReco_gen_notracks_2eh_15MET_0cos_45ME_e35_30M": "Reco_pt.at(0)>1 && Reco_pt.at(1)>1  && RecoEmiss_pt>15 && n_noLeptonTracks==0 && n_NeutralHadrons==0 && Reco_invMass<30 && Reco_cos>0 && RecoEmiss_e>45 && Reco_e_lead.at(0)<35",
-
-    ### select on different flavors to exclude ee/mumu nunu, cuts to feed combine
-    #"selReco_gen_notracks_2eh_15MET_0cos_45ME_e35_10ME_DF": "Reco_pt.at(0)>1 && Reco_pt.at(1)>1  && RecoEmiss_pt>15 && n_noLeptonTracks==0 && n_NeutralHadrons==0 && Reco_invMass<10 && Reco_cos>0 && n_RecoElectrons==1 && n_RecoMuons==1 && RecoEmiss_e>45 && Reco_e_lead.at(0)<35",
-    #"selReco_gen_notracks_2eh_15MET_0cos_45ME_e35_20ME_DF": "Reco_pt.at(0)>1 && Reco_pt.at(1)>1  && RecoEmiss_pt>15 && n_noLeptonTracks==0 && n_NeutralHadrons==0 && Reco_invMass<20 && Reco_cos>0 && n_RecoElectrons==1 && n_RecoMuons==1 && RecoEmiss_e>45 && Reco_e_lead.at(0)<35",
-    #"selReco_gen_notracks_2eh_15MET_0cos_45ME_e35_30ME_DF": "Reco_pt.at(0)>1 && Reco_pt.at(1)>1  && RecoEmiss_pt>15 && n_noLeptonTracks==0 && n_NeutralHadrons==0 && Reco_invMass<30 && Reco_cos>0 && n_RecoElectrons==1 && n_RecoMuons==1 && RecoEmiss_e>45 && Reco_e_lead.at(0)<35",
-    #"selReco_gen_notracks_2eh_10MET_0cos_45ME_e35_DF": "Reco_pt.at(0)>1 && Reco_pt.at(1)>1  && RecoEmiss_pt>10 && n_noLeptonTracks==0 && n_NeutralHadrons==0 && Reco_cos>0 && n_RecoElectrons==1 && n_RecoMuons==1 && RecoEmiss_e>45 && Reco_e_lead.at(0)<35",
-
-    #"selReco_gen_notracks_2eh_15MET_0cos_45ME_e35_10ME_SF": "Reco_pt.at(0)>1 && Reco_pt.at(1)>1  && RecoEmiss_pt>15 && n_noLeptonTracks==0 && n_NeutralHadrons==0 && Reco_invMass<10 && Reco_cos>0 && (n_RecoElectrons==2 || n_RecoMuons==2) && RecoEmiss_e>45 && Reco_e_lead.at(0)<35",
-    #"selReco_gen_notracks_2eh_15MET_0cos_45ME_e35_20ME_SF": "Reco_pt.at(0)>1 && Reco_pt.at(1)>1  && RecoEmiss_pt>15 && n_noLeptonTracks==0 && n_NeutralHadrons==0 && Reco_invMass<20 && Reco_cos>0 && (n_RecoElectrons==2 || n_RecoMuons==2) && RecoEmiss_e>45 && Reco_e_lead.at(0)<35",
-    #"selReco_gen_notracks_2eh_15MET_0cos_45ME_e35_30ME_SF": "Reco_pt.at(0)>1 && Reco_pt.at(1)>1  && RecoEmiss_pt>15 && n_noLeptonTracks==0 && n_NeutralHadrons==0 && Reco_invMass<30 && Reco_cos>0 && (n_RecoElectrons==2 || n_RecoMuons==2) && RecoEmiss_e>45 && Reco_e_lead.at(0)<35",
-    #"selReco_gen_notracks_2eh_10MET_0cos_45ME_e35_SF": "Reco_pt.at(0)>1 && Reco_pt.at(1)>1  && RecoEmiss_pt>10 && n_noLeptonTracks==0 && n_NeutralHadrons==0 && Reco_cos>0 && (n_RecoElectrons==2 || n_RecoMuons==2) && RecoEmiss_e>45 && Reco_e_lead.at(0)<35",
-
-    #### dv selection steps, on full samples so we don't loose half of the evenets twice from positive cosine and different flavor selection #####
-    #"selReco_gen_notracks_2eh_10MET_0.8cos": "Reco_pt.at(0)>1 && Reco_pt.at(1)>1  && RecoEmiss_pt>10 && n_noLeptonTracks==0 && n_NeutralHadrons==0 && Reco_cos>-0.8",
-    #"selReco_gen_notracks_2eh_10MET_0.8cos_80ME": "Reco_pt.at(0)>1 && Reco_pt.at(1)>1  && RecoEmiss_pt>10 && n_noLeptonTracks==0 && n_NeutralHadrons==0 && Reco_cos>-0.8 && Reco_invMass<80",
-    #"selReco_gen_notracks_2eh_10MET_0.8cos_80ME_10chi": "Reco_pt.at(0)>1 && Reco_pt.at(1)>1  && RecoEmiss_pt>10 && n_noLeptonTracks==0 && n_NeutralHadrons==0 && Reco_invMass<80 && Reco_cos>-0.8 && RecoDecayVertexLepton.chi2<10 && Reco_Lxy<2000 && abs(RecoDecayVertexLepton.position.z)<2000",
-    #"selReco_gen_notracks_2eh_10MET_0.8cos_80ME_10chi_0.64d0": "Reco_pt.at(0)>1 && Reco_pt.at(1)>1  && RecoEmiss_pt>10 && n_noLeptonTracks==0 && n_NeutralHadrons==0 && Reco_invMass<80 && Reco_cos>-0.8 && RecoDecayVertexLepton.chi2<10 && Reco_Lxy<2000 && abs(RecoDecayVertexLepton.position.z)<2000 && RecoTrack_absD0_lead.at(0)>0.64 && RecoTrack_absD0_sub.at(0)>0.64  ",
-
-    #"selReco_gen_0.64d0": "Reco_pt.at(0)>1 && Reco_pt.at(1)>1  && RecoEmiss_pt>5  && RecoTrack_absD0_lead.at(0)>0.64 && RecoTrack_absD0_sub.at(0)>0.64  ",
-
-    #"selReco_gen_notracks_2eh_10MET_0cos_45ME_e35_muon": "Reco_pt.at(0)>1 && Reco_pt.at(1)>1  && RecoEmiss_pt>10 && n_noLeptonTracks==0 && n_NeutralHadrons==0 && Reco_cos>0 && RecoEmiss_e>45 && Reco_e_lead.at(0)<35 && (n_RecoElectrons==0 && n_RecoMuons==2) ",
-    
-
+	
 }
 
 # Dictionary for prettier names of cuts (optional)
 ### needs to be in the same order as cutList or the table won't be organised well, it's only for the table ###
 cutLabels = {
 
-    #"sel2RecoSF_vetoes":"Two same flavor leptons, no photons",
-    #"sel2RecoSF_vetoes_notracks":"Two same flavor leptons, no photons, no other track",
-    #"sel2RecoSF_vetoes_notracks_nojets":"Two same flavor leptons, no photons, no other track, no jets",
-    #"sel2RecoSF_vetoes_notracks_nojets_M80":"Two same flavor leptons, no photons, no other track, no jets, M(l,l)<80 GeV",
-    #"sel2RecoSF_vetoes_notracks_nojets_M80_5MEpt":"Two same flavor leptons, no photons, no other track, no jets, M(l,l)<80 GeV, p_{T,miss}>5 GeV",
-    #"sel2RecoSF_vetoes_notracks_nojets_M80_5MEpt_0.8cos":"Two same flavor leptons, no photons, no other track, no jets, M(l,l)<80 GeV, p_{T,miss}>5 GeV, cos\theta>-0.8",
-    #"sel2RecoSF_vetoes_notracks_nojets_M80_5MEpt_0.8cos_chi_0.55d0":"Two same flavor leptons, no photons, no other track, no jets, M(l,l)<80 GeV, p_{T,miss}>5 GeV, cos\theta>-0.8, \chi^2<10, |d_0|>0.55 mm",
-
-    #"sel2RecoDF_vetoes":"Two different flavor leptons, no photons",
-    #"sel2RecoDF_vetoes_notracks":"Two different flavor leptons, no photons, no other trac",
-    #"sel2RecoDF_vetoes_notracks_nojets":"Two different flavor leptons, no photons, no other track, no jets",
-    #"sel2RecoDF_vetoes_notracks_nojets_M80":"Two different flavor leptons, no photons, no other track, no jets, M(l,l)<80 GeV",
-    #"sel2RecoDF_vetoes_motracks_nojets_M80_5MEpt":"Two different flavor leptons, no photons, no other track, no jets, M(l,l)<80 GeV, p_{T,miss}>5 GeV",
-    #"sel2RecoDF_vetoes_notracks_nojets_M80_5MEpt_0.8cos":"Two different flavor leptons, no photons, no other track, no jets, M(l,l)<80 GeV, p_{T,miss}>5 GeV, cos\theta>-0.8",
-    #"sel2RecoDF_vetoes_notracks_nojets_M80_5MEpt_0.8cos_chi_0.5d0":"Two different flavor leptons, no photons, no other track, no jets, M(l,l)<80 GeV, p_{T,miss}>5 GeV, cos\theta>-0.8, \chi^2<10, |d_0|>0.55 mm",
-
+    
     "selReco":"true reco signal",
-	#"selReco_D0_0.64":"D0>0.64",
-	#"selReco_eta":"cut on eta +-5",
-	#"selReco_M":"M>80",
-	#"selReco_jets_m":"jets_m>0.2",
-	#"selReco_c_p_miss_abs":"c_p_miss_abs<0.94",
-	#"selReco_c_mu_p_miss":"c_mu_p_miss.at(0)<0.80",
-	#"selReco_Ej_5":"Ej>5",
-	#"selReco_c_jj":"c_jj>-0.80",
-	#"selreco_c_jmu_against_Z":"c_jmu<0.8",
-	#"selreco_c_jmu_against_tautau":"c_jmu>-0.98",
-	#"selReco_complete":"all the previous cuts",
-	#"selReco_miei":"selReco_miei",
+	"selReco_M":"M>80",
+	"selReco_jets_m_0.2_30",
+	"selReco_jets_e_5_45",
+	"selReco_c_p_miss_abs",
+	"selReco_c_mu_p_miss",
+	"selReco_c_jj",
+	"selreco_c_jmu_against_Z_et_tautau",
+	"selReco_D0_0.3",
+	"selReco_Miss_e",
+	"selReco_Miss_pt",
+
+	
 	"selReco_complete_miei":"selReco_complete_miei",
     #"selReco_gen": "Two leptons, no photons, p_{T}>1 GeV, p_{T, miss}>5 GeV",
     #"selReco_gen_notracks": "Two leptons, no photons, no tracks, p_{T}>1 GeV, p_{T, miss}>5 GeV",
