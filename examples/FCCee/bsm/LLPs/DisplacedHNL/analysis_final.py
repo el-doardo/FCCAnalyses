@@ -518,8 +518,8 @@ cutList = {
 	"selreco_c_jmu_against_Z_et_tautau":"c_jmu2<0.8 && c_muj2<0.8 && c_jmu2>-0.8 && c_muj2>-0.8",
 	#"selreco_c_jmu_against_tautau":"c_jmu2>-0.98 && c_muj2>-0.98", ## ## unito a quello sopra e usato -0.8
 	"selReco_D0_0.3":"RecoMuon_lead_Track_absD0.at(0)>0.3",
-	"selReco_Miss_e":"All(RecoMissingEnergy_e > 15)";
-	"selReco_Miss_pt":"All(RecoMissingEnergy_pt > 10)";
+	"selReco_Miss_e":"All(RecoMissingEnergy_e > 15)",
+	"selReco_Miss_pt":"All(RecoMissingEnergy_pt > 10)",
 	#"selReco_complete":"RecoMuon_lead_Track_absD0.at(0)>0.64 && M>80 && jets_m.at(0)>0.2 && jets_m.at(1)>0.2 && c_p_miss_abs2<0.94 && c_mu_p_miss2<0.80 && jets_e.at(0)>5 && jets_e.at(1)>5 && c_jj2>-0.80 && c_jmu2<0.8 && c_muj2<0.8 && c_jmu2>-0.98 && c_muj2>-0.98",
     
 	# complete miei con d0
