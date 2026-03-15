@@ -7,7 +7,7 @@ intLumi        = 240.0e+06 #in pb-1
 ###If scaleSig or scaleBack is not defined, plots will be normalized to 1
 #scaleSig       = 0.
 #scaleBack      = 0.
-ana_tex        = "e^{+}e^{-} #rightarrow N_{1,2} #nu, N_{1,2} #rightarrow ll#nu"
+ana_tex        = "e^{+}e^{-} #rightarrow N_{1,2} #nu, N_{1,2} #rightarrow #mu jj"
 delphesVersion = '3.4.2'
 energy         = 91
 collider       = 'FCC-ee'
@@ -294,6 +294,8 @@ selections['HNL']  = [
 	#"selReco_complete",
 	#"selReco_miei",
 	"selReco_complete_miei",
+	"selReco_complete_miei_d0_03",
+	"selReco_complete",
 
 	
     #"sel2Reco_vetoes",
@@ -322,8 +324,9 @@ selections['HNL']  = [
 
 extralabel = {}
 extralabel['selNone'] = "Before selection"
-extralabel['selReco_miei'] = "selReco_miei"
-extralabel['selReco_complete_miei'] = "selReco_complete_miei"
+extralabel['selReco_miei'] = "Two jets, Leadig Muon pt > 10 GeV and all my cuts (but d_0)"
+extralabel['selReco_complete_miei'] = "Two jets, Leadig Muon pt > 10 GeV and all my cuts (but d_0) and paper cuts"
+extralabel['selReco_complete_miei_d0_03'] = "Two jets, Leadig Muon pt > 10 GeV and all my cuts (d_0 cut too) and paper cuts"
 extralabel['selReco_D0_0.64'] = "d0 > 0.64 mm"
 extralabel['selReco']="Two jets, Leadig Muon pt > 10 GeV"
 extralabel['selReco_M'] = "M>80GeV Against Z to tautau"
@@ -360,15 +363,15 @@ extralabel['sel2RecoDF_vetoes_tracks_M80_5MEpt_0.8cos']="Two different flavor le
 
 colors = {}
 
-colors['HNL_1.04e-8_30gev'] = ROOT.kCyan-7 ## ## modificato da me
-colors['HNL_8.35e-9_30gev'] = ROOT.kAzure+5
-colors['HNL_2.27e-9_30gev'] = ROOT.kBlue-7
+colors['HNL_1.04e-8_10gev'] = ROOT.kCyan-7 ## ## modificato da me
+colors['HNL_4e-10_20gev'] = ROOT.kAzure+5
+colors['HNL_4e-10_80gev'] = ROOT.kBlue-7
 colors['HNL_6.67e-10_30gev'] = ROOT.kOrange-2
-colors['HNL_4e-10_30gev'] = ROOT.kOrange+8
-colors['HNL_3.17e-11_30gev'] = ROOT.kBlue-4
+colors['HNL_8.35e-9_40gev'] = ROOT.kOrange+8
+colors['HNL_2.27e-9_20gev'] = ROOT.kBlue-4
 colors['HNL_1.04e-8_70gev'] = ROOT.kRed-4
-colors['HNL_1.04e-8_80gev'] = ROOT.kBlue-4
-colors['HNL_1.04e-8_90gev'] = ROOT.kRed+2
+colors['HNL_2.27e-9_50gev'] = ROOT.kBlue-4
+colors['HNL_3.17e-11_30gev'] = ROOT.kRed+2
 colors['HNL_3.17e-11_60gev'] = ROOT.kBlue+2
 
 colors['HNL'] = ROOT.kWhite
@@ -401,23 +404,16 @@ colors['tatanunu_m'] = 38
 plots = {}
 plots['HNL'] = {'signal':{
 	
-                    #'HNL_1.04e-8_10gev':['HNL_1.04e-8_10gev'],
-					#'HNL_4e-10_20gev':['HNL_4e-10_20gev'],
-					#'HNL_4e-10_80gev':['HNL_4e-10_80gev'],
-					#'HNL_6.67e-10_30gev':['HNL_6.67e-10_30gev'],
-					#'HNL_8.35e-9_40gev':['HNL_8.35e-9_40gev'],
-					#'HNL_2.27e-9_20gev':['HNL_2.27e-9_20gev'],
-                    #'HNL_1.04e-8_70gev':['HNL_1.04e-8_70gev'],
-					#'HNL_2.27e-9_50gev':['HNL_2.27e-9_50gev'],
-					#'HNL_3.17e-11_30gev':['HNL_3.17e-11_30gev'],
-					#'HNL_3.17e-11_60gev':['HNL_3.17e-11_60gev'],
-
-					'HNL_1.04e-8_30gev':['HNL_1.04e-8_30gev'],
-					'HNL_8.35e-9_30gev':['HNL_8.35e-9_30gev'],
-					'HNL_2.27e-9_30gev':['HNL_2.27e-9_30gev'],
+                    'HNL_1.04e-8_10gev':['HNL_1.04e-8_10gev'],
+					'HNL_4e-10_20gev':['HNL_4e-10_20gev'],
+					'HNL_4e-10_80gev':['HNL_4e-10_80gev'],
 					'HNL_6.67e-10_30gev':['HNL_6.67e-10_30gev'],
-					'HNL_4e-10_30gev':['HNL_4e-10_30gev'],
-					'HNL_3.17e-11_30gev':['HNL_3.17e-11_30gev'],	
+					'HNL_8.35e-9_40gev':['HNL_8.35e-9_40gev'],
+					'HNL_2.27e-9_20gev':['HNL_2.27e-9_20gev'],
+                    'HNL_1.04e-8_70gev':['HNL_1.04e-8_70gev'],
+					'HNL_2.27e-9_50gev':['HNL_2.27e-9_50gev'],
+					'HNL_3.17e-11_30gev':['HNL_3.17e-11_30gev'],
+					'HNL_3.17e-11_60gev':['HNL_3.17e-11_60gev'],
 
 					
 
@@ -439,15 +435,15 @@ plots['HNL'] = {'signal':{
 
 legend = {}
 
-legend['HNL_1.04e-8_30gev'] = 'U^{2}=1.04e-8, M_{N}=30 GeV'
-legend['HNL_8.35e-9_30gev'] = 'U^{2}=8.35e-9, M_{N}=30 GeV'
-legend['HNL_2.27e-9_30gev'] = 'U^{2}=2.27e-9, M_{N}=30 GeV'
+legend['HNL_1.04e-8_10gev'] = 'U^{2}=1.04e-8, M_{N}=10 GeV'
+legend['HNL_4e-10_20gev'] = 'U^{2}=4e-10, M_{N}=20 GeV'
+legend['HNL_4e-10_80gev'] = 'U^{2}=4e-10, M_{N}=80 GeV'
 legend['HNL_6.67e-10_30gev'] = 'U^{2}=6.67e-10, M_{N}=30 GeV'
-legend['HNL_4e-10_30gev'] = 'U^{2}=4e-10, M_{N}=30 GeV'
-legend['HNL_3.17e-11_30gev'] = 'U^{2}=3.17e-11, M_{N}=30 GeV'
+legend['HNL_8.35e-9_40gev'] = 'U^{2}=8.35e-9, M_{N}=40 GeV'
+legend['HNL_2.27e-9_20gev'] = 'U^{2}=2.27e-9, M_{N}=20 GeV'
 legend['HNL_1.04e-8_70gev'] = 'U^{2}=1.04e-8, M_{N}=70 GeV'
-legend['HNL_1.04e-8_80gev'] = 'U^{2}=1.04e-8, M_{N}=80 GeV'
-legend['HNL_1.04e-8_90gev'] = 'U^{2}=1.04e-8, M_{N}=90 GeV'
+legend['HNL_2.27e-9_50gev'] = 'U^{2}=2.27e-9, M_{N}=50 GeV'
+legend['HNL_3.17e-11_30gev'] = 'U^{2}=3.17e-11, M_{N}=30 GeV'
 legend['HNL_3.17e-11_60gev'] = 'U^{2}=3.17e-11, M_{N}=60 GeV'
 
 legend['HNL'] = ''
