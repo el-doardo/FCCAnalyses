@@ -23,40 +23,30 @@ processList = {
     #run over the full statistics from stage1
 
     #backgrounds
-	#'p8_ee_Zee_ecm91':{},
-    #'p8_ee_Zmumu_ecm91':{},
-    #'p8_ee_Ztautau_ecm91':{},
-    #'p8_ee_Zbb_ecm91':{},
-    #'p8_ee_Zcc_ecm91':{},
-    #'p8_ee_Zud_ecm91':{},
-    #'p8_ee_Zss_ecm91':{},
+	'p8_ee_Zee_ecm91':{},
+    'p8_ee_Zmumu_ecm91':{},
+    'p8_ee_Ztautau_ecm91':{},
+    'p8_ee_Zbb_ecm91':{},
+    'p8_ee_Zcc_ecm91':{},
+    'p8_ee_Zud_ecm91':{},
+    'p8_ee_Zss_ecm91':{},
        
     ### privately produced backgrounds ###
 
-	#"numujj":{},
+	"numujj":{},
 
   ## ##
 
-		#"HNL_1.04e-8_10gev":{},
-		#"HNL_1.04e-8_70gev":{},
-		#"HNL_4e-10_20gev":{},
-		#"HNL_4e-10_80gev":{},	
-		#"HNL_6.67e-10_30gev":{},
-		#"HNL_8.35e-9_40gev":{},
-		#"HNL_2.27e-9_20gev":{},
-		#"HNL_2.27e-9_50gev":{},
-		#"HNL_3.17e-11_30gev":{},
-		#"HNL_3.17e-11_60gev":{},
-
-		"HNL_3.17e-11_10gev":{},
-		"HNL_3.17e-11_20gev":{},
+		"HNL_1.04e-8_10gev":{},
+		"HNL_1.04e-8_70gev":{},
+		"HNL_4e-10_20gev":{},
+		"HNL_4e-10_80gev":{},	
+		"HNL_6.67e-10_30gev":{},
+		"HNL_8.35e-9_40gev":{},
+		"HNL_2.27e-9_20gev":{},
+		"HNL_2.27e-9_50gev":{},
 		"HNL_3.17e-11_30gev":{},
-		"HNL_3.17e-11_40gev":{},
-		"HNL_3.17e-11_50gev":{},
 		"HNL_3.17e-11_60gev":{},
-		"HNL_3.17e-11_70gev":{},
-		"HNL_3.17e-11_80gev":{},
-		"HNL_3.17e-11_90gev":{},	
 
 }
 
