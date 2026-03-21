@@ -729,7 +729,7 @@ procDictAdd = {
 
   ########### set03 ##########
   
-    'HNL_set03_1.04e-8_10gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 7.258e-05, "kfactor": 1.0, "matchingEfficiency": 1.0}, ## ## valore fittizio perché la generazione è stata settata male
+    'HNL_set03_1.04e-8_10gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 6.935e-05, "kfactor": 1.0, "matchingEfficiency": 1.0}, 
     'HNL_set03_1.04e-8_20gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 6.258e-05, "kfactor": 1.0, "matchingEfficiency": 1.0},
     'HNL_set03_1.04e-8_30gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 5.557e-05, "kfactor": 1.0, "matchingEfficiency": 1.0},
     'HNL_set03_1.04e-8_40gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 4.731e-05, "kfactor": 1.0, "matchingEfficiency": 1.0},
