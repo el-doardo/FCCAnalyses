@@ -814,7 +814,7 @@ procDictAdd = {
     'HNL_set04_6.67e-10_50gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.203e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
     'HNL_set04_6.67e-10_60gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 8.45e-07, "kfactor": 1.0, "matchingEfficiency": 1.0},
     'HNL_set04_6.67e-10_70gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 4.82e-07, "kfactor": 1.0, "matchingEfficiency": 1.0},
-	'HNL_set04_6.67e-10_80gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.82e-07, "kfactor": 1.0, "matchingEfficiency": 1.0}, ## ## dummy value to fix with a real one
+	'HNL_set04_6.67e-10_80gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 2.118e-07, "kfactor": 1.0, "matchingEfficiency": 1.0}, ## ## dummy value to fix with a real one
 	'HNL_set04_6.67e-10_90gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 2.967e-09, "kfactor": 1.0, "matchingEfficiency": 1.0},
   
     
