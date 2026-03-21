@@ -786,35 +786,36 @@ procDictAdd = {
 
   ########### set04 ##########
   
-    'HNL_set04_1.04e-8_10gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 1.903e-05, "kfactor": 1.0, "matchingEfficiency": 1.0}, ## ## modificato da me
-    'HNL_set04_1.04e-8_20gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 1.603e-05, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set04_1.04e-8_30gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 1.409e-05, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set04_1.04e-8_40gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 1.192e-05, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set04_1.04e-8_50gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 9.403e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set04_1.04e-8_60gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 6.61e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set04_1.04e-8_70gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 3.768e-06, "kfactor": 1.0, "matchingEfficiency": 1.0}, ## ## mod da me
-    'HNL_set04_1.04e-8_80gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 1.408e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
-	  'HNL_set04_1.04e-8_90gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 2.329e-08, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set04_1.04e-8_10gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 3.579e-05, "kfactor": 1.0, "matchingEfficiency": 1.0}, ## ## modificato da me
+    'HNL_set04_1.04e-8_20gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 3.155e-05, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set04_1.04e-8_30gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 2.795e-05, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set04_1.04e-8_40gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 2.377e-05, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set04_1.04e-8_50gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.876e-05, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set04_1.04e-8_60gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.318e-05, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set04_1.04e-8_70gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 7.515e-06, "kfactor": 1.0, "matchingEfficiency": 1.0}, ## ## mod da me
+    'HNL_set04_1.04e-8_80gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 3.322e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	  'HNL_set04_1.04e-8_90gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 4.611e-08, "kfactor": 1.0, "matchingEfficiency": 1.0},
 
-    'HNL_set04_4e-10_10gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 1.717e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set04_4e-10_20gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 1.522e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set04_4e-10_30gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 1.349e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set04_4e-10_40gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 1.145e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set04_4e-10_50gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 9.035e-07, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set04_4e-10_60gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 6.351e-07, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set04_4e-10_70gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 3.622e-07, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set04_4e-10_80gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 1.446e-07, "kfactor": 1.0, "matchingEfficiency": 1.0},
-	  'HNL_set04_4e-10_90gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 2.219e-09, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set04_4e-10_10gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.376e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set04_4e-10_20gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.214e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set04_4e-10_30gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.075e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set04_4e-10_40gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 9.141e-07, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set04_4e-10_50gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 7.214e-07, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set04_4e-10_60gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 5.068e-07, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set04_4e-10_70gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 2.89e-07, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set04_4e-10_80gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.278e-07, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	  'HNL_set04_4e-10_90gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.773e-09, "kfactor": 1.0, "matchingEfficiency": 1.0},
 
 
-    'HNL_set04_6.67e-10_10gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 1.22431787e-04, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set04_6.67e-10_20gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 0.00011644139999999999, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set04_6.67e-10_30gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 0.00010458925, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set04_6.67e-10_40gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 8.906455999999998e-05, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set04_6.67e-10_50gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 7.043142000000002e-05, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set04_6.67e-10_60gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 4.9687772e-05, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set04_6.67e-10_70gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 2.848299404122172e-05, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set04_6.67e-10_80gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 1.55565461531e-05, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set04_6.67e-10_10gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 2.295e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set04_6.67e-10_20gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 2.024e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set04_6.67e-10_30gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.792e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set04_6.67e-10_40gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.524e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set04_6.67e-10_50gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.203e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set04_6.67e-10_60gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 8.45e-07, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set04_6.67e-10_70gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 4.82e-07, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_set04_6.67e-10_80gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 1.55565461531e-05, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_set04_6.67e-10_90gev':{"numberOfEvents": 50000, "sumOfWeights": 50000, "crossSection": 1.55565461531e-05, "kfactor": 1.0, "matchingEfficiency": 1.0},
   
     
     
