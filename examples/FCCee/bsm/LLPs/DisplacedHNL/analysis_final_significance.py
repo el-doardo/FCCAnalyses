@@ -37,7 +37,7 @@ processList = {
 
   ## ##
 
-    "HNL_1.04e-8_10gev":{},
+    	"HNL_1.04e-8_10gev":{},
 		"HNL_1.04e-8_20gev":{},
 		"HNL_1.04e-8_30gev":{},
 		"HNL_1.04e-8_40gev":{},
@@ -47,7 +47,7 @@ processList = {
 		"HNL_1.04e-8_80gev":{},
 		"HNL_1.04e-8_90gev":{},
             
-    "HNL_4e-10_10gev":{},
+    	"HNL_4e-10_10gev":{},
 		"HNL_4e-10_20gev":{},
 		"HNL_4e-10_30gev":{},
 		"HNL_4e-10_40gev":{},
@@ -964,26 +964,26 @@ cutList = {
 	#"selReco_M":"M>80",
 	#"selReco_eta":"All(RecoParticles_eta > -5) && All(RecoParticles_eta < 5)",
 	#"selReco_jets_m_0.2":"jets_m.at(0)>0.2 && jets_m.at(1)>0.2",
-	"selReco_jets_m_30":"jets_m.at(0)<30 && jets_m.at(1)<30",
+	#"selReco_jets_m_30":"jets_m.at(0)<30 && jets_m.at(1)<30",
 	#"selReco_jets_e_5":"jets_e.at(0)>5 && jets_e.at(1)>5",
-	"selReco_jets_e_45":"jets_e.at(0)<45 && jets_e.at(1)<45",
+	#"selReco_jets_e_45":"jets_e.at(0)<45 && jets_e.at(1)<45",
 	#"selReco_c_p_miss_abs":"c_p_miss_abs2<0.94",
 	#"selReco_c_mu_p_miss":"c_mu_p_miss2<0.80",
 	#"selReco_Ej_5":"jets_e.at(0)>5 && jets_e.at(1)>5", ## ## unito a sopra
 	#"selReco_c_jj":"c_jj2>-0.80",
 	#"selreco_c_jmu_against_Z":"c_jmu2<0.8 && c_muj2<0.8",
-	"selreco_c_jmu_against_tautau":"c_jmu2>-0.8 && c_muj2>-0.8", ## ## usato -0.8 invece di -0.98
-	"selReco_D0_0.3":"RecoMuon_lead_Track_absD0.at(0)>0.3",
-	"selReco_Miss_e":"All(RecoMissingEnergy_e > 15)",
-	"selReco_Miss_pt":"All(RecoMissingEnergy_pt > 10)",
-	#"selReco_complete":"RecoMuon_lead_Track_absD0.at(0)>0.64 && M>80 && jets_m.at(0)>0.2 && jets_m.at(1)>0.2 && c_p_miss_abs2<0.94 && c_mu_p_miss2<0.80 && jets_e.at(0)>5 && jets_e.at(1)>5 && c_jj2>-0.80 && c_jmu2<0.8 && c_muj2<0.8 && c_jmu2>-0.98 && c_muj2>-0.98",
+	#"selreco_c_jmu_against_tautau":"c_jmu2>-0.8 && c_muj2>-0.8", ## ## usato -0.8 invece di -0.98
+	#"selReco_D0_0.3":"RecoMuon_lead_Track_absD0.at(0)>0.3",
+	#"selReco_Miss_e":"All(RecoMissingEnergy_e > 15)",
+	#"selReco_Miss_pt":"All(RecoMissingEnergy_pt > 10)",
+	##"selReco_complete":"RecoMuon_lead_Track_absD0.at(0)>0.64 && M>80 && jets_m.at(0)>0.2 && jets_m.at(1)>0.2 && c_p_miss_abs2<0.94 && c_mu_p_miss2<0.80 && jets_e.at(0)>5 && jets_e.at(1)>5 && c_jj2>-0.80 && c_jmu2<0.8 && c_muj2<0.8 && c_jmu2>-0.98 && c_muj2>-0.98",
     
 	# complete miei con d0
 	"selReco_complete_miei_d0":"All(RecoMissingEnergy_e > 15) && All(RecoMissingEnergy_pt > 10) && jets_m.at(0)<30 && jets_m.at(1)<30 && jets_e.at(0)<45 && jets_e.at(1)<45 && RecoMuon_lead_Track_absD0.at(0)>0.3 && M>80 && jets_m.at(0)>0.2 && jets_m.at(1)>0.2 && c_p_miss_abs2<0.94 && c_mu_p_miss2<0.80 && jets_e.at(0)>5 && jets_e.at(1)>5 && c_jj2>-0.80 && c_jmu2<0.8 && c_muj2<0.8 && c_jmu2>-0.8 && c_muj2>-0.8",
 	#"selReco_miei":"All(RecoMissingEnergy_e > 15) && All(RecoMissingEnergy_pt > 10) && jets_m.at(0)<30 && jets_m.at(1)<30 && jets_e.at(0)<45 && jets_e.at(1)<45 && RecoMuon_lead_Track_absD0.at(0)>0.3 && M>80 && c_mu_p_miss2<0.80 && jets_e.at(0)>5 && jets_e.at(1)>5 && c_jj2>-0.80 && c_jmu2>-0.8 && c_muj2>-0.8",
 
 	#complete miei senza d0
-	"selReco_complete_miei":"All(RecoMissingEnergy_e > 15) && All(RecoMissingEnergy_pt > 10) && jets_m.at(0)<30 && jets_m.at(1)<30 && jets_e.at(0)<45 && jets_e.at(1)<45 && M>80 && jets_m.at(0)>0.2 && jets_m.at(1)>0.2 && c_p_miss_abs2<0.94 && c_mu_p_miss2<0.80 && jets_e.at(0)>5 && jets_e.at(1)>5 && c_jj2>-0.80 && c_jmu2<0.8 && c_muj2<0.8 && c_jmu2>-0.8 && c_muj2>-0.8",
+	#"selReco_complete_miei":"All(RecoMissingEnergy_e > 15) && All(RecoMissingEnergy_pt > 10) && jets_m.at(0)<30 && jets_m.at(1)<30 && jets_e.at(0)<45 && jets_e.at(1)<45 && M>80 && jets_m.at(0)>0.2 && jets_m.at(1)>0.2 && c_p_miss_abs2<0.94 && c_mu_p_miss2<0.80 && jets_e.at(0)>5 && jets_e.at(1)>5 && c_jj2>-0.80 && c_jmu2<0.8 && c_muj2<0.8 && c_jmu2>-0.8 && c_muj2>-0.8",
 	#"selReco_miei":"All(RecoMissingEnergy_e > 15) && All(RecoMissingEnergy_pt > 10) && jets_m.at(0)<30 && jets_m.at(1)<30 && jets_e.at(0)<45 && jets_e.at(1)<45 && M>80 && c_mu_p_miss2<0.80 && jets_e.at(0)>5 && jets_e.at(1)>5 && c_jj2>-0.80 && c_jmu2>-0.8 && c_muj2>-0.8",
 
 	
@@ -998,21 +998,21 @@ cutLabels = {
     "selReco":"true reco signal",
 	#"selReco_M":"M>80",
 	#"selReco_jets_m_0.2":"$ jets m 0.2 $",
-	"selReco_jets_m_30":"$ jets m < 30 $",
+	#"selReco_jets_m_30":"$ jets m < 30 $",
 	#"selReco_jets_e_5":"$ jet e > 5 $",
-	"selReco_jets_e_45":" $ jet e < 45 $",
+	#"selReco_jets_e_45":" $ jet e < 45 $",
 	#"selReco_c_p_miss_abs": " $ |cos(p_{miss})| < 0.94 $ ",
 	#"selReco_c_mu_p_miss": " $ cos(\mu, p_{miss}) < 0.8 $ ",
 	#"selReco_c_jj":"$cos(j,j)>-0.8",
 	#"selreco_c_jmu_against_Z":"(hadr) $ cos(j,\mu)<0.8 $",
-	"selreco_c_jmu_against_tautau":"$(\tau \tau)$ $ cos(j,\mu)> - 0.80 $",
-	"selReco_D0_0.3":"DO>0.3 mm",
-	"selReco_Miss_e":"Missing E >15 GeV",
-	"selReco_Miss_pt":"Missing pt >10 GeV",
+	#"selreco_c_jmu_against_tautau":"$(\tau \tau)$ $ cos(j,\mu)> - 0.80 $",
+	#"selReco_D0_0.3":"DO>0.3 mm",
+	#"selReco_Miss_e":"Missing E >15 GeV",
+	#"selReco_Miss_pt":"Missing pt >10 GeV",
 
 	
 	"selReco_complete_miei_d0":"total cuts",
-	"selReco_complete_miei":"total cuts",
+	#"selReco_complete_miei":"total cuts",
     #"selReco_gen": "Two leptons, no photons, p_{T}>1 GeV, p_{T, miss}>5 GeV",
     #"selReco_gen_notracks": "Two leptons, no photons, no tracks, p_{T}>1 GeV, p_{T, miss}>5 GeV",
     #"selReco_gen_notrack_2eh": "Two leptons, no photons, no tracks, no neutral hadrons, p_{T}>1 GeV, p_{T, miss}>5 GeV",
