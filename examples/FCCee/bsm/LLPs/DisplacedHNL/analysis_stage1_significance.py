@@ -48,8 +48,33 @@ processList = {
 		#"HNL_3.17e-11_30gev":{},
 		#"HNL_3.17e-11_60gev":{},
 
-		
-		"HNL_1.04e-8_10gev":{},
+		"HNL_set06_8.35e-9_10gev":{},
+		"HNL_set06_8.35e-9_20gev":{},
+		"HNL_set06_8.35e-9_30gev":{},
+		"HNL_set06_8.35e-9_40gev":{},
+		"HNL_set06_8.35e-9_50gev":{},
+		"HNL_set06_8.35e-9_60gev":{},
+		"HNL_set06_8.35e-9_70gev":{},
+		"HNL_set06_8.35e-9_80gev":{},
+		"HNL_set06_8.35e-9_90gev":{},
+
+		"HNL_set06_2.27e-9_10gev":{},
+		"HNL_set06_2.27e-9_20gev":{},
+		"HNL_set06_2.27e-9_30gev":{},
+		"HNL_set06_2.27e-9_40gev":{},
+		"HNL_set06_2.27e-9_50gev":{},
+		"HNL_set06_2.27e-9_60gev":{},
+		"HNL_set06_2.27e-9_70gev":{},
+		"HNL_set06_2.27e-9_80gev":{},
+		"HNL_set06_2.27e-9_90gev":{},  
+			
+
+	
+}
+
+processList_ = {
+
+	"HNL_1.04e-8_10gev":{},
 		"HNL_1.04e-8_20gev":{},
 		"HNL_1.04e-8_30gev":{},
 		"HNL_1.04e-8_40gev":{},
@@ -468,75 +493,7 @@ processList = {
 		#"HNL_set06_3.17e-11_70gev":{},
 		#"HNL_set06_3.17e-11_80gev":{},
 		#"HNL_set06_3.17e-11_90gev":{},
-
-    
-			
-
-	
-}
-
-processList_ = {
-
-
-		"HNL_1.04e-8_10gev":{},
-		"HNL_1.04e-8_20gev":{},
-		"HNL_1.04e-8_30gev":{},
-		"HNL_1.04e-8_40gev":{},
-		"HNL_1.04e-8_50gev":{},
-		"HNL_1.04e-8_60gev":{},
-		"HNL_1.04e-8_70gev":{},
-		"HNL_1.04e-8_80gev":{},
-		"HNL_1.04e-8_90gev":{},
-
-		"HNL_4e-10_10gev":{},
-		"HNL_4e-10_20gev":{},
-		"HNL_4e-10_30gev":{},
-		"HNL_4e-10_40gev":{},
-		"HNL_4e-10_50gev":{},
-		"HNL_4e-10_60gev":{},
-		"HNL_4e-10_70gev":{},
-		"HNL_4e-10_80gev":{},
-		"HNL_4e-10_90gev":{},
-
-		"HNL_6.67e-10_10gev":{},
-		"HNL_6.67e-10_20gev":{},
-		"HNL_6.67e-10_30gev":{},
-		"HNL_6.67e-10_40gev":{},
-		"HNL_6.67e-10_50gev":{},
-		"HNL_6.67e-10_60gev":{},
-		"HNL_6.67e-10_70gev":{},
-		"HNL_6.67e-10_80gev":{},
-		"HNL_6.67e-10_90gev":{},
-
-		"HNL_8.35e-9_10gev":{},
-		"HNL_8.35e-9_20gev":{},
-		"HNL_8.35e-9_30gev":{},
-		"HNL_8.35e-9_40gev":{},
-		"HNL_8.35e-9_50gev":{},
-		"HNL_8.35e-9_60gev":{},
-		"HNL_8.35e-9_70gev":{},
-		"HNL_8.35e-9_80gev":{},
-		"HNL_8.35e-9_90gev":{},
-
-		"HNL_2.27e-9_10gev":{},
-		"HNL_2.27e-9_20gev":{},
-		"HNL_2.27e-9_30gev":{},
-		"HNL_2.27e-9_40gev":{},
-		"HNL_2.27e-9_50gev":{},
-		"HNL_2.27e-9_60gev":{},
-		"HNL_2.27e-9_70gev":{},
-		"HNL_2.27e-9_80gev":{},
-		"HNL_2.27e-9_90gev":{},
-
-		"HNL_3.17e-11_10gev":{},
-		"HNL_3.17e-11_20gev":{},
-		"HNL_3.17e-11_30gev":{},
-		"HNL_3.17e-11_40gev":{},
-		"HNL_3.17e-11_50gev":{},
-		"HNL_3.17e-11_60gev":{},
-		"HNL_3.17e-11_70gev":{},
-		"HNL_3.17e-11_80gev":{},
-		"HNL_3.17e-11_90gev":{},
+		
 
         
 }
