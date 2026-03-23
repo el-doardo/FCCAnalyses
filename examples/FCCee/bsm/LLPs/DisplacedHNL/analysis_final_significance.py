@@ -848,25 +848,25 @@ procDictAdd = {
 
   ########### set06 ##########
   
-    'HNL_set06_1.04e-8_10gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.903e-05, "kfactor": 1.0, "matchingEfficiency": 1.0}, ## ## modificato da me
-    'HNL_set06_1.04e-8_20gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.603e-05, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set06_1.04e-8_30gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.409e-05, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set06_1.04e-8_40gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.192e-05, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set06_1.04e-8_50gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 9.403e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set06_1.04e-8_60gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 6.61e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set06_1.04e-8_70gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 3.768e-06, "kfactor": 1.0, "matchingEfficiency": 1.0}, ## ## mod da me
-    'HNL_set06_1.04e-8_80gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.408e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
-	  'HNL_set06_1.04e-8_90gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 2.329e-08, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set06_1.04e-8_10gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.713e-05, "kfactor": 1.0, "matchingEfficiency": 1.0}, ## ## modificato da me
+    'HNL_set06_1.04e-8_20gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.56e-05, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set06_1.04e-8_30gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.391e-05, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set06_1.04e-8_40gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.184e-05, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set06_1.04e-8_50gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 9.367e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set06_1.04e-8_60gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 6.59e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set06_1.04e-8_70gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 3.75e-06, "kfactor": 1.0, "matchingEfficiency": 1.0}, ## ## mod da me
+    'HNL_set06_1.04e-8_80gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 3.245e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_set06_1.04e-8_90gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 2.299e-08, "kfactor": 1.0, "matchingEfficiency": 1.0},
 
-    'HNL_set06_4e-10_10gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.717e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set06_4e-10_20gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.522e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set06_4e-10_30gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.349e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set06_4e-10_40gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.145e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set06_4e-10_50gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 9.035e-07, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set06_4e-10_60gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 6.351e-07, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set06_4e-10_70gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 3.622e-07, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set06_4e-10_80gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.446e-07, "kfactor": 1.0, "matchingEfficiency": 1.0},
-	  'HNL_set06_4e-10_90gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 2.219e-09, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set06_4e-10_10gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 6.59e-07, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set06_4e-10_20gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 5.999e-07, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set06_4e-10_30gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 5.35e-07, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set06_4e-10_40gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 4.556e-07, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set06_4e-10_50gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 3.603e-07, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set06_4e-10_60gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 2.534e-07, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set06_4e-10_70gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.443e-07, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set06_4e-10_80gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.248e-07, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	  'HNL_set06_4e-10_90gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 8.843e-10, "kfactor": 1.0, "matchingEfficiency": 1.0},
 
 
     'HNL_set06_6.67e-10_10gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.099e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
@@ -891,15 +891,15 @@ procDictAdd = {
 	'HNL_set06_8.35e-9_90gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 7.008e-11, "kfactor": 1.0, "matchingEfficiency": 1.0},
     
     
-    'HNL_set06_2.27e-9_10gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 3.895e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set06_2.27e-9_20gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 3.456e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set06_2.27e-9_30gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 3.059e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set06_2.27e-9_40gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 2.599e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set06_2.27e-9_50gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 2.051e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set06_2.27e-9_60gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.443e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set06_2.27e-9_70gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 8.221e-07, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set06_2.27e-9_80gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 4.543e-07, "kfactor": 1.0, "matchingEfficiency": 1.0},
-	'HNL_set06_2.27e-9_90gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 5.047e-09, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set06_2.27e-9_10gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.358e-05, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set06_2.27e-9_20gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.25e-05, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set06_2.27e-9_30gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.117e-05, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set06_2.27e-9_40gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 9.525e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set06_2.27e-9_50gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 7.538e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set06_2.27e-9_60gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 5.303e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set06_2.27e-9_70gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 3.024e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set06_2.27e-9_80gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 3.032e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_set06_2.27e-9_90gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.844e-08, "kfactor": 1.0, "matchingEfficiency": 1.0},
 
   
 }
