@@ -838,6 +838,19 @@ procDictAdd = {
     'HNL_set04_3.17e-11_80gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.013e-08, "kfactor": 1.0, "matchingEfficiency": 1.0},
 	'HNL_set04_3.17e-11_90gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.405e-10, "kfactor": 1.0, "matchingEfficiency": 1.0},
 
+
+	'HNL_set04_2e-12_10gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 6.883e-09, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_set04_2e-12_20gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 6.066e-09, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_set04_2e-12_30gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 5.375e-09, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_set04_2e-12_40gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 4.57e-09, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_set04_2e-12_50gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 3.607e-09, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_set04_2e-12_60gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 2.534e-09, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_set04_2e-12_70gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.445e-09, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_set04_2e-12_80gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 6.389e-10, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_set04_2e-12_90gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 8.867e-12, "kfactor": 1.0, "matchingEfficiency": 1.0},
+
+	
+
   ########### set05 ##########
   
     'HNL_set05_1.04e-8_10gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.789e-05, "kfactor": 1.0, "matchingEfficiency": 1.0}, ## ## modificato da me
@@ -894,6 +907,18 @@ procDictAdd = {
     'HNL_set05_3.17e-11_80gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 6.359e-09, "kfactor": 1.0, "matchingEfficiency": 1.0},
 	'HNL_set05_3.17e-11_90gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 7.034e-11, "kfactor": 1.0, "matchingEfficiency": 1.0},
 
+
+	'HNL_set05_2e-12_10gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 3.441e-09, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_set05_2e-12_20gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 3.035e-09, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_set05_2e-12_30gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 2.687e-09, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_set05_2e-12_40gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 2.287e-09, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_set05_2e-12_50gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.805e-09, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_set05_2e-12_60gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.269e-09, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_set05_2e-12_70gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 7.231e-10, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_set05_2e-12_80gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 4.012e-10, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_set05_2e-12_90gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 4.438e-12, "kfactor": 1.0, "matchingEfficiency": 1.0},
+
+
   ########### set06 ##########
   
     'HNL_set06_1.04e-8_10gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.713e-05, "kfactor": 1.0, "matchingEfficiency": 1.0}, ## ## modificato da me
@@ -928,14 +953,14 @@ procDictAdd = {
 	'HNL_set06_6.67e-10_90gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.475e-09, "kfactor": 1.0, "matchingEfficiency": 1.0},
   
   
-    'HNL_set06_8.35e-9_10gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.422e-05, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set06_8.35e-9_20gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.264e-05, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set06_8.35e-9_30gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.123e-05, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set06_8.35e-9_40gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 9.539e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set06_8.35e-9_50gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 7.527e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set06_8.35e-9_60gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 5.299e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set06_8.35e-9_70gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 3.025e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
-    'HNL_set06_8.35e-9_80gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.13e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set06_8.35e-9_10gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.376e-05, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set06_8.35e-9_20gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.252e-05, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set06_8.35e-9_30gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.117e-05, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set06_8.35e-9_40gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 9.51e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set06_8.35e-9_50gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 7.521e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set06_8.35e-9_60gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 5.291e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set06_8.35e-9_70gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 3.011e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
+    'HNL_set06_8.35e-9_80gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 2.605e-06, "kfactor": 1.0, "matchingEfficiency": 1.0},
 	'HNL_set06_8.35e-9_90gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.846e-08, "kfactor": 1.0, "matchingEfficiency": 1.0},
     
     
@@ -948,6 +973,18 @@ procDictAdd = {
     'HNL_set06_2.27e-9_70gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 8.186e-07, "kfactor": 1.0, "matchingEfficiency": 1.0},
     'HNL_set06_2.27e-9_80gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 7.082e-07, "kfactor": 1.0, "matchingEfficiency": 1.0},
 	'HNL_set06_2.27e-9_90gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 5.019e-09, "kfactor": 1.0, "matchingEfficiency": 1.0},
+
+	
+
+	'HNL_set06_2e-12_10gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 3.295e-09, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_set06_2e-12_20gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 2.999e-09, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_set06_2e-12_30gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 2.675e-09, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_set06_2e-12_40gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 2.278e-09, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_set06_2e-12_50gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.801e-09, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_set06_2e-12_60gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.267e-09, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_set06_2e-12_70gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 7.276e-10, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_set06_2e-12_80gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 6.229e-10, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_set06_2e-12_90gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 4.451e-12, "kfactor": 1.0, "matchingEfficiency": 1.0},
 
   
 }
