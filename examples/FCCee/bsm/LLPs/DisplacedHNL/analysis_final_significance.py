@@ -766,7 +766,20 @@ procDictAdd = {
     'HNL_set03_3.17e-11_60gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 8.015e-08, "kfactor": 1.0, "matchingEfficiency": 1.0},
     'HNL_set03_3.17e-11_70gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 4.571e-08, "kfactor": 1.0, "matchingEfficiency": 1.0},
     'HNL_set03_3.17e-11_80gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.666e-08, "kfactor": 1.0, "matchingEfficiency": 1.0},
-	  'HNL_set03_3.17e-11_90gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 2.798e-10, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_set03_3.17e-11_90gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 2.798e-10, "kfactor": 1.0, "matchingEfficiency": 1.0},
+
+
+	'HNL_set03_2e-12_10gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.335e-08, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_set03_2e-12_20gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.203e-08, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_set03_2e-12_30gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.069e-08, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_set03_2e-12_40gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 9.098e-09, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_set03_2e-12_50gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 7.181e-09, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_set03_2e-12_60gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 5.057e-09, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_set03_2e-12_70gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 2.884e-09, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_set03_2e-12_80gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.046e-09, "kfactor": 1.0, "matchingEfficiency": 1.0},
+	'HNL_set03_2e-12_90gev':{"numberOfEvents": 10000, "sumOfWeights": 10000, "crossSection": 1.773e-11, "kfactor": 1.0, "matchingEfficiency": 1.0},
+
+	
 
   ########### set04 ##########
   
