@@ -665,6 +665,10 @@ ROOT.gPad.Update()
     canvas.GetFrame().SetBorderSize(12)
     canvas.Modified()
     canvas.Update()
+        ## ## aggiunti da me (3 righe successive)
+        hStack.GetYaxis().SetRangeUser(1e-6, 1e25)
+        canvas.Modified()
+        canvas.Update()
 
     if 'AAAyields' in name:
         dummyh = ROOT.TH1F("", "", 1, 0, 1)
