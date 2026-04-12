@@ -294,7 +294,7 @@ selections['HNL']  = [
 	#"selreco_c_jmu_against_tautau",
 	#"selReco_complete",
 	#"selReco_miei",
-	#"selReco_complete_miei",
+	"selReco_complete_miei",
 	#"selReco_complete_miei_d0_03",
 	"selReco_complete",
 
@@ -326,7 +326,7 @@ selections['HNL']  = [
 extralabel = {}
 extralabel['selNone'] = "Before selection"
 extralabel['selReco_miei'] = "Two jets, Leadig Muon pt > 10 GeV and all my cuts (but d_0)"
-extralabel['selReco_complete_miei'] = "Two jets, Leadig Muon pt > 10 GeV and all my cuts (but d_0) and paper cuts"
+extralabel['selReco_complete_miei'] = "Two jets, Leadig Muon pt > 10 GeV, PV selection cut and second selection cut"
 extralabel['selReco_complete_miei_d0_03'] = "Two jets, Leadig Muon pt > 10 GeV and all my cuts (d_0 cut too) and paper cuts"
 extralabel['selReco_D0_0.64'] = "d0 > 0.64 mm"
 extralabel['selReco']="Two jets, Leadig Muon pt > 10 GeV"
@@ -339,7 +339,7 @@ extralabel['selReco_Ej_5'] = "Requested by the paper with inclusive algorithm (n
 extralabel['selReco_c_jj'] = "c_jj >-08 Against Z to bb, cc and tautau"
 extralabel['selreco_c_jmu_against_Z'] = "c_jmu<0.8 Against Z to qq"
 extralabel['selreco_c_jmu_against_tautau'] = "c_jmu<0.8>-0.94 Against Z to tautau"
-extralabel['selReco_complete'] = "All the previous cuts"
+extralabel['selReco_complete'] = "All the PV"
 
 
 extralabel['sel2Reco_vetoes']="Two leptons, no photons and jets"
