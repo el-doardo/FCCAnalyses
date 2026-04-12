@@ -942,7 +942,7 @@ histoList = {
     #"Reco_DecayVertexMuon_lead.chi2":       {"name":"RecoDecayVertexMuon_lead.chi2",        "title":"Reco decay lepton vertex #chi^{2}",          "bin":100,"xmin":-10 ,"xmax":90},
 	#"Log_chi2":       						{"name":"Log_chi2",        						"title":"Log Reco decay lepton vertex #chi^{2}",      "bin":100,"xmin":-1 ,"xmax":6},
 
-	"M":									{"name":"M",    				"title":"M(#Sigma_{i} p_{vis,i} + p_{miss}) #; (GeV)",    	"bin":100, "xmin":0,"xmax":100},
+	"M":									{"name":"M",    				"title":"M(#Sigma_{i} p_{vis,i} + p_{miss}) [GeV]",    	"bin":100, "xmin":0,"xmax":100},
 	#"c_p_miss_abs":							{"name":"c_p_miss_abs",    		"title":"#abs{#cos{p_{miss}}}",          	 	"bin":100, "xmin":-0.2,"xmax":1.2},
 	#"c_mu_p_miss":							{"name":"c_mu_p_miss",    		"title":"#cos{#mu, p_{miss}",          	 		"bin":100, "xmin":-1.2,"xmax":1.2},
 	#"c_jj":									{"name":"c_jj",    				"title":"#cos{j,j}",          			 		"bin":100, "xmin":-1.2,"xmax":1.2},
