@@ -539,24 +539,39 @@ def drawStack(name, ylabel, legend, leftText, rightText, formats, directory,
     if xmin != -1 and xmax != -1:
         h_dummy.GetXaxis().SetLimits(xmin, xmax)
 
-    h_dummy.Draw("HIST")
-    if stacksig:
-        hStack.Draw("HIST SAME")
-        if plotStatUnc:
-            # sig+bkg uncertainty
-            hUnc_sig_bkg = formatStatUncHist(hStack.GetHists(), "sig_bkg")
-            hUnc_sig_bkg.Draw("E2 SAME")
-    else:
-        hStackBkg.Draw("HIST SAME")
-        hStackSig.Draw("HIST SAME NOSTACK")
-        if plotStatUnc:
-            # bkg-only uncertainty
-            hUnc_bkg = formatStatUncHist(hStackBkg.GetHists(), "bkg_only")
-            hUnc_bkg.Draw("E2 SAME")
-            for sHist in hStackSig.GetHists():
-                # sigs uncertainty
-                hUnc_sig = formatStatUncHist([sHist], "sig", 3245)
-                hUnc_sig.Draw("E2 SAME")
+            ## ## commentate le prime righe e aggiunte le ultime 8 (circa 8)
+                  
+    #h_dummy.Draw("HIST")
+                  
+    #if stacksig:
+    #    hStack.Draw("HIST SAME")
+    #    if plotStatUnc:
+    #        # sig+bkg uncertainty
+    #        hUnc_sig_bkg = formatStatUncHist(hStack.GetHists(), "sig_bkg")
+    #        hUnc_sig_bkg.Draw("E2 SAME")
+    #else:
+    #    hStackBkg.Draw("HIST SAME")
+    #    hStackSig.Draw("HIST SAME NOSTACK")
+    #    if plotStatUnc:
+    #        # bkg-only uncertainty
+    #        hUnc_bkg = formatStatUncHist(hStackBkg.GetHists(), "bkg_only")
+    #        hUnc_bkg.Draw("E2 SAME")
+    #        for sHist in hStackSig.GetHists():
+    #            # sigs uncertainty
+    #            hUnc_sig = formatStatUncHist([sHist], "sig", 3245)
+    #            hUnc_sig.Draw("E2 SAME")
+
+        h_dummy.Draw("HIST")
+
+        if stacksig:
+            hStack.Draw("HIST SAME")
+        else:
+            hStackBkg.Draw("HIST SAME")
+            hStackSig.Draw("HIST SAME NOSTACK")
+
+# FORZA asse Y
+hStack.SetMaximum(1e25)
+hStack.SetMinimum(1e-6)
 
     # x limits
     if xmin == -1:
@@ -598,14 +613,8 @@ def drawStack(name, ylabel, legend, leftText, rightText, formats, directory,
         sys.exit(3)
 
 
-        ## ## ho modificato commentando le due righe aggiungendo le successive 4
-    #h_dummy.SetMaximum(1e23)
-    #h_dummy.SetMinimum(1e-6)
-
-        ymax = 1e25
-        ymin = 1e-6
-        h_dummy.SetMaximum(ymax)
-        h_dummy.SetMinimum(ymin)
+    h_dummy.SetMaximum(1e23)
+    h_dummy.SetMinimum(1e-6)
 
     legend.Draw()
     if legend2 is not None:
