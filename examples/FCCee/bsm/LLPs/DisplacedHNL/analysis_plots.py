@@ -365,15 +365,15 @@ extralabel['sel2RecoDF_vetoes_tracks_M80_5MEpt_0.8cos']="Two different flavor le
 colors = {}
 
 colors['HNL_1.04e-8_10gev'] = ROOT.kCyan-7 ## ## modificato da me
-colors['HNL_4e-10_20gev'] = ROOT.kAzure+5
-colors['HNL_4e-10_80gev'] = ROOT.kBlue-7
-colors['HNL_6.67e-10_30gev'] = ROOT.kOrange-2
-colors['HNL_8.35e-9_40gev'] = ROOT.kOrange+8
-colors['HNL_2.27e-9_20gev'] = ROOT.kBlue-4
-colors['HNL_1.04e-8_70gev'] = ROOT.kRed-4
-colors['HNL_2.27e-9_50gev'] = ROOT.kBlue-4
-colors['HNL_3.17e-11_30gev'] = ROOT.kRed+2
-colors['HNL_3.17e-11_60gev'] = ROOT.kBlue+2
+colors['HNL_4e-10_10gev'] = ROOT.kAzure+5
+colors['HNL_4e-10_10gev'] = ROOT.kBlue-7
+colors['HNL_6.67e-10_10gev'] = ROOT.kOrange-2
+colors['HNL_8.35e-9_10gev'] = ROOT.kOrange+8
+colors['HNL_2.27e-9_10gev'] = ROOT.kBlue-4
+colors['HNL_1.04e-8_10gev'] = ROOT.kRed-4
+colors['HNL_2.27e-9_10gev'] = ROOT.kBlue-4
+colors['HNL_3.17e-11_10gev'] = ROOT.kRed+2
+colors['HNL_3.17e-11_10gev'] = ROOT.kBlue+2
 
 colors['HNL'] = ROOT.kWhite
 
@@ -406,15 +406,15 @@ plots = {}
 plots['HNL'] = {'signal':{
 	
                     'HNL_1.04e-8_10gev':['HNL_1.04e-8_10gev'],
-					'HNL_4e-10_20gev':['HNL_4e-10_20gev'],
-					'HNL_4e-10_80gev':['HNL_4e-10_80gev'],
-					'HNL_6.67e-10_30gev':['HNL_6.67e-10_30gev'],
-					'HNL_8.35e-9_40gev':['HNL_8.35e-9_40gev'],
-					'HNL_2.27e-9_20gev':['HNL_2.27e-9_20gev'],
-                    'HNL_1.04e-8_70gev':['HNL_1.04e-8_70gev'],
-					'HNL_2.27e-9_50gev':['HNL_2.27e-9_50gev'],
-					'HNL_3.17e-11_30gev':['HNL_3.17e-11_30gev'],
-					'HNL_3.17e-11_60gev':['HNL_3.17e-11_60gev'],
+					'HNL_4e-10_10gev':['HNL_4e-10_10gev'],
+					'HNL_4e-10_10gev':['HNL_4e-10_10gev'],
+					'HNL_6.67e-10_10gev':['HNL_6.67e-10_10gev'],
+					'HNL_8.35e-9_10gev':['HNL_8.35e-9_10gev'],
+					'HNL_2.27e-9_10gev':['HNL_2.27e-9_10gev'],
+                    'HNL_1.04e-8_10gev':['HNL_1.04e-8_10gev'],
+					'HNL_2.27e-9_10gev':['HNL_2.27e-9_10gev'],
+					'HNL_3.17e-11_10gev':['HNL_3.17e-11_10gev'],
+					'HNL_3.17e-11_10gev':['HNL_3.17e-11_10gev'],
 
 					
 
@@ -437,15 +437,15 @@ plots['HNL'] = {'signal':{
 legend = {}
 
 legend['HNL_1.04e-8_10gev'] = 'U^{2}=1.04e-8, M_{N}=10 GeV'
-legend['HNL_4e-10_20gev'] = 'U^{2}=4e-10, M_{N}=20 GeV'
-legend['HNL_4e-10_80gev'] = 'U^{2}=4e-10, M_{N}=80 GeV'
-legend['HNL_6.67e-10_30gev'] = 'U^{2}=6.67e-10, M_{N}=30 GeV'
-legend['HNL_8.35e-9_40gev'] = 'U^{2}=8.35e-9, M_{N}=40 GeV'
-legend['HNL_2.27e-9_20gev'] = 'U^{2}=2.27e-9, M_{N}=20 GeV'
-legend['HNL_1.04e-8_70gev'] = 'U^{2}=1.04e-8, M_{N}=70 GeV'
-legend['HNL_2.27e-9_50gev'] = 'U^{2}=2.27e-9, M_{N}=50 GeV'
-legend['HNL_3.17e-11_30gev'] = 'U^{2}=3.17e-11, M_{N}=30 GeV'
-legend['HNL_3.17e-11_60gev'] = 'U^{2}=3.17e-11, M_{N}=60 GeV'
+legend['HNL_4e-10_10gev'] = 'U^{2}=4e-10, M_{N}=20 GeV'
+legend['HNL_4e-10_10gev'] = 'U^{2}=4e-10, M_{N}=80 GeV'
+legend['HNL_6.67e-10_10gev'] = 'U^{2}=6.67e-10, M_{N}=30 GeV'
+legend['HNL_8.35e-9_10gev'] = 'U^{2}=8.35e-9, M_{N}=40 GeV'
+legend['HNL_2.27e-9_10gev'] = 'U^{2}=2.27e-9, M_{N}=20 GeV'
+legend['HNL_1.04e-8_10gev'] = 'U^{2}=1.04e-8, M_{N}=70 GeV'
+legend['HNL_2.27e-9_10gev'] = 'U^{2}=2.27e-9, M_{N}=50 GeV'
+legend['HNL_3.17e-11_10gev'] = 'U^{2}=3.17e-11, M_{N}=30 GeV'
+legend['HNL_3.17e-11_10gev'] = 'U^{2}=3.17e-11, M_{N}=60 GeV'
 
 legend['HNL'] = ''
 
