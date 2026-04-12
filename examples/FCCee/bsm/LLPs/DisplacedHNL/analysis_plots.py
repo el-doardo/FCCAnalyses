@@ -9,7 +9,7 @@ intLumi        = 240.0e+06 #in pb-1
 #scaleBack      = 0.
 ana_tex        = "e^{+}e^{-} #rightarrow N_{1,2} #nu, N_{1,2} #rightarrow #mu jj"
 delphesVersion = '3.4.2'
-energy         = 91
+energy         = 91.18
 collider       = 'FCC-ee'
 inputDir       = '/eos/user/e/espoto/FCC_2jet_z_pole/FCCAnalysis/final_reco/'
 outdir         = '/eos/user/e/espoto/FCC_2jet_z_pole/FCCAnalysis/plots_reco/toshow'
@@ -17,6 +17,7 @@ formats        = ['png']
 #formats        = ['pdf']
 #yaxis          = ['lin','log']
 yaxis          = ['log']
+ymax = 1e25	## ## aggiunto per aumentare y max
 stacksig       = ['nostack']
 stackbkg       = ['stack']
 #legendCoord    = [0.68,0.76,0.96,0.88]
@@ -293,8 +294,8 @@ selections['HNL']  = [
 	#"selreco_c_jmu_against_tautau",
 	#"selReco_complete",
 	#"selReco_miei",
-	"selReco_complete_miei",
-	"selReco_complete_miei_d0_03",
+	#"selReco_complete_miei",
+	#"selReco_complete_miei_d0_03",
 	"selReco_complete",
 
 	
