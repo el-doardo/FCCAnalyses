@@ -572,6 +572,7 @@ def drawStack(name, ylabel, legend, leftText, rightText, formats, directory,
 # FORZA asse Y
 hStack.SetMaximum(1e25)
 hStack.SetMinimum(1e-6)
+ROOT.gPad.Update()
 
     # x limits
     if xmin == -1:
